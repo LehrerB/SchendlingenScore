@@ -9,6 +9,7 @@
   "dependencies": {
     "chess-image-generator": "github:joeyschoblaska/chess-image-generator#highlights",
     "next": "^12.2.5",
+    "canvas": "2.6.1",
     "react": "18.0.0",
     "react-dom": "18.0.0"
   },
