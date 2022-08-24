@@ -1,6 +1,7 @@
 {
-  "private": true,
+  "private": false,
   "scripts": {
+    "vercel-build": "yum install libuuid-devel libmount-devel && cp /lib64/{libuuid,libmount,libblkid}.so.1 node_modules/canvas/build/Release/ && npm run build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
