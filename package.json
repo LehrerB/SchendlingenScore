@@ -1,13 +1,15 @@
 {
-  "private": true,
+  "private": false,
   "scripts": {
+    "vercel-build": "yum install libuuid-devel libmount-devel && cp /lib64/{libuuid,libmount,libblkid}.so.1 node_modules/canvas/build/Release/ && npm run build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "12.1.4",
+    "chess-image-generator": "github:joeyschoblaska/chess-image-generator#highlights",
+    "next": "^12.2.5",
     "react": "18.0.0",
     "react-dom": "18.0.0"
   },
