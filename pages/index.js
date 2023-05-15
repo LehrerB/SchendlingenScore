@@ -86,7 +86,7 @@ export default function Home() {
     setErrorMsg('');
 
     let metaRegex = /^\[(\w+) "?(\w+)"?\]$/g;
-    fetch(`https://lichess.org/api/games/user/${name}?max=10&perfType=ultraBullet,bullet,blitz,rapid,classical`)
+    fetch(`https://lichess.org/api/games/user/${name}?max=${amount}&perfType=ultraBullet,bullet,blitz,rapid,classical`)
       .then(response => response.text())
       .then(data => {
         const games = data.split('\n\n\n');
