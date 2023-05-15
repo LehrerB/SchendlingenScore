@@ -108,6 +108,20 @@
   margin-left: 0.5rem;
 }
 
+.input {
+  font-size: inherit;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.button {
+  font-size: inherit;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 360px;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;

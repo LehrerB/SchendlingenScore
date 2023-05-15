@@ -8,7 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "chess-image-generator": "github:joeyschoblaska/chess-image-generator#highlights",
+    "chess.js": "^1.0.0-beta.5",
     "next": "^12.2.5",
     "react": "18.0.0",
     "react-dom": "18.0.0"
