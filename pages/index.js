@@ -46,7 +46,7 @@ const checks = [{
   title: 'Mit-castle',
   description: 'Castled after move 10.',
   check: (game) => {
-    let i = game.isWhite ? 9 : 10;
+    let i = game.isWhite ? 18 : 19;
     const hist = game.history();
     while(i < hist.length) {
       if(hist[i].startsWith('O-O')) return true;
@@ -54,6 +54,14 @@ const checks = [{
     }
     return false;
   }
+}, {
+  title: 'The underdog',
+  description: 'Won against someone whose ELO is at least 200 higher.',
+  check: (game) => ((
+    game.isWhite && parseInt(game.header().BlackElo) >= (parseInt(game.header().WhiteElo + 200))
+  ) || (
+    game.isBlack && parseInt(game.header().WhiteElo) >= (parseInt(game.header().BlackElo + 200))
+  ))
 }]
 
 function Achievement({ title, description, urls }) {
@@ -66,14 +74,16 @@ function Achievement({ title, description, urls }) {
   );
 }
 
-
-
 export default function Home() {
   const [name, setName] = useState('');
   const [amount, setAmount] = useState(10);
   const [achievements, setAchievement] = useState([{title: 'Achievements come here', descritpion: 'Just wait', urls: ['https://lichess.org/']}]);
+  const [isLoading, setLoading] = useState(false);
+  const [errorMsg, setErrorMsg] = useState('');
 
   const fetchAndAnalyzeGames = () => {
+    setLoading(true);
+    setErrorMsg('');
 
     let metaRegex = /^\[(\w+) "?(\w+)"?\]$/g;
     fetch(`https://lichess.org/api/games/user/${name}?max=10&perfType=ultraBullet,bullet,blitz,rapid,classical`)
@@ -112,9 +122,12 @@ export default function Home() {
 
         setAchievement(newAch);
         console.log(newAch);
+        setLoading(false);
       })
       .catch(error => {
+        setLoading(false);
         console.error('Error fetching games:', error);
+        setErrorMsg('Error: ' + error);
       });
   };
 
@@ -133,8 +146,9 @@ export default function Home() {
             <input className={styles.input} value={amount} onChange={e => setAmount(e.target.value)} name="amount" />
           </label>
           <br />
-          <button className={styles.button} onClick={fetchAndAnalyzeGames}>Analyze</button>
+          <button className={styles.button} disabled={isLoading} onClick={fetchAndAnalyzeGames}>{isLoading ? 'Loading...' : 'Analyze'}</button>
         </div>
+        <p>{errorMsg}</p>
         <div className={styles.grid}>
           {achievements.map((trophy, index) => (
             <Achievement key={index} title={trophy.title} description={trophy.description} urls={trophy.urls} />
