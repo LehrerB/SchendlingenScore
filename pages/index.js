@@ -33,17 +33,17 @@ function attachHeaders(chess, str) {
 
 
 const checks = [{
-  name: 'Won as black',
+  title: 'Won as black',
   description: 'Won with the black pieces.',
   check: function(game) {
     return game.isBlack && game.header().Result === '0-1';
   }
 }, {
-  name: 'Won as white',
+  title: 'Won as white',
   description: 'Won with the white pieces.',
   check: (game) => (game.isWhite && game.header().Result === '1-0')
 }, {
-  name: 'Mit-castle',
+  title: 'Mit-castle',
   description: 'Castled after move 10.',
   check: (game) => {
     let i = game.isWhite ? 9 : 10;
