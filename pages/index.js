@@ -1,37 +1,10 @@
 import styles from '../styles/Home.module.css';
 import { useState } from 'react';
 import { Chess } from 'chess.js';
+import parseLichessGame from './parser';
 import * as castling from './trophies/castling';
 import * as underdog from './trophies/underdog';
 import * as won from './trophies/won';
-
-function attachHeaders(chess, str) {
-  /*
-  [Event "Rated Blitz game"]
-  [Site "https://lichess.org/CiZuQ3R6"]
-  [Date "2023.04.08"]
-  [White "erifetim"]
-  [Black "jalaleddine"]
-  [Result "0-1"]
-  [UTCDate "2023.04.08"]
-  [UTCTime "08:48:21"]
-  [WhiteElo "1464"]
-  [BlackElo "1409"]
-  [WhiteRatingDiff "-19"]
-  [BlackRatingDiff "+6"]
-  [Variant "Standard"]
-  [TimeControl "180+0"]
-  [ECO "A40"]
-  [Termination "Normal"]
-  */
-  const regx = /^\[(\w+) "?(.*?)"?\]$/;
-  str.split('\n').forEach(line => {
-    const matches = line.match(regx);
-    if(matches && matches.length >= 3) {
-      chess.header(matches[1], matches[2]);
-    }
-  });
-}
 
 const checks = [
   won.wonWithWhite,
@@ -58,36 +31,24 @@ export default function Home() {
   const [isLoading, setLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
 
-  const fetchAndAnalyzeGames = () => {
+  const isDev = process.env.NODE_ENV !== 'production';
+
+  const fetchAndAnalyzeGames = (local) => {
     setLoading(true);
     setErrorMsg('');
 
-    let metaRegex = /^\[(\w+) "?(\w+)"?\]$/g;
-    fetch(`https://lichess.org/api/games/user/${name}?max=${amount}&perfType=ultraBullet,bullet,blitz,rapid,classical`)
+    let url = `https://lichess.org/api/games/user/${name}?max=${amount}&perfType=ultraBullet,bullet,blitz,rapid,classical`;
+    if(local === true) {
+      url = '/custom.pgn'
+    }
+    fetch(url)
       .then(response => response.text())
       .then(data => {
         const games = data.split('\n\n\n');
-
         let newAch = checks.map(value => { return {'title': value.title, 'description': value.description, 'check': value.check, 'urls': []}});
 
         games.forEach(game => {
-          
-          const chess = new Chess();
-          
-          const moves = game.split('\n\n');
-          if(moves.length < 2) {
-            return;
-          }
-
-          chess.loadPgn(moves[1]);
-          chess.setComment(moves[0]);
-          moves[0].split('\n').forEach(line => {
-            let comps = /^\[(\w+) "?(\w+)"?\]$/g;
-          });
-
-          attachHeaders(chess, moves[0]);
-          chess.isWhite = chess.header().White === name;
-          chess.isBlack = chess.header().Black === name;
+          const chess = parseLichessGame(game, name);
 
           newAch.forEach(ach => {
             if(ach.check(chess)) {
@@ -122,6 +83,7 @@ export default function Home() {
           </label>
           <br />
           <button className={styles.button} disabled={isLoading} onClick={fetchAndAnalyzeGames}>{isLoading ? 'Loading...' : 'Analyze'}</button>
+          {isDev && <button onClick={() => fetchAndAnalyzeGames(true)}>Load local</button>}
         </div>
         <p>{errorMsg}</p>
         <div className={styles.grid}>
