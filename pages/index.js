@@ -49,6 +49,12 @@ export default function Home() {
 
         games.forEach(game => {
           const chess = parseLichessGame(game, name);
+          if(chess === null) {
+            return;
+          }
+          
+          chess.isWhite = chess.header().White === name;
+          chess.isBlack = chess.header().Black === name;
 
           newAch.forEach(ach => {
             if(ach.check(chess)) {

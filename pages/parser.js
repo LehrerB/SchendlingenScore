@@ -28,7 +28,7 @@ function attachHeaders(chess, str) {
   });
 }
 
-export default function parseLichessGame(str, name) {
+export default function parseLichessGame(str) {
   const chess = new Chess();
 
   const moves = str.split('\n\n');
@@ -37,12 +37,10 @@ export default function parseLichessGame(str, name) {
   }
 
   chess.loadPgn(moves[1]);
-  chess.setComment(moves[0]);
   moves[0].split('\n').forEach(line => {
     let comps = /^\[(\w+) "?(\w+)"?\]$/g;
   });
 
   attachHeaders(chess, moves[0]);
-  chess.isWhite = chess.header().White === name;
-  chess.isBlack = chess.header().Black === name;
+  return chess;
 }
