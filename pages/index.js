@@ -1,6 +1,9 @@
-import styles from '../styles/Home.module.css'
-import { useState } from 'react'
-import { Chess } from 'chess.js'; // Make sure to install chess.js: `npm install chess.js`
+import styles from '../styles/Home.module.css';
+import { useState } from 'react';
+import { Chess } from 'chess.js';
+import * as castling from './trophies/castling';
+import * as underdog from './trophies/underdog';
+import * as won from './trophies/won';
 
 function attachHeaders(chess, str) {
   /*
@@ -24,45 +27,19 @@ function attachHeaders(chess, str) {
   const regx = /^\[(\w+) "?(.*?)"?\]$/;
   str.split('\n').forEach(line => {
     const matches = line.match(regx);
-    console.log(matches);
     if(matches && matches.length >= 3) {
       chess.header(matches[1], matches[2]);
     }
   });
 }
 
-
-const checks = [{
-  title: 'Won as black',
-  description: 'Won with the black pieces.',
-  check: function(game) {
-    return game.isBlack && game.header().Result === '0-1';
-  }
-}, {
-  title: 'Won as white',
-  description: 'Won with the white pieces.',
-  check: (game) => (game.isWhite && game.header().Result === '1-0')
-}, {
-  title: 'Mit-castle',
-  description: 'Castled after move 10.',
-  check: (game) => {
-    let i = game.isWhite ? 18 : 19;
-    const hist = game.history();
-    while(i < hist.length) {
-      if(hist[i].startsWith('O-O')) return true;
-      i += 2;
-    }
-    return false;
-  }
-}, {
-  title: 'The underdog',
-  description: 'Won against someone whose ELO is at least 200 higher.',
-  check: (game) => ((
-    game.isWhite && parseInt(game.header().BlackElo) >= (parseInt(game.header().WhiteElo + 200))
-  ) || (
-    game.isBlack && parseInt(game.header().WhiteElo) >= (parseInt(game.header().BlackElo + 200))
-  ))
-}]
+const checks = [
+  won.wonWithWhite,
+  won.wonWithBlack,
+  castling.midCastle,
+  underdog.small_underdog,
+  underdog.big_underdog,
+]
 
 function Achievement({ title, description, urls }) {
   return (
@@ -90,7 +67,6 @@ export default function Home() {
       .then(response => response.text())
       .then(data => {
         const games = data.split('\n\n\n');
-        console.log(games[0]);
 
         let newAch = checks.map(value => { return {'title': value.title, 'description': value.description, 'check': value.check, 'urls': []}});
 
@@ -121,7 +97,6 @@ export default function Home() {
         });
 
         setAchievement(newAch);
-        console.log(newAch);
         setLoading(false);
       })
       .catch(error => {
