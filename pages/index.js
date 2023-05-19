@@ -4,6 +4,7 @@ import { Chess } from 'chess.js';
 import parseLichessGame from './parser';
 import * as castling from './trophies/castling';
 import * as underdog from './trophies/underdog';
+import * as winwithless from './trophies/lessmaterial';
 import * as won from './trophies/won';
 
 const checks = [
@@ -12,6 +13,8 @@ const checks = [
   castling.midCastle,
   underdog.small_underdog,
   underdog.big_underdog,
+  winwithless.winwithless
+
 ]
 
 function Achievement({ title, description, urls }) {
@@ -19,13 +22,13 @@ function Achievement({ title, description, urls }) {
     <div className={styles.card} >
       <h2>{title}</h2>
       <p>{description}</p>
-      {urls.map((url, index) => <a key={index} href={url}>🏆</a>)}
+      {urls.map((url, index) => <a key={index} href={url} target="_blank">🏆</a>)}
     </div>
   );
 }
 
 export default function Home() {
-  const [name, setName] = useState('');
+  const [name, setName] = useState('lawtrafalgar02');
   const [amount, setAmount] = useState(10);
   const [achievements, setAchievement] = useState([{title: 'Achievements come here', descritpion: 'Just wait', urls: ['https://lichess.org/']}]);
   const [isLoading, setLoading] = useState(false);
