@@ -7,7 +7,6 @@ export let noFool = {
   const hist = game.history();
   //move two and three need to include Bc4 and Qf3 or Qh5
   const move2and3 = hist[2] + " " + hist[4];
-  console.log(move2and3);
   if(!(move2and3.includes("Bc4")&&(move2and3.includes("Qf3")||move2and3.includes("Qh5")))){return false}
   //d5 and e6 need to be empty, f4, f5, f6 for Qf3 or if Qh5 g6 should be empty 
   //and please don't play Qe7 yourself

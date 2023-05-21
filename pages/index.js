@@ -63,16 +63,22 @@ export default function Home() {
     let url = `https://lichess.org/api/games/user/${name}?max=${amount}`;
     //let url = `https://lichess.org/api/games/user/${name}?max=${amount}&perfType=ultraBullet,bullet,blitz,rapid,classical`;
     if(local === true) {
-      url = 'public\custom.pgn'
+      url = 'http://localhost:3000/custom.txt'
     }
-    fetch(url)
+    fetch(url, { headers: { 'Content-Type': 'text/plain; charset=utf-8' } })
       .then(response => response.text())
       .then(data => {
-        const games = data.split('\n\n\n');
+        let games;
+        if(local === true){
+          games = data.trim().split('\r\n\r\n\r\n'); //local files are encoded with \r\n instead of \n
+        } else {
+          games = data.trim().split('\n\n\n')
+        }
         let newAch = checks.map(value => { return {'title': value.title, 'description': value.description, 'check': value.check, 'urls': []}});
-
         games.forEach(game => {
-          const chess = parseLichessGame(game, name);
+          //console.log(game)
+          //console.log("test")
+          const chess = parseLichessGame(game);
           if(chess === null) {
             return;
           }

@@ -30,7 +30,13 @@ function attachHeaders(chess, str) {
 
 export default function parseLichessGame(str) {
   const chess = new Chess();
-  const moves = str.split('\n\n');
+  let moves;
+  
+  if(str.includes('\r\n')){
+    moves = str.split('\r\n\r\n') //local files are encoded with \r\n instead of \n
+  } else {
+    moves = str.split('\n\n')
+  }
   if(moves.length < 2) {
     return null;
   }
