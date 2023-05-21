@@ -8,9 +8,16 @@ import * as winwithless from './trophies/lessmaterial';
 import * as result from './trophies/result';
 import * as computer from './trophies/computer';
 import * as checkmates from './trophies/checkmates';
+import * as opening from './trophies/opening';
 
 const checks = [
   result.didNotLose,
+  checkmates.mateOnBackRank,
+  opening.noFool,
+  checkmates.mateAfterCastling,
+  computer.mattStattPatt1,
+  computer.wonVsComputer1,
+  computer.wonVsComputer8NoQueen,
   checkmates.endedWithMate,
   checkmates.mateWithQueen,
   checkmates.mateWithRook,
@@ -56,7 +63,7 @@ export default function Home() {
     let url = `https://lichess.org/api/games/user/${name}?max=${amount}`;
     //let url = `https://lichess.org/api/games/user/${name}?max=${amount}&perfType=ultraBullet,bullet,blitz,rapid,classical`;
     if(local === true) {
-      url = '/custom.pgn'
+      url = 'public\custom.pgn'
     }
     fetch(url)
       .then(response => response.text())
@@ -72,12 +79,15 @@ export default function Home() {
           
           chess.isWhite = chess.header().White === name;
           chess.isBlack = chess.header().Black === name;
+          chess.isWon = ((chess.isWhite && chess.header().Result==='1-0')||(chess.isBlack && chess.header().Result==='0-1'))
           chess.noLoss = !((chess.isWhite && chess.header().Result==='0-1')||(chess.isBlack && chess.header().Result==='1-0'))
           chess.oppNoTime = chess.header().Termination === 'Time forfeit'  && ((chess.isWhite && (chess.history().length % 2 == 1)) || (chess.isBlack && (chess.history().length % 2 == 0)));
           chess.isStandard = chess.header().Variant === 'Standard';
+          chess.isFromPosition = chess.header().Variant === 'From Position';
           chess.isBullet = chess.header().Event.includes('Bullet');
           chess.isComputer = chess.header().White.includes('lichess AI level') || chess.header().Black.includes('lichess AI level');
-          
+          if(chess.isWhite){chess.oppName = chess.header().Black} else {chess.oppName = chess.header().White}
+
 
           newAch.forEach(ach => {
             if(ach.check(chess)) {

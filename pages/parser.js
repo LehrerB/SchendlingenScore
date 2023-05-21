@@ -39,7 +39,7 @@ export default function parseLichessGame(str) {
     return null;
   }
 
-  console.log(str);
+  //console.log(str);
   chess.loadPgn(str); //can import from whole string instead of moves[1] //.replace('[Variant "Chess960"]','[Variant "From Position"]')
   moves[0].split('\n').forEach(line => {
     let comps = /^\[(\w+) "?(\w+)"?\]$/g;
