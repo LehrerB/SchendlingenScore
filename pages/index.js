@@ -97,9 +97,10 @@ export default function Home() {
 
           
           newAch.forEach(ach => {
-            console.log(ach.urls)
             if(ach.check(chess)) {
-              ach.urls.push(chess.header().Site);
+              const add = chess.isBlack ? "/black" : "";
+              const site = chess.header().Site + add;
+              ach.urls.push(site)
             }
           });
         });
