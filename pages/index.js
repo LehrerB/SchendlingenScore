@@ -5,16 +5,29 @@ import parseLichessGame from './parser';
 import * as castling from './trophies/castling';
 import * as underdog from './trophies/underdog';
 import * as winwithless from './trophies/lessmaterial';
-import * as won from './trophies/won';
+import * as result from './trophies/result';
+import * as computer from './trophies/computer';
+import * as checkmates from './trophies/checkmates';
 
 const checks = [
-  won.wonWithWhite,
-  won.wonWithBlack,
+  result.didNotLose,
+  checkmates.endedWithMate,
+  checkmates.mateWithQueen,
+  checkmates.mateWithRook,
+  checkmates.mateWithBishop,
+  checkmates.mateWithKnight,
+  checkmates.mateWithKing,
+  checkmates.mateWithPawn,
+  result.wonWithWhite,
+  result.wonWithBlack,
+  result.drawWithWhite,
+  result.drawWithBlack,
   castling.midCastle,
   underdog.small_underdog,
   underdog.big_underdog,
-  winwithless.winwithless
-
+  winwithless.winwithless,
+  result.favoredByTime,
+  computer.againstComputer,
 ]
 
 function Achievement({ title, description, urls }) {
@@ -29,7 +42,7 @@ function Achievement({ title, description, urls }) {
 
 export default function Home() {
   const [name, setName] = useState('lawtrafalgar02');
-  const [amount, setAmount] = useState(10);
+  const [amount, setAmount] = useState(20);
   const [achievements, setAchievement] = useState([{title: 'Achievements come here', descritpion: 'Just wait', urls: ['https://lichess.org/']}]);
   const [isLoading, setLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
@@ -40,7 +53,8 @@ export default function Home() {
     setLoading(true);
     setErrorMsg('');
 
-    let url = `https://lichess.org/api/games/user/${name}?max=${amount}&perfType=ultraBullet,bullet,blitz,rapid,classical`;
+    let url = `https://lichess.org/api/games/user/${name}?max=${amount}`;
+    //let url = `https://lichess.org/api/games/user/${name}?max=${amount}&perfType=ultraBullet,bullet,blitz,rapid,classical`;
     if(local === true) {
       url = '/custom.pgn'
     }
@@ -58,6 +72,12 @@ export default function Home() {
           
           chess.isWhite = chess.header().White === name;
           chess.isBlack = chess.header().Black === name;
+          chess.noLoss = !((chess.isWhite && chess.header().Result==='0-1')||(chess.isBlack && chess.header().Result==='1-0'))
+          chess.oppNoTime = chess.header().Termination === 'Time forfeit'  && ((chess.isWhite && (chess.history().length % 2 == 1)) || (chess.isBlack && (chess.history().length % 2 == 0)));
+          chess.isStandard = chess.header().Variant === 'Standard';
+          chess.isBullet = chess.header().Event.includes('Bullet');
+          chess.isComputer = chess.header().White.includes('lichess AI level') || chess.header().Black.includes('lichess AI level');
+          
 
           newAch.forEach(ach => {
             if(ach.check(chess)) {

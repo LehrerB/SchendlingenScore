@@ -30,13 +30,17 @@ function attachHeaders(chess, str) {
 
 export default function parseLichessGame(str) {
   const chess = new Chess();
-
   const moves = str.split('\n\n');
   if(moves.length < 2) {
     return null;
   }
+  //check for variants
+  if(!(str.includes('[Variant "From Position"]')||str.includes('[Variant "Standard"]')    )){ //||str.includes('[Variant "Chess960"]')
+    return null;
+  }
 
-  chess.loadPgn(moves[1]);
+  console.log(str);
+  chess.loadPgn(str); //can import from whole string instead of moves[1] //.replace('[Variant "Chess960"]','[Variant "From Position"]')
   moves[0].split('\n').forEach(line => {
     let comps = /^\[(\w+) "?(\w+)"?\]$/g;
   });
