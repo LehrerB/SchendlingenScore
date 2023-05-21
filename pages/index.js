@@ -33,6 +33,7 @@ const checks = [
   underdog.small_underdog,
   underdog.big_underdog,
   winwithless.winwithless,
+  checkmates.mateWithLess,
   result.favoredByTime,
   computer.againstComputer,
 ]
@@ -94,8 +95,9 @@ export default function Home() {
           chess.isComputer = chess.header().White.includes('lichess AI level') || chess.header().Black.includes('lichess AI level');
           if(chess.isWhite){chess.oppName = chess.header().Black} else {chess.oppName = chess.header().White}
 
-
+          
           newAch.forEach(ach => {
+            console.log(ach.urls)
             if(ach.check(chess)) {
               ach.urls.push(chess.header().Site);
             }

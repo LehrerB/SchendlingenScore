@@ -9,8 +9,8 @@
         if(!(game.isWhite && game.header().Result === '1-0' || game.isBlack && game.header().Result === '0-1')){
             return false
         } 
-        let fen = game.fen()
-        //console.log(fen)
+        let fen = game.fen().split(" ")[0]; //careful, fen includes a small b at the end if it's blacks turn
+        console.log(fen)
         let score = 0
         let points = {
             P:1,
@@ -28,6 +28,7 @@
             //console.log(c)
             score+=points[c]||0       //0 wenn er keinen Buchstaben findet.
         }
+        console.log(score)
         return ((game.isWhite && score < 0)||(game.isBlack && score > 0))
     }
   }

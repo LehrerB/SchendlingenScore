@@ -1,4 +1,5 @@
 import * as utils from '../utils/javachess';
+import { winwithless } from './lessmaterial';
 
 export let endedWithMate = {
     title: 'Check Mate',
@@ -114,8 +115,6 @@ export let mateOnBackRank = {
     //define squares in front of king (only two for a and h file)
     const files = 'abcdefgh'
     const kingfilenum = files.indexOf(kingposition.replace(rank,""));
-    console.log(kingfilenum);
-    console.log(files[kingfilenum])
     const pawnrank = game.isWhite ? '7' : '2';
     let pawnpositions;
     if(kingfilenum===0) {
@@ -125,10 +124,26 @@ export let mateOnBackRank = {
       } else {
       pawnpositions = [files[kingfilenum-1] + pawnrank,files[kingfilenum]+pawnrank,files[kingfilenum+1]+pawnrank]
       }
-    console.log(pawnpositions);
-
-    
-
+    //check if there are at least two pieces in front of the king, and not white
+    let emptysquares = 0; //will count how many squares are empty
+    for(let pos in pawnpositions){
+      const squareinfo = game.get(pawnpositions[pos]);
+      if(squareinfo===false){emptysquares += 1} else {
+        if(squareinfo.color===piececolor){return false} //if any piece is white in front of the king, that's not backrank checkmate
+      }
+      if(emptysquares > 1){return false} //if two or more are empty
+    }
     return true
   }
+}
+
+export let mateWithLess = {
+  title: 'Der König zählt.',
+  description: <p>Matt mit weniger Material als der Gegner.</p>,
+  check: function(game) {
+  if(!(game.isStandard)||game.isBullet){return false}
+  const hist = game.history();
+  if(!(game.noLoss && hist[hist.length-1].includes('#'))){return false}
+  return winwithless.check(game);
+}
 }
