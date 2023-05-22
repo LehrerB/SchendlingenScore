@@ -2,16 +2,16 @@ import styles from '../styles/Home.module.css';
 import { useState } from 'react';
 import { Chess } from 'chess.js';
 import parseLichessGame from './parser';
-import * as castling from './trophies/castling';
-import * as underdog from './trophies/underdog';
-import * as lessmaterial from './trophies/lessmaterial';
-import * as result from './trophies/result';
-import * as computer from './trophies/computer';
-import * as checkmates from './trophies/checkmates';
-import * as opening from './trophies/opening';
-import * as captures from './trophies/captures';
-import * as specialmoves from './trophies/specialmoves';
-import * as pawnwords from './trophies/pawnwords';
+import * as castling from '../public/trophies/castling';
+import * as underdog from '../public/trophies/underdog';
+import * as lessmaterial from '../public/trophies/lessmaterial';
+import * as result from '../public/trophies/result';
+import * as computer from '../public/trophies/computer';
+import * as checkmates from '../public/trophies/checkmates';
+import * as opening from '../public/trophies/opening';
+import * as captures from '../public/trophies/captures';
+import * as specialmoves from '../public/trophies/specialmoves';
+import * as pawnwords from '../public/trophies/pawnwords';
 
 const checks = [
   result.wonWithWhite,
