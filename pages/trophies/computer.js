@@ -1,3 +1,6 @@
+const myDefaultExport = 'This is the default export';
+export default myDefaultExport;
+
 export let againstComputer = {
     title: 'Computer',
     description: 'Played against Computer.',
@@ -16,7 +19,7 @@ export let wonVsComputer1 = {
 }
 
 export let wonVsComputer2 = {
-  title: 'Computer Stufe 3',
+  title: 'Computer Stufe 2',
   description: <p>Besiege den Computer auf Stufe 2.</p>,
   check: function(game) {
   return (game.isComputer && game.isWon && game.isStandard && game.oppName.includes("2"))

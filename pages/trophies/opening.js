@@ -1,3 +1,6 @@
+const myDefaultExport = 'This is the default export';
+export default myDefaultExport;
+
 import { Chess } from 'chess.js';
 import * as utils from '../utils/javachess';
 

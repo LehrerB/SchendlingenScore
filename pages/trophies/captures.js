@@ -1,3 +1,6 @@
+const myDefaultExport = 'This is the default export';
+export default myDefaultExport;
+
 export let battlefield = {
     title: 'Sch(l)achtfeld',
     description: <p>Spiele ein Spiel, in dem mindestens 6 Mal hintereinander geschlagen wird.</p>,

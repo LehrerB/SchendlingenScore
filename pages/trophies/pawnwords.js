@@ -1,12 +1,18 @@
+const myDefaultExport = 'This is the default export';
+export default myDefaultExport;
+
 export let check_for_pawn_word = (game, word) => {
     //get player history
     const hist = game.history();
     const addwb = game.isWhite ? 1 : 0;
     let playerhist = hist.filter((_, index) => index % 2 !== addwb);
-    //start checking
-    
+    //start checking for correct letters
     for(let i = 0; i < word.length; i++){
         if(!(playerhist[i].includes(word[i]))){return false}
+    }
+    //check if no pieces were used
+    for(let i = 0; i < word.length; i++){
+        if(playerhist[i].includes('N')||playerhist[i].includes('B')||playerhist[i].includes('R')||playerhist[i].includes('Q')||playerhist[i].includes('K')){return false}
     }
     return true
   }

@@ -1,3 +1,6 @@
+const myDefaultExport = 'This is the default export';
+export default myDefaultExport;
+
 import * as utils from '../utils/javachess';
 
   export let winwithless = {

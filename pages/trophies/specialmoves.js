@@ -1,3 +1,6 @@
+const myDefaultExport = 'This is the default export';
+export default myDefaultExport;
+
 export let castleWithCheck = {
     title: 'O-O+',
     description: <p>Rochiere und gibt gleichzeitig Schach. Gewinne anschließend das Spiel.</p>,

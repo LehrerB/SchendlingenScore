@@ -1,3 +1,6 @@
+const myDefaultExport = 'This is the default export';
+export default myDefaultExport;
+
 export let didNotLose = {
   title: 'Nicht verloren',
   description: <p>Entweder gewinnen oder unentschieden spielen.</p>,

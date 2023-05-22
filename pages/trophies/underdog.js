@@ -1,3 +1,5 @@
+const myDefaultExport = 'This is the default export';
+export default myDefaultExport;
 
 function wonVsHigherElo(diff1, diff2) { //returns true if opponent is higher between range
   return function(game) {               //ignores diff2 if it's smaller than diff1 (no upper limit)
