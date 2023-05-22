@@ -8,19 +8,19 @@ function wonVsHigherElo(diff) {
 }
 
 export let small_underdog = {
-  title: 'The small underdog',
-  description: 'Won against someone whose ELO is at least 40 higher.',
+  title: 'Small underdog',
+  description: 'Gewinne gegen einen Spieler, der mindestens 40 ELO mehr hat.',
   check: wonVsHigherElo(40)
 }
 
 export let middle_underdog = {
-  title: 'The underdog',
-  description: 'Won against someone whose ELO is at least 80 higher.',
+  title: 'Underdog',
+  description: 'Gewinne gegen einen Spieler, der mindestens 80 ELO mehr hat.',
   check: wonVsHigherElo(80)
 }
 
 export let big_underdog = {
-  title: 'The big underdog',
-  description: 'Won against someone whose ELO is at least 120 higher.',
+  title: 'Big underdog',
+  description: 'Gewinne gegen einen Spieler, der mindestens 120 ELO mehr hat.',
   check: wonVsHigherElo(120)
 }
