@@ -9,27 +9,42 @@ import * as result from './trophies/result';
 import * as computer from './trophies/computer';
 import * as checkmates from './trophies/checkmates';
 import * as opening from './trophies/opening';
+import * as captures from './trophies/captures';
+import * as specialmoves from './trophies/specialmoves';
+import * as pawnwords from './trophies/pawnwords';
 
 const checks = [
-  result.didNotLose,
-  checkmates.mateOnBackRank,
-  opening.rookiemistake,
+  result.wonWithWhite,
+  result.wonWithBlack,
+  underdog.small_underdog,
+  underdog.big_underdog,
   opening.textbookOpening,
-  lessmaterial.timewithless,
   opening.noFool,
-  checkmates.mateAfterCastling,
-  computer.mattStattPatt1,
-  computer.wonVsComputer1,
-  computer.wonVsComputer8NoQueen,
-  checkmates.endedWithMate,
+  captures.battlefield,
+  captures.peacefulmode,
   checkmates.mateWithQueen,
   checkmates.mateWithRook,
   checkmates.mateWithBishop,
   checkmates.mateWithKnight,
   checkmates.mateWithKing,
   checkmates.mateWithPawn,
-  result.wonWithWhite,
-  result.wonWithBlack,
+  computer.wonVsComputer1,
+  computer.wonVsComputer2,
+  computer.wonVsComputer3,
+  computer.wonVsComputer8NoQueen,
+  computer.mattStattPatt1,
+  computer.mattStattPatt2,
+  computer.mattStattPatt3,
+  computer.mattStattPatt4,
+  computer.mattStattPatt5,
+  computer.mattStattPatt6,
+  pawnwords.spellGG,
+  pawnwords.spellDAB,
+  pawnwords.spellHaha,
+  pawnwords.spellAffe,
+  specialmoves.castleWithCheck,
+  checkmates.mateOnBackRank,
+  /*result.didNotLose,
   result.drawWithWhite,
   result.drawWithBlack,
   castling.midCastle,
@@ -39,6 +54,11 @@ const checks = [
   checkmates.mateWithLess,
   result.favoredByTime,
   computer.againstComputer,
+  opening.rookSniper,
+  opening.rookiemistake,
+  lessmaterial.timewithless,
+  checkmates.mateAfterCastling,
+  checkmates.endedWithMate,*/
 ]
 
 function Achievement({ title, description, urls }) {
@@ -52,7 +72,7 @@ function Achievement({ title, description, urls }) {
 }
 
 export default function Home() {
-  const [name, setName] = useState('lawtrafalgar02');
+  const [name, setName] = useState('msch-');
   const [amount, setAmount] = useState(20);
   const [achievements, setAchievement] = useState([{title: 'Achievements come here', descritpion: 'Just wait', urls: ['https://lichess.org/']}]);
   const [isLoading, setLoading] = useState(false);
@@ -83,7 +103,7 @@ export default function Home() {
           //console.log(game)
           //console.log("test")
           const chess = parseLichessGame(game);
-          if(chess === null) {
+          if(chess === null || chess.history().length < 3) {
             return;
           }
           
@@ -121,7 +141,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <h1 className={styles.title}>List trophies</h1>
+        <h1 className={styles.title}>Schendlingen Score</h1>
         <div className={styles.description}>
           <label>
             Your lichess name

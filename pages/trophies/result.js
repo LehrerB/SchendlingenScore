@@ -1,22 +1,22 @@
 export let didNotLose = {
-  title: 'Did not Lose',
-  description: <p>Either won or drew the game.</p>,
+  title: 'Nicht verloren',
+  description: <p>Entweder gewinnen oder unentschieden spielen.</p>,
   check: function(game) {
     return game.noLoss
   }
 }
 
 export let wonWithWhite = {
-  title: 'Won as white',
-  description: <p>Won with the <i>white</i> pieces</p>,
+  title: 'Gewinne mit Weiß',
+  description: <p>Gewinne ein Spiel mit den <i>weißen</i> Figuren.</p>,
   check: function(game) {
     return game.isWhite && game.header().Result === '1-0'
   }
 }
 
 export let wonWithBlack = {
-  title: 'Won as black',
-  description: <p>Won with the <i>black</i> pieces</p>,
+  title: 'Gewinne mit Schwarz',
+  description: <p>Gewinne ein Spiel mit den <i>schwarzen</i> Figuren.</p>,
   check: function(game) {
     return game.isBlack && game.header().Result === '0-1';
   }

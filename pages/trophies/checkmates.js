@@ -2,8 +2,8 @@ import * as utils from '../utils/javachess';
 import { winwithless } from './lessmaterial';
 
 export let endedWithMate = {
-    title: 'Check Mate',
-    description: <p>Won by Checkmate.</p>,
+    title: 'Schach Matt',
+    description: <p>Gewinne durch Schach Matt.</p>,
     check: function(game) {
     if(!(game.isStandard)||game.isBullet){return false}
     const hist = game.history();
@@ -12,8 +12,8 @@ export let endedWithMate = {
 }
 
 export let mateWithQueen = {
-    title: 'Queen',
-    description: <p>Checkmate with Queen.</p>,
+    title: 'Dame',
+    description: <p>Schach Matt mit der Dame.</p>,
     check: function(game) {
     if(!(game.isStandard)||game.isBullet){return false}
     const hist = game.history();
@@ -22,8 +22,8 @@ export let mateWithQueen = {
 }
 
 export let mateWithRook = {
-    title: 'Rook',
-    description: <p>Checkmate with Rook.</p>,
+    title: 'Turm',
+    description: <p>Schach Matt mit dem Turm.</p>,
     check: function(game) {
     if(!(game.isStandard)||game.isBullet){return false}
     const hist = game.history();
@@ -32,8 +32,8 @@ export let mateWithRook = {
 }
 
 export let mateWithBishop = {
-    title: 'Bishop',
-    description: <p>Checkmate with Bishop.</p>,
+    title: 'Läufer',
+    description: <p>Schach Matt mit dem Läufer.</p>,
     check: function(game) {
     if(!(game.isStandard)||game.isBullet){return false}
     const hist = game.history();
@@ -42,8 +42,8 @@ export let mateWithBishop = {
 }
 
 export let mateWithKnight = {
-    title: 'Knight',
-    description: <p>Checkmate with Knight.</p>,
+    title: 'Springer',
+    description: <p>Schach Matt mit dem Springer (Pferd).</p>,
     check: function(game) {
     if(!(game.isStandard)||game.isBullet){return false}
     const hist = game.history();
@@ -52,8 +52,8 @@ export let mateWithKnight = {
 }
 
 export let mateWithKing = {
-    title: 'King',
-    description: <p>Checkmate with King.</p>,
+    title: 'König',
+    description: <p>Schach Matt, in dem du den König bewegst.</p>,
     check: function(game) {
     if(!(game.isStandard)||game.isBullet){return false}
     const hist = game.history();
@@ -62,8 +62,8 @@ export let mateWithKing = {
 }
 
 export let mateWithPawn = {
-    title: 'Pawn',
-    description: <p>Checkmate with Pawn.</p>,
+    title: 'Bauer',
+    description: <p>Schach Matt mit einem Bauern.</p>,
     check: function(game) {
     if(!(game.isStandard)||game.isBullet){return false}
     const hist = game.history();
@@ -72,8 +72,8 @@ export let mateWithPawn = {
 }
 
 export let mateWithPromotion = {
-    title: 'Promotion',
-    description: <p>Checkmate with Promotion.</p>,
+    title: 'Umwandlung',
+    description: <p>Schach Matt durch Umwandlung.</p>,
     check: function(game) {
     if(!(game.isStandard)||game.isBullet){return false}
     const hist = game.history();

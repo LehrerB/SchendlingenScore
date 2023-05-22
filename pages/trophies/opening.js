@@ -88,8 +88,7 @@ export let textbookOpening = {
     let score
     let prevscore
     //castle and then start checking
-    conditionmet = 0
-    score = 0
+    score = 0;
     for (let i = castleindex; i < ophist.length; i++){
     currentpos.move(ophist[i])
     //no Knights or Bishops on those squares, NO MATTER WHAT COLOR
@@ -101,7 +100,7 @@ export let textbookOpening = {
     condd5 = currentpos.get('d5').type==='p' && currentpos.get('d5').color===piececolor;
     prevscore = score //can't be down material 2 turns in a row. Small issue with in between moves
     score = utils.get_material_player(currentpos);
-    if(condNB && (conde4 || conde5 || condd4 || condd5)&& score > -2 && prevscore > -2){conditionmet = 1}
+    if(condNB && (conde4 || conde5 || condd4 || condd5)&& score > -2 && prevscore > -2){return true}
     
     //for debugging
     /*
@@ -114,8 +113,7 @@ export let textbookOpening = {
     console.log(score)
     console.log(conditionmet)*/
   }
-    if(conditionmet === 0){return false}
-    return true
+    return false
   }
 }
 
@@ -125,7 +123,7 @@ export let rookiemistake = {
   description: <p>Schlage den Turm mit dem Läufer, wenn er am Anfang versucht auf a3 oder h3 ins Spiel zu kommen.</p>,
   check: function(game) {
   //Standard Game, win and not white
-  if(!(game.isStandard) || !(game.isWon) || game.isWhite){return false}
+  if(!(game.isStandard) || !(game.isWon)){return false}
   const hist = game.history();
   //reduce history to first moves
   const maxmoves = 6;
@@ -152,7 +150,7 @@ export let rookSniper = {
   description: <p>Schlage einen Turm in der Ecke mit deinem Läufer.</p>,
   check: function(game) {
   //Standard Game, win and not white
-  if(!(game.isStandard) || !(game.isWon) || game.isWhite){return false}
+  if(!(game.isStandard) || !(game.isWon)){return false}
   const hist = game.history();
   //reduce history to first moves
   const maxmoves = 10;
@@ -160,15 +158,21 @@ export let rookSniper = {
   const shorthist = hist.slice(0,slicenum);
   //check for Bx Moves a8, h8, a1 or h1
   const addwb = game.isWhite ? 1 : 0;
-  const addbw = game.isWhite ? 0 : 1;
-  const rank = game.isWhite ? '8' : '1';
-  const asquare = 'a'+rank
-  const hsquare = 'h'+rank
+  const rankx = game.isWhite ? '8' : '1';
+  const asquare = 'a'+rankx
+  const hsquare = 'h'+rankx
   const playerhist = shorthist.filter((_, index) => index % 2 !== addwb);
   if(!(playerhist.includes('Bx' + asquare)||playerhist.includes('Bx' + hsquare))){return false}
+  //check if bishop was fiancheto...ed on b2, g2, b6, g6
+  const rankb = game.isWhite ? '2' : '7';
+  const bsquare = 'b'+rankb
+  const gsquare = 'g'+rankb
+  if(!(playerhist.includes('B' + bsquare)||playerhist.includes('B' + gsquare))){return false}
   //check if it was a rook that was taken
-  
-  
+  let xsquare;
+  if(playerhist.includes('Bx' + asquare)){xsquare = hist.indexOf('Bx' + asquare)}
+  if(playerhist.includes('Bx' + hsquare)){xsquare = hist.indexOf('Bx' + hsquare)}
+  let takenpiece = utils.what_piece_was_captured(game,xsquare)
   return true
 }
 }

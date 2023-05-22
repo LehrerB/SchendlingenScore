@@ -50,7 +50,7 @@ export default function parseLichessGame(str) {
   moves[0].split('\n').forEach(line => {
     let comps = /^\[(\w+) "?(\w+)"?\]$/g;
   });
-
+  chess.deleteComments();
   attachHeaders(chess, moves[0]);
   return chess;
 }

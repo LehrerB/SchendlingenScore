@@ -64,7 +64,7 @@ export let get_legal_moves_by_piece = (game, piece) => {
     //go to position before
     let position = go_to_position_after_n_plays(game,play);
     //stuff behind x
-    let square = string.split("x")[x];
+    let square = hist[play].split('x')[1];
     //get square info
     let piece = position.get(square).type
     return piece
