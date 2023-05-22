@@ -1,5 +1,4 @@
-const myDefaultExport = 'This is the default export';
-export default myDefaultExport;
+export default [];
 
 import * as utils from '../utils/javachess';
 import { winwithless } from './lessmaterial';

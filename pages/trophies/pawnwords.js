@@ -1,5 +1,4 @@
-const myDefaultExport = 'This is the default export';
-export default myDefaultExport;
+export default [];
 
 export let check_for_pawn_word = (game, word) => {
     //get player history

@@ -1,5 +1,4 @@
-const myDefaultExport = 'This is the default export';
-export default myDefaultExport;
+export default [];
 
 export let againstComputer = {
     title: 'Computer',
