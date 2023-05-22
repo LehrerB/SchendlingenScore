@@ -53,4 +53,5 @@ export default function parseLichessGame(str) {
   chess.deleteComments();
   attachHeaders(chess, moves[0]);
   return chess;
+  
 }

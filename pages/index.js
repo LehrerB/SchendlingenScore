@@ -1,7 +1,7 @@
 import styles from '../styles/Home.module.css';
 import { useState } from 'react';
 import { Chess } from 'chess.js';
-import parseLichessGame from './parser';
+import parseLichessGame from '../public/parser';
 import * as castling from '../public/trophies/castling';
 import * as underdog from '../public/trophies/underdog';
 import * as lessmaterial from '../public/trophies/lessmaterial';
