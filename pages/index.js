@@ -4,7 +4,7 @@ import { Chess } from 'chess.js';
 import parseLichessGame from './parser';
 import * as castling from './trophies/castling';
 import * as underdog from './trophies/underdog';
-import * as winwithless from './trophies/lessmaterial';
+import * as lessmaterial from './trophies/lessmaterial';
 import * as result from './trophies/result';
 import * as computer from './trophies/computer';
 import * as checkmates from './trophies/checkmates';
@@ -13,6 +13,9 @@ import * as opening from './trophies/opening';
 const checks = [
   result.didNotLose,
   checkmates.mateOnBackRank,
+  opening.rookiemistake,
+  opening.textbookOpening,
+  lessmaterial.timewithless,
   opening.noFool,
   checkmates.mateAfterCastling,
   computer.mattStattPatt1,
@@ -32,7 +35,7 @@ const checks = [
   castling.midCastle,
   underdog.small_underdog,
   underdog.big_underdog,
-  winwithless.winwithless,
+  lessmaterial.winwithless,
   checkmates.mateWithLess,
   result.favoredByTime,
   computer.againstComputer,
@@ -91,7 +94,7 @@ export default function Home() {
           chess.oppNoTime = chess.header().Termination === 'Time forfeit'  && ((chess.isWhite && (chess.history().length % 2 == 1)) || (chess.isBlack && (chess.history().length % 2 == 0)));
           chess.isStandard = chess.header().Variant === 'Standard';
           chess.isFromPosition = chess.header().Variant === 'From Position';
-          chess.isBullet = chess.header().Event.includes('Bullet');
+          chess.isBullet = false; //chess.header().Event.includes('Bullet');
           chess.isComputer = chess.header().White.includes('lichess AI level') || chess.header().Black.includes('lichess AI level');
           if(chess.isWhite){chess.oppName = chess.header().Black} else {chess.oppName = chess.header().White}
 

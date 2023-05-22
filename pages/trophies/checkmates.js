@@ -100,18 +100,22 @@ export let mateOnBackRank = {
     const hist = game.history();
     //mate because of Queen or Rook
     if(!(game.noLoss && hist[hist.length-1].includes('#') && (hist[hist.length-1].includes('R')|| hist[hist.length-1].includes('Q')))){return false}
+    //define backrank and check if mate happened there
+    const rank = game.isWhite ? '8' : '1';
+    if(!(hist[hist.length-1].includes(rank))){return false}
     //define king color and rank, then get position
     const kingcolor = game.isWhite ? 'b' : 'w';
-    const rank = game.isWhite ? '8' : '1';
+    const piececolor = game.isWhite ? 'w' : 'b';
     const kingposition = utils.get_piece_positions(game,{ type: 'k', color: kingcolor})[0]; //only one king
     //check if king is on backrank
     if(!(kingposition.includes(rank))){return false}
-    //check if checking piece is on backrank as well
+    /*//check if checking piece is on backrank as well
     const piecetype = hist[hist.length-1].includes('R') ? 'r' : 'q';
-    const piececolor = game.isWhite ? 'w' : 'b';
+    
     const piecepositions = utils.get_piece_positions(game,{ type: piecetype, color: piececolor}); //possibly multiple rooks or queens
     const pieceonbackrank = piecepositions.some(pos => pos.includes(rank));
-    if(!(pieceonbackrank)){return false}
+    if(!(pieceonbackrank)){return false}*/
+
     //define squares in front of king (only two for a and h file)
     const files = 'abcdefgh'
     const kingfilenum = files.indexOf(kingposition.replace(rank,""));
@@ -138,7 +142,7 @@ export let mateOnBackRank = {
 }
 
 export let mateWithLess = {
-  title: 'Der König zählt.',
+  title: 'Nur der König zählt.',
   description: <p>Matt mit weniger Material als der Gegner.</p>,
   check: function(game) {
   if(!(game.isStandard)||game.isBullet){return false}
