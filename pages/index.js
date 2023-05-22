@@ -43,7 +43,7 @@ function Achievement({ title, description, urls }) {
     <div className={styles.card} >
       <h2>{title}</h2>
       <p>{description}</p>
-      {urls.map((url, index) => <a key={index} href={url} target="_blank">🏆</a>)}
+      {urls.map((url, index) => <a key={index} href={url} target="_blank" rel="noopener noreferrer">🏆</a>)}
     </div>
   );
 }
