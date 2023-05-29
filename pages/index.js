@@ -92,9 +92,10 @@ function Achievement({ name, ach }) {
   return (
     <div className={styles.card} >
       <h2>{checks[name].title}</h2>
-      <div className='details '>
+      {/* zero width character &#8203; such that the height of every card is the same */}
+      <div className={styles.trophyList}>&#8203;{ach.urls.map((url, index) => <a key={index} href={url} target="_blank" rel="noopener noreferrer">🏆</a>)}</div>
+      <div className={styles.details}>
         <p>{checks[name].description}</p>
-        {ach.urls.map((url, index) => <a key={index} href={url} target="_blank" rel="noopener noreferrer">🏆</a>)}
       </div>
     </div>
   );
@@ -187,7 +188,8 @@ export default function Home() {
 
         </div>
         {loadingStatus == LOADING_STATUS_ERROR && <p>{errorMsg}</p>}
-        {loadingStatus == LOADING_STATUS_DONE && <div className={styles.grid}>
+        {loadingStatus == LOADING_STATUS_DONE && <div className={styles.categoryCol}>
+          <div className={styles.grid}>
           <h3>Allgemein</h3>
           <Achievement name={"wonWithWhite"} ach={achievements.wonWithWhite} />
           <Achievement name={"wonWithBlack"} ach={achievements.wonWithBlack} />
@@ -221,7 +223,9 @@ export default function Home() {
           <Achievement name={"withBishopKnight"} ach={achievements.withBishopKnight} />
           <Achievement name={"drawWithKing"} ach={achievements.drawWithKing} />
           <Achievement name={"justTwoKings"} ach={achievements.justTwoKings} />
+          </div>
 
+          <div className={styles.grid}>
           <h3>Besondere Züge</h3>
           <Achievement name={"enpeasant"} ach={achievements.enpeasant} />
           <Achievement name={"castleWithCheck"} ach={achievements.castleWithCheck} />
@@ -269,6 +273,7 @@ export default function Home() {
           <Achievement ach={lessmaterial.timewithless} />
           <Achievement ach={checkmates.mateAfterCastling} />
           <Achievement ach={checkmates.endedWithMate} /> */}
+          </div>
 
         </div>}
       </main>
