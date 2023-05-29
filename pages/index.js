@@ -14,94 +14,32 @@ import * as specialmoves from '../public/trophies/specialmoves';
 import * as pawnwords from '../public/trophies/pawnwords';
 import * as endgames from '../public/trophies/endgames';
 
-const checks = [
-  result.drawWithKing,
-  result.justTwoKings,
-  endgames.onlyPawnsLeft,
-  computer.basicPawnEndgame1,
-  computer.basicPawnEndgame2,
-  opening.onlyPawnMoves,
-  endgames.withBishopKnight,
-  endgames.withTwoBishops,
-  endgames.withOneQueen,
-  endgames.withOneRook,
-  endgames.withTwoRooks,
-  endgames.getQueenBack,
-  endgames.secondQueen,
-  endgames.underpromote,
-  specialmoves.enpeasant,
-  checkmates.mateAfterCapture,
-  checkmates.mateAfter1capture,
-  checkmates.mateAfter2capture,
-  result.wonWithWhite,
-  result.wonWithBlack,
-  underdog.small_underdog,
-  underdog.big_underdog,
-  opening.textbookOpening,
-  opening.noFool,
-  captures.battlefield,
-  captures.peacefulmode,
-  checkmates.mateWithQueen,
-  checkmates.mateWithRook,
-  checkmates.mateWithBishop,
-  checkmates.mateWithKnight,
-  checkmates.mateWithKing,
-  checkmates.mateWithPawn,
-  computer.wonVsComputer1,
-  computer.wonVsComputer2,
-  computer.wonVsComputer3,
-  computer.wonVsComputer8NoQueen,
-  computer.mattStattPatt1,
-  computer.mattStattPatt2,
-  computer.mattStattPatt3,
-  computer.mattStattPatt4,
-  computer.mattStattPatt5,
-  computer.mattStattPatt6,
-  pawnwords.spellGG,
-  pawnwords.spellDAB,
-  pawnwords.spellHaha,
-  pawnwords.spellAffe,
-  specialmoves.castleWithCheck,
-  checkmates.mateOnBackRank,
-  /*result.didNotLose,
-  result.drawWithWhite,
-  result.drawWithBlack,
-  castling.midCastle,
-  underdog.small_underdog,
-  underdog.big_underdog,
-  lessmaterial.winwithless,
-  checkmates.mateWithLess,
-  result.favoredByTime,
-  computer.againstComputer,
-  opening.rookSniper,
-  opening.rookiemistake,
-  lessmaterial.timewithless,
-  checkmates.mateAfterCastling,
-  checkmates.endedWithMate,*/
-]
-
-function Achievement({ title, description, urls }) {
+function Achievement({ ach }) {
   return (
     <div className={styles.card} >
-      <h2>{title}</h2>
-      <p>{description}</p>
-      {urls.map((url, index) => <a key={index} href={url} target="_blank" rel="noopener noreferrer">🏆</a>)}
+      <h2>{ach.title}</h2>
+      <p>{ach.description}</p>
+      {ach.urls && ach.urls.map((url, index) => <a key={index} href={url} target="_blank" rel="noopener noreferrer">🏆</a>)}
     </div>
   );
 }
 
-export default function Home() {
-  const [name, setName] = useState('lawtrafalgar02');
-  //const [name, setName] = useState('msch-');
-  const [amount, setAmount] = useState(20);
-  const [achievements, setAchievement] = useState([{title: 'Achievements come here', descritpion: 'Just wait', urls: ['https://lichess.org/']}]);
-  const [isLoading, setLoading] = useState(false);
-  const [errorMsg, setErrorMsg] = useState('');
+const LOADING_STATUS_PRE = 0;
+const LOADING_STATUS_RUNNING = 1;
+const LOADING_STATUS_DONE = 2;
 
+export default function Home() {
   const isDev = process.env.NODE_ENV !== 'production';
 
+  const [name, setName] = useState(isDev ? 'lawtrafalgar02': 'msch-');
+  const [amount, setAmount] = useState(20);
+  const [achievements, setAchievement] = useState([{title: 'Achievements come here', descritpion: 'Just wait', urls: ['https://lichess.org/']}]);
+  const [loadingStatus, setLoadingStatus] = useState(LOADING_STATUS_PRE);
+  const [errorMsg, setErrorMsg] = useState('');
+
+
   const fetchAndAnalyzeGames = (local) => {
-    setLoading(true);
+    setLoadingStatus(LOADING_STATUS_RUNNING);
     setErrorMsg('');
 
     let url = `https://lichess.org/api/games/user/${name}?max=${amount}`;
@@ -120,28 +58,12 @@ export default function Home() {
         }
         let newAch = checks.map(value => { return {'title': value.title, 'description': value.description, 'check': value.check, 'urls': []}});
         games.forEach(game => {
-          //console.log(game)
-          //console.log("test")
-          const chess = parseLichessGame(game);
+
+          const chess = parseLichessGame(game, name);
           if(chess === null || chess.history().length < 3) {
             return;
           }
-          
-          chess.isWhite = chess.header().White.toLowerCase() === name.toLowerCase();
-          chess.isBlack = chess.header().Black.toLowerCase() === name.toLowerCase();
-          chess.isWon = ((chess.isWhite && chess.header().Result==='1-0')||(chess.isBlack && chess.header().Result==='0-1'))
-          chess.noLoss = !((chess.isWhite && chess.header().Result==='0-1')||(chess.isBlack && chess.header().Result==='1-0'))
-          chess.oppNoTime = chess.header().Termination === 'Time forfeit'  && ((chess.isWhite && (chess.history().length % 2 == 1)) || (chess.isBlack && (chess.history().length % 2 == 0)));
-          chess.isStandard = chess.header().Variant === 'Standard';
-          chess.isFromPosition = chess.header().Variant === 'From Position';
-          chess.isBullet = false; //chess.header().Event.includes('Bullet');
-          chess.addwb = chess.isWhite ? 1 : 0;
-          chess.playerhistory = chess.history().filter((_, index) => index % 2 !== chess.addwb);
-          chess.addbw = chess.isWhite ? 0 : 1;
-          chess.opphistory = chess.history().filter((_, index) => index % 2 !== chess.addbw);
-          chess.isComputer = chess.header().White.includes('lichess AI level') || chess.header().Black.includes('lichess AI level');
-          chess.lastfen = chess.fen().split(" ")[0];
-          if(chess.isWhite){chess.oppName = chess.header().Black} else {chess.oppName = chess.header().White}
+
           newAch.forEach(ach => {
             if(ach.check(chess)) {
               const add = chess.isBlack ? "/black" : "";
@@ -152,10 +74,10 @@ export default function Home() {
         });
 
         setAchievement(newAch);
-        setLoading(false);
+        setLoadingStatus(LOADING_STATUS_DONE);
       })
       .catch(error => {
-        setLoading(false);
+        setLoadingStatus(LOADING_STATUS_DONE);
         console.error('Error fetching games:', error);
         setErrorMsg('Error: ' + error);
       });
@@ -176,7 +98,7 @@ export default function Home() {
             <input className={styles.input} value={amount} onChange={e => setAmount(e.target.value)} name="amount" />
           </label>
           <br />
-          <button className={styles.button} disabled={isLoading} onClick={fetchAndAnalyzeGames}>{isLoading ? 'Loading...' : 'Analyze'}</button>
+          <button className={styles.button} disabled={loadingStatus == LOADING_STATUS_RUNNING} onClick={fetchAndAnalyzeGames}>{(loadingStatus == LOADING_STATUS_RUNNING) ? 'Loading...' : 'Analyze'}</button>
           {isDev && <button onClick={() => fetchAndAnalyzeGames(true)}>Load local</button>}
           <p></p>
         {achievements.length > 1 && <>Gesamt: {achievements.map(ach => ach.urls.length).reduce((partialSum, a) => partialSum + a, 0)} Trophäen</>}
@@ -186,9 +108,73 @@ export default function Home() {
         </div>
         <p>{errorMsg}</p>
         <div className={styles.grid}>
-          {achievements.map((trophy, index) => (
-            <Achievement key={index} title={trophy.title} description={trophy.description} urls={trophy.urls} />
-          ))}
+          <h3>Resultate</h3>
+          <Achievement ach={result.drawWithKing} />
+          <Achievement ach={result.justTwoKings} />
+          <Achievement ach={endgames.onlyPawnsLeft} />
+          <Achievement ach={computer.basicPawnEndgame1} />
+          <Achievement ach={computer.basicPawnEndgame2} />
+          <Achievement ach={opening.onlyPawnMoves} />
+
+          <h3>Gewinnstrategien</h3>
+          <Achievement ach={endgames.withBishopKnight} />
+          <Achievement ach={endgames.withTwoBishops} />
+          <Achievement ach={endgames.withOneQueen} />
+          <Achievement ach={endgames.withOneRook} />
+          <Achievement ach={endgames.withTwoRooks} />
+          <Achievement ach={endgames.getQueenBack} />
+          <Achievement ach={endgames.secondQueen} />
+          <Achievement ach={endgames.underpromote} />
+          <Achievement ach={specialmoves.enpeasant} />
+          <Achievement ach={checkmates.mateAfterCapture} />
+          <Achievement ach={checkmates.mateAfter1capture} />
+          <Achievement ach={checkmates.mateAfter2capture} />
+          <Achievement ach={result.wonWithWhite} />
+          <Achievement ach={result.wonWithBlack} />
+          <Achievement ach={underdog.small_underdog} />
+          <Achievement ach={underdog.big_underdog} />
+          <Achievement ach={opening.textbookOpening} />
+          <Achievement ach={opening.noFool} />
+          <Achievement ach={captures.battlefield} />
+          <Achievement ach={captures.peacefulmode} />
+          <Achievement ach={checkmates.mateWithQueen} />
+          <Achievement ach={checkmates.mateWithRook} />
+          <Achievement ach={checkmates.mateWithBishop} />
+          <Achievement ach={checkmates.mateWithKnight} />
+          <Achievement ach={checkmates.mateWithKing} />
+          <Achievement ach={checkmates.mateWithPawn} />
+          <Achievement ach={computer.wonVsComputer1} />
+          <Achievement ach={computer.wonVsComputer2} />
+          <Achievement ach={computer.wonVsComputer3} />
+          <Achievement ach={computer.wonVsComputer8NoQueen} />
+          <Achievement ach={computer.mattStattPatt1} />
+          <Achievement ach={computer.mattStattPatt2} />
+          <Achievement ach={computer.mattStattPatt3} />
+          <Achievement ach={computer.mattStattPatt4} />
+          <Achievement ach={computer.mattStattPatt5} />
+          <Achievement ach={computer.mattStattPatt6} />
+          <Achievement ach={pawnwords.spellGG} />
+          <Achievement ach={pawnwords.spellDAB} />
+          <Achievement ach={pawnwords.spellHaha} />
+          <Achievement ach={pawnwords.spellAffe} />
+          <Achievement ach={specialmoves.castleWithCheck} />
+          <Achievement ach={checkmates.mateOnBackRank} />
+          {/* <Achievement ach={result.didNotLose} />
+          <Achievement ach={result.drawWithWhite} />
+          <Achievement ach={result.drawWithBlack} />
+          <Achievement ach={castling.midCastle} />
+          <Achievement ach={underdog.small_underdog} />
+          <Achievement ach={underdog.big_underdog} />
+          <Achievement ach={lessmaterial.winwithless} />
+          <Achievement ach={checkmates.mateWithLess} />
+          <Achievement ach={result.favoredByTime} />
+          <Achievement ach={computer.againstComputer} />
+          <Achievement ach={opening.rookSniper} />
+          <Achievement ach={opening.rookiemistake} />
+          <Achievement ach={lessmaterial.timewithless} />
+          <Achievement ach={checkmates.mateAfterCastling} />
+          <Achievement ach={checkmates.endedWithMate} /> */}
+
         </div>
       </main>
     </div>
