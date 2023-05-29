@@ -108,68 +108,83 @@ export default function Home() {
         </div>
         <p>{errorMsg}</p>
         <div className={styles.grid}>
-          <h3>Resultate</h3>
-          <Achievement ach={result.drawWithKing} />
-          <Achievement ach={result.justTwoKings} />
-          <Achievement ach={endgames.onlyPawnsLeft} />
-          <Achievement ach={computer.basicPawnEndgame1} />
-          <Achievement ach={computer.basicPawnEndgame2} />
-          <Achievement ach={opening.onlyPawnMoves} />
-
-          <h3>Gewinnstrategien</h3>
-          <Achievement ach={endgames.withBishopKnight} />
-          <Achievement ach={endgames.withTwoBishops} />
-          <Achievement ach={endgames.withOneQueen} />
-          <Achievement ach={endgames.withOneRook} />
-          <Achievement ach={endgames.withTwoRooks} />
-          <Achievement ach={endgames.getQueenBack} />
-          <Achievement ach={endgames.secondQueen} />
-          <Achievement ach={endgames.underpromote} />
-          <Achievement ach={specialmoves.enpeasant} />
-          <Achievement ach={checkmates.mateAfterCapture} />
-          <Achievement ach={checkmates.mateAfter1capture} />
-          <Achievement ach={checkmates.mateAfter2capture} />
+          <h3>Allgemein</h3>
           <Achievement ach={result.wonWithWhite} />
           <Achievement ach={result.wonWithBlack} />
           <Achievement ach={underdog.small_underdog} />
           <Achievement ach={underdog.big_underdog} />
+          
+          <h3>Eröffnung</h3>
           <Achievement ach={opening.textbookOpening} />
           <Achievement ach={opening.noFool} />
-          <Achievement ach={captures.battlefield} />
-          <Achievement ach={captures.peacefulmode} />
+          <Achievement ach={opening.onlyPawnMoves} />
+          <Achievement ach={opening.rookSniper} />
+
+          <h3>Schach Matt</h3>
           <Achievement ach={checkmates.mateWithQueen} />
           <Achievement ach={checkmates.mateWithRook} />
           <Achievement ach={checkmates.mateWithBishop} />
           <Achievement ach={checkmates.mateWithKnight} />
-          <Achievement ach={checkmates.mateWithKing} />
           <Achievement ach={checkmates.mateWithPawn} />
+          <Achievement ach={checkmates.mateWithKing} />
+          <Achievement ach={checkmates.mateOnBackRank} />
+          <Achievement ach={checkmates.mateAfterCapture} />
+          <Achievement ach={checkmates.mateWithLess} />
+          
+          <h3>Endspiel</h3>
+          <Achievement ach={endgames.secondQueen} />
+          <Achievement ach={endgames.underpromote} />
+          <Achievement ach={endgames.withTwoRooks} />
+          <Achievement ach={endgames.withOneQueen} />
+          <Achievement ach={endgames.withOneRook} />
+          <Achievement ach={endgames.withTwoBishops} />
+          <Achievement ach={endgames.withBishopKnight} />
+          <Achievement ach={result.drawWithKing} />
+          <Achievement ach={result.justTwoKings} />
+
+          <h3>Besondere Züge</h3>
+          <Achievement ach={specialmoves.enpeasant} />
+          <Achievement ach={specialmoves.castleWithCheck} />
+          <Achievement ach={captures.battlefield} />
+          <Achievement ach={captures.peacefulmode} />
+
+          <h3>Mensch gegen Maschine</h3>
           <Achievement ach={computer.wonVsComputer1} />
           <Achievement ach={computer.wonVsComputer2} />
           <Achievement ach={computer.wonVsComputer3} />
           <Achievement ach={computer.wonVsComputer8NoQueen} />
+          <Achievement ach={computer.basicPawnEndgame1} />
+          <Achievement ach={computer.basicPawnEndgame2} />
+
+          <h3>Matt statt Patt</h3>
           <Achievement ach={computer.mattStattPatt1} />
           <Achievement ach={computer.mattStattPatt2} />
           <Achievement ach={computer.mattStattPatt3} />
           <Achievement ach={computer.mattStattPatt4} />
           <Achievement ach={computer.mattStattPatt5} />
-          <Achievement ach={computer.mattStattPatt6} />
+          <Achievement ach={computer.mattStattPatt6} />  
+          
+          <h3>Blödeleien</h3>
           <Achievement ach={pawnwords.spellGG} />
           <Achievement ach={pawnwords.spellDAB} />
           <Achievement ach={pawnwords.spellHaha} />
           <Achievement ach={pawnwords.spellAffe} />
-          <Achievement ach={specialmoves.castleWithCheck} />
-          <Achievement ach={checkmates.mateOnBackRank} />
-          {/* <Achievement ach={result.didNotLose} />
+          
+          
+          {/* 
+          <Achievement ach={checkmates.mateAfter1capture} />
+          <Achievement ach={checkmates.mateAfter2capture} />
+          <Achievement ach={endgames.onlyPawnsLeft} />
+          <Achievement ach={endgames.getQueenBack} />
+          <Achievement ach={result.didNotLose} />
           <Achievement ach={result.drawWithWhite} />
           <Achievement ach={result.drawWithBlack} />
           <Achievement ach={castling.midCastle} />
           <Achievement ach={underdog.small_underdog} />
           <Achievement ach={underdog.big_underdog} />
           <Achievement ach={lessmaterial.winwithless} />
-          <Achievement ach={checkmates.mateWithLess} />
           <Achievement ach={result.favoredByTime} />
           <Achievement ach={computer.againstComputer} />
-          <Achievement ach={opening.rookSniper} />
           <Achievement ach={opening.rookiemistake} />
           <Achievement ach={lessmaterial.timewithless} />
           <Achievement ach={checkmates.mateAfterCastling} />
