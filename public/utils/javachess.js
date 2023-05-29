@@ -71,3 +71,9 @@ export let get_legal_moves_by_piece = (game, piece) => {
     let piece = position.get(square).type
     return piece
   }
+
+  export let isPawnMove = (move) => {
+    //check if it contains R,Q,O-O,B,N
+    if(move.includes('R')||move.includes('Q')||move.includes('O-O')||move.includes('N')||move.includes('B')){return false}
+    return true
+  }

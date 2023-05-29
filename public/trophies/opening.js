@@ -175,6 +175,7 @@ export let rookSniper = {
   if(playerhist.includes('Bx' + asquare)){xsquare = hist.indexOf('Bx' + asquare)}
   if(playerhist.includes('Bx' + hsquare)){xsquare = hist.indexOf('Bx' + hsquare)}
   let takenpiece = utils.what_piece_was_captured(game,xsquare)
-  return true
+  if(takenpiece=='r'){return true}
+  return false
 }
 }

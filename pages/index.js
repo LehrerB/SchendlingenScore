@@ -12,8 +12,16 @@ import * as opening from '../public/trophies/opening';
 import * as captures from '../public/trophies/captures';
 import * as specialmoves from '../public/trophies/specialmoves';
 import * as pawnwords from '../public/trophies/pawnwords';
+import * as endgames from '../public/trophies/endgames';
 
 const checks = [
+  endgames.getQueenBack,
+  endgames.secondQueen,
+  endgames.underpromote,
+  specialmoves.enpeasant,
+  checkmates.mateAfterCapture,
+  checkmates.mateAfter1capture,
+  checkmates.mateAfter2capture,
   result.wonWithWhite,
   result.wonWithBlack,
   underdog.small_underdog,
@@ -72,7 +80,7 @@ function Achievement({ title, description, urls }) {
 }
 
 export default function Home() {
-  const [name, setName] = useState('msch-');
+  const [name, setName] = useState('lawtrafalgar02');
   const [amount, setAmount] = useState(20);
   const [achievements, setAchievement] = useState([{title: 'Achievements come here', descritpion: 'Just wait', urls: ['https://lichess.org/']}]);
   const [isLoading, setLoading] = useState(false);
@@ -107,18 +115,20 @@ export default function Home() {
             return;
           }
           
-          chess.isWhite = chess.header().White === name;
-          chess.isBlack = chess.header().Black === name;
+          chess.isWhite = chess.header().White.toLowerCase() === name.toLowerCase();
+          chess.isBlack = chess.header().Black.toLowerCase() === name.toLowerCase();
           chess.isWon = ((chess.isWhite && chess.header().Result==='1-0')||(chess.isBlack && chess.header().Result==='0-1'))
           chess.noLoss = !((chess.isWhite && chess.header().Result==='0-1')||(chess.isBlack && chess.header().Result==='1-0'))
           chess.oppNoTime = chess.header().Termination === 'Time forfeit'  && ((chess.isWhite && (chess.history().length % 2 == 1)) || (chess.isBlack && (chess.history().length % 2 == 0)));
           chess.isStandard = chess.header().Variant === 'Standard';
           chess.isFromPosition = chess.header().Variant === 'From Position';
           chess.isBullet = false; //chess.header().Event.includes('Bullet');
+          chess.addwb = chess.isWhite ? 1 : 0;
+          chess.playerhistory = chess.history().filter((_, index) => index % 2 !== chess.addwb);
+          chess.addbw = chess.isWhite ? 0 : 1;
+          chess.opphistory = chess.history().filter((_, index) => index % 2 !== chess.addbw);
           chess.isComputer = chess.header().White.includes('lichess AI level') || chess.header().Black.includes('lichess AI level');
           if(chess.isWhite){chess.oppName = chess.header().Black} else {chess.oppName = chess.header().White}
-
-          
           newAch.forEach(ach => {
             if(ach.check(chess)) {
               const add = chess.isBlack ? "/black" : "";
@@ -155,6 +165,11 @@ export default function Home() {
           <br />
           <button className={styles.button} disabled={isLoading} onClick={fetchAndAnalyzeGames}>{isLoading ? 'Loading...' : 'Analyze'}</button>
           {isDev && <button onClick={() => fetchAndAnalyzeGames(true)}>Load local</button>}
+          <p></p>
+        {achievements.length > 1 && <>Gesamt: {achievements.map(ach => ach.urls.length).reduce((partialSum, a) => partialSum + a, 0)} Trophäen</>}
+        <p></p>
+        {achievements.length > 1 && <>Gesamt: {achievements.map(ach => ach.urls.length > 0).reduce((partialSum, a) => partialSum + a, 0)} / {achievements.length} Challenges</>}
+        
         </div>
         <p>{errorMsg}</p>
         <div className={styles.grid}>

@@ -153,3 +153,36 @@ export let mateWithLess = {
   return winwithless.check(game);
 }
 }
+
+export let mateAfterCapture = {
+  title: 'Zu gierig',
+  description: <p>Schach Matt direkt nachdem dein Gegner eine Figur geschlagen hat.</p>,
+  check: function(game) {
+  if(!(game.isStandard)||!(game.isWon)){return false}
+  const hist = game.history();
+  return hist[hist.length-1].includes('#') && hist[hist.length-2].includes('x')
+}
+}
+
+export let mateAfter1capture = {
+  title: 'Zu gierig 1',
+  description: <p>Schach Matt direkt nachdem dein Gegner genau eine Figur geschlagen hat.</p>,
+  check: function(game) {
+  if(!(game.isStandard)||!(game.isWon)){return false}
+  const hist = game.history();
+  return hist[hist.length-1].includes('#') && hist[hist.length-2].includes('x') && !(hist[hist.length-4].includes('x'))
+}
+}
+
+export let mateAfter2capture = {
+  title: 'Zu gierig 2',
+  description: <p>Schach Matt direkt nachdem dein Gegner zwei Figuren geschlagen hat.</p>,
+  check: function(game) {
+  if(!(game.isStandard)||!(game.isWon)){return false}
+  const hist = game.history();
+  return hist[hist.length-1].includes('#') && hist[hist.length-2].includes('x') && hist[hist.length-4].includes('x')
+}
+}
+
+//doublecheckmate
+//# included, isWhite k : K, get kingsquare, attacking pieces of kingsquare, include two whites?
