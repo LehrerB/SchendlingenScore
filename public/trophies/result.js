@@ -3,7 +3,7 @@ import * as utils from '../utils/javachess';
 
 export let didNotLose = {
   title: 'Nicht verloren',
-  description: <p>Entweder gewinnen oder unentschieden spielen.</p>,
+  description: <>Entweder gewinnen oder unentschieden spielen.</>,
   check: function(game) {
     return game.noLoss
   }
@@ -11,7 +11,7 @@ export let didNotLose = {
 
 export let wonWithWhite = {
   title: 'Gewinne mit Weiß',
-  description: <p>Gewinne ein Spiel mit den <i>weißen</i> Figuren.</p>,
+  description: <>Gewinne ein Spiel mit den <i>weißen</i> Figuren.</>,
   check: function(game) {
     return game.isWhite && game.header().Result === '1-0'
   }
@@ -19,7 +19,7 @@ export let wonWithWhite = {
 
 export let wonWithBlack = {
   title: 'Gewinne mit Schwarz',
-  description: <p>Gewinne ein Spiel mit den <i>schwarzen</i> Figuren.</p>,
+  description: <>Gewinne ein Spiel mit den <i>schwarzen</i> Figuren.</>,
   check: function(game) {
     return game.isBlack && game.header().Result === '0-1';
   }

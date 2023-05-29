@@ -5,7 +5,7 @@ import * as utils from '../utils/javachess';
 
 export let noFool = {
   title: 'Netter Versuch',
-  description: <p>Vermeide das Schäfermatt und gewinne das Spiel.</p>,
+  description: <>Vermeide das Schäfermatt und gewinne das Spiel.</>,
   check: function(game) {
   //Standard Game, no Computer, win and not white
   if(!(game.isStandard) || (game.isComputer) || !(game.isWon) || game.isWhite){return false}
@@ -40,7 +40,7 @@ export let noFool = {
 
 export let textbookOpening = {
   title: 'Vorbildlich',
-  description: <p>Vorbildliche Eröffnung: Besetze das Zentrum, entwickle alle Leichtfiguren und mache die Rochade. Gewinne danach das Spiel.</p>,
+  description: <>Vorbildliche Eröffnung: Besetze das Zentrum, entwickle alle Leichtfiguren und mache die Rochade. Gewinne danach das Spiel.</>,
   check: function(game) {
     if(!(game.isStandard)){return false}
     const hist = game.history();
@@ -122,7 +122,7 @@ export let textbookOpening = {
 
 export let rookiemistake = {
   title: 'Rookie Mistake',
-  description: <p>Schlage den Turm mit dem Läufer, wenn er am Anfang versucht auf a3 oder h3 ins Spiel zu kommen.</p>,
+  description: <>Schlage den Turm mit dem Läufer, wenn er am Anfang versucht auf a3 oder h3 ins Spiel zu kommen.</>,
   check: function(game) {
   //Standard Game, win and not white
   if(!(game.isStandard) || !(game.isWon)){return false}
@@ -149,7 +149,7 @@ export let rookiemistake = {
 
 export let rookSniper = {
   title: 'Eckenfressen',
-  description: <p>Schlage einen Turm in der Ecke mit deinem Läufer.</p>,
+  description: <>Schlage einen Turm in der Ecke mit deinem Läufer.</>,
   check: function(game) {
   //Standard Game, win and not white
   if(!(game.isStandard) || !(game.isWon)){return false}
@@ -183,7 +183,7 @@ export let rookSniper = {
 
 export let onlyPawnMoves = {
   title: 'Bauerntrampel',
-  description: <p>Gewinne gegen einen Gegner, der am Anfang nur Bauernzüge macht. (mind. 5)</p>,
+  description: <>Gewinne gegen einen Gegner, der am Anfang nur Bauernzüge macht. (mind. 5)</>,
   check: function(game) {
   if(!(game.isStandard)||game.isBullet||!(game.isWon)){return false}
   const opphist = game.opphistory

@@ -186,7 +186,7 @@ export default function Home() {
           {loadingStatus == LOADING_STATUS_DONE && <>Gesamt: {Object.values(achievements).map(ach => ach.urls.length > 0).reduce((partialSum, a) => partialSum + a, 0)} / {achievements.length} Challenges</>}
 
         </div>
-        <p>{errorMsg}</p>
+        {loadingStatus == LOADING_STATUS_ERROR && <p>{errorMsg}</p>}
         {loadingStatus == LOADING_STATUS_DONE && <div className={styles.grid}>
           <h3>Allgemein</h3>
           <Achievement name={"wonWithWhite"} ach={achievements.wonWithWhite} />

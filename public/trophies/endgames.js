@@ -5,7 +5,7 @@ import * as utils from '../utils/javachess';
 
 export let getQueenBack = {
     title: 'Wiedergeburt',
-    description: <p>Hol dir deine Dame zurück und gewinne das Spiel.</p>,
+    description: <>Hol dir deine Dame zurück und gewinne das Spiel.</>,
     check: function(game) {
     if(!(game.isStandard)||game.isBullet||!(game.isWon)){return false}
     const playerhist = game.playerhistory;
@@ -40,7 +40,7 @@ export let getQueenBack = {
 
 export let secondQueen = {
     title: 'Zweite Dame',
-    description: <p>Hol dir eine zweite Dame und gewinne das Spiel.</p>,
+    description: <>Hol dir eine zweite Dame und gewinne das Spiel.</>,
     check: function(game) {
     if(!(game.isStandard)||game.isBullet||!(game.isWon)){return false}
     const playerhist = game.playerhistory;
@@ -62,7 +62,7 @@ export let secondQueen = {
 
 export let underpromote = {
     title: 'Mal was anderes',
-    description: <p>Wandle deinen Bauer in eine andere Figur als die Dame um. Gewinne das Spiel.</p>,
+    description: <>Wandle deinen Bauer in eine andere Figur als die Dame um. Gewinne das Spiel.</>,
     check: function(game) {
     if(!(game.isStandard)||game.isBullet||!(game.isWon)){return false}
     const playerhist = game.playerhistory;
@@ -81,7 +81,7 @@ export let underpromote = {
 
 export let withTwoRooks = {
     title: '2 Türme',
-    description: <p>Gewinne mit zwei Türmen.</p>,
+    description: <>Gewinne mit zwei Türmen.</>,
     check: function(game) {
     if(!(game.isStandard)||game.isBullet||!(game.isWon)){return false}
     let lastfen = game.lastfen
@@ -101,7 +101,7 @@ export let withTwoRooks = {
 
 export let withOneQueen = {
     title: '1 Dame',
-    description: <p>Gewinne mit einer Dame.</p>,
+    description: <>Gewinne mit einer Dame.</>,
     check: function(game) {
     if(game.isBullet||!(game.isWon)){return false} 
     if(game.history().length < 6){return false} //not standard, but not just 2 moves
@@ -123,7 +123,7 @@ export let withOneQueen = {
 
 export let withOneRook = {
     title: '1 Turm',
-    description: <p>Gewinne mit einem Turm.</p>,
+    description: <>Gewinne mit einem Turm.</>,
     check: function(game) {
     if(game.isBullet||!(game.isWon)){return false} //not standard, but not just 2 moves
     if(game.history().length < 6){return false}
@@ -148,7 +148,7 @@ export let withOneRook = {
 
 export let withTwoBishops = {
     title: '2 Läufer',
-    description: <p>Gewinne mit zwei Läufern.</p>,
+    description: <>Gewinne mit zwei Läufern.</>,
     check: function(game) {
     if(game.isBullet||!(game.isWon)){return false} //not standard, but not just 2 moves
     if(game.history().length < 10){return false}
@@ -173,7 +173,7 @@ export let withTwoBishops = {
 
 export let withBishopKnight = {
     title: '1 Läufer und 1 Pferd',
-    description: <p>Gewinne mit einem Läufer und einem Pferd.</p>,
+    description: <>Gewinne mit einem Läufer und einem Pferd.</>,
     check: function(game) {
     if(game.isBullet||!(game.isWon)){return false} //not standard, but not just 2 moves
     if(game.history().length < 10){return false}
@@ -197,7 +197,7 @@ export let withBishopKnight = {
 
 export let onlyPawnsLeft = {
     title: 'Nur noch Bauern',
-    description: <p>Gewinne ein Spiel, in dem du an einem Punkt nur noch Bauern hattest.</p>,
+    description: <>Gewinne ein Spiel, in dem du an einem Punkt nur noch Bauern hattest.</>,
     check: function(game) {
     if(!(game.isStandard)||game.isBullet||!(game.isWon)){return false}
     let lastfen = game.lastfen

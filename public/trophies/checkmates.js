@@ -5,7 +5,7 @@ import { winwithless } from './lessmaterial';
 
 export let endedWithMate = {
     title: 'Schach Matt',
-    description: <p>Gewinne durch Schach Matt.</p>,
+    description: <>Gewinne durch Schach Matt.</>,
     check: function(game) {
     if(!(game.isStandard)||game.isBullet){return false}
     const hist = game.history();
@@ -15,7 +15,7 @@ export let endedWithMate = {
 
 export let mateWithQueen = {
     title: 'Dame',
-    description: <p>Schach Matt mit der Dame.</p>,
+    description: <>Schach Matt mit der Dame.</>,
     check: function(game) {
     if(!(game.isStandard)||game.isBullet){return false}
     const hist = game.history();
@@ -25,7 +25,7 @@ export let mateWithQueen = {
 
 export let mateWithRook = {
     title: 'Turm',
-    description: <p>Schach Matt mit dem Turm.</p>,
+    description: <>Schach Matt mit dem Turm.</>,
     check: function(game) {
     if(!(game.isStandard)||game.isBullet){return false}
     const hist = game.history();
@@ -35,7 +35,7 @@ export let mateWithRook = {
 
 export let mateWithBishop = {
     title: 'Läufer',
-    description: <p>Schach Matt mit dem Läufer.</p>,
+    description: <>Schach Matt mit dem Läufer.</>,
     check: function(game) {
     if(!(game.isStandard)||game.isBullet){return false}
     const hist = game.history();
@@ -45,7 +45,7 @@ export let mateWithBishop = {
 
 export let mateWithKnight = {
     title: 'Springer',
-    description: <p>Schach Matt mit dem Springer (Pferd).</p>,
+    description: <>Schach Matt mit dem Springer (Pferd).</>,
     check: function(game) {
     if(!(game.isStandard)||game.isBullet){return false}
     const hist = game.history();
@@ -55,7 +55,7 @@ export let mateWithKnight = {
 
 export let mateWithKing = {
     title: 'König',
-    description: <p>Schach Matt, in dem du den König bewegst.</p>,
+    description: <>Schach Matt, in dem du den König bewegst.</>,
     check: function(game) {
     if(!(game.isStandard)||game.isBullet){return false}
     const hist = game.history();
@@ -65,7 +65,7 @@ export let mateWithKing = {
 
 export let mateWithPawn = {
     title: 'Bauer',
-    description: <p>Schach Matt mit einem Bauern.</p>,
+    description: <>Schach Matt mit einem Bauern.</>,
     check: function(game) {
     if(!(game.isStandard)||game.isBullet){return false}
     const hist = game.history();
@@ -75,7 +75,7 @@ export let mateWithPawn = {
 
 export let mateWithPromotion = {
     title: 'Umwandlung',
-    description: <p>Schach Matt durch Umwandlung.</p>,
+    description: <>Schach Matt durch Umwandlung.</>,
     check: function(game) {
     if(!(game.isStandard)||game.isBullet){return false}
     const hist = game.history();
@@ -85,7 +85,7 @@ export let mateWithPromotion = {
 
 export let mateAfterCastling = {
     title: 'Schade Rochade',
-    description: <p>Dein Gegner hat ins Matt rochiert.</p>,
+    description: <>Dein Gegner hat ins Matt rochiert.</>,
     check: function(game) {
     if(!(game.isStandard)){return false}
     const hist = game.history();
@@ -95,7 +95,7 @@ export let mateAfterCastling = {
 
 export let mateOnBackRank = {
     title: 'Grundreihen Matt',
-    description: <p>Dein Gegner hat seinen König zu wenig beschützt.</p>,
+    description: <>Dein Gegner hat seinen König zu wenig beschützt.</>,
     check: function(game) {
     //Bullet allowed, Computer allowed
     if(!(game.isStandard)){return false}
@@ -145,7 +145,7 @@ export let mateOnBackRank = {
 
 export let mateWithLess = {
   title: 'Nur der König zählt.',
-  description: <p>Matt mit weniger Material als der Gegner.</p>,
+  description: <>Matt mit weniger Material als der Gegner.</>,
   check: function(game) {
   if(!(game.isStandard)||game.isBullet){return false}
   const hist = game.history();
@@ -156,7 +156,7 @@ export let mateWithLess = {
 
 export let mateAfterCapture = {
   title: 'Zu gierig',
-  description: <p>Schach Matt direkt nachdem dein Gegner eine Figur geschlagen hat.</p>,
+  description: <>Schach Matt direkt nachdem dein Gegner eine Figur geschlagen hat.</>,
   check: function(game) {
   if(!(game.isStandard)||!(game.isWon)){return false}
   const hist = game.history();
@@ -166,7 +166,7 @@ export let mateAfterCapture = {
 
 export let mateAfter1capture = {
   title: 'Zu gierig 1',
-  description: <p>Schach Matt direkt nachdem dein Gegner genau eine Figur geschlagen hat.</p>,
+  description: <>Schach Matt direkt nachdem dein Gegner genau eine Figur geschlagen hat.</>,
   check: function(game) {
   if(!(game.isStandard)||!(game.isWon)){return false}
   const hist = game.history();
@@ -176,7 +176,7 @@ export let mateAfter1capture = {
 
 export let mateAfter2capture = {
   title: 'Zu gierig 2',
-  description: <p>Schach Matt direkt nachdem dein Gegner zwei Figuren geschlagen hat.</p>,
+  description: <>Schach Matt direkt nachdem dein Gegner zwei Figuren geschlagen hat.</>,
   check: function(game) {
   if(!(game.isStandard)||!(game.isWon)){return false}
   const hist = game.history();
