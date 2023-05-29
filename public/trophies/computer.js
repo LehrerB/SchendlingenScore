@@ -118,3 +118,27 @@ export let mattStattPatt6 = {
 
 }
 }
+
+
+export let basicPawnEndgame1 = {
+  title: '1 Bauer im Endspiel',
+  description: <p><a href="https://lichess.org/editor/4k3/8/8/8/8/8/4P3/4K3_w_-_-_0_1?color=white">Gewinne dieses klassische Endspiel gegen den Computer.</a> (Stufe 6+)</p>,
+  check: function(game) {
+  if(game.isStandard || !(game.isComputer) || !(game.isWon)){return false}
+  const complvl = parseInt(game.oppName.replace("lichess AI level ",""));
+  return (game.isWon && complvl >= 6 && (game.header().FEN === '4k3/8/8/8/8/8/4P3/4K3 w - - 0 1'))
+
+}
+}
+
+
+export let basicPawnEndgame2 = {
+  title: 'Bauer gegen Bauer',
+  description: <p><a href="https://lichess.org/editor/8/8/8/4p1K1/2k1P3/8/8/8_w_-_-_0_1?color=white">Gewinne dieses klassische Endspiel gegen den Computer.</a> (Stufe 6+)</p>,
+  check: function(game) {
+  if(game.isStandard || !(game.isComputer) || !(game.isWon)){return false}
+  const complvl = parseInt(game.oppName.replace("lichess AI level ",""));
+  return (game.isWon && complvl >= 6 && (game.header().FEN === '8/8/8/4p1K1/2k1P3/8/8/8 w - - 0 1'))
+
+}
+}

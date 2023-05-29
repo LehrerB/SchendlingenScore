@@ -15,6 +15,17 @@ import * as pawnwords from '../public/trophies/pawnwords';
 import * as endgames from '../public/trophies/endgames';
 
 const checks = [
+  result.drawWithKing,
+  result.justTwoKings,
+  endgames.onlyPawnsLeft,
+  computer.basicPawnEndgame1,
+  computer.basicPawnEndgame2,
+  opening.onlyPawnMoves,
+  endgames.withBishopKnight,
+  endgames.withTwoBishops,
+  endgames.withOneQueen,
+  endgames.withOneRook,
+  endgames.withTwoRooks,
   endgames.getQueenBack,
   endgames.secondQueen,
   endgames.underpromote,
@@ -80,7 +91,8 @@ function Achievement({ title, description, urls }) {
 }
 
 export default function Home() {
-  const [name, setName] = useState('msch-');
+  const [name, setName] = useState('lawtrafalgar02');
+  //const [name, setName] = useState('msch-');
   const [amount, setAmount] = useState(20);
   const [achievements, setAchievement] = useState([{title: 'Achievements come here', descritpion: 'Just wait', urls: ['https://lichess.org/']}]);
   const [isLoading, setLoading] = useState(false);
@@ -128,6 +140,7 @@ export default function Home() {
           chess.addbw = chess.isWhite ? 0 : 1;
           chess.opphistory = chess.history().filter((_, index) => index % 2 !== chess.addbw);
           chess.isComputer = chess.header().White.includes('lichess AI level') || chess.header().Black.includes('lichess AI level');
+          chess.lastfen = chess.fen().split(" ")[0];
           if(chess.isWhite){chess.oppName = chess.header().Black} else {chess.oppName = chess.header().White}
           newAch.forEach(ach => {
             if(ach.check(chess)) {

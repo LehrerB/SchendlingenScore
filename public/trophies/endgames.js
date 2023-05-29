@@ -30,7 +30,9 @@ export let getQueenBack = {
     if(fen.includes(queen)){return false}
     //was the queen captured the move after that
     let moveafter = game.isWhite ? secondqmove : (secondqmove + 1)
+    if(opphist.length > moveafter){ //in case opp resigned right after queening
     if(opphist[moveafter].includes('xQ')){return false}
+    }
     //doesn't check if you lose your queen immediately and get ANOTHER one later
     return true
   }
@@ -65,7 +67,6 @@ export let underpromote = {
     if(!(game.isStandard)||game.isBullet||!(game.isWon)){return false}
     const playerhist = game.playerhistory;
     let conditionmet = 0
-    let secondqmove
     //was a pawn promoted to a queen? //can start on move 8
     for (let i = 8; i < playerhist.length; i++) {
         if(playerhist[i].includes('=')&&!(playerhist[i].includes('Q'))){
@@ -75,5 +76,157 @@ export let underpromote = {
       }
     if(conditionmet != 1){return false}
     return true
+  }
+}
+
+export let withTwoRooks = {
+    title: '2 Türme',
+    description: <p>Gewinne mit zwei Türmen.</p>,
+    check: function(game) {
+    if(!(game.isStandard)||game.isBullet||!(game.isWon)){return false}
+    let lastfen = game.lastfen
+    //define pieces if white and black
+    let rook = game.isWhite ? 'R' : 'r'
+    let bishop = game.isWhite ? 'B' : 'b'
+    let knight = game.isWhite ? 'N' : 'n'
+    let queen = game.isWhite ? 'Q' : 'q'
+    //check for bishop, knight and queen, pawns allowed
+    if(lastfen.includes(bishop)||lastfen.includes(knight)||lastfen.includes(queen)){return false}
+    //count rooks
+    const count = lastfen.split('').filter((char) => char === rook).length;
+    if(count != 2){return false}
+    return true
+  }
+}
+
+export let withOneQueen = {
+    title: '1 Dame',
+    description: <p>Gewinne mit einer Dame.</p>,
+    check: function(game) {
+    if(game.isBullet||!(game.isWon)){return false} 
+    if(game.history().length < 6){return false} //not standard, but not just 2 moves
+    let lastfen = game.lastfen
+    //define pieces if white and black
+    let rook = game.isWhite ? 'R' : 'r'
+    let bishop = game.isWhite ? 'B' : 'b'
+    let knight = game.isWhite ? 'N' : 'n'
+    let queen = game.isWhite ? 'Q' : 'q'
+    let pawn = game.isWhite ? 'P' : 'p'
+    //check for bishop, knight and rooks, pawns NOT allowed
+    if(lastfen.includes(bishop)||lastfen.includes(knight)||lastfen.includes(rook)||lastfen.includes(pawn)){return false}
+    //count queens
+    const count = lastfen.split('').filter((char) => char === queen).length;
+    if(count != 1){return false}
+    return true
+  }
+}
+
+export let withOneRook = {
+    title: '1 Turm',
+    description: <p>Gewinne mit einem Turm.</p>,
+    check: function(game) {
+    if(game.isBullet||!(game.isWon)){return false} //not standard, but not just 2 moves
+    if(game.history().length < 6){return false}
+    let lastfen = game.lastfen
+    //define pieces if white and black
+    let rook = game.isWhite ? 'R' : 'r'
+    let bishop = game.isWhite ? 'B' : 'b'
+    let knight = game.isWhite ? 'N' : 'n'
+    let queen = game.isWhite ? 'Q' : 'q'
+    let pawn = game.isWhite ? 'P' : 'p'
+    //check for bishop, knight and queen, pawns NOT allowed
+    if(lastfen.includes(bishop)||lastfen.includes(knight)||lastfen.includes(queen)||lastfen.includes(pawn)){return false}
+    //count rooks
+    const count = lastfen.split('').filter((char) => char === rook).length;
+    console.log(game.header().Site)
+    console.log(count)
+    if(count != 1){return false}
+    return true
+  }
+}
+
+
+export let withTwoBishops = {
+    title: '2 Läufer',
+    description: <p>Gewinne mit zwei Läufern.</p>,
+    check: function(game) {
+    if(game.isBullet||!(game.isWon)){return false} //not standard, but not just 2 moves
+    if(game.history().length < 10){return false}
+    let lastfen = game.lastfen
+    //define pieces if white and black
+    let rook = game.isWhite ? 'R' : 'r'
+    let bishop = game.isWhite ? 'B' : 'b'
+    let knight = game.isWhite ? 'N' : 'n'
+    let queen = game.isWhite ? 'Q' : 'q'
+    let pawn = game.isWhite ? 'P' : 'p'
+    //check for bishop, knight and queen, pawns NOT allowed
+    if(lastfen.includes(rook)||lastfen.includes(knight)||lastfen.includes(queen)||lastfen.includes(pawn)){return false}
+    //count rooks
+    const count = lastfen.split('').filter((char) => char === bishop).length;
+    console.log(game.header().Site)
+    console.log(count)
+    if(count != 2){return false}
+    return true
+  }
+}
+
+
+export let withBishopKnight = {
+    title: '1 Läufer und 1 Pferd',
+    description: <p>Gewinne mit einem Läufer und einem Pferd.</p>,
+    check: function(game) {
+    if(game.isBullet||!(game.isWon)){return false} //not standard, but not just 2 moves
+    if(game.history().length < 10){return false}
+    let lastfen = game.lastfen
+    //define pieces if white and black
+    let rook = game.isWhite ? 'R' : 'r'
+    let bishop = game.isWhite ? 'B' : 'b'
+    let knight = game.isWhite ? 'N' : 'n'
+    let queen = game.isWhite ? 'Q' : 'q'
+    let pawn = game.isWhite ? 'P' : 'p'
+    //check for bishop, knight and queen, pawns NOT allowed
+    if(lastfen.includes(rook)||lastfen.includes(queen)||lastfen.includes(pawn)){return false}
+    //count rooks
+    const bishops = lastfen.split('').filter((char) => char === bishop).length;
+    const knights = lastfen.split('').filter((char) => char === knight).length;
+    if(bishops != 1 || knights != 1){return false}
+    return true
+  }
+}
+
+
+export let onlyPawnsLeft = {
+    title: 'Nur noch Bauern',
+    description: <p>Gewinne ein Spiel, in dem du an einem Punkt nur noch Bauern hattest.</p>,
+    check: function(game) {
+    if(!(game.isStandard)||game.isBullet||!(game.isWon)){return false}
+    let lastfen = game.lastfen
+    //define pieces if white and black
+    let rook = game.isWhite ? 'R' : 'r'
+    let bishop = game.isWhite ? 'B' : 'b'
+    let knight = game.isWhite ? 'N' : 'n'
+    let queen = game.isWhite ? 'Q' : 'q'
+    //check end position
+    if(!(lastfen.includes(rook)||lastfen.includes(queen)||lastfen.includes(bishop)||lastfen.includes(knight))){return true}
+    //then there must have been a promotion
+    let conditionmet
+    let promotions = []
+    const playerhist = game.playerhistory;
+    if(playerhist.length < 15){return false} //not happening in under 15 moves...
+    //check if there were promotions and on what move
+    for (let i = 14; i < playerhist.length; i++) {
+        if(playerhist[i].includes('=')){
+          conditionmet = 1
+          promotions.push(2*i-game.addwb)
+        }
+      }
+    if(conditionmet != 1){return false}
+    //go through all promotions and check the position for only pawns
+    for (let i = 0; i < promotions.length; i++){
+       const position = utils.go_to_position_after_n_plays(game,promotions[i]-1+2).fen().split(" ")[0];
+       if(!(position.includes(rook)||position.includes(queen)||position.includes(bishop)||position.includes(knight))){return true}
+    }
+    //could count pawns to check for 1 pawn only
+    return false
   }
 }

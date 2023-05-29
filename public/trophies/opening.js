@@ -179,3 +179,18 @@ export let rookSniper = {
   return false
 }
 }
+
+
+export let onlyPawnMoves = {
+  title: 'Bauerntrampel',
+  description: <p>Gewinne gegen einen Gegner, der am Anfang nur Bauernzüge macht. (mind. 5)</p>,
+  check: function(game) {
+  if(!(game.isStandard)||game.isBullet||!(game.isWon)){return false}
+  const opphist = game.opphistory
+  for (let i = 0; i < opphist.length; i++) {
+    if(i > 5){return true}
+    if(!(utils.isPawnMove(opphist[i]))){return false}
+  }
+  return true
+}
+}

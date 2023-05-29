@@ -1,4 +1,5 @@
 export default [];
+import * as utils from '../utils/javachess';
 
 export let didNotLose = {
   title: 'Nicht verloren',
@@ -46,5 +47,44 @@ export let favoredByTime = {
   description: 'Opponent ran out of time.',
   check: function(game) {
     return game.oppNoTime;
+  }
+}
+
+
+export let justTwoKings = {
+  title: 'Bis zum Schluss',
+  description: 'Gib nicht auf und spiele, bis nur noch zwei Könige übrig sind.',
+  check: function(game) {
+  //draw, standard game, bullet allowed
+  if(!(game.isStandard)||!(game.header().Result === '1/2-1/2')){return false}
+  let lastfen = game.lastfen
+  //is board empty
+  if(lastfen.includes('p')||lastfen.includes('r')||lastfen.includes('q')||lastfen.includes('b')||lastfen.includes('n')){return false}
+  if(lastfen.includes('P')||lastfen.includes('R')||lastfen.includes('Q')||lastfen.includes('B')||lastfen.includes('N')){return false}
+  //was the last opponent move a x?
+  if(game.playerhistory[game.playerhistory.length-1].includes('x')){return true}
+  return false
+  }
+}
+
+
+export let drawWithKing = {
+  title: 'Pattser',
+  description: 'Patt nur mit dem König, wenn dein Gegner deutlich mehr Material hat.',
+  check: function(game) {
+  //draw, standard game, bullet allowed
+  if(!(game.isStandard)||!(game.header().Result === '1/2-1/2')){return false}
+  let lastfen = game.lastfen
+  //is board empty
+  let rook = game.isWhite ? 'R' : 'r'
+  let bishop = game.isWhite ? 'B' : 'b'
+  let knight = game.isWhite ? 'N' : 'n'
+  let queen = game.isWhite ? 'Q' : 'q'
+  let pawn = game.isWhite ? 'P' : 'p'
+  if(lastfen.includes(pawn)||lastfen.includes(rook)||lastfen.includes(queen)||lastfen.includes(bishop)||lastfen.includes(knight)){return false}
+  //does the opponent have more material?
+  let material = utils.get_material_player(game)
+  if(material > -5){return false}
+  return false
   }
 }
