@@ -80,7 +80,7 @@ function Achievement({ title, description, urls }) {
 }
 
 export default function Home() {
-  const [name, setName] = useState('lawtrafalgar02');
+  const [name, setName] = useState('msch-');
   const [amount, setAmount] = useState(20);
   const [achievements, setAchievement] = useState([{title: 'Achievements come here', descritpion: 'Just wait', urls: ['https://lichess.org/']}]);
   const [isLoading, setLoading] = useState(false);
