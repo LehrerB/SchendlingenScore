@@ -14,70 +14,150 @@ import * as specialmoves from '../public/trophies/specialmoves';
 import * as pawnwords from '../public/trophies/pawnwords';
 import * as endgames from '../public/trophies/endgames';
 
-function Achievement({ ach }) {
+const checks = {
+  drawWithKing         : result.drawWithKing,
+  justTwoKings         : result.justTwoKings,
+  onlyPawnsLeft        : endgames.onlyPawnsLeft,
+  basicPawnEndgame1    : computer.basicPawnEndgame1,
+  basicPawnEndgame2    : computer.basicPawnEndgame2,
+  onlyPawnMoves        : opening.onlyPawnMoves,
+  withBishopKnight     : endgames.withBishopKnight,
+  withTwoBishops       : endgames.withTwoBishops,
+  withOneQueen         : endgames.withOneQueen,
+  withOneRook          : endgames.withOneRook,
+  withTwoRooks         : endgames.withTwoRooks,
+  getQueenBack         : endgames.getQueenBack,
+  secondQueen          : endgames.secondQueen,
+  underpromote         : endgames.underpromote,
+  enpeasant            : specialmoves.enpeasant,
+  mateAfterCapture     : checkmates.mateAfterCapture,
+  mateAfter1capture    : checkmates.mateAfter1capture,
+  mateAfter2capture    : checkmates.mateAfter2capture,
+  wonWithWhite         : result.wonWithWhite,
+  wonWithBlack         : result.wonWithBlack,
+  small_underdog       : underdog.small_underdog,
+  big_underdog         : underdog.big_underdog,
+  textbookOpening      : opening.textbookOpening,
+  noFool               : opening.noFool,
+  battlefield          : captures.battlefield,
+  peacefulmode         : captures.peacefulmode,
+  mateWithQueen        : checkmates.mateWithQueen,
+  mateWithRook         : checkmates.mateWithRook,
+  mateWithBishop       : checkmates.mateWithBishop,
+  mateWithKnight       : checkmates.mateWithKnight,
+  mateWithKing         : checkmates.mateWithKing,
+  mateWithPawn         : checkmates.mateWithPawn,
+  wonVsComputer1       : computer.wonVsComputer1,
+  wonVsComputer2       : computer.wonVsComputer2,
+  wonVsComputer3       : computer.wonVsComputer3,
+  wonVsComputer8NoQueen: computer.wonVsComputer8NoQueen,
+  mattStattPatt1       : computer.mattStattPatt1,
+  mattStattPatt2       : computer.mattStattPatt2,
+  mattStattPatt3       : computer.mattStattPatt3,
+  mattStattPatt4       : computer.mattStattPatt4,
+  mattStattPatt5       : computer.mattStattPatt5,
+  mattStattPatt6       : computer.mattStattPatt6,
+  spellGG              : pawnwords.spellGG,
+  spellDAB             : pawnwords.spellDAB,
+  spellHaha            : pawnwords.spellHaha,
+  spellAffe            : pawnwords.spellAffe,
+  castleWithCheck      : specialmoves.castleWithCheck,
+  mateOnBackRank       : checkmates.mateOnBackRank,
+  didNotLose           : result.didNotLose,
+  drawWithWhite        : result.drawWithWhite,
+  drawWithBlack        : result.drawWithBlack,
+  midCastle            : castling.midCastle,
+  small_underdog       : underdog.small_underdog,
+  big_underdog         : underdog.big_underdog,
+  winwithless          : lessmaterial.winwithless,
+  mateWithLess         : checkmates.mateWithLess,
+  favoredByTime        : result.favoredByTime,
+  againstComputer      : computer.againstComputer,
+  rookSniper           : opening.rookSniper,
+  rookiemistake        : opening.rookiemistake,
+  timewithless         : lessmaterial.timewithless,
+  mateAfterCastling    : checkmates.mateAfterCastling,
+  endedWithMate        : checkmates.endedWithMate
+}
+
+function createAchievementsDict() {
+  let d = {}
+  for(const [key, _] of Object.entries(checks)) {
+    d[key] = { urls: [] }
+  }
+  return d;
+}
+
+function Achievement({ name, ach }) {
   return (
     <div className={styles.card} >
-      <h2>{ach.title}</h2>
-      <p>{ach.description}</p>
-      {ach.urls && ach.urls.map((url, index) => <a key={index} href={url} target="_blank" rel="noopener noreferrer">🏆</a>)}
+      <h2>{checks[name].title}</h2>
+      <div className='details '>
+        <p>{checks[name].description}</p>
+        {ach.urls.map((url, index) => <a key={index} href={url} target="_blank" rel="noopener noreferrer">🏆</a>)}
+      </div>
     </div>
   );
 }
 
 const LOADING_STATUS_PRE = 0;
 const LOADING_STATUS_RUNNING = 1;
-const LOADING_STATUS_DONE = 2;
+const LOADING_STATUS_ERROR = 2;
+const LOADING_STATUS_DONE = 3;
 
 export default function Home() {
   const isDev = process.env.NODE_ENV !== 'production';
 
-  const [name, setName] = useState(isDev ? 'lawtrafalgar02': 'msch-');
+  const [name, setName] = useState(isDev ? 'lawtrafalgar02' : 'msch-');
   const [amount, setAmount] = useState(20);
-  const [achievements, setAchievement] = useState([{title: 'Achievements come here', descritpion: 'Just wait', urls: ['https://lichess.org/']}]);
   const [loadingStatus, setLoadingStatus] = useState(LOADING_STATUS_PRE);
   const [errorMsg, setErrorMsg] = useState('');
+  const [achievements, setAchievement] = useState(createAchievementsDict());
 
 
   const fetchAndAnalyzeGames = (local) => {
     setLoadingStatus(LOADING_STATUS_RUNNING);
     setErrorMsg('');
 
+    let newAch = createAchievementsDict();
+
     let url = `https://lichess.org/api/games/user/${name}?max=${amount}`;
     //let url = `https://lichess.org/api/games/user/${name}?max=${amount}&perfType=ultraBullet,bullet,blitz,rapid,classical`;
-    if(local === true) {
+    if (local === true) {
       url = 'http://localhost:3000/custom.txt'
     }
     fetch(url, { headers: { 'Content-Type': 'text/plain; charset=utf-8' } })
       .then(response => response.text())
       .then(data => {
         let games;
-        if(local === true){
+        if (local === true) {
           games = data.trim().split('\r\n\r\n\r\n'); //local files are encoded with \r\n instead of \n
         } else {
           games = data.trim().split('\n\n\n')
         }
-        let newAch = checks.map(value => { return {'title': value.title, 'description': value.description, 'check': value.check, 'urls': []}});
+        //let newAch = checks.map(value => { return { 'title': value.title, 'description': value.description, 'check': value.check, 'urls': [] } });
         games.forEach(game => {
 
           const chess = parseLichessGame(game, name);
-          if(chess === null || chess.history().length < 3) {
+          if (chess === null || chess.history().length < 3) {
             return;
           }
 
-          newAch.forEach(ach => {
-            if(ach.check(chess)) {
+          for(const [key, ach] of Object.entries(checks)) {
+            if (ach.check(chess)) {
               const add = chess.isBlack ? "/black" : "";
               const site = chess.header().Site + add;
-              ach.urls.push(site)
+              newAch[key].urls.push(site);
             }
-          });
+          }
         });
 
+        
         setAchievement(newAch);
         setLoadingStatus(LOADING_STATUS_DONE);
       })
       .catch(error => {
-        setLoadingStatus(LOADING_STATUS_DONE);
+        setLoadingStatus(LOADING_STATUS_ERROR);
         console.error('Error fetching games:', error);
         setErrorMsg('Error: ' + error);
       });
@@ -101,76 +181,76 @@ export default function Home() {
           <button className={styles.button} disabled={loadingStatus == LOADING_STATUS_RUNNING} onClick={fetchAndAnalyzeGames}>{(loadingStatus == LOADING_STATUS_RUNNING) ? 'Loading...' : 'Analyze'}</button>
           {isDev && <button onClick={() => fetchAndAnalyzeGames(true)}>Load local</button>}
           <p></p>
-        {achievements.length > 1 && <>Gesamt: {achievements.map(ach => ach.urls.length).reduce((partialSum, a) => partialSum + a, 0)} Trophäen</>}
-        <p></p>
-        {achievements.length > 1 && <>Gesamt: {achievements.map(ach => ach.urls.length > 0).reduce((partialSum, a) => partialSum + a, 0)} / {achievements.length} Challenges</>}
-        
+          {loadingStatus == LOADING_STATUS_DONE && <>Gesamt: {Object.values(achievements).map(ach => ach.urls.length).reduce((partialSum, a) => partialSum + a, 0)} Trophäen</>}
+          <br />
+          {loadingStatus == LOADING_STATUS_DONE && <>Gesamt: {Object.values(achievements).map(ach => ach.urls.length > 0).reduce((partialSum, a) => partialSum + a, 0)} / {achievements.length} Challenges</>}
+
         </div>
         <p>{errorMsg}</p>
-        <div className={styles.grid}>
+        {loadingStatus == LOADING_STATUS_DONE && <div className={styles.grid}>
           <h3>Allgemein</h3>
-          <Achievement ach={result.wonWithWhite} />
-          <Achievement ach={result.wonWithBlack} />
-          <Achievement ach={underdog.small_underdog} />
-          <Achievement ach={underdog.big_underdog} />
-          
+          <Achievement name={"wonWithWhite"} ach={achievements.wonWithWhite} />
+          <Achievement name={"wonWithBlack"} ach={achievements.wonWithBlack} />
+          <Achievement name={"small_underdog"} ach={achievements.small_underdog} />
+          <Achievement name={"big_underdog"} ach={achievements.big_underdog} />
+
           <h3>Eröffnung</h3>
-          <Achievement ach={opening.textbookOpening} />
-          <Achievement ach={opening.noFool} />
-          <Achievement ach={opening.onlyPawnMoves} />
-          <Achievement ach={opening.rookSniper} />
+          <Achievement name={"textbookOpening"} ach={achievements.textbookOpening} />
+          <Achievement name={"noFool"} ach={achievements.noFool} />
+          <Achievement name={"onlyPawnMoves"} ach={achievements.onlyPawnMoves} />
+          <Achievement name={"rookSniper"} ach={achievements.rookSniper} />
 
           <h3>Schach Matt</h3>
-          <Achievement ach={checkmates.mateWithQueen} />
-          <Achievement ach={checkmates.mateWithRook} />
-          <Achievement ach={checkmates.mateWithBishop} />
-          <Achievement ach={checkmates.mateWithKnight} />
-          <Achievement ach={checkmates.mateWithPawn} />
-          <Achievement ach={checkmates.mateWithKing} />
-          <Achievement ach={checkmates.mateOnBackRank} />
-          <Achievement ach={checkmates.mateAfterCapture} />
-          <Achievement ach={checkmates.mateWithLess} />
-          
+          <Achievement name={"mateWithQueen"} ach={achievements.mateWithQueen} />
+          <Achievement name={"mateWithRook"} ach={achievements.mateWithRook} />
+          <Achievement name={"mateWithBishop"} ach={achievements.mateWithBishop} />
+          <Achievement name={"mateWithKnight"} ach={achievements.mateWithKnight} />
+          <Achievement name={"mateWithPawn"} ach={achievements.mateWithPawn} />
+          <Achievement name={"mateWithKing"} ach={achievements.mateWithKing} />
+          <Achievement name={"mateOnBackRank"} ach={achievements.mateOnBackRank} />
+          <Achievement name={"mateAfterCapture"} ach={achievements.mateAfterCapture} />
+          <Achievement name={"mateWithLess"} ach={achievements.mateWithLess} />
+
           <h3>Endspiel</h3>
-          <Achievement ach={endgames.secondQueen} />
-          <Achievement ach={endgames.underpromote} />
-          <Achievement ach={endgames.withTwoRooks} />
-          <Achievement ach={endgames.withOneQueen} />
-          <Achievement ach={endgames.withOneRook} />
-          <Achievement ach={endgames.withTwoBishops} />
-          <Achievement ach={endgames.withBishopKnight} />
-          <Achievement ach={result.drawWithKing} />
-          <Achievement ach={result.justTwoKings} />
+          <Achievement name={"secondQueen"} ach={achievements.secondQueen} />
+          <Achievement name={"underpromote"} ach={achievements.underpromote} />
+          <Achievement name={"withTwoRooks"} ach={achievements.withTwoRooks} />
+          <Achievement name={"withOneQueen"} ach={achievements.withOneQueen} />
+          <Achievement name={"withOneRook"} ach={achievements.withOneRook} />
+          <Achievement name={"withTwoBishops"} ach={achievements.withTwoBishops} />
+          <Achievement name={"withBishopKnight"} ach={achievements.withBishopKnight} />
+          <Achievement name={"drawWithKing"} ach={achievements.drawWithKing} />
+          <Achievement name={"justTwoKings"} ach={achievements.justTwoKings} />
 
           <h3>Besondere Züge</h3>
-          <Achievement ach={specialmoves.enpeasant} />
-          <Achievement ach={specialmoves.castleWithCheck} />
-          <Achievement ach={captures.battlefield} />
-          <Achievement ach={captures.peacefulmode} />
+          <Achievement name={"enpeasant"} ach={achievements.enpeasant} />
+          <Achievement name={"castleWithCheck"} ach={achievements.castleWithCheck} />
+          <Achievement name={"battlefield"} ach={achievements.battlefield} />
+          <Achievement name={"peacefulmode"} ach={achievements.peacefulmode} />
 
           <h3>Mensch gegen Maschine</h3>
-          <Achievement ach={computer.wonVsComputer1} />
-          <Achievement ach={computer.wonVsComputer2} />
-          <Achievement ach={computer.wonVsComputer3} />
-          <Achievement ach={computer.wonVsComputer8NoQueen} />
-          <Achievement ach={computer.basicPawnEndgame1} />
-          <Achievement ach={computer.basicPawnEndgame2} />
+          <Achievement name={"wonVsComputer1"} ach={achievements.wonVsComputer1} />
+          <Achievement name={"wonVsComputer2"} ach={achievements.wonVsComputer2} />
+          <Achievement name={"wonVsComputer3"} ach={achievements.wonVsComputer3} />
+          <Achievement name={"wonVsComputer8NoQueen"} ach={achievements.wonVsComputer8NoQueen} />
+          <Achievement name={"basicPawnEndgame1"} ach={achievements.basicPawnEndgame1} />
+          <Achievement name={"basicPawnEndgame2"} ach={achievements.basicPawnEndgame2} />
 
           <h3>Matt statt Patt</h3>
-          <Achievement ach={computer.mattStattPatt1} />
-          <Achievement ach={computer.mattStattPatt2} />
-          <Achievement ach={computer.mattStattPatt3} />
-          <Achievement ach={computer.mattStattPatt4} />
-          <Achievement ach={computer.mattStattPatt5} />
-          <Achievement ach={computer.mattStattPatt6} />  
-          
+          <Achievement name={"mattStattPatt1"} ach={achievements.mattStattPatt1} />
+          <Achievement name={"mattStattPatt2"} ach={achievements.mattStattPatt2} />
+          <Achievement name={"mattStattPatt3"} ach={achievements.mattStattPatt3} />
+          <Achievement name={"mattStattPatt4"} ach={achievements.mattStattPatt4} />
+          <Achievement name={"mattStattPatt5"} ach={achievements.mattStattPatt5} />
+          <Achievement name={"mattStattPatt6"} ach={achievements.mattStattPatt6} />
+
           <h3>Blödeleien</h3>
-          <Achievement ach={pawnwords.spellGG} />
-          <Achievement ach={pawnwords.spellDAB} />
-          <Achievement ach={pawnwords.spellHaha} />
-          <Achievement ach={pawnwords.spellAffe} />
-          
-          
+          <Achievement name={"spellGG"} ach={achievements.spellGG} />
+          <Achievement name={"spellDAB"} ach={achievements.spellDAB} />
+          <Achievement name={"spellHaha"} ach={achievements.spellHaha} />
+          <Achievement name={"spellAffe"} ach={achievements.spellAffe} />
+
+
           {/* 
           <Achievement ach={checkmates.mateAfter1capture} />
           <Achievement ach={checkmates.mateAfter2capture} />
@@ -190,7 +270,7 @@ export default function Home() {
           <Achievement ach={checkmates.mateAfterCastling} />
           <Achievement ach={checkmates.endedWithMate} /> */}
 
-        </div>
+        </div>}
       </main>
     </div>
   )
