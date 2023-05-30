@@ -57,26 +57,24 @@ const checks = {
   mattStattPatt4       : computer.mattStattPatt4,
   mattStattPatt5       : computer.mattStattPatt5,
   mattStattPatt6       : computer.mattStattPatt6,
+  rookSniper           : opening.rookSniper,
+  mateOnBackRank       : checkmates.mateOnBackRank,
+  mateWithLess         : checkmates.mateWithLess,
   spellGG              : pawnwords.spellGG,
   spellDAB             : pawnwords.spellDAB,
   spellHaha            : pawnwords.spellHaha,
   spellAffe            : pawnwords.spellAffe,
   castleWithCheck      : specialmoves.castleWithCheck,
-  mateOnBackRank       : checkmates.mateOnBackRank,
-  didNotLose           : result.didNotLose,
+  /*didNotLose           : result.didNotLose,
   drawWithWhite        : result.drawWithWhite,
   drawWithBlack        : result.drawWithBlack,
   midCastle            : castling.midCastle,
-  small_underdog       : underdog.small_underdog,
-  big_underdog         : underdog.big_underdog,
   winwithless          : lessmaterial.winwithless,
-  mateWithLess         : checkmates.mateWithLess,
   favoredByTime        : result.favoredByTime,
   againstComputer      : computer.againstComputer,
-  rookSniper           : opening.rookSniper,
   rookiemistake        : opening.rookiemistake,
   timewithless         : lessmaterial.timewithless,
-  mateAfterCastling    : checkmates.mateAfterCastling,
+  mateAfterCastling    : checkmates.mateAfterCastling,*/
   endedWithMate        : checkmates.endedWithMate
 }
 
@@ -109,7 +107,7 @@ const LOADING_STATUS_DONE = 3;
 export default function Home() {
   const isDev = process.env.NODE_ENV !== 'production';
 
-  const [name, setName] = useState(isDev ? 'lawtrafalgar02' : 'msch-');
+  const [name, setName] = useState(isDev ? 'lawtrafalgar02' : 'msch-'); //smart
   const [amount, setAmount] = useState(20);
   const [loadingStatus, setLoadingStatus] = useState(LOADING_STATUS_PRE);
   const [errorMsg, setErrorMsg] = useState('');
