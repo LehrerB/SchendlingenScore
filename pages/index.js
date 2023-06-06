@@ -15,9 +15,6 @@ import * as pawnwords from '../public/trophies/pawnwords';
 import * as endgames from '../public/trophies/endgames';
 
 const checks = {
-  drawWithKing         : result.drawWithKing,
-  justTwoKings         : result.justTwoKings,
-  onlyPawnsLeft        : endgames.onlyPawnsLeft,
   basicPawnEndgame1    : computer.basicPawnEndgame1,
   basicPawnEndgame2    : computer.basicPawnEndgame2,
   onlyPawnMoves        : opening.onlyPawnMoves,
@@ -26,13 +23,9 @@ const checks = {
   withOneQueen         : endgames.withOneQueen,
   withOneRook          : endgames.withOneRook,
   withTwoRooks         : endgames.withTwoRooks,
-  getQueenBack         : endgames.getQueenBack,
   secondQueen          : endgames.secondQueen,
-  underpromote         : endgames.underpromote,
   enpeasant            : specialmoves.enpeasant,
   mateAfterCapture     : checkmates.mateAfterCapture,
-  mateAfter1capture    : checkmates.mateAfter1capture,
-  mateAfter2capture    : checkmates.mateAfter2capture,
   wonWithWhite         : result.wonWithWhite,
   wonWithBlack         : result.wonWithBlack,
   small_underdog       : underdog.small_underdog,
@@ -64,8 +57,17 @@ const checks = {
   spellDAB             : pawnwords.spellDAB,
   spellHaha            : pawnwords.spellHaha,
   spellAffe            : pawnwords.spellAffe,
+  justTwoKings         : result.justTwoKings,
+  drawWithKing         : result.drawWithKing,
   castleWithCheck      : specialmoves.castleWithCheck,
+  underpromote         : endgames.underpromote
   /*didNotLose           : result.didNotLose,
+  mateAfter1capture    : checkmates.mateAfter1capture,
+  mateAfter2capture    : checkmates.mateAfter2capture,
+  endedWithMate        : checkmates.endedWithMate,
+  getQueenBack         : endgames.getQueenBack,
+
+  onlyPawnsLeft        : endgames.onlyPawnsLeft,
   drawWithWhite        : result.drawWithWhite,
   drawWithBlack        : result.drawWithBlack,
   midCastle            : castling.midCastle,
@@ -75,7 +77,7 @@ const checks = {
   rookiemistake        : opening.rookiemistake,
   timewithless         : lessmaterial.timewithless,
   mateAfterCastling    : checkmates.mateAfterCastling,*/
-  endedWithMate        : checkmates.endedWithMate
+  
 }
 
 function createAchievementsDict() {
@@ -108,7 +110,7 @@ export default function Home() {
   const isDev = process.env.NODE_ENV !== 'production';
 
   const [name, setName] = useState(isDev ? 'lawtrafalgar02' : 'msch-'); //smart
-  const [amount, setAmount] = useState(20);
+  const [amount, setAmount] = useState(isDev ? '20' : '50');
   const [loadingStatus, setLoadingStatus] = useState(LOADING_STATUS_PRE);
   const [errorMsg, setErrorMsg] = useState('');
   const [achievements, setAchievement] = useState(createAchievementsDict());
@@ -179,7 +181,7 @@ export default function Home() {
             <input className={styles.input} type='number' value={amount} onChange={e => setAmount(e.target.value)} name="amount" />
           </label>
           <br />
-          <button className={styles.button} disabled={loadingStatus == LOADING_STATUS_RUNNING} onClick={fetchAndAnalyzeGames}>{(loadingStatus == LOADING_STATUS_RUNNING) ? 'Loading...' : 'Analyze'}</button>
+          <button className={styles.button} disabled={loadingStatus == LOADING_STATUS_RUNNING} onClick={fetchAndAnalyzeGames}>{(loadingStatus == LOADING_STATUS_RUNNING) ? 'Ladet...' : 'Start'}</button>
           {isDev && <button onClick={() => fetchAndAnalyzeGames(true)}>Load local</button>}
           <p></p>
           {loadingStatus == LOADING_STATUS_DONE && <>
