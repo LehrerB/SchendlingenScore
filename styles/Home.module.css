@@ -94,8 +94,8 @@
 }
 
 .card {
-  margin: 0.5rem;
-  padding: 1rem;
+  margin: 0 0.125rem 0.25rem 0.125rem;
+  padding: 0.25rem;
   text-align: left;
   color: inherit;
   text-decoration: none;
@@ -120,24 +120,40 @@
 
 .card h2 {
   margin: 0 0 0.5rem 0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: normal;
+  text-align: center;
 }
 
 .card p {
   margin: 0;
+  font-size: 0.8rem;
   font-size: 1rem;
   line-height: 1.5;
 }
 
 .trophyList {
-  text-align: left;
+  text-align: center;
 }
 
 .logo {
   height: 5em;
   margin-left: 0.5rem;
   margin-top: 1rem;
+  position: relative;
+}
+
+.logor {
+  height: 5em;
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.logobox {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .rightylogo {

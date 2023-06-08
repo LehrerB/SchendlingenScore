@@ -23,14 +23,3 @@ h3 {
 * {
   box-sizing: border-box;
 }
-
-logobox {
-  display: flex; 
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-centeredtext {
-  text-align: center;
-  flex-grow: 1;
-}

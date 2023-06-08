@@ -167,14 +167,13 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.logobox}>
-  <a href="https://ms-schendlingen.at/" target="_blank">
+  <a href="https://ms-schendlingen.at/" target="_blank" rel="noopener noreferrer">
         <img className={styles.logo} src='/schendlingen_logo.png' alt="MS Schendlingen"></img>
       </a>
 
-  <a class="righty-logo" href="https://ms-schendlingen.at/" target="_blank">
-        <img className={styles.logo} src='/schendlingen_logo.png' alt="MS Schendlingen"></img>
+  <a href="https://lichess.org/" target="_blank" rel="noopener noreferrer">
+        <img className={styles.logor} src='/lichess_logo.png' alt="MS Schendlingen"></img>
       </a>
-
   
 </div>
       <main className={styles.main}>
