@@ -3,7 +3,7 @@ import * as utils from '../utils/javachess';
 
 export let castleWithCheck = {
     title: 'O-O+',
-    description: <>Rochiere und gibt gleichzeitig Schach. Gewinne anschließend das Spiel.</>,
+    description: <>Rochiere und gib gleichzeitig Schach. Gewinne anschließend das Spiel.</>,
     check: function(game) {
     if(!(game.isStandard)||game.isBullet||!(game.isWon)){return false}
     const playerhist = game.playerhistory

@@ -166,7 +166,17 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <img className={styles.logo} src='/schendlingen_logo.png'></img>
+      <div className={styles.logobox}>
+  <a href="https://ms-schendlingen.at/" target="_blank">
+        <img className={styles.logo} src='/schendlingen_logo.png' alt="MS Schendlingen"></img>
+      </a>
+
+  <a class="righty-logo" href="https://ms-schendlingen.at/" target="_blank">
+        <img className={styles.logo} src='/schendlingen_logo.png' alt="MS Schendlingen"></img>
+      </a>
+
+  
+</div>
       <main className={styles.main}>
         <h1 className={styles.title}>Schendlingen Score</h1>
         <div className={styles.description}>

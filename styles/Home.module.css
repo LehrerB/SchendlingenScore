@@ -140,6 +140,11 @@
   margin-top: 1rem;
 }
 
+.rightylogo {
+  position: absolute;
+  right: 0;
+}
+
 .input {
   font-size: inherit;
   border-radius: 5px;
