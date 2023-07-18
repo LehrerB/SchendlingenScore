@@ -137,17 +137,22 @@
 }
 
 .logo {
-  height: 5em;
   margin-left: 0.5rem;
   margin-top: 1rem;
   position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  max-height: 8vw;
+  margin-right: 40vw;
 }
 
 .logor {
-  height: 5em;
   margin-right: 0.5rem;
   margin-top: 1rem;
   position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  max-height: 8vw;
 }
 
 .logobox {
@@ -155,6 +160,7 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
 
 .rightylogo {
   position: absolute;

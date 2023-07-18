@@ -138,8 +138,8 @@ export let withOneRook = {
     if(lastfen.includes(bishop)||lastfen.includes(knight)||lastfen.includes(queen)||lastfen.includes(pawn)){return false}
     //count rooks
     const count = lastfen.split('').filter((char) => char === rook).length;
-    console.log(game.header().Site)
-    console.log(count)
+    //console.log(game.header().Site)
+    //console.log(count)
     if(count != 1){return false}
     return true
   }
@@ -163,8 +163,8 @@ export let withTwoBishops = {
     if(lastfen.includes(rook)||lastfen.includes(knight)||lastfen.includes(queen)||lastfen.includes(pawn)){return false}
     //count rooks
     const count = lastfen.split('').filter((char) => char === bishop).length;
-    console.log(game.header().Site)
-    console.log(count)
+    //console.log(game.header().Site)
+    //console.log(count)
     if(count != 2){return false}
     return true
   }

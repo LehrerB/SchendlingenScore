@@ -174,7 +174,6 @@ export default function Home() {
   <a href="https://lichess.org/" target="_blank" rel="noopener noreferrer">
         <img className={styles.logor} src='/lichess_logo.png' alt="MS Schendlingen"></img>
       </a>
-  
 </div>
       <main className={styles.main}>
         <h1 className={styles.title}>Schendlingen Score</h1>
