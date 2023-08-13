@@ -67,30 +67,34 @@
 
 .categoryCol {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
   flex-wrap: wrap;
-  width: 100%;
-  max-width: 1680px;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1500px;
 }
 
-.categoryCol > div {
-  margin: 0 1rem;
+.column {
+  flex: 1;
+  min-width: 400px;
 }
 
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 650px;
+.column h3 {
+  text-align: center;
 }
+
 
 .details {
   height: 0;
   opacity: 0;
   overflow-y: hidden;
   transition: 0.15s ease;
+}
+
+.achWrap {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .card {
@@ -102,8 +106,7 @@
   border: 1px solid #eaeaea;
   border-radius: 3px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  width: 40%;
-  min-width: 300px;
+  flex-basis: calc(50% - 10px);
 }
 
 .card:hover,
