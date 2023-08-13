@@ -206,7 +206,7 @@ export default function Home() {
               <Achievement name={"wonWithWhite"} ach={achievements.wonWithWhite} />
               <Achievement name={"wonWithBlack"} ach={achievements.wonWithBlack} />
               <Achievement name={"small_underdog"} ach={achievements.small_underdog} />
-              <Achievement name={"big_underdog"} ach={achievements.big_underdog} />
+              {achievements.small_underdog.urls.length > 0 && <Achievement name={"big_underdog"} ach={achievements.big_underdog} />}
             </div>
 
             <h3>Eröffnung</h3>
