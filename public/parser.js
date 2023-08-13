@@ -67,7 +67,6 @@ export default function parseLichessGame(str, name) {
   chess.opphistory = chess.history().filter((_, index) => index % 2 !== chess.addbw);
   chess.isComputer = chess.header().White.includes('lichess AI level') || chess.header().Black.includes('lichess AI level');
   chess.lastfen = chess.fen().split(" ")[0];
-  chess.oppName = "";
   if(chess.isWhite){chess.oppName = chess.header().Black} else {chess.oppName = chess.header().White}
 
   return chess;

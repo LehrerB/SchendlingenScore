@@ -15,7 +15,6 @@ import * as pawnwords from '../public/trophies/pawnwords';
 import * as endgames from '../public/trophies/endgames';
 
 const checks = {
-<<<<<<< Updated upstream
   basicPawnEndgame1: computer.basicPawnEndgame1,
   basicPawnEndgame2: computer.basicPawnEndgame2,
   onlyPawnMoves: opening.onlyPawnMoves,
@@ -44,37 +43,6 @@ const checks = {
   wonVsComputer1: computer.wonVsComputer1,
   wonVsComputer2: computer.wonVsComputer2,
   wonVsComputer3: computer.wonVsComputer3,
-=======
-  basicPawnEndgame1    : computer.basicPawnEndgame1,
-  basicPawnEndgame2    : computer.basicPawnEndgame2,
-  onlyPawnMoves        : opening.onlyPawnMoves,
-  withBishopKnight     : endgames.withBishopKnight,
-  withTwoBishops       : endgames.withTwoBishops,
-  withOneQueen         : endgames.withOneQueen,
-  withOneRook          : endgames.withOneRook,
-  withTwoRooks         : endgames.withTwoRooks,
-  secondQueen          : endgames.secondQueen,
-  enpeasant            : specialmoves.enpeasant,
-  mateAfterCapture     : checkmates.mateAfterCapture,
-  wonWithWhite         : result.wonWithWhite,
-  wonWithBlack         : result.wonWithBlack,
-  small_underdog       : underdog.small_underdog,
-  big_underdog         : underdog.big_underdog,
-  new_opponent         : underdog.new_opponent,
-  textbookOpening      : opening.textbookOpening,
-  noFool               : opening.noFool,
-  battlefield          : captures.battlefield,
-  peacefulmode         : captures.peacefulmode,
-  mateWithQueen        : checkmates.mateWithQueen,
-  mateWithRook         : checkmates.mateWithRook,
-  mateWithBishop       : checkmates.mateWithBishop,
-  mateWithKnight       : checkmates.mateWithKnight,
-  mateWithKing         : checkmates.mateWithKing,
-  mateWithPawn         : checkmates.mateWithPawn,
-  wonVsComputer1       : computer.wonVsComputer1,
-  wonVsComputer2       : computer.wonVsComputer2,
-  wonVsComputer3       : computer.wonVsComputer3,
->>>>>>> Stashed changes
   wonVsComputer8NoQueen: computer.wonVsComputer8NoQueen,
   mattStattPatt1: computer.mattStattPatt1,
   mattStattPatt2: computer.mattStattPatt2,
@@ -231,13 +199,7 @@ export default function Home() {
 
         </div>
         {loadingStatus == LOADING_STATUS_ERROR && <p>{errorMsg}</p>}
-        <div className={styles.grid}>
-          <h3>Allgemein</h3>
-          <Achievement name={"wonWithWhite"} ach={achievements.wonWithWhite} />
-          <Achievement name={"wonWithBlack"} ach={achievements.wonWithBlack} />
-          </div>
         {loadingStatus == LOADING_STATUS_DONE && <div className={styles.categoryCol}>
-<<<<<<< Updated upstream
           <div className={styles.column}>
             <h3>Allgemein</h3>
             <div className={styles.achWrap}>
@@ -246,14 +208,6 @@ export default function Home() {
               <Achievement name={"small_underdog"} ach={achievements.small_underdog} />
               {achievements.small_underdog.urls.length > 0 && <Achievement name={"big_underdog"} ach={achievements.big_underdog} />}
             </div>
-=======
-          
-          <div className={styles.grid}>
-            <h3>Gemeinschaft</h3>
-            <Achievement name={"new_opponent"} ach={achievements.new_opponent} />
-            <Achievement name={"small_underdog"} ach={achievements.small_underdog} />
-            <Achievement name={"big_underdog"} ach={achievements.big_underdog} />
->>>>>>> Stashed changes
 
             <h3>Eröffnung</h3>
             <div className={styles.achWrap}>
@@ -310,7 +264,6 @@ export default function Home() {
             </div>
 
             <h3>Matt statt Patt</h3>
-<<<<<<< Updated upstream
             <div className={styles.achWrap}>
               <Achievement name={"mattStattPatt1"} ach={achievements.mattStattPatt1} />
               <Achievement name={"mattStattPatt2"} ach={achievements.mattStattPatt2} />
@@ -320,15 +273,6 @@ export default function Home() {
               <Achievement name={"mattStattPatt6"} ach={achievements.mattStattPatt6} />
             </div>
 
-=======
-            <Achievement name={"mattStattPatt1"} ach={achievements.mattStattPatt1} />
-            <Achievement name={"mattStattPatt2"} ach={achievements.mattStattPatt2} />
-            <Achievement name={"mattStattPatt3"} ach={achievements.mattStattPatt3} />
-            <Achievement name={"mattStattPatt4"} ach={achievements.mattStattPatt4} />
-            <Achievement name={"mattStattPatt5"} ach={achievements.mattStattPatt5} />
-            <Achievement name={"mattStattPatt6"} ach={achievements.mattStattPatt6} />
-            
->>>>>>> Stashed changes
             <h3>Blödeleien</h3>
             <div className={styles.achWrap}>
               <Achievement name={"spellGG"} ach={achievements.spellGG} />

@@ -27,21 +27,3 @@ export let big_underdog = {
   description: 'Gewinne gegen einen Spieler, der mindestens 120 ELO mehr hat.',
   check: wonVsHigherElo(120,0)
 }
-
-let opponents_school_unique = []
-
-export let new_opponent = {
-  title: 'Verschiedene Gegner',
-  description: 'Spiele gegen verschiedene Schülerinnen der Schule.',
-  check: function(game) {
-    if(!(game.oppName.toLowerCase().includes("msch-")||game.oppName.toLowerCase().includes("misch-"))){
-      return false
-    }
-    if(opponents_school_unique.includes(game.oppName.toLowerCase())){
-      return false
-    }
-    opponents_school_unique.push(game.oppName.toLowerCase());
-    console.log(opponents_school_unique);
-    return true
-  }
-}

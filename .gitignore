@@ -33,5 +33,3 @@ yarn-error.log*
 
 # vercel
 .vercel
-pages/index.js
-styles/Home.module.css
