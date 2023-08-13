@@ -42,7 +42,7 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 .title,
@@ -69,13 +69,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px;
-  max-width: 1500px;
+  gap: 5px;
+  max-width: 75rem; /* 1500px*/
 }
 
 .column {
   flex: 1;
-  min-width: 400px;
+  min-width: 350px;
 }
 
 .column h3 {
@@ -118,12 +118,12 @@
 
 .card:hover > .details {
   opacity: 1;
-  height: 70px;
+  height: 80px;
 }
 
 .card h2 {
   margin: 0 0 0.5rem 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: normal;
   text-align: center;
 }

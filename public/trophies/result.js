@@ -84,7 +84,7 @@ export let drawWithKing = {
   if(lastfen.includes(pawn)||lastfen.includes(rook)||lastfen.includes(queen)||lastfen.includes(bishop)||lastfen.includes(knight)){return false}
   //does the opponent have more material?
   let material = utils.get_material_player(game)
-  if(material > -5){return false}
+  if(material < -5){return false}
   return false
   }
 }

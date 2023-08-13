@@ -29,7 +29,8 @@ const checks = {
   wonWithWhite: result.wonWithWhite,
   wonWithBlack: result.wonWithBlack,
   small_underdog: underdog.small_underdog,
-  big_underdog: underdog.big_underdog,
+  /*big_underdog: underdog.big_underdog,*/
+  new_opponent: underdog.new_opponent,
   textbookOpening: opening.textbookOpening,
   noFool: opening.noFool,
   battlefield: captures.battlefield,
@@ -199,14 +200,24 @@ export default function Home() {
 
         </div>
         {loadingStatus == LOADING_STATUS_ERROR && <p>{errorMsg}</p>}
-        {loadingStatus == LOADING_STATUS_DONE && <div className={styles.categoryCol}>
+        {loadingStatus == LOADING_STATUS_DONE && <>
           <div className={styles.column}>
-            <h3>Allgemein</h3>
+        <h3>Allgemein</h3>
             <div className={styles.achWrap}>
               <Achievement name={"wonWithWhite"} ach={achievements.wonWithWhite} />
               <Achievement name={"wonWithBlack"} ach={achievements.wonWithBlack} />
+            </div>
+        </div>
+        <div className={styles.categoryCol}>
+        
+          
+          <div className={styles.column}>
+            <h3>Gemeinschaft</h3>
+            <div className={styles.achWrap}>
+              <Achievement name={"new_opponent"} ach={achievements.new_opponent} />
               <Achievement name={"small_underdog"} ach={achievements.small_underdog} />
-              {achievements.small_underdog.urls.length > 0 && <Achievement name={"big_underdog"} ach={achievements.big_underdog} />}
+
+              {achievements.small_underdog.urls.length < 0 && <Achievement name={"big_underdog"} ach={achievements.big_underdog} />}
             </div>
 
             <h3>Eröffnung</h3>
@@ -272,15 +283,15 @@ export default function Home() {
               <Achievement name={"mattStattPatt5"} ach={achievements.mattStattPatt5} />
               <Achievement name={"mattStattPatt6"} ach={achievements.mattStattPatt6} />
             </div>
-
+            {Object.values(achievements).map(ach => ach.urls.length > 0).reduce((partialSum, a) => partialSum + a, 0)>20 && <>
             <h3>Blödeleien</h3>
             <div className={styles.achWrap}>
               <Achievement name={"spellGG"} ach={achievements.spellGG} />
               <Achievement name={"spellDAB"} ach={achievements.spellDAB} />
               <Achievement name={"spellHaha"} ach={achievements.spellHaha} />
               <Achievement name={"spellAffe"} ach={achievements.spellAffe} />
-            </div>
-
+            </div></>
+            }
 
             {/* 
             <Achievement ach={checkmates.mateAfter1capture} />
@@ -302,7 +313,7 @@ export default function Home() {
             <Achievement ach={checkmates.endedWithMate} /> */}
           </div>
 
-        </div>}
+        </div></>}
       </main>
     </div>
   )
