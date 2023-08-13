@@ -17,8 +17,9 @@ h3 {
   font-size: x-large;
   font-style: italic;
   border-top: 1px dashed lightblue;
-  padding-top: 10px;
+  padding-top: 8px;
 }
+
 
 * {
   box-sizing: border-box;
