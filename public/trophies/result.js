@@ -14,7 +14,7 @@ export let wonWithWhite = {
   description: <>Gewinne ein Spiel mit den <i>weißen</i> Figuren.</>,
   pref: {
     win: 1,
-    bullet: 2,
+    bullet: 3,
     computer: 2,
     time: 2
   },
@@ -26,6 +26,12 @@ export let wonWithWhite = {
 export let wonWithBlack = {
   title: 'Gewinne mit Schwarz',
   description: <>Gewinne ein Spiel mit den <i>schwarzen</i> Figuren.</>,
+  pref: {
+    win: 1,
+    bullet: 3,
+    computer: 2,
+    time: 2
+  },
   check: function(game) {
     return game.isBlack && game.header().Result === '0-1';
   }
@@ -60,6 +66,12 @@ export let favoredByTime = {
 export let justTwoKings = {
   title: 'Bis zum Schluss',
   description: 'Gib nicht auf und spiele, bis nur noch zwei Könige übrig sind.',
+  pref: {
+    win: 3,
+    bullet: 2,
+    computer: 2,
+    time: 3
+  },
   check: function(game) {
   //draw, standard game, bullet allowed
   if(!(game.isStandard)||!(game.header().Result === '1/2-1/2')){return false}
@@ -77,6 +89,12 @@ export let justTwoKings = {
 export let drawWithKing = {
   title: 'Pattser',
   description: 'Patt nur mit dem König und Bauern, wenn dein Gegner deutlich mehr Material hat.',
+  pref: {
+    win: 3,
+    bullet: 2,
+    computer: 2,
+    time: 3
+  },
   check: function(game) {
   //draw, standard game, bullet allowed
   if(!(game.isStandard)||!(game.header().Result === '1/2-1/2')){return false}

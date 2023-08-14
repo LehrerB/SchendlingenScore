@@ -6,6 +6,12 @@ import { winwithless } from './lessmaterial';
 export let endedWithMate = {
     title: 'Schach Matt',
     description: <>Gewinne durch Schach Matt.</>,
+    pref: {
+      win: 1,
+      bullet: 2,
+      computer: 2,
+      time: 3
+    },
     check: function(game) {
     if(!(game.isStandard)||game.isBullet){return false}
     const hist = game.history();
@@ -16,6 +22,12 @@ export let endedWithMate = {
 export let mateWithQueen = {
     title: 'Dame',
     description: <>Schach Matt mit der Dame.</>,
+    pref: {
+      win: 1,
+      bullet: 2,
+      computer: 2,
+      time: 3
+    },
     check: function(game) {
     if(!(game.isStandard)||game.isBullet){return false}
     const hist = game.history();
@@ -26,6 +38,12 @@ export let mateWithQueen = {
 export let mateWithRook = {
     title: 'Turm',
     description: <>Schach Matt mit dem Turm.</>,
+    pref: {
+      win: 1,
+      bullet: 2,
+      computer: 2,
+      time: 3
+    },
     check: function(game) {
     if(!(game.isStandard)||game.isBullet){return false}
     const hist = game.history();
@@ -36,6 +54,12 @@ export let mateWithRook = {
 export let mateWithBishop = {
     title: 'Läufer',
     description: <>Schach Matt mit dem Läufer.</>,
+    pref: {
+      win: 1,
+      bullet: 2,
+      computer: 2,
+      time: 3
+    },
     check: function(game) {
     if(!(game.isStandard)||game.isBullet){return false}
     const hist = game.history();
@@ -46,6 +70,12 @@ export let mateWithBishop = {
 export let mateWithKnight = {
     title: 'Springer',
     description: <>Schach Matt mit dem Springer (Pferd).</>,
+    pref: {
+      win: 1,
+      bullet: 2,
+      computer: 2,
+      time: 3
+    },
     check: function(game) {
     if(!(game.isStandard)||game.isBullet){return false}
     const hist = game.history();
@@ -56,6 +86,12 @@ export let mateWithKnight = {
 export let mateWithKing = {
     title: 'König',
     description: <>Schach Matt, in dem du den König bewegst.</>,
+    pref: {
+      win: 1,
+      bullet: 2,
+      computer: 2,
+      time: 3
+    },
     check: function(game) {
     if(!(game.isStandard)||game.isBullet){return false}
     const hist = game.history();
@@ -66,6 +102,12 @@ export let mateWithKing = {
 export let mateWithPawn = {
     title: 'Bauer',
     description: <>Schach Matt mit einem Bauern.</>,
+    pref: {
+      win: 1,
+      bullet: 2,
+      computer: 2,
+      time: 3
+    },
     check: function(game) {
     if(!(game.isStandard)||game.isBullet){return false}
     const hist = game.history();
@@ -76,6 +118,12 @@ export let mateWithPawn = {
 export let mateWithPromotion = {
     title: 'Umwandlung',
     description: <>Schach Matt durch Umwandlung.</>,
+    pref: {
+      win: 1,
+      bullet: 2,
+      computer: 2,
+      time: 3
+    },
     check: function(game) {
     if(!(game.isStandard)||game.isBullet){return false}
     const hist = game.history();
@@ -86,6 +134,12 @@ export let mateWithPromotion = {
 export let mateAfterCastling = {
     title: 'Schade Rochade',
     description: <>Dein Gegner hat ins Matt rochiert.</>,
+    pref: {
+      win: 1,
+      bullet: 2,
+      computer: 2,
+      time: 3
+    },
     check: function(game) {
     if(!(game.isStandard)){return false}
     const hist = game.history();
@@ -96,6 +150,12 @@ export let mateAfterCastling = {
 export let mateOnBackRank = {
     title: 'Grundreihen Matt',
     description: <>Dein Gegner hat seinen König zu wenig beschützt.</>,
+    pref: {
+      win: 1,
+      bullet: 2,
+      computer: 2,
+      time: 3
+    },
     check: function(game) {
     //Bullet allowed, Computer allowed
     if(!(game.isStandard)){return false}
@@ -146,6 +206,12 @@ export let mateOnBackRank = {
 export let mateWithLess = {
   title: 'Nur der König zählt.',
   description: <>Matt mit weniger Material als der Gegner.</>,
+  pref: {
+    win: 1,
+    bullet: 2,
+    computer: 2,
+    time: 3
+  },
   check: function(game) {
   if(!(game.isStandard)||game.isBullet){return false}
   const hist = game.history();
@@ -157,6 +223,12 @@ export let mateWithLess = {
 export let mateAfterCapture = {
   title: 'Zu gierig',
   description: <>Schach Matt direkt nachdem dein Gegner eine Figur geschlagen hat.</>,
+  pref: {
+    win: 1,
+    bullet: 2,
+    computer: 2,
+    time: 3
+  },
   check: function(game) {
   if(!(game.isStandard)||!(game.isWon)){return false}
   const hist = game.history();
@@ -167,6 +239,12 @@ export let mateAfterCapture = {
 export let mateAfter1capture = {
   title: 'Zu gierig 1',
   description: <>Schach Matt direkt nachdem dein Gegner genau eine Figur geschlagen hat.</>,
+  pref: {
+    win: 1,
+    bullet: 2,
+    computer: 2,
+    time: 3
+  },
   check: function(game) {
   if(!(game.isStandard)||!(game.isWon)){return false}
   const hist = game.history();
@@ -177,6 +255,12 @@ export let mateAfter1capture = {
 export let mateAfter2capture = {
   title: 'Zu gierig 2',
   description: <>Schach Matt direkt nachdem dein Gegner zwei Figuren geschlagen hat.</>,
+  pref: {
+    win: 1,
+    bullet: 2,
+    computer: 2,
+    time: 3
+  },
   check: function(game) {
   if(!(game.isStandard)||!(game.isWon)){return false}
   const hist = game.history();

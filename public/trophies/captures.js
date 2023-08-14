@@ -3,6 +3,12 @@ export default [];
 export let battlefield = {
     title: 'Sch(l)achtfeld',
     description: <>Spiele ein Spiel, in dem mindestens 6 Mal hintereinander geschlagen wird.</>,
+    pref: {
+      win: 1,
+      bullet: 2,
+      computer: 2,
+      time: 2
+    },
     check: function(game) {
     //Standard Game, win
     if(!(game.isStandard) || !(game.isWon)){return false}
@@ -29,6 +35,12 @@ export let battlefield = {
   export let peacefulmode = {
     title: 'Friedensbote',
     description: <>Die ersten 12 Züge darf keine Figur geschlagen werden und du musst das Spiel gewinnen.</>,
+    pref: {
+      win: 1,
+      bullet: 2,
+      computer: 2,
+      time: 2
+    },
     check: function(game) {
     //Standard Game, win and not white
     if(!(game.isStandard) || !(game.isWon)){return false}
