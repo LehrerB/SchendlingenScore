@@ -12,6 +12,12 @@ export let didNotLose = {
 export let wonWithWhite = {
   title: 'Gewinne mit Weiß',
   description: <>Gewinne ein Spiel mit den <i>weißen</i> Figuren.</>,
+  pref: {
+    win: 1,
+    bullet: 2,
+    computer: 2,
+    time: 2
+  },
   check: function(game) {
     return game.isWhite && game.header().Result === '1-0'
   }

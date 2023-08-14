@@ -98,6 +98,29 @@ function Achievement({ name, ach }) {
       <div className={styles.details}>
         <p>{checks[name].description}</p>
       </div>
+      <div className={styles.details}>
+      <div className={styles.iconbox}>
+      {(checks[name].pref != undefined && checks[name].pref.win != undefined) && <img className={styles.icon} src='/check_trophy.svg' alt="Gewinnen"></img>}
+      {(checks[name].pref != undefined && checks[name].pref.win != undefined && checks[name].pref.win === 1) && <img className={styles.icon} src='/check_1exclamation.svg' alt="Muss"></img>}
+      {(checks[name].pref != undefined && checks[name].pref.win != undefined && checks[name].pref.win === 2) && <img className={styles.icon} src='/check_2haken.svg' alt="Erlaubt"></img>}
+      {(checks[name].pref != undefined && checks[name].pref.win != undefined && checks[name].pref.win === 3) && <img className={styles.icon} src='/check_3x.svg' alt="Nicht erlaubt"></img>}
+
+      {(checks[name].pref != undefined && checks[name].pref.bullet != undefined) && <img className={styles.icon} src='/check_bullet.svg' alt="Bullet"></img>}
+      {(checks[name].pref != undefined && checks[name].pref.bullet != undefined && checks[name].pref.bullet === 1) && <img className={styles.icon} src='/check_1exclamation.svg' alt="Muss"></img>}
+      {(checks[name].pref != undefined && checks[name].pref.bullet != undefined && checks[name].pref.bullet === 2) && <img className={styles.icon} src='/check_2haken.svg' alt="Erlaubt"></img>}
+      {(checks[name].pref != undefined && checks[name].pref.bullet != undefined && checks[name].pref.bullet === 3) && <img className={styles.icon} src='/check_3x.svg' alt="Nicht erlaubt"></img>}
+      
+      {(checks[name].pref != undefined && checks[name].pref.computer != undefined) && <img className={styles.icon} src='/check_monitor.svg' alt="Computer"></img>}
+      {(checks[name].pref != undefined && checks[name].pref.computer != undefined && checks[name].pref.computer === 1) && <img className={styles.icon} src='/check_1exclamation.svg' alt="Muss"></img>}
+      {(checks[name].pref != undefined && checks[name].pref.computer != undefined && checks[name].pref.computer === 2) && <img className={styles.icon} src='/check_2haken.svg' alt="Erlaubt"></img>}
+      {(checks[name].pref != undefined && checks[name].pref.computer != undefined && checks[name].pref.computer === 3) && <img className={styles.icon} src='/check_3x.svg' alt="Nicht erlaubt"></img>}
+      
+      {(checks[name].pref != undefined && checks[name].pref.time != undefined) && <img className={styles.icon} src='/check_hourglass.svg' alt="Zeit"></img>}
+      {(checks[name].pref != undefined && checks[name].pref.time != undefined && checks[name].pref.time === 1) && <img className={styles.icon} src='/check_1exclamation.svg' alt="Muss"></img>}
+      {(checks[name].pref != undefined && checks[name].pref.time != undefined && checks[name].pref.time === 2) && <img className={styles.icon} src='/check_2haken.svg' alt="Erlaubt"></img>}
+      {(checks[name].pref != undefined && checks[name].pref.time != undefined && checks[name].pref.time === 3) && <img className={styles.icon} src='/check_3x.svg' alt="Nicht erlaubt"></img>}
+      </div>
+      </div>
     </div>
   );
 }
