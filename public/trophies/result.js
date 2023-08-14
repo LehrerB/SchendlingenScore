@@ -70,7 +70,7 @@ export let justTwoKings = {
 
 export let drawWithKing = {
   title: 'Pattser',
-  description: 'Patt nur mit dem König, wenn dein Gegner deutlich mehr Material hat.',
+  description: 'Patt nur mit dem König und Bauern, wenn dein Gegner deutlich mehr Material hat.',
   check: function(game) {
   //draw, standard game, bullet allowed
   if(!(game.isStandard)||!(game.header().Result === '1/2-1/2')){return false}
@@ -81,10 +81,15 @@ export let drawWithKing = {
   let knight = game.isWhite ? 'N' : 'n'
   let queen = game.isWhite ? 'Q' : 'q'
   let pawn = game.isWhite ? 'P' : 'p'
-  if(lastfen.includes(pawn)||lastfen.includes(rook)||lastfen.includes(queen)||lastfen.includes(bishop)||lastfen.includes(knight)){return false}
+  if(lastfen.includes(rook)||lastfen.includes(queen)||lastfen.includes(bishop)||lastfen.includes(knight)){return false}
+  //did the opponent make the last move?
+
+  //did it end on time?
+  if(game.oppNoTime){return false}
   //does the opponent have more material?
-  let material = utils.get_material_player(game)
-  if(material < -5){return false}
+  let sign = game.isWhite ? 1 : -1;
+  let material = sign * utils.get_material_score(game)
+  if(material < -4){return true}
   return false
   }
 }

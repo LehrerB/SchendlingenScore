@@ -66,10 +66,11 @@
 }
 
 .categoryCol {
+  /*flexbox of all cards*/
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 5px;
+  gap: 2rem;
   max-width: 75rem; /* 1500px*/
 }
 
@@ -93,7 +94,7 @@
 .achWrap {
   display: flex; 
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -188,5 +189,6 @@
   .grid {
     width: 100%;
     flex-direction: column;
+    align-items: center;
   }
 }
