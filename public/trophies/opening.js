@@ -6,6 +6,12 @@ import * as utils from '../utils/javachess';
 export let noFool = {
   title: 'Netter Versuch',
   description: <>Vermeide das Schäfermatt und gewinne das Spiel.</>,
+  pref: {
+    win: 1,
+    bullet: 2,
+    computer: 3,
+    time: 2
+  },
   check: function(game) {
   //Standard Game, no Computer, win and not white
   if(!(game.isStandard) || (game.isComputer) || !(game.isWon) || game.isWhite){return false}
@@ -41,6 +47,12 @@ export let noFool = {
 export let textbookOpening = {
   title: 'Vorbildlich',
   description: <>Vorbildliche Eröffnung: Besetze das Zentrum, entwickle alle Leichtfiguren und mache die Rochade. Gewinne danach das Spiel.</>,
+  pref: {
+    win: 1,
+    bullet: 2,
+    computer: 2,
+    time: 2
+  },
   check: function(game) {
     if(!(game.isStandard)){return false}
     const hist = game.history();
@@ -123,6 +135,12 @@ export let textbookOpening = {
 export let rookiemistake = {
   title: 'Rookie Mistake',
   description: <>Schlage den Turm mit dem Läufer, wenn er am Anfang versucht auf a3 oder h3 ins Spiel zu kommen.</>,
+  pref: {
+    win: 1,
+    bullet: 2,
+    computer: 2,
+    time: 2
+  },
   check: function(game) {
   //Standard Game, win and not white
   if(!(game.isStandard) || !(game.isWon)){return false}
@@ -150,6 +168,12 @@ export let rookiemistake = {
 export let rookSniper = {
   title: 'Eckenfressen',
   description: <>Schlage einen Turm in der Ecke mit deinem Läufer.</>,
+  pref: {
+    win: 1,
+    bullet: 2,
+    computer: 2,
+    time: 2
+  },
   check: function(game) {
   //Standard Game, win and not white
   if(!(game.isStandard) || !(game.isWon)){return false}
@@ -184,6 +208,12 @@ export let rookSniper = {
 export let onlyPawnMoves = {
   title: 'Bauerntrampel',
   description: <>Gewinne gegen einen Gegner, der am Anfang nur Bauernzüge macht. (mind. 5)</>,
+  pref: {
+    win: 1,
+    bullet: 3,
+    computer: 2,
+    time: 2
+  },
   check: function(game) {
   if(!(game.isStandard)||game.isBullet||!(game.isWon)){return false}
   const opphist = game.opphistory

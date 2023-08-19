@@ -4,6 +4,12 @@ import * as utils from '../utils/javachess';
 export let castleWithCheck = {
     title: 'O-O+',
     description: <>Rochiere und gib gleichzeitig Schach. Gewinne anschließend das Spiel.</>,
+    pref: {
+      win: 1,
+      bullet: 3,
+      computer: 2,
+      time: 2
+    },
     check: function(game) {
     if(!(game.isStandard)||game.isBullet||!(game.isWon)){return false}
     const playerhist = game.playerhistory
@@ -14,6 +20,12 @@ export let castleWithCheck = {
 export let enpeasant = {
   title: 'En Peasant',
   description: <>Schlage einen Bauern En Peasant und gewinne danach das Spiel.</>,
+  pref: {
+    win: 1,
+    bullet: 3,
+    computer: 2,
+    time: 2
+  },
   check: function(game) {
   if(!(game.isStandard)||game.isBullet||!(game.isWon)){return false}
   const playerhist = game.playerhistory;

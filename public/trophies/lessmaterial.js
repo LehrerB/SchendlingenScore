@@ -5,6 +5,12 @@ import * as utils from '../utils/javachess';
   export let winwithless = {
     title: 'Win with less',
     description: 'Win with less material.',
+    pref: {
+      win: 1,
+      bullet: 2,
+      computer: 2,
+      time: 2
+    },
     check: function(game){
         //check if the game was even won
         
@@ -19,6 +25,12 @@ import * as utils from '../utils/javachess';
   export let drawwithless = {
     title: 'Draw with less',
     description: 'Draw with less material.',
+    pref: {
+      win: 3,
+      bullet: 2,
+      computer: 2,
+      time: 2
+    },
     check: function(game){
         //check if the game was even won
         
@@ -33,6 +45,12 @@ import * as utils from '../utils/javachess';
   export let timewithless = {
     title: 'Win with less on time',
     description: 'Win with less material.',
+    pref: {
+      win: 1,
+      bullet: 2,
+      computer: 2,
+      time: 1
+    },
     check: function(game){
         //check if the game was even won
         if(!(game.isWon && game.oppNoTime)){return false}

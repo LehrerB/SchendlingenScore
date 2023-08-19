@@ -13,18 +13,36 @@ function wonVsHigherElo(diff1, diff2) { //returns true if opponent is higher bet
 export let small_underdog = {
   title: 'Small underdog',
   description: 'Gewinne gegen einen Spieler, der mindestens 40 ELO mehr hat.',
+  pref: {
+    win: 1,
+    bullet: 2,
+    computer: 3,
+    time: 2
+  },
   check: wonVsHigherElo(40,120)
 }
 
 export let middle_underdog = {
   title: 'Underdog',
   description: 'Gewinne gegen einen Spieler, der mindestens 80 ELO mehr hat.',
+  pref: {
+    win: 1,
+    bullet: 2,
+    computer: 3,
+    time: 2
+  },
   check: wonVsHigherElo(80,120)
 }
 
 export let big_underdog = {
   title: 'Big underdog',
   description: 'Gewinne gegen einen Spieler, der mindestens 120 ELO mehr hat.',
+  pref: {
+    win: 1,
+    bullet: 2,
+    computer: 3,
+    time: 2
+  },
   check: wonVsHigherElo(120,0)
 }
 
@@ -34,6 +52,12 @@ let opponents_school_unique = []
 export let new_opponent = {
   title: 'Verschiedene Gegner',
   description: 'Spiele gegen verschiedene Schülerinnen der Schule.',
+  pref: {
+    win: 2,
+    bullet: 3,
+    computer: 3,
+    time: 2
+  },
   check: function(game) {
     if(!(game.oppName.toLowerCase().includes("msch-")||game.oppName.toLowerCase().includes("misch-"))){
       return false

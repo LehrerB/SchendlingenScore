@@ -29,6 +29,12 @@ export let check_for_pawn_word = (game, word) => {
   export let spellDAB = {
     title: 'DAB',
     description: 'Buchstabiere am Anfang das Wort mit deinen Bauern und gewinne das Spiel.',
+    pref: {
+      win: 1,
+      bullet: 2,
+      computer: 2,
+      time: 2
+    },
     check: function(game) {
     //Standard Game, win
     if(!(game.isStandard) || !(game.isWon)){return false}
@@ -39,6 +45,12 @@ export let check_for_pawn_word = (game, word) => {
   export let spellHaha = {
     title: 'Haha',
     description: 'Buchstabiere am Anfang das Wort mit deinen Bauern und gewinne das Spiel.',
+    pref: {
+      win: 1,
+      bullet: 2,
+      computer: 2,
+      time: 2
+    },
     check: function(game) {
     //Standard Game, win
     if(!(game.isStandard) || !(game.isWon)){return false}
@@ -49,6 +61,12 @@ export let check_for_pawn_word = (game, word) => {
   export let spellAffe = {
     title: 'Affe',
     description: 'Buchstabiere am Anfang das Wort mit deinen Bauern und gewinne das Spiel.',
+    pref: {
+      win: 1,
+      bullet: 2,
+      computer: 2,
+      time: 2
+    },
     check: function(game) {
     //Standard Game, win
     if(!(game.isStandard) || !(game.isWon)){return false}
@@ -59,6 +77,12 @@ export let check_for_pawn_word = (game, word) => {
   export let spellAchbach = {
     title: 'Achbach',
     description: 'Buchstabiere am Anfang das Wort mit deinen Bauern und gewinne das Spiel.',
+    pref: {
+      win: 1,
+      bullet: 2,
+      computer: 2,
+      time: 2
+    },
     check: function(game) {
     //Standard Game, win
     if(!(game.isStandard) || !(game.isWon)){return false}
@@ -69,6 +93,12 @@ export let check_for_pawn_word = (game, word) => {
   export let spellGaga = {
     title: 'GAGA',
     description: 'Buchstabiere am Anfang das Wort mit deinen Bauern und gewinne das Spiel.',
+    pref: {
+      win: 1,
+      bullet: 2,
+      computer: 2,
+      time: 2
+    },
     check: function(game) {
     //Standard Game, win
     if(!(game.isStandard) || !(game.isWon)){return false}

@@ -6,6 +6,12 @@ import * as utils from '../utils/javachess';
 export let getQueenBack = {
     title: 'Wiedergeburt',
     description: <>Hol dir deine Dame zurück und gewinne das Spiel.</>,
+    pref: {
+      win: 1,
+      bullet: 3,
+      computer: 2,
+      time: 2
+    },
     check: function(game) {
     if(!(game.isStandard)||game.isBullet||!(game.isWon)){return false}
     const playerhist = game.playerhistory;
@@ -41,6 +47,12 @@ export let getQueenBack = {
 export let secondQueen = {
     title: 'Zweite Dame',
     description: <>Hol dir eine zweite Dame und gewinne das Spiel.</>,
+    pref: {
+      win: 1,
+      bullet: 3,
+      computer: 2,
+      time: 2
+    },
     check: function(game) {
     if(!(game.isStandard)||game.isBullet||!(game.isWon)){return false}
     const playerhist = game.playerhistory;
@@ -63,6 +75,12 @@ export let secondQueen = {
 export let underpromote = {
     title: 'Mal was anderes',
     description: <>Wandle deinen Bauer in eine andere Figur als die Dame um. Gewinne das Spiel.</>,
+    pref: {
+      win: 1,
+      bullet: 3,
+      computer: 2,
+      time: 2
+    },
     check: function(game) {
     if(!(game.isStandard)||game.isBullet||!(game.isWon)){return false}
     const playerhist = game.playerhistory;
@@ -82,6 +100,12 @@ export let underpromote = {
 export let withTwoRooks = {
     title: '2 Türme',
     description: <>Gewinne mit zwei Türmen.</>,
+    pref: {
+      win: 1,
+      bullet: 3,
+      computer: 2,
+      time: 2
+    },
     check: function(game) {
     if(!(game.isStandard)||game.isBullet||!(game.isWon)){return false}
     let lastfen = game.lastfen
@@ -102,6 +126,12 @@ export let withTwoRooks = {
 export let withOneQueen = {
     title: '1 Dame',
     description: <>Gewinne mit einer Dame.</>,
+    pref: {
+      win: 1,
+      bullet: 3,
+      computer: 2,
+      time: 2
+    },
     check: function(game) {
     if(game.isBullet||!(game.isWon)){return false} 
     if(game.history().length < 6){return false} //not standard, but not just 2 moves
@@ -124,6 +154,12 @@ export let withOneQueen = {
 export let withOneRook = {
     title: '1 Turm',
     description: <>Gewinne mit einem Turm.</>,
+    pref: {
+      win: 1,
+      bullet: 3,
+      computer: 2,
+      time: 2
+    },
     check: function(game) {
     if(game.isBullet||!(game.isWon)){return false} //not standard, but not just 2 moves
     if(game.history().length < 6){return false}
@@ -149,6 +185,12 @@ export let withOneRook = {
 export let withTwoBishops = {
     title: '2 Läufer',
     description: <>Gewinne mit zwei Läufern.</>,
+    pref: {
+      win: 1,
+      bullet: 3,
+      computer: 2,
+      time: 2
+    },
     check: function(game) {
     if(game.isBullet||!(game.isWon)){return false} //not standard, but not just 2 moves
     if(game.history().length < 10){return false}
@@ -174,6 +216,12 @@ export let withTwoBishops = {
 export let withBishopKnight = {
     title: '1 Läufer und 1 Pferd',
     description: <>Gewinne mit einem Läufer und einem Pferd.</>,
+    pref: {
+      win: 1,
+      bullet: 3,
+      computer: 2,
+      time: 2
+    },
     check: function(game) {
     if(game.isBullet||!(game.isWon)){return false} //not standard, but not just 2 moves
     if(game.history().length < 10){return false}
@@ -198,6 +246,12 @@ export let withBishopKnight = {
 export let onlyPawnsLeft = {
     title: 'Nur noch Bauern',
     description: <>Gewinne ein Spiel, in dem du an einem Punkt nur noch Bauern hattest.</>,
+    pref: {
+      win: 1,
+      bullet: 3,
+      computer: 2,
+      time: 2
+    },
     check: function(game) {
     if(!(game.isStandard)||game.isBullet||!(game.isWon)){return false}
     let lastfen = game.lastfen
