@@ -97,8 +97,7 @@ function Achievement({ name, ach }) {
       <div className={styles.trophyList}>&#8203;{ach.urls.map((url, index) => <a key={index} href={url} target="_blank" rel="noopener noreferrer">🏆</a>)}</div>
       <div className={styles.details}>
         <p>{checks[name].description}</p>
-      </div>
-      <div className={styles.details}>
+      
       <div className={styles.iconbox}>
       {(checks[name].pref != undefined && checks[name].pref.win != undefined) && <img className={styles.icon} src='/check_trophy.svg' alt="Gewinnen"></img>}
       {(checks[name].pref != undefined && checks[name].pref.win != undefined && checks[name].pref.win === 1) && <img className={styles.icon} src='/check_1exclamation.svg' alt="Muss"></img>}
@@ -306,7 +305,7 @@ export default function Home() {
               <Achievement name={"mattStattPatt5"} ach={achievements.mattStattPatt5} />
               <Achievement name={"mattStattPatt6"} ach={achievements.mattStattPatt6} />
             </div>
-            {Object.values(achievements).map(ach => ach.urls.length > 0).reduce((partialSum, a) => partialSum + a, 0)>20 && <>
+            {Object.values(achievements).map(ach => ach.urls.length > 0).reduce((partialSum, a) => partialSum + a, 0)>29 && <>
             <h3>Blödeleien</h3>
             <div className={styles.achWrap}>
               <Achievement name={"spellGG"} ach={achievements.spellGG} />

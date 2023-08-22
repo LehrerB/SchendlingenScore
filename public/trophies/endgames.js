@@ -109,13 +109,11 @@ export let withTwoRooks = {
     check: function(game) {
     if(!(game.isStandard)||game.isBullet||!(game.isWon)){return false}
     let lastfen = game.lastfen
-    //define pieces if white and black
+    //define rook and rook of opponent
     let rook = game.isWhite ? 'R' : 'r'
-    let bishop = game.isWhite ? 'B' : 'b'
-    let knight = game.isWhite ? 'N' : 'n'
-    let queen = game.isWhite ? 'Q' : 'q'
+    let opp_rook = game.isWhite ? 'r' : 'R'
     //check for bishop, knight and queen, pawns allowed
-    if(lastfen.includes(bishop)||lastfen.includes(knight)||lastfen.includes(queen)){return false}
+    if(lastfen.includes(opp_rook)||lastfen.includes('N')||lastfen.includes('n')||lastfen.includes('B')||lastfen.includes('b')||lastfen.includes('Q')||lastfen.includes('q')){return false}
     //count rooks
     const count = lastfen.split('').filter((char) => char === rook).length;
     if(count != 2){return false}
@@ -164,15 +162,12 @@ export let withOneRook = {
     if(game.isBullet||!(game.isWon)){return false} //not standard, but not just 2 moves
     if(game.history().length < 6){return false}
     let lastfen = game.lastfen
-    //define pieces if white and black
-    let rook = game.isWhite ? 'R' : 'r'
-    let bishop = game.isWhite ? 'B' : 'b'
-    let knight = game.isWhite ? 'N' : 'n'
-    let queen = game.isWhite ? 'Q' : 'q'
-    let pawn = game.isWhite ? 'P' : 'p'
-    //check for bishop, knight and queen, pawns NOT allowed
-    if(lastfen.includes(bishop)||lastfen.includes(knight)||lastfen.includes(queen)||lastfen.includes(pawn)){return false}
-    //count rooks
+   //define rook and rook of opponent
+   let rook = game.isWhite ? 'R' : 'r'
+   let opp_rook = game.isWhite ? 'r' : 'R'
+   //check for bishop, knight and queen, pawns allowed
+   if(lastfen.includes(opp_rook)||lastfen.includes('N')||lastfen.includes('n')||lastfen.includes('B')||lastfen.includes('b')||lastfen.includes('Q')||lastfen.includes('q')){return false}
+   //count rooks
     const count = lastfen.split('').filter((char) => char === rook).length;
     //console.log(game.header().Site)
     //console.log(count)

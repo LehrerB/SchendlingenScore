@@ -19,6 +19,12 @@ export let check_for_pawn_word = (game, word) => {
   export let spellGG = {
     title: 'GG',
     description: 'Buchstabiere am Anfang das Wort "gg" mit deinen Bauern und gewinne das Spiel.',
+    pref: {
+      win: 1,
+      bullet: 2,
+      computer: 2,
+      time: 2
+    },
     check: function(game) {
     //Standard Game, win
     if(!(game.isStandard) || !(game.isWon)){return false}

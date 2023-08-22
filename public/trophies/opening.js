@@ -46,7 +46,7 @@ export let noFool = {
 
 export let textbookOpening = {
   title: 'Vorbildlich',
-  description: <>Vorbildliche Eröffnung: Besetze das Zentrum, entwickle alle Leichtfiguren und mache die Rochade. Gewinne danach das Spiel.</>,
+  description: <>Vorbildliche Eröffnung: Besetze das Zentrum, entwickle alle Leichtfiguren und mache die Rochade.</>,
   pref: {
     win: 1,
     bullet: 2,

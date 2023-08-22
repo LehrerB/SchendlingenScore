@@ -18,8 +18,8 @@ export let castleWithCheck = {
 }
 
 export let enpeasant = {
-  title: 'En Peasant',
-  description: <>Schlage einen Bauern En Peasant und gewinne danach das Spiel.</>,
+  title: 'En Passant',
+  description: <>Schlage einen Bauern En Passant und gewinne danach das Spiel.</>,
   pref: {
     win: 1,
     bullet: 3,
