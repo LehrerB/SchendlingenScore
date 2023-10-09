@@ -99,7 +99,7 @@ export let underpromote = {
 
 export let withTwoRooks = {
     title: '2 Türme',
-    description: <>Gewinne mit zwei Türmen.</>,
+    description: <>Gewinne mit 2 Türmen. <a href="https://nimble.li/2d55l5d3" target="_blank">(LINK)</a></>,
     pref: {
       win: 1,
       bullet: 3,
@@ -123,7 +123,7 @@ export let withTwoRooks = {
 
 export let withOneQueen = {
     title: '1 Dame',
-    description: <>Gewinne mit einer Dame.</>,
+    description: <>Gewinne mit einer Dame. <a href="https://nimble.li/qm2kgem2" target="_blank">(LINK)</a></>,
     pref: {
       win: 1,
       bullet: 3,
@@ -151,7 +151,7 @@ export let withOneQueen = {
 
 export let withOneRook = {
     title: '1 Turm',
-    description: <>Gewinne mit einem Turm.</>,
+    description: <>Gewinne mit einem Turm. <a href="https://nimble.li/6dwa4x9l" target="_blank">(LINK)</a></>,
     pref: {
       win: 1,
       bullet: 3,
@@ -179,7 +179,7 @@ export let withOneRook = {
 
 export let withTwoBishops = {
     title: '2 Läufer',
-    description: <>Gewinne mit zwei Läufern.</>,
+    description: <>Gewinne mit 2 Läufern. <a href="https://nimble.li/omzv2pd6" target="_blank">(LINK)</a></>,
     pref: {
       win: 1,
       bullet: 3,
@@ -210,7 +210,7 @@ export let withTwoBishops = {
 
 export let withBishopKnight = {
     title: '1 Läufer und 1 Pferd',
-    description: <>Gewinne mit einem Läufer und einem Pferd.</>,
+    description: <>Gewinne mit einem Läufer und einem Pferd. <a href="https://nimble.li/vdrzp29y" target="_blank">(LINK)</a></>,
     pref: {
       win: 1,
       bullet: 3,
