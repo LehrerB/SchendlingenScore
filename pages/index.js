@@ -13,6 +13,10 @@ import * as captures from '../public/trophies/captures';
 import * as specialmoves from '../public/trophies/specialmoves';
 import * as pawnwords from '../public/trophies/pawnwords';
 import * as endgames from '../public/trophies/endgames';
+//import saved_data from '../api/saved_data.json';
+const fs = require("fs");
+let saved_data = fs.readFileSync("pages/api/saved_data.json")
+console.log(saved_data)
 
 const checks = {
   basicPawnEndgame1: computer.basicPawnEndgame1,
@@ -145,7 +149,7 @@ export default function Home() {
 
     let newAch = createAchievementsDict();
 
-    let url = `https://lichess.org/api/games/user/${name}?max=${amount}`;
+    let url = `https://lichess.org/api/games/user/${name}?max=${amount}`; //an Datum anpassen
     //let url = `https://lichess.org/api/games/user/${name}?max=${amount}&perfType=ultraBullet,bullet,blitz,rapid,classical`;
     if (local === true) {
       url = 'http://localhost:3000/custom.txt'
@@ -163,7 +167,7 @@ export default function Home() {
         games.forEach(game => {
 
           const chess = parseLichessGame(game, name);
-          if (chess === null || chess.history().length < 3) {
+          if (chess === null || chess.history().length < 3 || chess.isWeirdVariant) {
             return;
           }
 
@@ -176,8 +180,7 @@ export default function Home() {
           }
         });
 
-
-        setAchievement(newAch);
+        setAchievement(newAch); //Achievements get updated to show user
         setLoadingStatus(LOADING_STATUS_DONE);
       })
       .catch(error => {
