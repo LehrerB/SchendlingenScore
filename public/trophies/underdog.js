@@ -66,7 +66,6 @@ export let new_opponent = {
       return false
     }
     opponents_school_unique.push(game.oppName.toLowerCase());
-    console.log(opponents_school_unique);
     return true
   }
 }
