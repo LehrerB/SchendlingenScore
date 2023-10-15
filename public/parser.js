@@ -1,5 +1,24 @@
 import { Chess } from 'chess.js';
 
+let banned_games = [
+  "https://lichess.org/uMQzhegX",
+  "https://lichess.org/BIAVenHR",
+  "https://lichess.org/xmH5XVVJ",
+  "https://lichess.org/DPENkKoJ",
+]
+
+function checkForBannedGames(str, banned_games) {
+  for (const bannedGame of banned_games) {
+    if (str.includes(bannedGame)) {
+      // Match found, return or perform the desired action
+      return true;
+    }
+  }
+  // No match found, continue with your code
+  return false;
+  // If you want to return something specific in case of no match, do it here
+}
+
 function attachHeaders(chess, str) {
   /*
   [Event "Rated Blitz game"]
@@ -41,9 +60,12 @@ export default function parseLichessGame(str, name) {
     return null;
   }
   //check for variants
-  if(!(str.includes('[Variant "From Position"]')||str.includes('[Variant "Standard"]')    )){ //||str.includes('[Variant "Chess960"]')
+  if(!(str.includes('[Variant "From Position"]')||str.includes('[Variant "Standard"]'))){ //||str.includes('[Variant "Chess960"]')
     return null;
   }
+  //check for banned games
+  if(checkForBannedGames(str, banned_games)){ 
+    return null}
 
   //console.log(str);
   chess.loadPgn(str); //can import from whole string instead of moves[1] //.replace('[Variant "Chess960"]','[Variant "From Position"]')

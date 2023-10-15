@@ -14,9 +14,24 @@ import * as specialmoves from '../public/trophies/specialmoves';
 import * as pawnwords from '../public/trophies/pawnwords';
 import * as endgames from '../public/trophies/endgames';
 //import saved_data from '../api/saved_data.json';
-const fs = require("fs");
-let saved_data = fs.readFileSync("pages/api/saved_data.json")
-console.log(saved_data)
+
+  const dataurl = '/saved_data.json'; // Relative URL to your JSON file
+  let bigdata;
+  fetch(dataurl)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json(); // Parse the JSON response
+    })
+    .then(data => {
+      bigdata = data;
+      console.log('Bigdata:',data); // Use the JSON data in your application
+    })
+    .catch(error => {
+      console.error('Error fetching JSON data:', error);
+    });
+/**/
 
 const checks = {
   basicPawnEndgame1: computer.basicPawnEndgame1,
@@ -128,6 +143,12 @@ function Achievement({ name, ach }) {
   );
 }
 
+function artificialBreak() {
+  setTimeout(function() {
+    // Code to execute after the artificial break
+  }, 20); // 20 milliseconds
+}
+
 const LOADING_STATUS_PRE = 0;
 const LOADING_STATUS_RUNNING = 1;
 const LOADING_STATUS_ERROR = 2;
@@ -136,24 +157,68 @@ const LOADING_STATUS_DONE = 3;
 export default function Home() {
   const isDev = process.env.NODE_ENV !== 'production';
 
-  const [name, setName] = useState(isDev ? 'lawtrafalgar02' : 'msch-'); //smart
-  const [amount, setAmount] = useState(isDev ? '20' : '50');
+  const [name, setName] = useState(isDev ? 'msch-jakhal' : 'msch-'); //smart
+  const [amount, setAmount] = useState(isDev ? 'all' : '50');
   const [loadingStatus, setLoadingStatus] = useState(LOADING_STATUS_PRE);
   const [errorMsg, setErrorMsg] = useState('');
   const [achievements, setAchievement] = useState(createAchievementsDict());
+  const [view, setView] = useState(0);
+  const [namelist, setUsername] = useState('');
+
+  const toggleView = () => {
+    // Toggle between View 0 and View 1
+    setView(view === 0 ? 1 : 0);
+  };
 
 
   const fetchAndAnalyzeGames = (local) => {
     setLoadingStatus(LOADING_STATUS_RUNNING);
     setErrorMsg('');
 
-    let newAch = createAchievementsDict();
 
-    let url = `https://lichess.org/api/games/user/${name}?max=${amount}`; //an Datum anpassen
-    //let url = `https://lichess.org/api/games/user/${name}?max=${amount}&perfType=ultraBullet,bullet,blitz,rapid,classical`;
+          const oneMonthAgo = new Date();
+          oneMonthAgo.setMonth(oneMonthAgo.getMonth() - 1);
+          const timestampOneMonthAgo = oneMonthAgo.getTime();
+
+          const oneYearAgo = new Date();
+          oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1);
+          const timestampOneYearAgo = oneYearAgo.getTime();
+
+          let usernames = namelist.trim().split('\n');
+          const nameArray = view === 0 ? [name] : usernames;
+          console.log('Usernamen:', nameArray);
+  
+  let objectArray = [];
+  nameArray.forEach((currentname, index) => {
+    //setTimeout(() => {
+
+
+    let newAch = createAchievementsDict();
+    let url;
+    console.time('Url')
+        if (amount === "all") {
+          url = `https://lichess.org/api/games/user/${currentname}`;
+          const userobjectIndex = bigdata.findIndex(item => item.username.toLowerCase() === currentname.toLowerCase());
+          if(userobjectIndex != -1) {
+            let userobject = bigdata[userobjectIndex];
+            console.log('Found userobject:',userobjectIndex)
+            newAch = userobject.ach;
+            url = `https://lichess.org/api/games/user/${currentname}?since=${userobject.timestamp}`;
+          }
+        } else if (amount === "month") {
+          url = `https://lichess.org/api/games/user/${currentname}?since=${timestampOneMonthAgo}`;
+        } else if (amount === "year") {
+          url = `https://lichess.org/api/games/user/${currentname}?since=${timestampOneYearAgo}`;
+        } else {
+          // For other cases (50, 200, 1000), use the provided amount
+          url = `https://lichess.org/api/games/user/${currentname}?max=${amount}`;
+        }
+    console.timeEnd('Url')
+    console.log(url)
     if (local === true) {
       url = 'http://localhost:3000/custom.txt'
     }
+    
     fetch(url, { headers: { 'Content-Type': 'text/plain; charset=utf-8' } })
       .then(response => response.text())
       .then(data => {
@@ -161,12 +226,12 @@ export default function Home() {
         if (local === true) {
           games = data.trim().split('\r\n\r\n\r\n'); //local files are encoded with \r\n instead of \n
         } else {
-          games = data.trim().split('\n\n\n')
+          games = data.trim().split('\n\n\n');
         }
         //let newAch = checks.map(value => { return { 'title': value.title, 'description': value.description, 'check': value.check, 'urls': [] } });
         games.forEach(game => {
 
-          const chess = parseLichessGame(game, name);
+          const chess = parseLichessGame(game, currentname);
           if (chess === null || chess.history().length < 3 || chess.isWeirdVariant) {
             return;
           }
@@ -180,14 +245,49 @@ export default function Home() {
           }
         });
 
+        if(view === 0){
         setAchievement(newAch); //Achievements get updated to show user
+        }
+        if (index === nameArray.length - 1) {
         setLoadingStatus(LOADING_STATUS_DONE);
+        }
       })
       .catch(error => {
         setLoadingStatus(LOADING_STATUS_ERROR);
         console.error('Error fetching games:', error);
         setErrorMsg('Error: ' + error);
       });
+    
+
+      if(view === 0 && isDev){
+      console.log('Object',{username: currentname, timestamp: Math.floor(Date.now() / 1000)*1000, ach: newAch})
+      objectArray.push({username: currentname, timestamp: Math.floor(Date.now() / 1000)*1000, ach: newAch})
+      }
+    //}, index * 10000);
+    });
+    
+    //setTimeout(() => {
+    if(view === 1 && isDev){
+    console.log('ObjectArray:')
+    console.log(objectArray)
+    let new_bigdata = bigdata;
+
+    // Loop through objectArray
+  objectArray.forEach(newObj => {
+  const existingObjIndex = new_bigdata.findIndex(obj => obj.username === newObj.username);
+
+  if (existingObjIndex !== -1) {
+    // If the username exists, replace the object in new_bigdata
+    new_bigdata[existingObjIndex] = newObj;
+  } else {
+    // If the username doesn't exist, add the object to new_bigdata
+    new_bigdata.push(newObj);
+  }
+});
+
+console.log(new_bigdata);
+    }
+  //}, nameArray.length * 10000);
   };
 
   return (
@@ -205,15 +305,57 @@ export default function Home() {
         <h1 className={styles.title}>Schendlingen Score</h1>
         <div className={styles.description}>
 
-          <label>
-            Lichess Benutzername
-            <input className={styles.input} value={name} onChange={e => setName(e.target.value)} name="lichessName" />
-          </label>
-          <br />
-          <label>
-            Anzahl der Spiele
-            <input className={styles.input} type='number' value={amount} onChange={e => setAmount(e.target.value)} name="amount" />
-          </label>
+        {isDev && (
+          <button onClick={toggleView}>Toggle View</button>
+        )}
+
+        <br />
+        {view === 0 ? (
+            <>
+              <label>
+                Lichess Benutzername
+                <input
+                  className={styles.input}
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  name="lichessName"
+                />
+              </label>
+            </>
+          ) : (
+            <>
+            <div className={styles.inputContainer}>
+            <label>
+                Usernamen
+                <textarea
+                  className={styles.input}
+                  rows="5"
+                  value={namelist}
+                  onChange={(e) => setUsername(e.target.value)}
+                  name="username"
+                />
+              </label>
+            </div>
+            </>
+          )}
+            <br />
+            <label>
+              Anzahl der Spiele
+              <select
+                className={styles.input}
+                value={amount}
+                onChange={(e) => setAmount(e.target.value)}
+                name="amount"
+              >
+                <option value="all">Alle</option>
+                <option value="50">50 Spiele</option>
+                <option value="200"> 200 Spiele</option>
+                <option value="1000">1000 Spiele</option>
+                <option value="month">Letzter Monat</option>
+                <option value="year">Letztes Jahr</option>
+
+              </select>
+            </label>
           <br />
           <button className={styles.button} disabled={loadingStatus == LOADING_STATUS_RUNNING} onClick={fetchAndAnalyzeGames}>{(loadingStatus == LOADING_STATUS_RUNNING) ? 'Ladet...' : 'Start'}</button>
           {isDev && <button onClick={() => fetchAndAnalyzeGames(true)}>Load local</button>}

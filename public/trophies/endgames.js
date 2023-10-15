@@ -210,7 +210,7 @@ export let withTwoBishops = {
 
 export let withBishopKnight = {
     title: '1 Läufer und 1 Pferd',
-    description: <>Gewinne mit einem Läufer und einem Pferd. <a href="https://nimble.li/vdrzp29y" target="_blank">(LINK)</a></>,
+    description: <>Gewinne mit einem Läufer und einem Pferd. <a href="https://nimble.li/vdrzp29y" target="_blank">(LINK)</a> (Stufe 6+)</>,
     pref: {
       win: 1,
       bullet: 3,
@@ -220,6 +220,10 @@ export let withBishopKnight = {
     check: function(game) {
     if(game.isBullet||!(game.isWon)){return false} //not standard, but not just 2 moves
     if(game.history().length < 10){return false}
+    if(game.isComputer){
+      const complvl = parseInt(game.oppName.replace("lichess AI level ",""));
+      if(complvl < 6) { return }
+    }
     let lastfen = game.lastfen
     //define pieces if white and black
     let rook = game.isWhite ? 'R' : 'r'
