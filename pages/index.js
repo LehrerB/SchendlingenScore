@@ -355,7 +355,7 @@ export default function Home() {
     for (let index = 0; index < nameArray.length; index++) {
       const currentname = nameArray[index];
       await processPlayerData(currentname, index);
-      await delay(250);
+      await delay(150);
     }
     //end of fetchData
   }
