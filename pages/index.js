@@ -34,53 +34,62 @@ import * as endgames from '../public/trophies/endgames';
 /**/
 
 const checks = {
-  basicPawnEndgame1: computer.basicPawnEndgame1,
-  basicPawnEndgame2: computer.basicPawnEndgame2,
-  onlyPawnMoves: opening.onlyPawnMoves,
-  withBishopKnight: endgames.withBishopKnight,
-  withTwoBishops: endgames.withTwoBishops,
-  withOneQueen: endgames.withOneQueen,
-  withOneRook: endgames.withOneRook,
-  withTwoRooks: endgames.withTwoRooks,
-  secondQueen: endgames.secondQueen,
-  enpeasant: specialmoves.enpeasant,
-  mateAfterCapture: checkmates.mateAfterCapture,
   wonWithWhite: result.wonWithWhite,
   wonWithBlack: result.wonWithBlack,
+
+  new_opponent: underdog.new_opponent,
   small_underdog: underdog.small_underdog,
   /*big_underdog: underdog.big_underdog,*/
-  new_opponent: underdog.new_opponent,
+  rookSniper: opening.rookSniper,
+
   textbookOpening: opening.textbookOpening,
   noFool: opening.noFool,
-  battlefield: captures.battlefield,
-  peacefulmode: captures.peacefulmode,
+  onlyPawnMoves: opening.onlyPawnMoves,
+
   mateWithQueen: checkmates.mateWithQueen,
   mateWithRook: checkmates.mateWithRook,
   mateWithBishop: checkmates.mateWithBishop,
   mateWithKnight: checkmates.mateWithKnight,
-  mateWithKing: checkmates.mateWithKing,
   mateWithPawn: checkmates.mateWithPawn,
+  mateWithKing: checkmates.mateWithKing,
+  mateOnBackRank: checkmates.mateOnBackRank,
+  mateWithLess: checkmates.mateWithLess,
+  mateAfterCapture: checkmates.mateAfterCapture,
+
+  secondQueen: endgames.secondQueen,
+  underpromote: endgames.underpromote,
+  withTwoRooks: endgames.withTwoRooks,
+  withOneQueen: endgames.withOneQueen,
+  withOneRook: endgames.withOneRook,
+  withTwoBishops: endgames.withTwoBishops,
+  withBishopKnight: endgames.withBishopKnight,
+  drawWithKing: result.drawWithKing,
+  justTwoKings: result.justTwoKings,
+
+  enpeasant: specialmoves.enpeasant,
+  castleWithCheck: specialmoves.castleWithCheck,
+  battlefield: captures.battlefield,
+  peacefulmode: captures.peacefulmode,
+
   wonVsComputer1: computer.wonVsComputer1,
   wonVsComputer2: computer.wonVsComputer2,
   wonVsComputer3: computer.wonVsComputer3,
   wonVsComputer8NoQueen: computer.wonVsComputer8NoQueen,
+  basicPawnEndgame1: computer.basicPawnEndgame1,
+  basicPawnEndgame2: computer.basicPawnEndgame2,
+
   mattStattPatt1: computer.mattStattPatt1,
   mattStattPatt2: computer.mattStattPatt2,
   mattStattPatt3: computer.mattStattPatt3,
   mattStattPatt4: computer.mattStattPatt4,
   mattStattPatt5: computer.mattStattPatt5,
   mattStattPatt6: computer.mattStattPatt6,
-  rookSniper: opening.rookSniper,
-  mateOnBackRank: checkmates.mateOnBackRank,
-  mateWithLess: checkmates.mateWithLess,
+
   spellGG: pawnwords.spellGG,
   spellDAB: pawnwords.spellDAB,
   spellHaha: pawnwords.spellHaha,
   spellAffe: pawnwords.spellAffe,
-  justTwoKings: result.justTwoKings,
-  drawWithKing: result.drawWithKing,
-  castleWithCheck: specialmoves.castleWithCheck,
-  underpromote: endgames.underpromote
+
   /*didNotLose           : result.didNotLose,
   mateAfter1capture    : checkmates.mateAfter1capture,
   mateAfter2capture    : checkmates.mateAfter2capture,
@@ -143,16 +152,85 @@ function Achievement({ name, ach }) {
   );
 }
 
-function artificialBreak() {
-  setTimeout(function() {
-    // Code to execute after the artificial break
-  }, 20); // 20 milliseconds
+function createAchievementTable(tableid, bigdata_input, nameArray_input, checks_input, start, end) {
+    // Get the table element by ID
+    const table = document.getElementById(tableid);
+    table.innerHTML = ''; 
+    // Create a header row
+    const headerRow = document.createElement('tr');
+  
+    // Create columns for usernames
+    const usernameCell = document.createElement('th');
+    usernameCell.textContent = 'Benutzernamen';
+    headerRow.appendChild(usernameCell);
+  
+    // Create an array to store unique achievement names
+    const uniqueAchievements = Object.keys(checks_input);
+    const greenAchievement = [
+      "mattStattPatt1",
+      "mattStattPatt2",
+      "mattStattPatt3",
+      "mattStattPatt4",
+      "mattStattPatt5",
+      "mattStattPatt6",
+      
+    ]
+    // Create columns for unique achievement names
+    for (let i = start; i < end; i++) {
+      const achKey = uniqueAchievements[i];
+      const th = document.createElement('th');
+      const title = checks_input[achKey].title;
+
+      th.classList.add('rotated_cell');
+      if(greenAchievement.includes(achKey)){th.classList.add('green_ach');}
+  
+      const div = document.createElement("div");
+      div.classList.add('rotate_text') // Apply the 'rotate_text' class
+      div.textContent = title;
+      th.appendChild(div);
+      headerRow.appendChild(th);
+    }
+  
+    // Append the header row to the table
+    table.appendChild(headerRow);
+  
+    // Create rows for each user's achievements
+    for (const user of bigdata_input) {
+      if(nameArray_input.includes(user.username)){
+            const row = document.createElement('tr');
+            row.innerHTML = `<td>${user.username}</td>`;
+        
+            // Create columns for unique achievement names
+            for (let i = start; i < end; i++) {
+              const achKey = uniqueAchievements[i];
+              const ach = user.ach[achKey];
+              let the_td;
+              if(greenAchievement.includes(achKey) && ach.urls.length > 0){
+                the_td = `<td class="green_ach">${ach.urls.length}</td>`
+              } else { 
+                the_td = `<td>${ach.urls.length}</td>`
+              }
+              row.innerHTML += the_td;
+            }
+        
+            // Append the row to the table
+            table.appendChild(row);
+      }
+    }
+  }
+
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 const LOADING_STATUS_PRE = 0;
 const LOADING_STATUS_RUNNING = 1;
 const LOADING_STATUS_ERROR = 2;
 const LOADING_STATUS_DONE = 3;
+let secondview = false;
+
+
+
 
 export default function Home() {
   const isDev = process.env.NODE_ENV !== 'production';
@@ -172,10 +250,13 @@ export default function Home() {
 
 
   const fetchAndAnalyzeGames = (local) => {
+    if(name === "view"){
+      setName("msch-");
+      secondview = true;
+      return;
+    }
     setLoadingStatus(LOADING_STATUS_RUNNING);
     setErrorMsg('');
-
-
           const oneMonthAgo = new Date();
           oneMonthAgo.setMonth(oneMonthAgo.getMonth() - 1);
           const timestampOneMonthAgo = oneMonthAgo.getTime();
@@ -189,13 +270,12 @@ export default function Home() {
           console.log('Usernamen:', nameArray);
   
   let objectArray = [];
-  nameArray.forEach((currentname, index) => {
-    //setTimeout(() => {
 
-
+  async function processPlayerData(currentname, index) {
     let newAch = createAchievementsDict();
-    let url;
-    console.time('Url')
+
+    function getURLofPlayer(currentname){
+      let url;
         if (amount === "all") {
           url = `https://lichess.org/api/games/user/${currentname}`;
           const userobjectIndex = bigdata.findIndex(item => item.username.toLowerCase() === currentname.toLowerCase());
@@ -213,13 +293,18 @@ export default function Home() {
           // For other cases (50, 200, 1000), use the provided amount
           url = `https://lichess.org/api/games/user/${currentname}?max=${amount}`;
         }
-    console.timeEnd('Url')
-    console.log(url)
     if (local === true) {
       url = 'http://localhost:3000/custom.txt'
     }
+    return url;
+ }   
+
     
-    fetch(url, { headers: { 'Content-Type': 'text/plain; charset=utf-8' } })
+    let url = getURLofPlayer(currentname);
+    //let games = getGamesOfURL(url);
+    //getGamesOfURL(url)
+    
+    await fetch(url, { headers: { 'Content-Type': 'text/plain; charset=utf-8' } })
       .then(response => response.text())
       .then(data => {
         let games;
@@ -228,6 +313,7 @@ export default function Home() {
         } else {
           games = data.trim().split('\n\n\n');
         }
+      
         //let newAch = checks.map(value => { return { 'title': value.title, 'description': value.description, 'check': value.check, 'urls': [] } });
         games.forEach(game => {
 
@@ -259,13 +345,27 @@ export default function Home() {
       });
     
 
-      if(view === 0 && isDev){
+      if(isDev){
       console.log('Object',{username: currentname, timestamp: Math.floor(Date.now() / 1000)*1000, ach: newAch})
       objectArray.push({username: currentname, timestamp: Math.floor(Date.now() / 1000)*1000, ach: newAch})
       }
-    //}, index * 10000);
-    });
-    
+  } //end processPlayerData
+
+  async function fetchDataForPlayers() {
+    for (let index = 0; index < nameArray.length; index++) {
+      const currentname = nameArray[index];
+      await processPlayerData(currentname, index);
+      await delay(250);
+    }
+    //end of fetchData
+  }
+  
+  // Call the async function to fetch data for players
+  
+doTheRest();
+
+async function doTheRest() {
+  await fetchDataForPlayers();
     //setTimeout(() => {
     if(view === 1 && isDev){
     console.log('ObjectArray:')
@@ -284,9 +384,15 @@ export default function Home() {
     new_bigdata.push(newObj);
   }
 });
-
-console.log(new_bigdata);
+if( view === 1 ){
+  const checks_keys_array = Object.keys(checks);
+  createAchievementTable("table1",new_bigdata, nameArray, checks, 0, (checks_keys_array.length / 2));
+  createAchievementTable("table2",new_bigdata, nameArray, checks, (checks_keys_array.length / 2 + 1), checks_keys_array.length);
+}
+console.log('New Big Data',new_bigdata);
+    
     }
+}
   //}, nameArray.length * 10000);
   };
 
@@ -305,8 +411,8 @@ console.log(new_bigdata);
         <h1 className={styles.title}>Schendlingen Score</h1>
         <div className={styles.description}>
 
-        {isDev && (
-          <button onClick={toggleView}>Toggle View</button>
+        {(isDev || secondview) && (
+          <button onClick={toggleView}>Change view</button>
         )}
 
         <br />
@@ -358,6 +464,10 @@ console.log(new_bigdata);
             </label>
           <br />
           <button className={styles.button} disabled={loadingStatus == LOADING_STATUS_RUNNING} onClick={fetchAndAnalyzeGames}>{(loadingStatus == LOADING_STATUS_RUNNING) ? 'Ladet...' : 'Start'}</button>
+          { view === 1 && <br /> }
+          { view === 1 && <table id="table1"></table> }
+          { view === 1 && <br /> }
+          { view === 1 && <table id="table2"></table> }
           {isDev && <button onClick={() => fetchAndAnalyzeGames(true)}>Load local</button>}
           <p></p>
           {loadingStatus == LOADING_STATUS_DONE && <>
@@ -481,6 +591,7 @@ console.log(new_bigdata);
           </div>
 
         </div></>}
+        
       </main>
     </div>
   )

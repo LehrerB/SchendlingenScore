@@ -23,3 +23,36 @@ h3 {
 * {
   box-sizing: border-box;
 }
+
+/*#######     Table Stuff      #######*/
+.rotate_text {
+  transform: rotate(270deg) !important;
+  width: 3rem;
+}
+
+.rotated_cell {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  height: 5rem;
+}
+
+table {
+  border-collapse: collapse; /* Merge cell borders */
+}
+
+td, th {
+  border: 1px solid #000; /* Add borders to table cells */
+  padding: 1px; /* Add padding for cell content */
+  text-align: center; /* Center-align cell content */
+}
+
+th {
+  height: 18rem;
+  vertical-align: bottom; /* Align text to the bottom */
+  padding-bottom: 1rem;
+  text-align: center; /* Align text to the left */
+}
+
+.green_ach {
+  background-color: #9bf09b;
+}
