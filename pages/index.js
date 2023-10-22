@@ -219,10 +219,18 @@ function createAchievementTable(tableid, bigdata_input, nameArray_input, checks_
     }
   }
 
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 const LOADING_STATUS_PRE = 0;
 const LOADING_STATUS_RUNNING = 1;
 const LOADING_STATUS_ERROR = 2;
 const LOADING_STATUS_DONE = 3;
+let secondview = false;
+
+
+
 
 export default function Home() {
   const isDev = process.env.NODE_ENV !== 'production';
@@ -242,10 +250,13 @@ export default function Home() {
 
 
   const fetchAndAnalyzeGames = (local) => {
+    if(name === "view"){
+      setName("msch-");
+      secondview = true;
+      return;
+    }
     setLoadingStatus(LOADING_STATUS_RUNNING);
     setErrorMsg('');
-
-
           const oneMonthAgo = new Date();
           oneMonthAgo.setMonth(oneMonthAgo.getMonth() - 1);
           const timestampOneMonthAgo = oneMonthAgo.getTime();
@@ -259,13 +270,12 @@ export default function Home() {
           console.log('Usernamen:', nameArray);
   
   let objectArray = [];
-  nameArray.forEach((currentname, index) => {
-    //setTimeout(() => {
 
-
+  async function processPlayerData(currentname, index) {
     let newAch = createAchievementsDict();
-    let url;
-    console.time('Url')
+
+    function getURLofPlayer(currentname){
+      let url;
         if (amount === "all") {
           url = `https://lichess.org/api/games/user/${currentname}`;
           const userobjectIndex = bigdata.findIndex(item => item.username.toLowerCase() === currentname.toLowerCase());
@@ -283,13 +293,18 @@ export default function Home() {
           // For other cases (50, 200, 1000), use the provided amount
           url = `https://lichess.org/api/games/user/${currentname}?max=${amount}`;
         }
-    console.timeEnd('Url')
-    console.log(url)
     if (local === true) {
       url = 'http://localhost:3000/custom.txt'
     }
+    return url;
+ }   
+
     
-    fetch(url, { headers: { 'Content-Type': 'text/plain; charset=utf-8' } })
+    let url = getURLofPlayer(currentname);
+    //let games = getGamesOfURL(url);
+    //getGamesOfURL(url)
+    
+    await fetch(url, { headers: { 'Content-Type': 'text/plain; charset=utf-8' } })
       .then(response => response.text())
       .then(data => {
         let games;
@@ -298,6 +313,7 @@ export default function Home() {
         } else {
           games = data.trim().split('\n\n\n');
         }
+      
         //let newAch = checks.map(value => { return { 'title': value.title, 'description': value.description, 'check': value.check, 'urls': [] } });
         games.forEach(game => {
 
@@ -329,13 +345,27 @@ export default function Home() {
       });
     
 
-      if(view === 0 && isDev){
+      if(isDev){
       console.log('Object',{username: currentname, timestamp: Math.floor(Date.now() / 1000)*1000, ach: newAch})
       objectArray.push({username: currentname, timestamp: Math.floor(Date.now() / 1000)*1000, ach: newAch})
       }
-    //}, index * 10000);
-    });
-    
+  } //end processPlayerData
+
+  async function fetchDataForPlayers() {
+    for (let index = 0; index < nameArray.length; index++) {
+      const currentname = nameArray[index];
+      await processPlayerData(currentname, index);
+      await delay(250);
+    }
+    //end of fetchData
+  }
+  
+  // Call the async function to fetch data for players
+  
+doTheRest();
+
+async function doTheRest() {
+  await fetchDataForPlayers();
     //setTimeout(() => {
     if(view === 1 && isDev){
     console.log('ObjectArray:')
@@ -356,11 +386,13 @@ export default function Home() {
 });
 if( view === 1 ){
   const checks_keys_array = Object.keys(checks);
-  createAchievementTable("table1",bigdata, nameArray, checks, 0, (checks_keys_array.length / 2));
-  createAchievementTable("table2",bigdata, nameArray, checks, (checks_keys_array.length / 2 + 1), checks_keys_array.length);
+  createAchievementTable("table1",new_bigdata, nameArray, checks, 0, (checks_keys_array.length / 2));
+  createAchievementTable("table2",new_bigdata, nameArray, checks, (checks_keys_array.length / 2 + 1), checks_keys_array.length);
 }
-console.log(new_bigdata);
+console.log('New Big Data',new_bigdata);
+    
     }
+}
   //}, nameArray.length * 10000);
   };
 
@@ -379,8 +411,8 @@ console.log(new_bigdata);
         <h1 className={styles.title}>Schendlingen Score</h1>
         <div className={styles.description}>
 
-        {isDev && (
-          <button onClick={toggleView}>Toggle View</button>
+        {(isDev || secondview) && (
+          <button onClick={toggleView}>Change view</button>
         )}
 
         <br />

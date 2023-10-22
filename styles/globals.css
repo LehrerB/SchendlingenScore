@@ -24,6 +24,7 @@ h3 {
   box-sizing: border-box;
 }
 
+/*#######     Table Stuff      #######*/
 .rotate_text {
   transform: rotate(270deg) !important;
   width: 3rem;
