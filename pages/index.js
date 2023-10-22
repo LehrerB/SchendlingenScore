@@ -367,7 +367,7 @@ doTheRest();
 async function doTheRest() {
   await fetchDataForPlayers();
     //setTimeout(() => {
-    if(view === 1 && isDev){
+    if(view === 1 && (isDev || secondview)){
     console.log('ObjectArray:')
     console.log(objectArray)
     let new_bigdata = bigdata;
