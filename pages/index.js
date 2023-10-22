@@ -345,7 +345,7 @@ export default function Home() {
       });
     
 
-      if(isDev){
+      if(isDev || secondview){
       console.log('Object',{username: currentname, timestamp: Math.floor(Date.now() / 1000)*1000, ach: newAch})
       objectArray.push({username: currentname, timestamp: Math.floor(Date.now() / 1000)*1000, ach: newAch})
       }
