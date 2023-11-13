@@ -16,6 +16,7 @@ export let noFool = {
   //Standard Game, no Computer, win and not white
   if(!(game.isStandard) || (game.isComputer) || !(game.isWon) || game.isWhite){return false}
   const hist = game.history();
+  console.log(game.oppName,game.history)
   //move two and three need to include Bc4 and Qf3 or Qh5
   const move2and3 = hist[2] + " " + hist[4];
   if(!(move2and3.includes("Bc4")&&(move2and3.includes("Qf3")||move2and3.includes("Qh5")))){return false}
@@ -32,13 +33,19 @@ export let noFool = {
   const squaree7 = posafter3moves.get('e7'); //squaree7.type and .color
   //if value is false, it's empty
   //check d5 and e6
-  if(!(squared5===false)||!(squaree6===false)){return false}
+  if(!(squared5===false)||!(squaree6===false)){
+    return false
+  }
   //check g6 if Qh5
-  if(move2and3.includes("Qh5") && !(squareg6===false)){return false}
+  if(move2and3.includes("Qh5") && !(squareg6===false)){
+    return false
+  }
   //check f4, f5, f6 if Qf3
   if(move2and3.includes("Qf3") && (!(squaref4===false) || !(squaref5===false) || (!(squaref6===false)&&!(squaref6.type==='n')))){return false}
   //e7 should be empty, we don't encourage Qe7, Be7, Ne7 OR Ke7 for black for this
-  if(!(squaree7===false)){return false}
+  if(!(squaree7===false)&&(squaree7.type != 'p')){
+    return false
+  }
   //finally, you did it
   return true
 }

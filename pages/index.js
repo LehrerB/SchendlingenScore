@@ -15,6 +15,9 @@ import * as pawnwords from '../public/trophies/pawnwords';
 import * as endgames from '../public/trophies/endgames';
 //import saved_data from '../api/saved_data.json';
 
+let opponents_school_unique = [];
+export { opponents_school_unique };
+
   const dataurl = '/saved_data.json'; // Relative URL to your JSON file
   let bigdata;
   fetch(dataurl)
@@ -207,12 +210,13 @@ function createAchievementTable(tableid, bigdata_input, nameArray_input, checks_
               let the_td;
               if(greenAchievement.includes(achKey) && ach.urls.length > 0){
                 the_td = `<td class="green_ach">${ach.urls.length}</td>`
-              } else { 
+              } else if(ach.urls.length === 0){ 
+                the_td = `<td class="grey_zero">${ach.urls.length}</td>`
+              } else {
                 the_td = `<td>${ach.urls.length}</td>`
               }
               row.innerHTML += the_td;
             }
-        
             // Append the row to the table
             table.appendChild(row);
       }
@@ -272,6 +276,7 @@ export default function Home() {
   let objectArray = [];
 
   async function processPlayerData(currentname, index) {
+    return new Promise((resolve, reject) => {
     let newAch = createAchievementsDict();
 
     function getURLofPlayer(currentname){
@@ -281,6 +286,7 @@ export default function Home() {
           const userobjectIndex = bigdata.findIndex(item => item.username.toLowerCase() === currentname.toLowerCase());
           if(userobjectIndex != -1) {
             let userobject = bigdata[userobjectIndex];
+            if(userobject.unique != null){opponents_school_unique = userobject.unique}
             console.log('Found userobject:',userobjectIndex)
             newAch = userobject.ach;
             url = `https://lichess.org/api/games/user/${currentname}?since=${userobject.timestamp}`;
@@ -304,7 +310,8 @@ export default function Home() {
     //let games = getGamesOfURL(url);
     //getGamesOfURL(url)
     
-    await fetch(url, { headers: { 'Content-Type': 'text/plain; charset=utf-8' } })
+    console.log('Name',currentname)
+    fetch(url, { headers: { 'Content-Type': 'text/plain; charset=utf-8' } })
       .then(response => response.text())
       .then(data => {
         let games;
@@ -330,35 +337,61 @@ export default function Home() {
             }
           }
         });
-
+      })
+      .then(data => {
         if(view === 0){
-        setAchievement(newAch); //Achievements get updated to show user
-        }
-        if (index === nameArray.length - 1) {
-        setLoadingStatus(LOADING_STATUS_DONE);
-        }
+          setAchievement(newAch); //Achievements get updated to show user
+          }
+          if (index === nameArray.length - 1) {
+          setLoadingStatus(LOADING_STATUS_DONE);
+          if(isDev || secondview){
+            console.log('Object',{username: currentname, timestamp: Math.floor(Date.now() / 1000)*1000, ach: newAch, unique: opponents_school_unique})
+            objectArray.push({username: currentname, timestamp: Math.floor(Date.now() / 1000)*1000, ach: newAch, unique: opponents_school_unique})
+            opponents_school_unique = []; //empty again
+          }
+          resolve();
+          }
       })
       .catch(error => {
         setLoadingStatus(LOADING_STATUS_ERROR);
         console.error('Error fetching games:', error);
         setErrorMsg('Error: ' + error);
+        if(isDev || secondview){
+          console.log('Object',{username: currentname, timestamp: Math.floor(Date.now() / 1000)*1000, ach: newAch, unique: opponents_school_unique})
+          objectArray.push({username: currentname, timestamp: Math.floor(Date.now() / 1000)*1000, ach: newAch, unique: opponents_school_unique})
+          opponents_school_unique = []; //empty again
+        }
+        reject(error);
       });
     
 
-      if(isDev || secondview){
-      console.log('Object',{username: currentname, timestamp: Math.floor(Date.now() / 1000)*1000, ach: newAch})
-      objectArray.push({username: currentname, timestamp: Math.floor(Date.now() / 1000)*1000, ach: newAch})
-      }
+
+  });
   } //end processPlayerData
 
   async function fetchDataForPlayers() {
-    for (let index = 0; index < nameArray.length; index++) {
-      const currentname = nameArray[index];
-      await processPlayerData(currentname, index);
-      await delay(150);
-    }
-    //end of fetchData
+    const delayTime = 500; // Minimum delay time in milliseconds
+    const promises = nameArray.map((currentname, index) => {
+      return new Promise(async resolve => {
+        const startTime = Date.now();
+        await processPlayerData(currentname, index);
+  
+        const processingTime = Date.now() - startTime;
+        const remainingTime = Math.max(delayTime - processingTime, 0);
+  
+        // Implementing a minimum delay logic
+        if (remainingTime > 0) {
+          await new Promise(res => setTimeout(res, remainingTime));
+        }
+  
+        resolve();
+      });
+    });
+  
+    await Promise.all(promises);
+    // Continue after all processing is done or at least after 500ms for each iteration
   }
+  
   
   // Call the async function to fetch data for players
   
@@ -367,7 +400,7 @@ doTheRest();
 async function doTheRest() {
   await fetchDataForPlayers();
     //setTimeout(() => {
-    if(view === 1 && (isDev || secondview)){
+    if( (view === 1 || view === 0) && (isDev || secondview)){
     console.log('ObjectArray:')
     console.log(objectArray)
     let new_bigdata = bigdata;
@@ -378,11 +411,13 @@ async function doTheRest() {
 
   if (existingObjIndex !== -1) {
     // If the username exists, replace the object in new_bigdata
+    
     new_bigdata[existingObjIndex] = newObj;
   } else {
     // If the username doesn't exist, add the object to new_bigdata
     new_bigdata.push(newObj);
   }
+
 });
 if( view === 1 ){
   const checks_keys_array = Object.keys(checks);
