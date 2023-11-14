@@ -16,7 +16,6 @@ export let noFool = {
   //Standard Game, no Computer, win and not white
   if(!(game.isStandard) || (game.isComputer) || !(game.isWon) || game.isWhite){return false}
   const hist = game.history();
-  console.log(game.oppName,game.history)
   //move two and three need to include Bc4 and Qf3 or Qh5
   const move2and3 = hist[2] + " " + hist[4];
   if(!(move2and3.includes("Bc4")&&(move2and3.includes("Qf3")||move2and3.includes("Qh5")))){return false}

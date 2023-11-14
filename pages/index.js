@@ -18,22 +18,22 @@ import * as endgames from '../public/trophies/endgames';
 let opponents_school_unique = [];
 export { opponents_school_unique };
 
-  const dataurl = '/saved_data.json'; // Relative URL to your JSON file
-  let bigdata;
-  fetch(dataurl)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      return response.json(); // Parse the JSON response
-    })
-    .then(data => {
-      bigdata = data;
-      console.log('Bigdata:',data); // Use the JSON data in your application
-    })
-    .catch(error => {
-      console.error('Error fetching JSON data:', error);
-    });
+const dataurl = '/saved_data.json'; // Relative URL to your JSON file
+let bigdata;
+fetch(dataurl)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json(); // Parse the JSON response
+  })
+  .then(data => {
+    bigdata = data;
+    console.log('Bigdata:', data); // Use the JSON data in your application
+  })
+  .catch(error => {
+    console.error('Error fetching JSON data:', error);
+  });
 /**/
 
 const checks = {
@@ -128,100 +128,102 @@ function Achievement({ name, ach }) {
       <div className={styles.trophyList}>&#8203;{ach.urls.map((url, index) => <a key={index} href={url} target="_blank" rel="noopener noreferrer">🏆</a>)}</div>
       <div className={styles.details}>
         <p>{checks[name].description}</p>
-      
-      <div className={styles.iconbox}>
-      {(checks[name].pref != undefined && checks[name].pref.win != undefined) && <img className={styles.icon} src='/check_trophy.svg' alt="Gewinnen"></img>}
-      {(checks[name].pref != undefined && checks[name].pref.win != undefined && checks[name].pref.win === 1) && <img className={styles.icon} src='/check_1exclamation.svg' alt="Muss"></img>}
-      {(checks[name].pref != undefined && checks[name].pref.win != undefined && checks[name].pref.win === 2) && <img className={styles.icon} src='/check_2haken.svg' alt="Erlaubt"></img>}
-      {(checks[name].pref != undefined && checks[name].pref.win != undefined && checks[name].pref.win === 3) && <img className={styles.icon} src='/check_3x.svg' alt="Nicht erlaubt"></img>}
 
-      {(checks[name].pref != undefined && checks[name].pref.bullet != undefined) && <img className={styles.icon} src='/check_bullet.svg' alt="Bullet"></img>}
-      {(checks[name].pref != undefined && checks[name].pref.bullet != undefined && checks[name].pref.bullet === 1) && <img className={styles.icon} src='/check_1exclamation.svg' alt="Muss"></img>}
-      {(checks[name].pref != undefined && checks[name].pref.bullet != undefined && checks[name].pref.bullet === 2) && <img className={styles.icon} src='/check_2haken.svg' alt="Erlaubt"></img>}
-      {(checks[name].pref != undefined && checks[name].pref.bullet != undefined && checks[name].pref.bullet === 3) && <img className={styles.icon} src='/check_3x.svg' alt="Nicht erlaubt"></img>}
-      
-      {(checks[name].pref != undefined && checks[name].pref.computer != undefined) && <img className={styles.icon} src='/check_monitor.svg' alt="Computer"></img>}
-      {(checks[name].pref != undefined && checks[name].pref.computer != undefined && checks[name].pref.computer === 1) && <img className={styles.icon} src='/check_1exclamation.svg' alt="Muss"></img>}
-      {(checks[name].pref != undefined && checks[name].pref.computer != undefined && checks[name].pref.computer === 2) && <img className={styles.icon} src='/check_2haken.svg' alt="Erlaubt"></img>}
-      {(checks[name].pref != undefined && checks[name].pref.computer != undefined && checks[name].pref.computer === 3) && <img className={styles.icon} src='/check_3x.svg' alt="Nicht erlaubt"></img>}
-      
-      {(checks[name].pref != undefined && checks[name].pref.time != undefined) && <img className={styles.icon} src='/check_hourglass.svg' alt="Zeit"></img>}
-      {(checks[name].pref != undefined && checks[name].pref.time != undefined && checks[name].pref.time === 1) && <img className={styles.icon} src='/check_1exclamation.svg' alt="Muss"></img>}
-      {(checks[name].pref != undefined && checks[name].pref.time != undefined && checks[name].pref.time === 2) && <img className={styles.icon} src='/check_2haken.svg' alt="Erlaubt"></img>}
-      {(checks[name].pref != undefined && checks[name].pref.time != undefined && checks[name].pref.time === 3) && <img className={styles.icon} src='/check_3x.svg' alt="Nicht erlaubt"></img>}
-      </div>
+        <div className={styles.iconbox}>
+          {(checks[name].pref != undefined && checks[name].pref.win != undefined) && <img className={styles.icon} src='/check_trophy.svg' alt="Gewinnen"></img>}
+          {(checks[name].pref != undefined && checks[name].pref.win != undefined && checks[name].pref.win === 1) && <img className={styles.icon} src='/check_1exclamation.svg' alt="Muss"></img>}
+          {(checks[name].pref != undefined && checks[name].pref.win != undefined && checks[name].pref.win === 2) && <img className={styles.icon} src='/check_2haken.svg' alt="Erlaubt"></img>}
+          {(checks[name].pref != undefined && checks[name].pref.win != undefined && checks[name].pref.win === 3) && <img className={styles.icon} src='/check_3x.svg' alt="Nicht erlaubt"></img>}
+
+          {(checks[name].pref != undefined && checks[name].pref.bullet != undefined) && <img className={styles.icon} src='/check_bullet.svg' alt="Bullet"></img>}
+          {(checks[name].pref != undefined && checks[name].pref.bullet != undefined && checks[name].pref.bullet === 1) && <img className={styles.icon} src='/check_1exclamation.svg' alt="Muss"></img>}
+          {(checks[name].pref != undefined && checks[name].pref.bullet != undefined && checks[name].pref.bullet === 2) && <img className={styles.icon} src='/check_2haken.svg' alt="Erlaubt"></img>}
+          {(checks[name].pref != undefined && checks[name].pref.bullet != undefined && checks[name].pref.bullet === 3) && <img className={styles.icon} src='/check_3x.svg' alt="Nicht erlaubt"></img>}
+
+          {(checks[name].pref != undefined && checks[name].pref.computer != undefined) && <img className={styles.icon} src='/check_monitor.svg' alt="Computer"></img>}
+          {(checks[name].pref != undefined && checks[name].pref.computer != undefined && checks[name].pref.computer === 1) && <img className={styles.icon} src='/check_1exclamation.svg' alt="Muss"></img>}
+          {(checks[name].pref != undefined && checks[name].pref.computer != undefined && checks[name].pref.computer === 2) && <img className={styles.icon} src='/check_2haken.svg' alt="Erlaubt"></img>}
+          {(checks[name].pref != undefined && checks[name].pref.computer != undefined && checks[name].pref.computer === 3) && <img className={styles.icon} src='/check_3x.svg' alt="Nicht erlaubt"></img>}
+
+          {(checks[name].pref != undefined && checks[name].pref.time != undefined) && <img className={styles.icon} src='/check_hourglass.svg' alt="Zeit"></img>}
+          {(checks[name].pref != undefined && checks[name].pref.time != undefined && checks[name].pref.time === 1) && <img className={styles.icon} src='/check_1exclamation.svg' alt="Muss"></img>}
+          {(checks[name].pref != undefined && checks[name].pref.time != undefined && checks[name].pref.time === 2) && <img className={styles.icon} src='/check_2haken.svg' alt="Erlaubt"></img>}
+          {(checks[name].pref != undefined && checks[name].pref.time != undefined && checks[name].pref.time === 3) && <img className={styles.icon} src='/check_3x.svg' alt="Nicht erlaubt"></img>}
+        </div>
       </div>
     </div>
   );
 }
 
 function createAchievementTable(tableid, bigdata_input, nameArray_input, checks_input, start, end) {
-    // Get the table element by ID
-    const table = document.getElementById(tableid);
-    table.innerHTML = ''; 
-    // Create a header row
-    const headerRow = document.createElement('tr');
-  
-    // Create columns for usernames
-    const usernameCell = document.createElement('th');
-    usernameCell.textContent = 'Benutzernamen';
-    headerRow.appendChild(usernameCell);
-  
-    // Create an array to store unique achievement names
-    const uniqueAchievements = Object.keys(checks_input);
-    const greenAchievement = [
-      "mattStattPatt1",
-      "mattStattPatt2",
-      "mattStattPatt3",
-      "mattStattPatt4",
-      "mattStattPatt5",
-      "mattStattPatt6",
-      
-    ]
-    // Create columns for unique achievement names
-    for (let i = start; i < end; i++) {
-      const achKey = uniqueAchievements[i];
-      const th = document.createElement('th');
-      const title = checks_input[achKey].title;
+  // Get the table element by ID
+  const table = document.getElementById(tableid);
+  table.innerHTML = '';
+  // Create a header row
+  const headerRow = document.createElement('tr');
 
-      th.classList.add('rotated_cell');
-      if(greenAchievement.includes(achKey)){th.classList.add('green_ach');}
-  
-      const div = document.createElement("div");
-      div.classList.add('rotate_text') // Apply the 'rotate_text' class
-      div.textContent = title;
-      th.appendChild(div);
-      headerRow.appendChild(th);
-    }
-  
-    // Append the header row to the table
-    table.appendChild(headerRow);
-  
-    // Create rows for each user's achievements
+  // Create columns for usernames
+  const usernameCell = document.createElement('th');
+  usernameCell.textContent = 'Benutzernamen';
+  headerRow.appendChild(usernameCell);
+
+  // Create an array to store unique achievement names
+  const uniqueAchievements = Object.keys(checks_input);
+  const greenAchievement = [
+    "mattStattPatt1",
+    "mattStattPatt2",
+    "mattStattPatt3",
+    "mattStattPatt4",
+    "mattStattPatt5",
+    "mattStattPatt6",
+
+  ]
+  // Create columns for unique achievement names
+  for (let i = start; i < end; i++) {
+    const achKey = uniqueAchievements[i];
+    const th = document.createElement('th');
+    const title = checks_input[achKey].title;
+
+    th.classList.add('rotated_cell');
+    if (greenAchievement.includes(achKey)) { th.classList.add('green_ach'); }
+
+    const div = document.createElement("div");
+    div.classList.add('rotate_text') // Apply the 'rotate_text' class
+    div.textContent = title;
+    th.appendChild(div);
+    headerRow.appendChild(th);
+  }
+
+  // Append the header row to the table
+  table.appendChild(headerRow);
+
+  // Create rows for each user's achievements
+  for (const name of nameArray) {
     for (const user of bigdata_input) {
-      if(nameArray_input.includes(user.username)){
-            const row = document.createElement('tr');
-            row.innerHTML = `<td>${user.username}</td>`;
-        
-            // Create columns for unique achievement names
-            for (let i = start; i < end; i++) {
-              const achKey = uniqueAchievements[i];
-              const ach = user.ach[achKey];
-              let the_td;
-              if(greenAchievement.includes(achKey) && ach.urls.length > 0){
-                the_td = `<td class="green_ach">${ach.urls.length}</td>`
-              } else if(ach.urls.length === 0){ 
-                the_td = `<td class="grey_zero">${ach.urls.length}</td>`
-              } else {
-                the_td = `<td>${ach.urls.length}</td>`
-              }
-              row.innerHTML += the_td;
-            }
-            // Append the row to the table
-            table.appendChild(row);
+      if (name === user.username) {
+        const row = document.createElement('tr');
+        row.innerHTML = `<td>${user.username}</td>`;
+
+        // Create columns for unique achievement names
+        for (let i = start; i < end; i++) {
+          const achKey = uniqueAchievements[i];
+          const ach = user.ach[achKey];
+          let the_td;
+          if (greenAchievement.includes(achKey) && ach.urls.length > 0) {
+            the_td = `<td class="green_ach">${ach.urls.length}</td>`
+          } else if (ach.urls.length === 0) {
+            the_td = `<td class="grey_zero">${ach.urls.length}</td>`
+          } else {
+            the_td = `<td>${ach.urls.length}</td>`
+          }
+          row.innerHTML += the_td;
+        }
+        // Append the row to the table
+        table.appendChild(row);
       }
     }
   }
+}
 
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -232,7 +234,7 @@ const LOADING_STATUS_RUNNING = 1;
 const LOADING_STATUS_ERROR = 2;
 const LOADING_STATUS_DONE = 3;
 let secondview = false;
-
+let nameArray = [];
 
 
 
@@ -254,181 +256,182 @@ export default function Home() {
 
 
   const fetchAndAnalyzeGames = (local) => {
-    if(name === "view"){
+    if (name === "view") {
       setName("msch-");
       secondview = true;
       return;
     }
     setLoadingStatus(LOADING_STATUS_RUNNING);
     setErrorMsg('');
-          const oneMonthAgo = new Date();
-          oneMonthAgo.setMonth(oneMonthAgo.getMonth() - 1);
-          const timestampOneMonthAgo = oneMonthAgo.getTime();
+    const oneMonthAgo = new Date();
+    oneMonthAgo.setMonth(oneMonthAgo.getMonth() - 1);
+    const timestampOneMonthAgo = oneMonthAgo.getTime();
 
-          const oneYearAgo = new Date();
-          oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1);
-          const timestampOneYearAgo = oneYearAgo.getTime();
+    const oneYearAgo = new Date();
+    oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1);
+    const timestampOneYearAgo = oneYearAgo.getTime();
 
-          let usernames = namelist.trim().split('\n');
-          const nameArray = view === 0 ? [name] : usernames;
-          console.log('Usernamen:', nameArray);
-  
-  let objectArray = [];
+    let usernames = namelist.trim().split('\n');
+    nameArray = view === 0 ? [name] : usernames;
+    console.log('Usernamen:', nameArray);
 
-  async function processPlayerData(currentname, index) {
-    return new Promise((resolve, reject) => {
-    let newAch = createAchievementsDict();
+    let objectArray = [];
 
-    function getURLofPlayer(currentname){
-      let url;
-        if (amount === "all") {
-          url = `https://lichess.org/api/games/user/${currentname}`;
-          const userobjectIndex = bigdata.findIndex(item => item.username.toLowerCase() === currentname.toLowerCase());
-          if(userobjectIndex != -1) {
-            let userobject = bigdata[userobjectIndex];
-            if(userobject.unique != null){opponents_school_unique = userobject.unique}
-            console.log('Found userobject:',userobjectIndex)
-            newAch = userobject.ach;
-            url = `https://lichess.org/api/games/user/${currentname}?since=${userobject.timestamp}`;
-          }
-        } else if (amount === "month") {
-          url = `https://lichess.org/api/games/user/${currentname}?since=${timestampOneMonthAgo}`;
-        } else if (amount === "year") {
-          url = `https://lichess.org/api/games/user/${currentname}?since=${timestampOneYearAgo}`;
-        } else {
-          // For other cases (50, 200, 1000), use the provided amount
-          url = `https://lichess.org/api/games/user/${currentname}?max=${amount}`;
-        }
-    if (local === true) {
-      url = 'http://localhost:3000/custom.txt'
-    }
-    return url;
- }   
+    function processPlayerData(currentname, index) {
+      return new Promise((resolve, reject) => {
+        let newAch = createAchievementsDict();
 
-    
-    let url = getURLofPlayer(currentname);
-    //let games = getGamesOfURL(url);
-    //getGamesOfURL(url)
-    
-    console.log('Name',currentname)
-    fetch(url, { headers: { 'Content-Type': 'text/plain; charset=utf-8' } })
-      .then(response => response.text())
-      .then(data => {
-        let games;
-        if (local === true) {
-          games = data.trim().split('\r\n\r\n\r\n'); //local files are encoded with \r\n instead of \n
-        } else {
-          games = data.trim().split('\n\n\n');
-        }
-      
-        //let newAch = checks.map(value => { return { 'title': value.title, 'description': value.description, 'check': value.check, 'urls': [] } });
-        games.forEach(game => {
-
-          const chess = parseLichessGame(game, currentname);
-          if (chess === null || chess.history().length < 3 || chess.isWeirdVariant) {
-            return;
-          }
-
-          for (const [key, ach] of Object.entries(checks)) {
-            if (ach.check(chess)) {
-              const add = chess.isBlack ? "/black" : "";
-              const site = chess.header().Site + add;
-              newAch[key].urls.push(site);
+        function getURLofPlayer(currentname) {
+          let url;
+          if (amount === "all") {
+            url = `https://lichess.org/api/games/user/${currentname}`;
+            const userobjectIndex = bigdata.findIndex(item => item.username.toLowerCase() === currentname.toLowerCase());
+            if (userobjectIndex != -1) {
+              let userobject = bigdata[userobjectIndex];
+              if (userobject.unique != null) { opponents_school_unique = userobject.unique }
+              console.log('Found userobject:', userobjectIndex)
+              newAch = userobject.ach;
+              url = `https://lichess.org/api/games/user/${currentname}?since=${userobject.timestamp}`;
             }
+          } else if (amount === "month") {
+            url = `https://lichess.org/api/games/user/${currentname}?since=${timestampOneMonthAgo}`;
+          } else if (amount === "year") {
+            url = `https://lichess.org/api/games/user/${currentname}?since=${timestampOneYearAgo}`;
+          } else {
+            // For other cases (50, 200, 1000), use the provided amount
+            url = `https://lichess.org/api/games/user/${currentname}?max=${amount}`;
           }
-        });
-      })
-      .then(data => {
-        if(view === 0){
-          setAchievement(newAch); //Achievements get updated to show user
+          if (local === true) {
+            url = 'http://localhost:3000/custom.txt'
           }
-          if (index === nameArray.length - 1) {
-          setLoadingStatus(LOADING_STATUS_DONE);
-          if(isDev || secondview){
-            console.log('Object',{username: currentname, timestamp: Math.floor(Date.now() / 1000)*1000, ach: newAch, unique: opponents_school_unique})
-            objectArray.push({username: currentname, timestamp: Math.floor(Date.now() / 1000)*1000, ach: newAch, unique: opponents_school_unique})
-            opponents_school_unique = []; //empty again
-          }
-          resolve();
-          }
-      })
-      .catch(error => {
-        setLoadingStatus(LOADING_STATUS_ERROR);
-        console.error('Error fetching games:', error);
-        setErrorMsg('Error: ' + error);
-        if(isDev || secondview){
-          console.log('Object',{username: currentname, timestamp: Math.floor(Date.now() / 1000)*1000, ach: newAch, unique: opponents_school_unique})
-          objectArray.push({username: currentname, timestamp: Math.floor(Date.now() / 1000)*1000, ach: newAch, unique: opponents_school_unique})
-          opponents_school_unique = []; //empty again
+          return url;
         }
-        reject(error);
+
+
+        let url = getURLofPlayer(currentname);
+        //let games = getGamesOfURL(url);
+        //getGamesOfURL(url)
+
+        console.log('Name', currentname)
+        if (view === 1) {
+          
+        }
+        fetch(url, { headers: { 'Content-Type': 'text/plain; charset=utf-8' } })
+          .then(response => response.text())
+          .then(data => {
+            let games;
+            if (local === true) {
+              games = data.trim().split('\r\n\r\n\r\n'); //local files are encoded with \r\n instead of \n
+            } else {
+              games = data.trim().split('\n\n\n');
+            }
+
+            //let newAch = checks.map(value => { return { 'title': value.title, 'description': value.description, 'check': value.check, 'urls': [] } });
+            games.forEach(game => {
+
+              const chess = parseLichessGame(game, currentname);
+              if (chess === null || chess.history().length < 3 || chess.isWeirdVariant) {
+                return;
+              }
+
+              for (const [key, ach] of Object.entries(checks)) {
+                if (ach.check(chess)) {
+                  const add = chess.isBlack ? "/black" : "";
+                  const site = chess.header().Site + add;
+                  newAch[key].urls.push(site);
+                }
+              }
+            });
+          })
+          .then(data => {
+            if (view === 0) {
+              setAchievement(newAch); //Achievements get updated to show user
+            }
+            if (isDev || secondview) {
+              console.log('Object', { username: currentname, timestamp: Math.floor(Date.now() / 1000) * 1000, ach: newAch, unique: opponents_school_unique })
+              objectArray.push({ username: currentname, timestamp: Math.floor(Date.now() / 1000) * 1000, ach: newAch, unique: opponents_school_unique })
+              opponents_school_unique = []; //empty again
+            }
+            if (index === nameArray.length - 1) {
+              setLoadingStatus(LOADING_STATUS_DONE);
+            }
+            resolve();
+          })
+          .catch(error => {
+            setLoadingStatus(LOADING_STATUS_ERROR);
+            console.error('Error fetching games:', error);
+            setErrorMsg('Error: ' + error);
+            if (isDev || secondview) {
+              console.log('Object', { username: currentname, timestamp: Math.floor(Date.now() / 1000) * 1000, ach: newAch, unique: opponents_school_unique })
+              objectArray.push({ username: currentname, timestamp: Math.floor(Date.now() / 1000) * 1000, ach: newAch, unique: opponents_school_unique })
+              opponents_school_unique = []; //empty again
+            }
+            reject(error);
+          });
+
+
+
       });
-    
+    } //end processPlayerData
 
-
-  });
-  } //end processPlayerData
-
-  async function fetchDataForPlayers() {
-    const delayTime = 500; // Minimum delay time in milliseconds
-    const promises = nameArray.map((currentname, index) => {
-      return new Promise(async resolve => {
+    async function fetchDataForPlayers() {
+      const delayTimeShort = 800; // Minimum delay time in milliseconds
+      const delayTimeLong = 4500; // Minimum delay time in milliseconds
+      const LongPauseAfter = 4;
+      for (let i = 0; i < nameArray.length; i++) {
+        let currentname = nameArray[i];
         const startTime = Date.now();
-        await processPlayerData(currentname, index);
-  
+        let delayTime = (i%LongPauseAfter != 0 || i === 0) ? delayTimeShort : delayTimeLong;
+        console.log('delay', delayTime)
+        await processPlayerData(currentname, i);
+
         const processingTime = Date.now() - startTime;
         const remainingTime = Math.max(delayTime - processingTime, 0);
-  
+
         // Implementing a minimum delay logic
         if (remainingTime > 0) {
-          await new Promise(res => setTimeout(res, remainingTime));
+          await Promise.all([new Promise(res => setTimeout(res, remainingTime))]);
         }
-  
-        resolve();
-      });
-    });
-  
-    await Promise.all(promises);
-    // Continue after all processing is done or at least after 500ms for each iteration
-  }
-  
-  
-  // Call the async function to fetch data for players
-  
-doTheRest();
-
-async function doTheRest() {
-  await fetchDataForPlayers();
-    //setTimeout(() => {
-    if( (view === 1 || view === 0) && (isDev || secondview)){
-    console.log('ObjectArray:')
-    console.log(objectArray)
-    let new_bigdata = bigdata;
-
-    // Loop through objectArray
-  objectArray.forEach(newObj => {
-  const existingObjIndex = new_bigdata.findIndex(obj => obj.username === newObj.username);
-
-  if (existingObjIndex !== -1) {
-    // If the username exists, replace the object in new_bigdata
-    
-    new_bigdata[existingObjIndex] = newObj;
-  } else {
-    // If the username doesn't exist, add the object to new_bigdata
-    new_bigdata.push(newObj);
-  }
-
-});
-if( view === 1 ){
-  const checks_keys_array = Object.keys(checks);
-  createAchievementTable("table1",new_bigdata, nameArray, checks, 0, (checks_keys_array.length / 2));
-  createAchievementTable("table2",new_bigdata, nameArray, checks, (checks_keys_array.length / 2 + 1), checks_keys_array.length);
-}
-console.log('New Big Data',new_bigdata);
-    
+      }
     }
-}
-  //}, nameArray.length * 10000);
+
+
+    // Call the async function to fetch data for players
+
+    doTheRest();
+
+    async function doTheRest() {
+      await fetchDataForPlayers();
+      //setTimeout(() => {
+      if ((view === 1 || view === 0) && (isDev || secondview)) {
+        console.log('ObjectArray:')
+        console.log(objectArray)
+        let new_bigdata = bigdata;
+
+        // Loop through objectArray
+        objectArray.forEach(newObj => {
+          const existingObjIndex = new_bigdata.findIndex(obj => obj.username === newObj.username);
+
+          if (existingObjIndex !== -1) {
+            // If the username exists, replace the object in new_bigdata
+
+            new_bigdata[existingObjIndex] = newObj;
+          } else {
+            // If the username doesn't exist, add the object to new_bigdata
+            new_bigdata.push(newObj);
+          }
+
+        });
+        if (view === 1) {
+          const checks_keys_array = Object.keys(checks);
+          createAchievementTable("table1", new_bigdata, nameArray, checks, 0, (checks_keys_array.length / 2));
+          createAchievementTable("table2", new_bigdata, nameArray, checks, (checks_keys_array.length / 2 + 1), checks_keys_array.length);
+        }
+        console.log('New Big Data', new_bigdata);
+
+      }
+    }
+    //}, nameArray.length * 10000);
   };
 
   return (
@@ -446,12 +449,12 @@ console.log('New Big Data',new_bigdata);
         <h1 className={styles.title}>Schendlingen Score</h1>
         <div className={styles.description}>
 
-        {(isDev || secondview) && (
-          <button onClick={toggleView}>Change view</button>
-        )}
+          {(isDev || secondview) && (
+            <button onClick={toggleView}>Change view</button>
+          )}
 
-        <br />
-        {view === 0 ? (
+          <br />
+          {view === 0 ? (
             <>
               <label>
                 Lichess Benutzername
@@ -465,44 +468,44 @@ console.log('New Big Data',new_bigdata);
             </>
           ) : (
             <>
-            <div className={styles.inputContainer}>
-            <label>
-                Usernamen
-                <textarea
-                  className={styles.input}
-                  rows="5"
-                  value={namelist}
-                  onChange={(e) => setUsername(e.target.value)}
-                  name="username"
-                />
-              </label>
-            </div>
+              <div className={styles.inputContainer}>
+                <label>
+                  Usernamen
+                  <textarea
+                    className={styles.input}
+                    rows="5"
+                    value={namelist}
+                    onChange={(e) => setUsername(e.target.value)}
+                    name="username"
+                  />
+                </label>
+              </div>
             </>
           )}
-            <br />
-            <label>
-              Anzahl der Spiele
-              <select
-                className={styles.input}
-                value={amount}
-                onChange={(e) => setAmount(e.target.value)}
-                name="amount"
-              >
-                <option value="all">Alle</option>
-                <option value="50">50 Spiele</option>
-                <option value="200"> 200 Spiele</option>
-                <option value="1000">1000 Spiele</option>
-                <option value="month">Letzter Monat</option>
-                <option value="year">Letztes Jahr</option>
+          <br />
+          <label>
+            Anzahl der Spiele
+            <select
+              className={styles.input}
+              value={amount}
+              onChange={(e) => setAmount(e.target.value)}
+              name="amount"
+            >
+              <option value="all">Alle</option>
+              <option value="50">50 Spiele</option>
+              <option value="200"> 200 Spiele</option>
+              <option value="1000">1000 Spiele</option>
+              <option value="month">Letzter Monat</option>
+              <option value="year">Letztes Jahr</option>
 
-              </select>
-            </label>
+            </select>
+          </label>
           <br />
           <button className={styles.button} disabled={loadingStatus == LOADING_STATUS_RUNNING} onClick={fetchAndAnalyzeGames}>{(loadingStatus == LOADING_STATUS_RUNNING) ? 'Ladet...' : 'Start'}</button>
-          { view === 1 && <br /> }
-          { view === 1 && <table id="table1"></table> }
-          { view === 1 && <br /> }
-          { view === 1 && <table id="table2"></table> }
+          {view === 1 && <br />}
+          {view === 1 && <table id="table1"></table>}
+          {view === 1 && <br />}
+          {view === 1 && <table id="table2"></table>}
           {isDev && <button onClick={() => fetchAndAnalyzeGames(true)}>Load local</button>}
           <p></p>
           {loadingStatus == LOADING_STATUS_DONE && <>
@@ -514,98 +517,98 @@ console.log('New Big Data',new_bigdata);
         {loadingStatus == LOADING_STATUS_ERROR && <p>{errorMsg}</p>}
         {loadingStatus == LOADING_STATUS_DONE && <>
           <div className={styles.column}>
-        <h3>Allgemein</h3>
+            <h3>Allgemein</h3>
             <div className={styles.achWrap}>
               <Achievement name={"wonWithWhite"} ach={achievements.wonWithWhite} />
               <Achievement name={"wonWithBlack"} ach={achievements.wonWithBlack} />
             </div>
-        </div>
-        <div className={styles.categoryCol}>
-        
-          
-          <div className={styles.column}>
-            <h3>Gemeinschaft</h3>
-            <div className={styles.achWrap}>
-              <Achievement name={"new_opponent"} ach={achievements.new_opponent} />
-              <Achievement name={"small_underdog"} ach={achievements.small_underdog} />
-
-              {achievements.small_underdog.urls.length < 0 && <Achievement name={"big_underdog"} ach={achievements.big_underdog} />}
-            </div>
-
-            <h3>Eröffnung</h3>
-            <div className={styles.achWrap}>
-              <Achievement name={"textbookOpening"} ach={achievements.textbookOpening} />
-              <Achievement name={"noFool"} ach={achievements.noFool} />
-              <Achievement name={"onlyPawnMoves"} ach={achievements.onlyPawnMoves} />
-              <Achievement name={"rookSniper"} ach={achievements.rookSniper} />
-            </div>
-
-            <h3>Schach Matt</h3>
-            <div className={styles.achWrap}>
-              <Achievement name={"mateWithQueen"} ach={achievements.mateWithQueen} />
-              <Achievement name={"mateWithRook"} ach={achievements.mateWithRook} />
-              <Achievement name={"mateWithBishop"} ach={achievements.mateWithBishop} />
-              <Achievement name={"mateWithKnight"} ach={achievements.mateWithKnight} />
-              <Achievement name={"mateWithPawn"} ach={achievements.mateWithPawn} />
-              <Achievement name={"mateWithKing"} ach={achievements.mateWithKing} />
-              <Achievement name={"mateOnBackRank"} ach={achievements.mateOnBackRank} />
-              <Achievement name={"mateAfterCapture"} ach={achievements.mateAfterCapture} />
-              <Achievement name={"mateWithLess"} ach={achievements.mateWithLess} />
-            </div>
-
-            <h3>Endspiel</h3>
-            <div className={styles.achWrap}>
-              <Achievement name={"secondQueen"} ach={achievements.secondQueen} />
-              <Achievement name={"underpromote"} ach={achievements.underpromote} />
-              <Achievement name={"withTwoRooks"} ach={achievements.withTwoRooks} />
-              <Achievement name={"withOneQueen"} ach={achievements.withOneQueen} />
-              <Achievement name={"withOneRook"} ach={achievements.withOneRook} />
-              <Achievement name={"withTwoBishops"} ach={achievements.withTwoBishops} />
-              <Achievement name={"withBishopKnight"} ach={achievements.withBishopKnight} />
-              <Achievement name={"drawWithKing"} ach={achievements.drawWithKing} />
-              <Achievement name={"justTwoKings"} ach={achievements.justTwoKings} />
-            </div>
           </div>
+          <div className={styles.categoryCol}>
 
-          <div className={styles.column}>
-            <h3>Besondere Züge</h3>
-            <div className={styles.achWrap}>
-              <Achievement name={"enpeasant"} ach={achievements.enpeasant} />
-              <Achievement name={"castleWithCheck"} ach={achievements.castleWithCheck} />
-              <Achievement name={"battlefield"} ach={achievements.battlefield} />
-              <Achievement name={"peacefulmode"} ach={achievements.peacefulmode} />
+
+            <div className={styles.column}>
+              <h3>Gemeinschaft</h3>
+              <div className={styles.achWrap}>
+                <Achievement name={"new_opponent"} ach={achievements.new_opponent} />
+                <Achievement name={"small_underdog"} ach={achievements.small_underdog} />
+
+                {achievements.small_underdog.urls.length < 0 && <Achievement name={"big_underdog"} ach={achievements.big_underdog} />}
+              </div>
+
+              <h3>Eröffnung</h3>
+              <div className={styles.achWrap}>
+                <Achievement name={"textbookOpening"} ach={achievements.textbookOpening} />
+                <Achievement name={"noFool"} ach={achievements.noFool} />
+                <Achievement name={"onlyPawnMoves"} ach={achievements.onlyPawnMoves} />
+                <Achievement name={"rookSniper"} ach={achievements.rookSniper} />
+              </div>
+
+              <h3>Schach Matt</h3>
+              <div className={styles.achWrap}>
+                <Achievement name={"mateWithQueen"} ach={achievements.mateWithQueen} />
+                <Achievement name={"mateWithRook"} ach={achievements.mateWithRook} />
+                <Achievement name={"mateWithBishop"} ach={achievements.mateWithBishop} />
+                <Achievement name={"mateWithKnight"} ach={achievements.mateWithKnight} />
+                <Achievement name={"mateWithPawn"} ach={achievements.mateWithPawn} />
+                <Achievement name={"mateWithKing"} ach={achievements.mateWithKing} />
+                <Achievement name={"mateOnBackRank"} ach={achievements.mateOnBackRank} />
+                <Achievement name={"mateAfterCapture"} ach={achievements.mateAfterCapture} />
+                <Achievement name={"mateWithLess"} ach={achievements.mateWithLess} />
+              </div>
+
+              <h3>Endspiel</h3>
+              <div className={styles.achWrap}>
+                <Achievement name={"secondQueen"} ach={achievements.secondQueen} />
+                <Achievement name={"underpromote"} ach={achievements.underpromote} />
+                <Achievement name={"withTwoRooks"} ach={achievements.withTwoRooks} />
+                <Achievement name={"withOneQueen"} ach={achievements.withOneQueen} />
+                <Achievement name={"withOneRook"} ach={achievements.withOneRook} />
+                <Achievement name={"withTwoBishops"} ach={achievements.withTwoBishops} />
+                <Achievement name={"withBishopKnight"} ach={achievements.withBishopKnight} />
+                <Achievement name={"drawWithKing"} ach={achievements.drawWithKing} />
+                <Achievement name={"justTwoKings"} ach={achievements.justTwoKings} />
+              </div>
             </div>
 
-            <h3>Mensch gegen Maschine</h3>
-            <div className={styles.achWrap}>
-              <Achievement name={"wonVsComputer1"} ach={achievements.wonVsComputer1} />
-              <Achievement name={"wonVsComputer2"} ach={achievements.wonVsComputer2} />
-              <Achievement name={"wonVsComputer3"} ach={achievements.wonVsComputer3} />
-              <Achievement name={"wonVsComputer8NoQueen"} ach={achievements.wonVsComputer8NoQueen} />
-              <Achievement name={"basicPawnEndgame1"} ach={achievements.basicPawnEndgame1} />
-              <Achievement name={"basicPawnEndgame2"} ach={achievements.basicPawnEndgame2} />
-            </div>
+            <div className={styles.column}>
+              <h3>Besondere Züge</h3>
+              <div className={styles.achWrap}>
+                <Achievement name={"enpeasant"} ach={achievements.enpeasant} />
+                <Achievement name={"castleWithCheck"} ach={achievements.castleWithCheck} />
+                <Achievement name={"battlefield"} ach={achievements.battlefield} />
+                <Achievement name={"peacefulmode"} ach={achievements.peacefulmode} />
+              </div>
 
-            <h3>Matt statt Patt</h3>
-            <div className={styles.achWrap}>
-              <Achievement name={"mattStattPatt1"} ach={achievements.mattStattPatt1} />
-              <Achievement name={"mattStattPatt2"} ach={achievements.mattStattPatt2} />
-              <Achievement name={"mattStattPatt3"} ach={achievements.mattStattPatt3} />
-              <Achievement name={"mattStattPatt4"} ach={achievements.mattStattPatt4} />
-              <Achievement name={"mattStattPatt5"} ach={achievements.mattStattPatt5} />
-              <Achievement name={"mattStattPatt6"} ach={achievements.mattStattPatt6} />
-            </div>
-            {Object.values(achievements).map(ach => ach.urls.length > 0).reduce((partialSum, a) => partialSum + a, 0)>29 && <>
-            <h3>Blödeleien</h3>
-            <div className={styles.achWrap}>
-              <Achievement name={"spellGG"} ach={achievements.spellGG} />
-              <Achievement name={"spellDAB"} ach={achievements.spellDAB} />
-              <Achievement name={"spellHaha"} ach={achievements.spellHaha} />
-              <Achievement name={"spellAffe"} ach={achievements.spellAffe} />
-            </div></>
-            }
+              <h3>Mensch gegen Maschine</h3>
+              <div className={styles.achWrap}>
+                <Achievement name={"wonVsComputer1"} ach={achievements.wonVsComputer1} />
+                <Achievement name={"wonVsComputer2"} ach={achievements.wonVsComputer2} />
+                <Achievement name={"wonVsComputer3"} ach={achievements.wonVsComputer3} />
+                <Achievement name={"wonVsComputer8NoQueen"} ach={achievements.wonVsComputer8NoQueen} />
+                <Achievement name={"basicPawnEndgame1"} ach={achievements.basicPawnEndgame1} />
+                <Achievement name={"basicPawnEndgame2"} ach={achievements.basicPawnEndgame2} />
+              </div>
 
-            {/* 
+              <h3>Matt statt Patt</h3>
+              <div className={styles.achWrap}>
+                <Achievement name={"mattStattPatt1"} ach={achievements.mattStattPatt1} />
+                <Achievement name={"mattStattPatt2"} ach={achievements.mattStattPatt2} />
+                <Achievement name={"mattStattPatt3"} ach={achievements.mattStattPatt3} />
+                <Achievement name={"mattStattPatt4"} ach={achievements.mattStattPatt4} />
+                <Achievement name={"mattStattPatt5"} ach={achievements.mattStattPatt5} />
+                <Achievement name={"mattStattPatt6"} ach={achievements.mattStattPatt6} />
+              </div>
+              {Object.values(achievements).map(ach => ach.urls.length > 0).reduce((partialSum, a) => partialSum + a, 0) > 29 && <>
+                <h3>Blödeleien</h3>
+                <div className={styles.achWrap}>
+                  <Achievement name={"spellGG"} ach={achievements.spellGG} />
+                  <Achievement name={"spellDAB"} ach={achievements.spellDAB} />
+                  <Achievement name={"spellHaha"} ach={achievements.spellHaha} />
+                  <Achievement name={"spellAffe"} ach={achievements.spellAffe} />
+                </div></>
+              }
+
+              {/* 
             <Achievement ach={checkmates.mateAfter1capture} />
             <Achievement ach={checkmates.mateAfter2capture} />
             <Achievement ach={endgames.onlyPawnsLeft} />
@@ -623,10 +626,10 @@ console.log('New Big Data',new_bigdata);
             <Achievement ach={lessmaterial.timewithless} />
             <Achievement ach={checkmates.mateAfterCastling} />
             <Achievement ach={checkmates.endedWithMate} /> */}
-          </div>
+            </div>
 
-        </div></>}
-        
+          </div></>}
+
       </main>
     </div>
   )
