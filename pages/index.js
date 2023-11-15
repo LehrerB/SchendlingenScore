@@ -242,12 +242,12 @@ export default function Home() {
   const isDev = process.env.NODE_ENV !== 'production';
 
   const [name, setName] = useState(isDev ? 'msch-jakhal' : 'msch-'); //smart
-  const [amount, setAmount] = useState(isDev ? 'all' : '50');
+  const [amount, setAmount] = useState(isDev ? 'all' : 'all');
   const [loadingStatus, setLoadingStatus] = useState(LOADING_STATUS_PRE);
   const [errorMsg, setErrorMsg] = useState('');
   const [achievements, setAchievement] = useState(createAchievementsDict());
   const [view, setView] = useState(0);
-  const [namelist, setUsername] = useState('');
+  const [namelist, setUsername] = useState('LehrerB\nmsch-oliwel\nmsch-xenhof\nmisch-andhof\nmsch-dommio\nmsch-necdem\nmsch-horbar\nmsch-musgez\nmsch-abuele\nmsch-salsar\nmsch-emijov\nmsch-millaz\nmsch-lucler\nmsch-stemio\nmsch-mehpor\nAykan20100\nHatArs\nmsch-semfen\nmsch-noabil\nmsch-martra\nmsch-subbar\nmsch-mahdil\nmsch-abdbol');
 
   const toggleView = () => {
     // Toggle between View 0 and View 1
