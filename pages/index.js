@@ -13,8 +13,8 @@ import * as captures from '../public/trophies/captures';
 import * as specialmoves from '../public/trophies/specialmoves';
 import * as pawnwords from '../public/trophies/pawnwords';
 import * as endgames from '../public/trophies/endgames';
+import * as classes from '../public/classes';
 //import saved_data from '../api/saved_data.json';
-
 let opponents_school_unique = [];
 export { opponents_school_unique };
 
@@ -155,76 +155,6 @@ function Achievement({ name, ach }) {
   );
 }
 
-function createAchievementTable(tableid, bigdata_input, nameArray_input, checks_input, start, end) {
-  // Get the table element by ID
-  const table = document.getElementById(tableid);
-  table.innerHTML = '';
-  // Create a header row
-  const headerRow = document.createElement('tr');
-
-  // Create columns for usernames
-  const usernameCell = document.createElement('th');
-  usernameCell.textContent = 'Benutzernamen';
-  headerRow.appendChild(usernameCell);
-
-  // Create an array to store unique achievement names
-  const uniqueAchievements = Object.keys(checks_input);
-  const greenAchievement = [
-    "mattStattPatt1",
-    "mattStattPatt2",
-    "mattStattPatt3",
-    "mattStattPatt4",
-    "mattStattPatt5",
-    "mattStattPatt6",
-
-  ]
-  // Create columns for unique achievement names
-  for (let i = start; i < end; i++) {
-    const achKey = uniqueAchievements[i];
-    const th = document.createElement('th');
-    const title = checks_input[achKey].title;
-
-    th.classList.add('rotated_cell');
-    if (greenAchievement.includes(achKey)) { th.classList.add('green_ach'); }
-
-    const div = document.createElement("div");
-    div.classList.add('rotate_text') // Apply the 'rotate_text' class
-    div.textContent = title;
-    th.appendChild(div);
-    headerRow.appendChild(th);
-  }
-
-  // Append the header row to the table
-  table.appendChild(headerRow);
-
-  // Create rows for each user's achievements
-  for (const name of nameArray) {
-    for (const user of bigdata_input) {
-      if (name === user.username) {
-        const row = document.createElement('tr');
-        row.innerHTML = `<td>${user.username}</td>`;
-
-        // Create columns for unique achievement names
-        for (let i = start; i < end; i++) {
-          const achKey = uniqueAchievements[i];
-          const ach = user.ach[achKey];
-          let the_td;
-          if (greenAchievement.includes(achKey) && ach.urls.length > 0) {
-            the_td = `<td class="green_ach">${ach.urls.length}</td>`
-          } else if (ach.urls.length === 0) {
-            the_td = `<td class="grey_zero">${ach.urls.length}</td>`
-          } else {
-            the_td = `<td>${ach.urls.length}</td>`
-          }
-          row.innerHTML += the_td;
-        }
-        // Append the row to the table
-        table.appendChild(row);
-      }
-    }
-  }
-}
-
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -235,6 +165,7 @@ const LOADING_STATUS_ERROR = 2;
 const LOADING_STATUS_DONE = 3;
 let secondview = false;
 let nameArray = [];
+let objectArray = [];
 
 
 
@@ -247,7 +178,8 @@ export default function Home() {
   const [errorMsg, setErrorMsg] = useState('');
   const [achievements, setAchievement] = useState(createAchievementsDict());
   const [view, setView] = useState(0);
-  const [namelist, setUsername] = useState('LehrerB\nmsch-oliwel\nmsch-xenhof\nmisch-andhof\nmsch-dommio\nmsch-necdem\nmsch-horbar\nmsch-musgez\nmsch-abuele\nmsch-salsar\nmsch-emijov\nmsch-millaz\nmsch-lucler\nmsch-stemio\nmsch-mehpor\nAykan20100\nHatArs\nmsch-semfen\nmsch-noabil\nmsch-martra\nmsch-subbar\nmsch-mahdil\nmsch-abdbol');
+  const [namelist, setUsername] = useState('LehrerB\nmsch-oliwel\nmsch-xenhof\nmisch-andhof');
+  const [skipFetch, setSkipFetch] = useState(true);
 
   const toggleView = () => {
     // Toggle between View 0 and View 1
@@ -275,9 +207,9 @@ export default function Home() {
     nameArray = view === 0 ? [name] : usernames;
     console.log('Usernamen:', nameArray);
 
-    let objectArray = [];
+    objectArray = [];
 
-    function processPlayerData(currentname, index) {
+    function processPlayerData(currentname, index, forceDownloadBoolean) {
       return new Promise((resolve, reject) => {
         let newAch = createAchievementsDict();
 
@@ -313,9 +245,7 @@ export default function Home() {
         //getGamesOfURL(url)
 
         console.log('Name', currentname)
-        if (view === 1) {
-          
-        }
+        if (view === 0 || !skipFetch || forceDownloadBoolean) {
         fetch(url, { headers: { 'Content-Type': 'text/plain; charset=utf-8' } })
           .then(response => response.text())
           .then(data => {
@@ -352,9 +282,6 @@ export default function Home() {
               objectArray.push({ username: currentname, timestamp: Math.floor(Date.now() / 1000) * 1000, ach: newAch, unique: opponents_school_unique })
               opponents_school_unique = []; //empty again
             }
-            if (index === nameArray.length - 1) {
-              setLoadingStatus(LOADING_STATUS_DONE);
-            }
             resolve();
           })
           .catch(error => {
@@ -368,7 +295,9 @@ export default function Home() {
             }
             reject(error);
           });
-
+        } else {
+          resolve();
+        }
 
 
       });
@@ -382,6 +311,7 @@ export default function Home() {
         let currentname = nameArray[i];
         const startTime = Date.now();
         let delayTime = (i%LongPauseAfter != 0 || i === 0) ? delayTimeShort : delayTimeLong;
+        if(skipFetch){delayTime = 2}
         console.log('delay', delayTime)
         await processPlayerData(currentname, i);
 
@@ -398,11 +328,15 @@ export default function Home() {
 
     // Call the async function to fetch data for players
 
-    doTheRest();
+    doMainPart();
 
-    async function doTheRest() {
+    async function doMainPart() {
       await fetchDataForPlayers();
-      //setTimeout(() => {
+      setLoadingStatus(LOADING_STATUS_DONE);
+      doRest();
+    }
+
+    function doRest() {
       if ((view === 1 || view === 0) && (isDev || secondview)) {
         console.log('ObjectArray:')
         console.log(objectArray)
@@ -422,16 +356,184 @@ export default function Home() {
           }
 
         });
+        objectArray = [];
+        //to prevent that new achs can be added again and again
+        bigdata = new_bigdata //just in case we don't want to do it like this later
         if (view === 1) {
           const checks_keys_array = Object.keys(checks);
           createAchievementTable("table1", new_bigdata, nameArray, checks, 0, (checks_keys_array.length / 2));
-          createAchievementTable("table2", new_bigdata, nameArray, checks, (checks_keys_array.length / 2 + 1), checks_keys_array.length);
+          createAchievementTable("table2", new_bigdata, nameArray, checks, (checks_keys_array.length / 2), checks_keys_array.length);
         }
         console.log('New Big Data', new_bigdata);
-
       }
     }
-    //}, nameArray.length * 10000);
+
+    //green
+    const greenAchievement = [
+      "mattStattPatt1",
+      "mattStattPatt2",
+      "mattStattPatt3",
+      "mattStattPatt4",
+      "mattStattPatt5",
+      "mattStattPatt6",
+    ];
+
+    let greenAchievementTitle = []
+    
+    for(let green of greenAchievement){
+    greenAchievementTitle.push(checks[green].title)
+    }
+
+
+    function createAchievementTable(tableid, bigdata_input, nameArray_input, checks_input, start, end) {
+      const table = document.getElementById(tableid);
+      table.innerHTML = '';
+    
+      const headerRow = document.createElement('tr');
+      const usernameCell = document.createElement('th');
+      usernameCell.textContent = 'Benutzernamen';
+      headerRow.appendChild(usernameCell);
+    
+      const uniqueAchievements = Object.keys(checks_input);
+    
+      for (let i = start; i < end; i++) {
+        const achKey = uniqueAchievements[i];
+        const th = document.createElement('th');
+        const title = checks_input[achKey].title;
+    
+        th.classList.add('rotated_cell');
+        if (greenAchievement.includes(achKey)) {
+          th.classList.add('green_ach');
+        }
+    
+        const div = document.createElement('div');
+        div.classList.add('rotate_text');
+        div.textContent = title;
+        th.appendChild(div);
+        headerRow.appendChild(th);
+      }
+    
+      table.appendChild(headerRow);
+    
+      for (const name of nameArray_input) {
+        for (const user of bigdata_input) {
+          if (name === user.username) {
+            const row = document.createElement('tr');
+            const usernameCell = document.createElement('td');
+            usernameCell.textContent = user.username;
+            usernameCell.style.cursor = 'pointer';
+            usernameCell.onclick = () => reloadUser(user.username,uniqueAchievements);
+            row.appendChild(usernameCell);
+    
+            for (let i = start; i < end; i++) {
+              const achKey = uniqueAchievements[i];
+              const ach = user.ach[achKey];
+              const cell = document.createElement('td');
+    
+              if (greenAchievement.includes(achKey) && ach.urls.length > 0) {
+                cell.classList.add('green_ach');
+              } else if (ach.urls.length === 0) {
+                cell.classList.add('grey_zero');
+              }
+    
+              cell.textContent = ach.urls.length;
+              row.appendChild(cell);
+            }
+    
+            table.appendChild(row);
+          }
+        }
+      }
+      updateTableStyles(tableid,greenAchievementTitle);
+    }
+    function reloadUser(username,uniqueAchievements) {
+      console.log('reload')
+      processPlayerData(username, 0, true);
+      const checks_keys_array = Object.keys(checks);
+      reloadUserTable(username,"table1",uniqueAchievements,0, (checks_keys_array.length / 2));
+      reloadUserTable(username,"table2",uniqueAchievements,(checks_keys_array.length / 2),checks_keys_array.length);
+    }
+
+    function reloadUserTable(username, tableId, uniqueAchievements,start,end) {
+      // Find the row corresponding to the username
+      const table = document.getElementById(tableId); // replace with your actual table id
+      const rows = table.getElementsByTagName('tr');
+    
+      //construct innerHMTL
+      let rowInnerHTML
+      for (const user of bigdata) {
+          if (username === user.username) {
+            rowInnerHTML = `<td style="cursor: pointer;">${user.username}</td>`;
+            for (let i = start; i < end; i++) {
+              const achKey = uniqueAchievements[i];
+              const ach = user.ach[achKey];
+              rowInnerHTML = rowInnerHTML + `<td>${ach.urls.length}</td>`;
+            }
+          }
+        }
+
+        for (let i = 0; i < rows.length; i++) {
+          const cells = rows[i].getElementsByTagName('td');
+          if (cells.length > 0 && cells[0].textContent === username) {
+            // Your logic to update the row goes here
+            // For example, you can clear the existing content and re-append the updated content
+            rows[i].innerHTML = rowInnerHTML;
+            cells[0].onclick = () => reloadUser(username,uniqueAchievements);
+            break;
+          }
+        }
+      updateTableStyles(tableId,greenAchievementTitle);  
+    }  
+
+    function updateTableStyles(tableId, highlightStrings) {
+      const table = document.getElementById(tableId);
+    
+      // Iterate through the columns
+      for (let col = 1; col < table.rows[0].cells.length; col++) {
+        let maxNonZeroValue = 0;
+        let maxNonZeroRowIndices = [];
+    
+        // Iterate through the rows (skipping the header row)
+        for (let row = 1; row < table.rows.length; row++) {
+          const cell = table.rows[row].cells[col];
+          const cellValue = parseInt(cell.textContent, 10);
+    
+          // Apply background color based on the cell value
+          if (cellValue === 0) {
+            //cell.style.backgroundColor = 'lightgrey';
+            cell.style.color = 'lightgrey';
+          } else {
+            cell.style.backgroundColor = '#ffdd99';
+            cell.style.color = 'black';
+          }
+    
+        // Find cells with the highest non-zero value
+        if (cellValue > maxNonZeroValue) {
+          maxNonZeroValue = cellValue;
+          maxNonZeroRowIndices = [row];
+          } else if (cellValue === maxNonZeroValue) {
+              maxNonZeroRowIndices.push(row);
+          }
+        }
+
+        // Apply red text to cells with the highest non-zero value in the column
+        for (const rowIndex of maxNonZeroRowIndices) {
+          table.rows[rowIndex].cells[col].style.color = 'red';
+        }
+    
+        // Apply green background to cells in the column with top cells matching the array
+        const topCellText = table.rows[0].cells[col].textContent.trim();
+        if (highlightStrings.includes(topCellText)) {
+          for (let row = 0; row < table.rows.length; row++) {
+            const cell = table.rows[row].cells[col];
+            const cellValue = parseInt(cell.textContent, 10);
+            if(cellValue != 0){
+            cell.style.backgroundColor = '#9bf09b';
+            }
+          }
+        }
+      }
+    }
   };
 
   return (
@@ -502,15 +604,45 @@ export default function Home() {
           </label>
           <br />
           <button className={styles.button} disabled={loadingStatus == LOADING_STATUS_RUNNING} onClick={fetchAndAnalyzeGames}>{(loadingStatus == LOADING_STATUS_RUNNING) ? 'Ladet...' : 'Start'}</button>
-          {view === 1 && <br />}
-          {view === 1 && <table id="table1"></table>}
-          {view === 1 && <br />}
-          {view === 1 && <table id="table2"></table>}
+          {view === 1 && (
+            <label>
+              <input type="checkbox" checked={skipFetch} onChange={() => setSkipFetch(!skipFetch)} />
+              fast
+            </label>
+          )}
+          
+
+          {view === 1 && (
+            
+            <>
+              <br />
+              {[
+                { label: 'Schach', class: classes.classChess },
+                { label: '2c', class: classes.class2c },
+                { label: '3b', class: classes.class3b },
+                { label: '4a', class: classes.class4a },
+                { label: '4b', class: classes.class4b },
+                { label: '4c', class: classes.class4c },
+              ].map(({ label, class: buttonClass }, index, array) => (
+                <span key={label}>
+                  <button disabled={loadingStatus === LOADING_STATUS_RUNNING} onClick={() => setUsername(buttonClass)}>
+                    {label}
+                  </button>
+                  {index < array.length - 1 && ' '}
+                </span>
+              ))}
+              <br />
+              <table id="table1"></table>
+              <br />
+              <table id="table2"></table>
+            </>
+          )}
+
           {isDev && <button onClick={() => fetchAndAnalyzeGames(true)}>Load local</button>}
           <p></p>
           {loadingStatus == LOADING_STATUS_DONE && <>
-            {Object.values(achievements).map(ach => ach.urls.length).reduce((partialSum, a) => partialSum + a, 0)} Trophäen<br />
-            {Object.values(achievements).map(ach => ach.urls.length > 0).reduce((partialSum, a) => partialSum + a, 0)} / {Object.keys(achievements).length} Challenges
+            {Object.values(achievements).map(ach => ach.urls.length > 0).reduce((partialSum, a) => partialSum + a, 0)} / {Object.keys(achievements).length} Challenges<br/>
+            {Object.values(achievements).map(ach => ach.urls.length).reduce((partialSum, a) => partialSum + a, 0)} Trophäen
           </>}
 
         </div>
