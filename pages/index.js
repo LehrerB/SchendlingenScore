@@ -467,12 +467,15 @@ export default function Home() {
       }
       updateTableStyles(tableid,greenAchievementTitle);
     }
-    function reloadUser(username,uniqueAchievements) {
-      console.log('reload')
-      processPlayerData(username, 0, true);
-      const checks_keys_array = Object.keys(checks);
-      reloadUserTable(username,"table1",uniqueAchievements,0, (checks_keys_array.length / 2)-2);
-      reloadUserTable(username,"table2",uniqueAchievements,(checks_keys_array.length / 2),checks_keys_array.length);
+    async function reloadUser(username,uniqueAchievements) {
+      try {
+        await processPlayerData(username, 0, true);
+        const checks_keys_array = Object.keys(checks);
+        reloadUserTable(username,"table1",uniqueAchievements,0, (checks_keys_array.length / 2)-2);
+        reloadUserTable(username,"table2",uniqueAchievements,(checks_keys_array.length / 2),checks_keys_array.length);  
+      } catch (error) {
+
+      }
     }
 
     function reloadUserTable(username, tableId, uniqueAchievements,start,end) {
