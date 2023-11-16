@@ -361,8 +361,8 @@ export default function Home() {
         bigdata = new_bigdata //just in case we don't want to do it like this later
         if (view === 1) {
           const checks_keys_array = Object.keys(checks);
-          createAchievementTable("table1", new_bigdata, nameArray, checks, 0, (checks_keys_array.length / 2));
-          createAchievementTable("table2", new_bigdata, nameArray, checks, (checks_keys_array.length / 2), checks_keys_array.length);
+          createAchievementTable("table1", new_bigdata, nameArray, checks, 0, (checks_keys_array.length / 2)-2);
+          createAchievementTable("table2", new_bigdata, nameArray, checks, (checks_keys_array.length / 2)-2, checks_keys_array.length-4);
         }
         console.log('New Big Data', new_bigdata);
       }
@@ -395,16 +395,25 @@ export default function Home() {
       headerRow.appendChild(usernameCell);
     
       const uniqueAchievements = Object.keys(checks_input);
-    
+      
+      if(start === 0){
+        const th = document.createElement('th');
+        th.classList.add('rotated_cell');
+        let title = "Challenges";
+        const div = document.createElement('div');
+        div.classList.add('rotate_text');
+        div.textContent = title;
+        th.appendChild(div);
+        headerRow.appendChild(th);
+      }
+
       for (let i = start; i < end; i++) {
         const achKey = uniqueAchievements[i];
         const th = document.createElement('th');
         const title = checks_input[achKey].title;
     
         th.classList.add('rotated_cell');
-        if (greenAchievement.includes(achKey)) {
-          th.classList.add('green_ach');
-        }
+
     
         const div = document.createElement('div');
         div.classList.add('rotate_text');
@@ -425,6 +434,18 @@ export default function Home() {
             usernameCell.onclick = () => reloadUser(user.username,uniqueAchievements);
             row.appendChild(usernameCell);
     
+            //count challenges
+            if(start === 0){
+              let challengeCount = 0;
+              for (let achKey of uniqueAchievements){
+                const ach = user.ach[achKey];
+                if(ach.urls.length > 0){challengeCount += 1}
+              }
+              const cell = document.createElement('td');
+              cell.textContent = challengeCount;
+              row.appendChild(cell);
+            }
+
             for (let i = start; i < end; i++) {
               const achKey = uniqueAchievements[i];
               const ach = user.ach[achKey];
@@ -450,7 +471,7 @@ export default function Home() {
       console.log('reload')
       processPlayerData(username, 0, true);
       const checks_keys_array = Object.keys(checks);
-      reloadUserTable(username,"table1",uniqueAchievements,0, (checks_keys_array.length / 2));
+      reloadUserTable(username,"table1",uniqueAchievements,0, (checks_keys_array.length / 2)-2);
       reloadUserTable(username,"table2",uniqueAchievements,(checks_keys_array.length / 2),checks_keys_array.length);
     }
 
@@ -464,6 +485,17 @@ export default function Home() {
       for (const user of bigdata) {
           if (username === user.username) {
             rowInnerHTML = `<td style="cursor: pointer;">${user.username}</td>`;
+
+            //count challenges
+            if(start === 0){
+              let challengeCount = 0;
+              for (let achKey of uniqueAchievements){
+                const ach = user.ach[achKey];
+                if(ach.urls.length > 0){challengeCount += 1}
+              }
+            rowInnerHTML = rowInnerHTML + `<td>${challengeCount}</td>`;
+            }
+
             for (let i = start; i < end; i++) {
               const achKey = uniqueAchievements[i];
               const ach = user.ach[achKey];
@@ -511,7 +543,7 @@ export default function Home() {
         if (cellValue > maxNonZeroValue) {
           maxNonZeroValue = cellValue;
           maxNonZeroRowIndices = [row];
-          } else if (cellValue === maxNonZeroValue) {
+          } else if (cellValue === maxNonZeroValue && cellValue != 0) {
               maxNonZeroRowIndices.push(row);
           }
         }

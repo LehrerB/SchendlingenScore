@@ -5,6 +5,7 @@ export let check_for_pawn_word = (game, word) => {
     const hist = game.history();
     const addwb = game.isWhite ? 1 : 0;
     let playerhist = hist.filter((_, index) => index % 2 !== addwb);
+    if(playerhist.length < word.length){return false}
     //start checking for correct letters
     for(let i = 0; i < word.length; i++){
         if(!(playerhist[i].includes(word[i]))){return false}

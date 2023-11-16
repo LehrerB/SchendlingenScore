@@ -77,7 +77,7 @@ let class4bArray = [
   'msch-rabyas',
   'msch-semfen',
   'HatArs', //freestyle
-  'mich-suddur', //mich statt msch
+  'mich-sudder', //mich statt msch
   //'msch-joriss', //not found
 ]
 
