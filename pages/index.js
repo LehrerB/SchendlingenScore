@@ -472,7 +472,7 @@ export default function Home() {
         await processPlayerData(username, 0, true);
         const checks_keys_array = Object.keys(checks);
         reloadUserTable(username,"table1",uniqueAchievements,0, (checks_keys_array.length / 2)-2);
-        reloadUserTable(username,"table2",uniqueAchievements,(checks_keys_array.length / 2),checks_keys_array.length);  
+        reloadUserTable(username,"table2",uniqueAchievements,(checks_keys_array.length / 2)-2,checks_keys_array.length-4);  
       } catch (error) {
 
       }
