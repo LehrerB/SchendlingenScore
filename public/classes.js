@@ -1,5 +1,15 @@
 export default [];
 
+export let blackSheepList = [
+  'LehrerB',
+  'Aykan20100',
+  'HatArs',
+  'EliasStegi',  
+  'Ninaum',
+  'Riri_theCat',
+  'esmkar',
+]
+
 //chess group
 let classChessArray = [
   'LehrerB',
@@ -180,3 +190,36 @@ let class2cArray = [
 ]
 
 export let class2c = class2cArray.join('\n'); 
+
+//1c
+let class1cArray = [
+  'msch-amyhor',
+  'msch-azryil',
+  'msch-brkkay',
+  'msch-burpar',
+  'msch-celalt',
+  'msch-davmit',
+  'msch-emilyjov',
+  'msch-emierc',
+  'msch-ezgiyil',
+  'msch-leakol',
+  'msch-lelfek',
+  'msch-lenly',
+  'msch-lenmei',
+  'msch-majmar',
+  'msch-marsai',
+  'msch-mihtod',
+  'msch-mikcin',
+  'msch-raphef',
+  'msch-ronber',
+  'msch-selkar',
+  'msch-tahalp',
+  'msch-turgue',
+  'msch-yahyue',
+  'esmkar',
+]
+
+export let class1c = class1cArray.join('\n'); 
+
+
+

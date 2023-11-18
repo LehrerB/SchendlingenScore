@@ -27049,5 +27049,4183 @@
             "msch-melizg",
             "msch-ervert"
         ]
+    },
+    {
+        "username": "msch-amyhor",
+        "timestamp": 1700334542000,
+        "ach": {
+            "wonWithWhite": {
+                "urls": []
+            },
+            "wonWithBlack": {
+                "urls": []
+            },
+            "new_opponent": {
+                "urls": [
+                    "https://lichess.org/DEAOez3J"
+                ]
+            },
+            "small_underdog": {
+                "urls": []
+            },
+            "rookSniper": {
+                "urls": []
+            },
+            "textbookOpening": {
+                "urls": []
+            },
+            "noFool": {
+                "urls": []
+            },
+            "onlyPawnMoves": {
+                "urls": []
+            },
+            "mateWithQueen": {
+                "urls": []
+            },
+            "mateWithRook": {
+                "urls": []
+            },
+            "mateWithBishop": {
+                "urls": []
+            },
+            "mateWithKnight": {
+                "urls": []
+            },
+            "mateWithPawn": {
+                "urls": []
+            },
+            "mateWithKing": {
+                "urls": []
+            },
+            "mateOnBackRank": {
+                "urls": []
+            },
+            "mateWithLess": {
+                "urls": []
+            },
+            "mateAfterCapture": {
+                "urls": []
+            },
+            "secondQueen": {
+                "urls": []
+            },
+            "underpromote": {
+                "urls": []
+            },
+            "withTwoRooks": {
+                "urls": []
+            },
+            "withOneQueen": {
+                "urls": []
+            },
+            "withOneRook": {
+                "urls": []
+            },
+            "withTwoBishops": {
+                "urls": []
+            },
+            "withBishopKnight": {
+                "urls": []
+            },
+            "drawWithKing": {
+                "urls": []
+            },
+            "justTwoKings": {
+                "urls": []
+            },
+            "enpeasant": {
+                "urls": []
+            },
+            "castleWithCheck": {
+                "urls": []
+            },
+            "battlefield": {
+                "urls": []
+            },
+            "peacefulmode": {
+                "urls": []
+            },
+            "wonVsComputer1": {
+                "urls": []
+            },
+            "wonVsComputer2": {
+                "urls": []
+            },
+            "wonVsComputer3": {
+                "urls": []
+            },
+            "wonVsComputer8NoQueen": {
+                "urls": []
+            },
+            "basicPawnEndgame1": {
+                "urls": []
+            },
+            "basicPawnEndgame2": {
+                "urls": []
+            },
+            "mattStattPatt1": {
+                "urls": []
+            },
+            "mattStattPatt2": {
+                "urls": []
+            },
+            "mattStattPatt3": {
+                "urls": []
+            },
+            "mattStattPatt4": {
+                "urls": []
+            },
+            "mattStattPatt5": {
+                "urls": []
+            },
+            "mattStattPatt6": {
+                "urls": []
+            },
+            "spellGG": {
+                "urls": []
+            },
+            "spellDAB": {
+                "urls": []
+            },
+            "spellHaha": {
+                "urls": []
+            },
+            "spellAffe": {
+                "urls": []
+            }
+        },
+        "unique": [
+            "msch-adrhor"
+        ]
+    },
+    {
+        "username": "msch-azryil",
+        "timestamp": 1700334543000,
+        "ach": {
+            "wonWithWhite": {
+                "urls": []
+            },
+            "wonWithBlack": {
+                "urls": []
+            },
+            "new_opponent": {
+                "urls": []
+            },
+            "small_underdog": {
+                "urls": []
+            },
+            "rookSniper": {
+                "urls": []
+            },
+            "textbookOpening": {
+                "urls": []
+            },
+            "noFool": {
+                "urls": []
+            },
+            "onlyPawnMoves": {
+                "urls": []
+            },
+            "mateWithQueen": {
+                "urls": []
+            },
+            "mateWithRook": {
+                "urls": []
+            },
+            "mateWithBishop": {
+                "urls": []
+            },
+            "mateWithKnight": {
+                "urls": []
+            },
+            "mateWithPawn": {
+                "urls": []
+            },
+            "mateWithKing": {
+                "urls": []
+            },
+            "mateOnBackRank": {
+                "urls": []
+            },
+            "mateWithLess": {
+                "urls": []
+            },
+            "mateAfterCapture": {
+                "urls": []
+            },
+            "secondQueen": {
+                "urls": []
+            },
+            "underpromote": {
+                "urls": []
+            },
+            "withTwoRooks": {
+                "urls": []
+            },
+            "withOneQueen": {
+                "urls": []
+            },
+            "withOneRook": {
+                "urls": []
+            },
+            "withTwoBishops": {
+                "urls": []
+            },
+            "withBishopKnight": {
+                "urls": []
+            },
+            "drawWithKing": {
+                "urls": []
+            },
+            "justTwoKings": {
+                "urls": []
+            },
+            "enpeasant": {
+                "urls": []
+            },
+            "castleWithCheck": {
+                "urls": []
+            },
+            "battlefield": {
+                "urls": []
+            },
+            "peacefulmode": {
+                "urls": []
+            },
+            "wonVsComputer1": {
+                "urls": []
+            },
+            "wonVsComputer2": {
+                "urls": []
+            },
+            "wonVsComputer3": {
+                "urls": []
+            },
+            "wonVsComputer8NoQueen": {
+                "urls": []
+            },
+            "basicPawnEndgame1": {
+                "urls": []
+            },
+            "basicPawnEndgame2": {
+                "urls": []
+            },
+            "mattStattPatt1": {
+                "urls": []
+            },
+            "mattStattPatt2": {
+                "urls": []
+            },
+            "mattStattPatt3": {
+                "urls": []
+            },
+            "mattStattPatt4": {
+                "urls": []
+            },
+            "mattStattPatt5": {
+                "urls": []
+            },
+            "mattStattPatt6": {
+                "urls": []
+            },
+            "spellGG": {
+                "urls": []
+            },
+            "spellDAB": {
+                "urls": []
+            },
+            "spellHaha": {
+                "urls": []
+            },
+            "spellAffe": {
+                "urls": []
+            }
+        },
+        "unique": []
+    },
+    {
+        "username": "msch-brkkay",
+        "timestamp": 1700334546000,
+        "ach": {
+            "wonWithWhite": {
+                "urls": [
+                    "https://lichess.org/A1XZr2pl",
+                    "https://lichess.org/e02ej3uO",
+                    "https://lichess.org/5BVrlfn4",
+                    "https://lichess.org/VV93XzNC",
+                    "https://lichess.org/FZkyUnI1",
+                    "https://lichess.org/Nr2u5Q6E",
+                    "https://lichess.org/tbXf0BfO"
+                ]
+            },
+            "wonWithBlack": {
+                "urls": [
+                    "https://lichess.org/SZ37ESHh/black",
+                    "https://lichess.org/vNwR7NCN/black",
+                    "https://lichess.org/rnfkSygy/black"
+                ]
+            },
+            "new_opponent": {
+                "urls": [
+                    "https://lichess.org/5fsypiDX/black",
+                    "https://lichess.org/SZ37ESHh/black",
+                    "https://lichess.org/VV93XzNC",
+                    "https://lichess.org/rnfkSygy/black",
+                    "https://lichess.org/tbXf0BfO"
+                ]
+            },
+            "small_underdog": {
+                "urls": []
+            },
+            "rookSniper": {
+                "urls": []
+            },
+            "textbookOpening": {
+                "urls": []
+            },
+            "noFool": {
+                "urls": []
+            },
+            "onlyPawnMoves": {
+                "urls": [
+                    "https://lichess.org/VV93XzNC",
+                    "https://lichess.org/vNwR7NCN/black",
+                    "https://lichess.org/Nr2u5Q6E",
+                    "https://lichess.org/rnfkSygy/black"
+                ]
+            },
+            "mateWithQueen": {
+                "urls": [
+                    "https://lichess.org/SZ37ESHh/black",
+                    "https://lichess.org/A1XZr2pl",
+                    "https://lichess.org/e02ej3uO",
+                    "https://lichess.org/5BVrlfn4",
+                    "https://lichess.org/VV93XzNC",
+                    "https://lichess.org/FZkyUnI1",
+                    "https://lichess.org/vNwR7NCN/black",
+                    "https://lichess.org/rnfkSygy/black",
+                    "https://lichess.org/tbXf0BfO"
+                ]
+            },
+            "mateWithRook": {
+                "urls": [
+                    "https://lichess.org/Nr2u5Q6E"
+                ]
+            },
+            "mateWithBishop": {
+                "urls": []
+            },
+            "mateWithKnight": {
+                "urls": []
+            },
+            "mateWithPawn": {
+                "urls": [
+                    "https://lichess.org/VV93XzNC"
+                ]
+            },
+            "mateWithKing": {
+                "urls": []
+            },
+            "mateOnBackRank": {
+                "urls": [
+                    "https://lichess.org/5BVrlfn4",
+                    "https://lichess.org/vNwR7NCN/black",
+                    "https://lichess.org/Nr2u5Q6E",
+                    "https://lichess.org/rnfkSygy/black"
+                ]
+            },
+            "mateWithLess": {
+                "urls": []
+            },
+            "mateAfterCapture": {
+                "urls": []
+            },
+            "secondQueen": {
+                "urls": [
+                    "https://lichess.org/VV93XzNC",
+                    "https://lichess.org/FZkyUnI1"
+                ]
+            },
+            "underpromote": {
+                "urls": []
+            },
+            "withTwoRooks": {
+                "urls": []
+            },
+            "withOneQueen": {
+                "urls": []
+            },
+            "withOneRook": {
+                "urls": []
+            },
+            "withTwoBishops": {
+                "urls": []
+            },
+            "withBishopKnight": {
+                "urls": []
+            },
+            "drawWithKing": {
+                "urls": [
+                    "https://lichess.org/yFWVFrZ8/black",
+                    "https://lichess.org/wQn9g02T/black",
+                    "https://lichess.org/o05by9wA/black"
+                ]
+            },
+            "justTwoKings": {
+                "urls": [
+                    "https://lichess.org/5hQ4Y07G"
+                ]
+            },
+            "enpeasant": {
+                "urls": []
+            },
+            "castleWithCheck": {
+                "urls": []
+            },
+            "battlefield": {
+                "urls": []
+            },
+            "peacefulmode": {
+                "urls": [
+                    "https://lichess.org/rnfkSygy/black"
+                ]
+            },
+            "wonVsComputer1": {
+                "urls": []
+            },
+            "wonVsComputer2": {
+                "urls": []
+            },
+            "wonVsComputer3": {
+                "urls": []
+            },
+            "wonVsComputer8NoQueen": {
+                "urls": []
+            },
+            "basicPawnEndgame1": {
+                "urls": []
+            },
+            "basicPawnEndgame2": {
+                "urls": []
+            },
+            "mattStattPatt1": {
+                "urls": []
+            },
+            "mattStattPatt2": {
+                "urls": []
+            },
+            "mattStattPatt3": {
+                "urls": []
+            },
+            "mattStattPatt4": {
+                "urls": []
+            },
+            "mattStattPatt5": {
+                "urls": []
+            },
+            "mattStattPatt6": {
+                "urls": []
+            },
+            "spellGG": {
+                "urls": []
+            },
+            "spellDAB": {
+                "urls": []
+            },
+            "spellHaha": {
+                "urls": []
+            },
+            "spellAffe": {
+                "urls": []
+            }
+        },
+        "unique": [
+            "msch-emierc",
+            "msch-tahalp",
+            "msch-lenly",
+            "msch-selkar",
+            "msch-raphef"
+        ]
+    },
+    {
+        "username": "msch-burpar",
+        "timestamp": 1700334546000,
+        "ach": {
+            "wonWithWhite": {
+                "urls": []
+            },
+            "wonWithBlack": {
+                "urls": []
+            },
+            "new_opponent": {
+                "urls": []
+            },
+            "small_underdog": {
+                "urls": []
+            },
+            "rookSniper": {
+                "urls": []
+            },
+            "textbookOpening": {
+                "urls": []
+            },
+            "noFool": {
+                "urls": []
+            },
+            "onlyPawnMoves": {
+                "urls": []
+            },
+            "mateWithQueen": {
+                "urls": []
+            },
+            "mateWithRook": {
+                "urls": []
+            },
+            "mateWithBishop": {
+                "urls": []
+            },
+            "mateWithKnight": {
+                "urls": []
+            },
+            "mateWithPawn": {
+                "urls": []
+            },
+            "mateWithKing": {
+                "urls": []
+            },
+            "mateOnBackRank": {
+                "urls": []
+            },
+            "mateWithLess": {
+                "urls": []
+            },
+            "mateAfterCapture": {
+                "urls": []
+            },
+            "secondQueen": {
+                "urls": []
+            },
+            "underpromote": {
+                "urls": []
+            },
+            "withTwoRooks": {
+                "urls": []
+            },
+            "withOneQueen": {
+                "urls": []
+            },
+            "withOneRook": {
+                "urls": []
+            },
+            "withTwoBishops": {
+                "urls": []
+            },
+            "withBishopKnight": {
+                "urls": []
+            },
+            "drawWithKing": {
+                "urls": []
+            },
+            "justTwoKings": {
+                "urls": []
+            },
+            "enpeasant": {
+                "urls": []
+            },
+            "castleWithCheck": {
+                "urls": []
+            },
+            "battlefield": {
+                "urls": []
+            },
+            "peacefulmode": {
+                "urls": []
+            },
+            "wonVsComputer1": {
+                "urls": []
+            },
+            "wonVsComputer2": {
+                "urls": []
+            },
+            "wonVsComputer3": {
+                "urls": []
+            },
+            "wonVsComputer8NoQueen": {
+                "urls": []
+            },
+            "basicPawnEndgame1": {
+                "urls": []
+            },
+            "basicPawnEndgame2": {
+                "urls": []
+            },
+            "mattStattPatt1": {
+                "urls": []
+            },
+            "mattStattPatt2": {
+                "urls": []
+            },
+            "mattStattPatt3": {
+                "urls": []
+            },
+            "mattStattPatt4": {
+                "urls": []
+            },
+            "mattStattPatt5": {
+                "urls": []
+            },
+            "mattStattPatt6": {
+                "urls": []
+            },
+            "spellGG": {
+                "urls": []
+            },
+            "spellDAB": {
+                "urls": []
+            },
+            "spellHaha": {
+                "urls": []
+            },
+            "spellAffe": {
+                "urls": []
+            }
+        },
+        "unique": []
+    },
+    {
+        "username": "msch-celalt",
+        "timestamp": 1700334546000,
+        "ach": {
+            "wonWithWhite": {
+                "urls": []
+            },
+            "wonWithBlack": {
+                "urls": []
+            },
+            "new_opponent": {
+                "urls": []
+            },
+            "small_underdog": {
+                "urls": []
+            },
+            "rookSniper": {
+                "urls": []
+            },
+            "textbookOpening": {
+                "urls": []
+            },
+            "noFool": {
+                "urls": []
+            },
+            "onlyPawnMoves": {
+                "urls": []
+            },
+            "mateWithQueen": {
+                "urls": []
+            },
+            "mateWithRook": {
+                "urls": []
+            },
+            "mateWithBishop": {
+                "urls": []
+            },
+            "mateWithKnight": {
+                "urls": []
+            },
+            "mateWithPawn": {
+                "urls": []
+            },
+            "mateWithKing": {
+                "urls": []
+            },
+            "mateOnBackRank": {
+                "urls": []
+            },
+            "mateWithLess": {
+                "urls": []
+            },
+            "mateAfterCapture": {
+                "urls": []
+            },
+            "secondQueen": {
+                "urls": []
+            },
+            "underpromote": {
+                "urls": []
+            },
+            "withTwoRooks": {
+                "urls": []
+            },
+            "withOneQueen": {
+                "urls": []
+            },
+            "withOneRook": {
+                "urls": []
+            },
+            "withTwoBishops": {
+                "urls": []
+            },
+            "withBishopKnight": {
+                "urls": []
+            },
+            "drawWithKing": {
+                "urls": []
+            },
+            "justTwoKings": {
+                "urls": []
+            },
+            "enpeasant": {
+                "urls": []
+            },
+            "castleWithCheck": {
+                "urls": []
+            },
+            "battlefield": {
+                "urls": []
+            },
+            "peacefulmode": {
+                "urls": []
+            },
+            "wonVsComputer1": {
+                "urls": []
+            },
+            "wonVsComputer2": {
+                "urls": []
+            },
+            "wonVsComputer3": {
+                "urls": []
+            },
+            "wonVsComputer8NoQueen": {
+                "urls": []
+            },
+            "basicPawnEndgame1": {
+                "urls": []
+            },
+            "basicPawnEndgame2": {
+                "urls": []
+            },
+            "mattStattPatt1": {
+                "urls": []
+            },
+            "mattStattPatt2": {
+                "urls": []
+            },
+            "mattStattPatt3": {
+                "urls": []
+            },
+            "mattStattPatt4": {
+                "urls": []
+            },
+            "mattStattPatt5": {
+                "urls": []
+            },
+            "mattStattPatt6": {
+                "urls": []
+            },
+            "spellGG": {
+                "urls": []
+            },
+            "spellDAB": {
+                "urls": []
+            },
+            "spellHaha": {
+                "urls": []
+            },
+            "spellAffe": {
+                "urls": []
+            }
+        },
+        "unique": []
+    },
+    {
+        "username": "msch-davmit",
+        "timestamp": 1700334553000,
+        "ach": {
+            "wonWithWhite": {
+                "urls": [
+                    "https://lichess.org/7hnP4bt1"
+                ]
+            },
+            "wonWithBlack": {
+                "urls": [
+                    "https://lichess.org/Kj0bDFqo/black"
+                ]
+            },
+            "new_opponent": {
+                "urls": [
+                    "https://lichess.org/MymHGxvA/black"
+                ]
+            },
+            "small_underdog": {
+                "urls": [
+                    "https://lichess.org/7hnP4bt1"
+                ]
+            },
+            "rookSniper": {
+                "urls": []
+            },
+            "textbookOpening": {
+                "urls": []
+            },
+            "noFool": {
+                "urls": []
+            },
+            "onlyPawnMoves": {
+                "urls": []
+            },
+            "mateWithQueen": {
+                "urls": []
+            },
+            "mateWithRook": {
+                "urls": []
+            },
+            "mateWithBishop": {
+                "urls": []
+            },
+            "mateWithKnight": {
+                "urls": []
+            },
+            "mateWithPawn": {
+                "urls": []
+            },
+            "mateWithKing": {
+                "urls": []
+            },
+            "mateOnBackRank": {
+                "urls": []
+            },
+            "mateWithLess": {
+                "urls": []
+            },
+            "mateAfterCapture": {
+                "urls": []
+            },
+            "secondQueen": {
+                "urls": []
+            },
+            "underpromote": {
+                "urls": []
+            },
+            "withTwoRooks": {
+                "urls": []
+            },
+            "withOneQueen": {
+                "urls": []
+            },
+            "withOneRook": {
+                "urls": []
+            },
+            "withTwoBishops": {
+                "urls": []
+            },
+            "withBishopKnight": {
+                "urls": []
+            },
+            "drawWithKing": {
+                "urls": [
+                    "https://lichess.org/3UT5UHXw"
+                ]
+            },
+            "justTwoKings": {
+                "urls": []
+            },
+            "enpeasant": {
+                "urls": []
+            },
+            "castleWithCheck": {
+                "urls": []
+            },
+            "battlefield": {
+                "urls": []
+            },
+            "peacefulmode": {
+                "urls": []
+            },
+            "wonVsComputer1": {
+                "urls": []
+            },
+            "wonVsComputer2": {
+                "urls": []
+            },
+            "wonVsComputer3": {
+                "urls": []
+            },
+            "wonVsComputer8NoQueen": {
+                "urls": []
+            },
+            "basicPawnEndgame1": {
+                "urls": []
+            },
+            "basicPawnEndgame2": {
+                "urls": []
+            },
+            "mattStattPatt1": {
+                "urls": []
+            },
+            "mattStattPatt2": {
+                "urls": []
+            },
+            "mattStattPatt3": {
+                "urls": []
+            },
+            "mattStattPatt4": {
+                "urls": []
+            },
+            "mattStattPatt5": {
+                "urls": []
+            },
+            "mattStattPatt6": {
+                "urls": []
+            },
+            "spellGG": {
+                "urls": []
+            },
+            "spellDAB": {
+                "urls": []
+            },
+            "spellHaha": {
+                "urls": []
+            },
+            "spellAffe": {
+                "urls": []
+            }
+        },
+        "unique": [
+            "msch-emimit"
+        ]
+    },
+    {
+        "username": "msch-emilyjov",
+        "timestamp": 1700334553000,
+        "ach": {
+            "wonWithWhite": {
+                "urls": []
+            },
+            "wonWithBlack": {
+                "urls": []
+            },
+            "new_opponent": {
+                "urls": []
+            },
+            "small_underdog": {
+                "urls": []
+            },
+            "rookSniper": {
+                "urls": []
+            },
+            "textbookOpening": {
+                "urls": []
+            },
+            "noFool": {
+                "urls": []
+            },
+            "onlyPawnMoves": {
+                "urls": []
+            },
+            "mateWithQueen": {
+                "urls": []
+            },
+            "mateWithRook": {
+                "urls": []
+            },
+            "mateWithBishop": {
+                "urls": []
+            },
+            "mateWithKnight": {
+                "urls": []
+            },
+            "mateWithPawn": {
+                "urls": []
+            },
+            "mateWithKing": {
+                "urls": []
+            },
+            "mateOnBackRank": {
+                "urls": []
+            },
+            "mateWithLess": {
+                "urls": []
+            },
+            "mateAfterCapture": {
+                "urls": []
+            },
+            "secondQueen": {
+                "urls": []
+            },
+            "underpromote": {
+                "urls": []
+            },
+            "withTwoRooks": {
+                "urls": []
+            },
+            "withOneQueen": {
+                "urls": []
+            },
+            "withOneRook": {
+                "urls": []
+            },
+            "withTwoBishops": {
+                "urls": []
+            },
+            "withBishopKnight": {
+                "urls": []
+            },
+            "drawWithKing": {
+                "urls": []
+            },
+            "justTwoKings": {
+                "urls": []
+            },
+            "enpeasant": {
+                "urls": []
+            },
+            "castleWithCheck": {
+                "urls": []
+            },
+            "battlefield": {
+                "urls": []
+            },
+            "peacefulmode": {
+                "urls": []
+            },
+            "wonVsComputer1": {
+                "urls": []
+            },
+            "wonVsComputer2": {
+                "urls": []
+            },
+            "wonVsComputer3": {
+                "urls": []
+            },
+            "wonVsComputer8NoQueen": {
+                "urls": []
+            },
+            "basicPawnEndgame1": {
+                "urls": []
+            },
+            "basicPawnEndgame2": {
+                "urls": []
+            },
+            "mattStattPatt1": {
+                "urls": []
+            },
+            "mattStattPatt2": {
+                "urls": []
+            },
+            "mattStattPatt3": {
+                "urls": []
+            },
+            "mattStattPatt4": {
+                "urls": []
+            },
+            "mattStattPatt5": {
+                "urls": []
+            },
+            "mattStattPatt6": {
+                "urls": []
+            },
+            "spellGG": {
+                "urls": []
+            },
+            "spellDAB": {
+                "urls": []
+            },
+            "spellHaha": {
+                "urls": []
+            },
+            "spellAffe": {
+                "urls": []
+            }
+        },
+        "unique": []
+    },
+    {
+        "username": "msch-emierc",
+        "timestamp": 1700334557000,
+        "ach": {
+            "wonWithWhite": {
+                "urls": [
+                    "https://lichess.org/2tHekEfm"
+                ]
+            },
+            "wonWithBlack": {
+                "urls": []
+            },
+            "new_opponent": {
+                "urls": [
+                    "https://lichess.org/5fsypiDX",
+                    "https://lichess.org/SMYX8HFq/black",
+                    "https://lichess.org/RwTskxaK/black",
+                    "https://lichess.org/LGxAliIn/black"
+                ]
+            },
+            "small_underdog": {
+                "urls": []
+            },
+            "rookSniper": {
+                "urls": []
+            },
+            "textbookOpening": {
+                "urls": []
+            },
+            "noFool": {
+                "urls": []
+            },
+            "onlyPawnMoves": {
+                "urls": []
+            },
+            "mateWithQueen": {
+                "urls": [
+                    "https://lichess.org/2tHekEfm"
+                ]
+            },
+            "mateWithRook": {
+                "urls": []
+            },
+            "mateWithBishop": {
+                "urls": []
+            },
+            "mateWithKnight": {
+                "urls": []
+            },
+            "mateWithPawn": {
+                "urls": []
+            },
+            "mateWithKing": {
+                "urls": []
+            },
+            "mateOnBackRank": {
+                "urls": [
+                    "https://lichess.org/2tHekEfm"
+                ]
+            },
+            "mateWithLess": {
+                "urls": []
+            },
+            "mateAfterCapture": {
+                "urls": []
+            },
+            "secondQueen": {
+                "urls": []
+            },
+            "underpromote": {
+                "urls": []
+            },
+            "withTwoRooks": {
+                "urls": []
+            },
+            "withOneQueen": {
+                "urls": []
+            },
+            "withOneRook": {
+                "urls": []
+            },
+            "withTwoBishops": {
+                "urls": []
+            },
+            "withBishopKnight": {
+                "urls": []
+            },
+            "drawWithKing": {
+                "urls": [
+                    "https://lichess.org/KiAl2D89/black"
+                ]
+            },
+            "justTwoKings": {
+                "urls": [
+                    "https://lichess.org/XJhnChtz",
+                    "https://lichess.org/9ENpxwSw",
+                    "https://lichess.org/pqTdREOB"
+                ]
+            },
+            "enpeasant": {
+                "urls": []
+            },
+            "castleWithCheck": {
+                "urls": []
+            },
+            "battlefield": {
+                "urls": []
+            },
+            "peacefulmode": {
+                "urls": []
+            },
+            "wonVsComputer1": {
+                "urls": []
+            },
+            "wonVsComputer2": {
+                "urls": []
+            },
+            "wonVsComputer3": {
+                "urls": []
+            },
+            "wonVsComputer8NoQueen": {
+                "urls": []
+            },
+            "basicPawnEndgame1": {
+                "urls": []
+            },
+            "basicPawnEndgame2": {
+                "urls": []
+            },
+            "mattStattPatt1": {
+                "urls": []
+            },
+            "mattStattPatt2": {
+                "urls": []
+            },
+            "mattStattPatt3": {
+                "urls": []
+            },
+            "mattStattPatt4": {
+                "urls": []
+            },
+            "mattStattPatt5": {
+                "urls": []
+            },
+            "mattStattPatt6": {
+                "urls": []
+            },
+            "spellGG": {
+                "urls": []
+            },
+            "spellDAB": {
+                "urls": []
+            },
+            "spellHaha": {
+                "urls": []
+            },
+            "spellAffe": {
+                "urls": []
+            }
+        },
+        "unique": [
+            "msch-brkkay",
+            "msch-selkar",
+            "msch-tahalp",
+            "msch-mikcin"
+        ]
+    },
+    {
+        "username": "msch-ezgiyil",
+        "timestamp": 1700334557000,
+        "ach": {
+            "wonWithWhite": {
+                "urls": []
+            },
+            "wonWithBlack": {
+                "urls": []
+            },
+            "new_opponent": {
+                "urls": [
+                    "https://lichess.org/gVGi7xvv"
+                ]
+            },
+            "small_underdog": {
+                "urls": []
+            },
+            "rookSniper": {
+                "urls": []
+            },
+            "textbookOpening": {
+                "urls": []
+            },
+            "noFool": {
+                "urls": []
+            },
+            "onlyPawnMoves": {
+                "urls": []
+            },
+            "mateWithQueen": {
+                "urls": []
+            },
+            "mateWithRook": {
+                "urls": []
+            },
+            "mateWithBishop": {
+                "urls": []
+            },
+            "mateWithKnight": {
+                "urls": []
+            },
+            "mateWithPawn": {
+                "urls": []
+            },
+            "mateWithKing": {
+                "urls": []
+            },
+            "mateOnBackRank": {
+                "urls": []
+            },
+            "mateWithLess": {
+                "urls": []
+            },
+            "mateAfterCapture": {
+                "urls": []
+            },
+            "secondQueen": {
+                "urls": []
+            },
+            "underpromote": {
+                "urls": []
+            },
+            "withTwoRooks": {
+                "urls": []
+            },
+            "withOneQueen": {
+                "urls": []
+            },
+            "withOneRook": {
+                "urls": []
+            },
+            "withTwoBishops": {
+                "urls": []
+            },
+            "withBishopKnight": {
+                "urls": []
+            },
+            "drawWithKing": {
+                "urls": []
+            },
+            "justTwoKings": {
+                "urls": []
+            },
+            "enpeasant": {
+                "urls": []
+            },
+            "castleWithCheck": {
+                "urls": []
+            },
+            "battlefield": {
+                "urls": []
+            },
+            "peacefulmode": {
+                "urls": []
+            },
+            "wonVsComputer1": {
+                "urls": []
+            },
+            "wonVsComputer2": {
+                "urls": []
+            },
+            "wonVsComputer3": {
+                "urls": []
+            },
+            "wonVsComputer8NoQueen": {
+                "urls": []
+            },
+            "basicPawnEndgame1": {
+                "urls": []
+            },
+            "basicPawnEndgame2": {
+                "urls": []
+            },
+            "mattStattPatt1": {
+                "urls": []
+            },
+            "mattStattPatt2": {
+                "urls": []
+            },
+            "mattStattPatt3": {
+                "urls": []
+            },
+            "mattStattPatt4": {
+                "urls": []
+            },
+            "mattStattPatt5": {
+                "urls": []
+            },
+            "mattStattPatt6": {
+                "urls": []
+            },
+            "spellGG": {
+                "urls": []
+            },
+            "spellDAB": {
+                "urls": []
+            },
+            "spellHaha": {
+                "urls": []
+            },
+            "spellAffe": {
+                "urls": []
+            }
+        },
+        "unique": [
+            "msch-majmar"
+        ]
+    },
+    {
+        "username": "msch-leakol",
+        "timestamp": 1700334562000,
+        "ach": {
+            "wonWithWhite": {
+                "urls": []
+            },
+            "wonWithBlack": {
+                "urls": []
+            },
+            "new_opponent": {
+                "urls": []
+            },
+            "small_underdog": {
+                "urls": []
+            },
+            "rookSniper": {
+                "urls": []
+            },
+            "textbookOpening": {
+                "urls": []
+            },
+            "noFool": {
+                "urls": []
+            },
+            "onlyPawnMoves": {
+                "urls": []
+            },
+            "mateWithQueen": {
+                "urls": []
+            },
+            "mateWithRook": {
+                "urls": []
+            },
+            "mateWithBishop": {
+                "urls": []
+            },
+            "mateWithKnight": {
+                "urls": []
+            },
+            "mateWithPawn": {
+                "urls": []
+            },
+            "mateWithKing": {
+                "urls": []
+            },
+            "mateOnBackRank": {
+                "urls": []
+            },
+            "mateWithLess": {
+                "urls": []
+            },
+            "mateAfterCapture": {
+                "urls": []
+            },
+            "secondQueen": {
+                "urls": []
+            },
+            "underpromote": {
+                "urls": []
+            },
+            "withTwoRooks": {
+                "urls": []
+            },
+            "withOneQueen": {
+                "urls": []
+            },
+            "withOneRook": {
+                "urls": []
+            },
+            "withTwoBishops": {
+                "urls": []
+            },
+            "withBishopKnight": {
+                "urls": []
+            },
+            "drawWithKing": {
+                "urls": []
+            },
+            "justTwoKings": {
+                "urls": []
+            },
+            "enpeasant": {
+                "urls": []
+            },
+            "castleWithCheck": {
+                "urls": []
+            },
+            "battlefield": {
+                "urls": []
+            },
+            "peacefulmode": {
+                "urls": []
+            },
+            "wonVsComputer1": {
+                "urls": []
+            },
+            "wonVsComputer2": {
+                "urls": []
+            },
+            "wonVsComputer3": {
+                "urls": []
+            },
+            "wonVsComputer8NoQueen": {
+                "urls": []
+            },
+            "basicPawnEndgame1": {
+                "urls": []
+            },
+            "basicPawnEndgame2": {
+                "urls": []
+            },
+            "mattStattPatt1": {
+                "urls": []
+            },
+            "mattStattPatt2": {
+                "urls": []
+            },
+            "mattStattPatt3": {
+                "urls": []
+            },
+            "mattStattPatt4": {
+                "urls": []
+            },
+            "mattStattPatt5": {
+                "urls": []
+            },
+            "mattStattPatt6": {
+                "urls": []
+            },
+            "spellGG": {
+                "urls": []
+            },
+            "spellDAB": {
+                "urls": []
+            },
+            "spellHaha": {
+                "urls": []
+            },
+            "spellAffe": {
+                "urls": []
+            }
+        },
+        "unique": []
+    },
+    {
+        "username": "msch-lelfek",
+        "timestamp": 1700334563000,
+        "ach": {
+            "wonWithWhite": {
+                "urls": []
+            },
+            "wonWithBlack": {
+                "urls": []
+            },
+            "new_opponent": {
+                "urls": []
+            },
+            "small_underdog": {
+                "urls": []
+            },
+            "rookSniper": {
+                "urls": []
+            },
+            "textbookOpening": {
+                "urls": []
+            },
+            "noFool": {
+                "urls": []
+            },
+            "onlyPawnMoves": {
+                "urls": []
+            },
+            "mateWithQueen": {
+                "urls": []
+            },
+            "mateWithRook": {
+                "urls": []
+            },
+            "mateWithBishop": {
+                "urls": []
+            },
+            "mateWithKnight": {
+                "urls": []
+            },
+            "mateWithPawn": {
+                "urls": []
+            },
+            "mateWithKing": {
+                "urls": []
+            },
+            "mateOnBackRank": {
+                "urls": []
+            },
+            "mateWithLess": {
+                "urls": []
+            },
+            "mateAfterCapture": {
+                "urls": []
+            },
+            "secondQueen": {
+                "urls": []
+            },
+            "underpromote": {
+                "urls": []
+            },
+            "withTwoRooks": {
+                "urls": []
+            },
+            "withOneQueen": {
+                "urls": []
+            },
+            "withOneRook": {
+                "urls": []
+            },
+            "withTwoBishops": {
+                "urls": []
+            },
+            "withBishopKnight": {
+                "urls": []
+            },
+            "drawWithKing": {
+                "urls": []
+            },
+            "justTwoKings": {
+                "urls": []
+            },
+            "enpeasant": {
+                "urls": []
+            },
+            "castleWithCheck": {
+                "urls": []
+            },
+            "battlefield": {
+                "urls": []
+            },
+            "peacefulmode": {
+                "urls": []
+            },
+            "wonVsComputer1": {
+                "urls": []
+            },
+            "wonVsComputer2": {
+                "urls": []
+            },
+            "wonVsComputer3": {
+                "urls": []
+            },
+            "wonVsComputer8NoQueen": {
+                "urls": []
+            },
+            "basicPawnEndgame1": {
+                "urls": []
+            },
+            "basicPawnEndgame2": {
+                "urls": []
+            },
+            "mattStattPatt1": {
+                "urls": []
+            },
+            "mattStattPatt2": {
+                "urls": []
+            },
+            "mattStattPatt3": {
+                "urls": []
+            },
+            "mattStattPatt4": {
+                "urls": []
+            },
+            "mattStattPatt5": {
+                "urls": []
+            },
+            "mattStattPatt6": {
+                "urls": []
+            },
+            "spellGG": {
+                "urls": []
+            },
+            "spellDAB": {
+                "urls": []
+            },
+            "spellHaha": {
+                "urls": []
+            },
+            "spellAffe": {
+                "urls": []
+            }
+        },
+        "unique": []
+    },
+    {
+        "username": "msch-lenly",
+        "timestamp": 1700334564000,
+        "ach": {
+            "wonWithWhite": {
+                "urls": []
+            },
+            "wonWithBlack": {
+                "urls": []
+            },
+            "new_opponent": {
+                "urls": [
+                    "https://lichess.org/4EwYUFdl",
+                    "https://lichess.org/VV93XzNC/black"
+                ]
+            },
+            "small_underdog": {
+                "urls": []
+            },
+            "rookSniper": {
+                "urls": []
+            },
+            "textbookOpening": {
+                "urls": []
+            },
+            "noFool": {
+                "urls": []
+            },
+            "onlyPawnMoves": {
+                "urls": []
+            },
+            "mateWithQueen": {
+                "urls": []
+            },
+            "mateWithRook": {
+                "urls": []
+            },
+            "mateWithBishop": {
+                "urls": []
+            },
+            "mateWithKnight": {
+                "urls": []
+            },
+            "mateWithPawn": {
+                "urls": []
+            },
+            "mateWithKing": {
+                "urls": []
+            },
+            "mateOnBackRank": {
+                "urls": []
+            },
+            "mateWithLess": {
+                "urls": []
+            },
+            "mateAfterCapture": {
+                "urls": []
+            },
+            "secondQueen": {
+                "urls": []
+            },
+            "underpromote": {
+                "urls": []
+            },
+            "withTwoRooks": {
+                "urls": []
+            },
+            "withOneQueen": {
+                "urls": []
+            },
+            "withOneRook": {
+                "urls": []
+            },
+            "withTwoBishops": {
+                "urls": []
+            },
+            "withBishopKnight": {
+                "urls": []
+            },
+            "drawWithKing": {
+                "urls": []
+            },
+            "justTwoKings": {
+                "urls": []
+            },
+            "enpeasant": {
+                "urls": []
+            },
+            "castleWithCheck": {
+                "urls": []
+            },
+            "battlefield": {
+                "urls": []
+            },
+            "peacefulmode": {
+                "urls": []
+            },
+            "wonVsComputer1": {
+                "urls": []
+            },
+            "wonVsComputer2": {
+                "urls": []
+            },
+            "wonVsComputer3": {
+                "urls": []
+            },
+            "wonVsComputer8NoQueen": {
+                "urls": []
+            },
+            "basicPawnEndgame1": {
+                "urls": []
+            },
+            "basicPawnEndgame2": {
+                "urls": []
+            },
+            "mattStattPatt1": {
+                "urls": []
+            },
+            "mattStattPatt2": {
+                "urls": []
+            },
+            "mattStattPatt3": {
+                "urls": []
+            },
+            "mattStattPatt4": {
+                "urls": []
+            },
+            "mattStattPatt5": {
+                "urls": []
+            },
+            "mattStattPatt6": {
+                "urls": []
+            },
+            "spellGG": {
+                "urls": []
+            },
+            "spellDAB": {
+                "urls": []
+            },
+            "spellHaha": {
+                "urls": []
+            },
+            "spellAffe": {
+                "urls": []
+            }
+        },
+        "unique": [
+            "msch-majmar",
+            "msch-brkkay"
+        ]
+    },
+    {
+        "username": "msch-lenmei",
+        "timestamp": 1700334564000,
+        "ach": {
+            "wonWithWhite": {
+                "urls": []
+            },
+            "wonWithBlack": {
+                "urls": []
+            },
+            "new_opponent": {
+                "urls": []
+            },
+            "small_underdog": {
+                "urls": []
+            },
+            "rookSniper": {
+                "urls": []
+            },
+            "textbookOpening": {
+                "urls": []
+            },
+            "noFool": {
+                "urls": []
+            },
+            "onlyPawnMoves": {
+                "urls": []
+            },
+            "mateWithQueen": {
+                "urls": []
+            },
+            "mateWithRook": {
+                "urls": []
+            },
+            "mateWithBishop": {
+                "urls": []
+            },
+            "mateWithKnight": {
+                "urls": []
+            },
+            "mateWithPawn": {
+                "urls": []
+            },
+            "mateWithKing": {
+                "urls": []
+            },
+            "mateOnBackRank": {
+                "urls": []
+            },
+            "mateWithLess": {
+                "urls": []
+            },
+            "mateAfterCapture": {
+                "urls": []
+            },
+            "secondQueen": {
+                "urls": []
+            },
+            "underpromote": {
+                "urls": []
+            },
+            "withTwoRooks": {
+                "urls": []
+            },
+            "withOneQueen": {
+                "urls": []
+            },
+            "withOneRook": {
+                "urls": []
+            },
+            "withTwoBishops": {
+                "urls": []
+            },
+            "withBishopKnight": {
+                "urls": []
+            },
+            "drawWithKing": {
+                "urls": []
+            },
+            "justTwoKings": {
+                "urls": []
+            },
+            "enpeasant": {
+                "urls": []
+            },
+            "castleWithCheck": {
+                "urls": []
+            },
+            "battlefield": {
+                "urls": []
+            },
+            "peacefulmode": {
+                "urls": []
+            },
+            "wonVsComputer1": {
+                "urls": []
+            },
+            "wonVsComputer2": {
+                "urls": []
+            },
+            "wonVsComputer3": {
+                "urls": []
+            },
+            "wonVsComputer8NoQueen": {
+                "urls": []
+            },
+            "basicPawnEndgame1": {
+                "urls": []
+            },
+            "basicPawnEndgame2": {
+                "urls": []
+            },
+            "mattStattPatt1": {
+                "urls": []
+            },
+            "mattStattPatt2": {
+                "urls": []
+            },
+            "mattStattPatt3": {
+                "urls": []
+            },
+            "mattStattPatt4": {
+                "urls": []
+            },
+            "mattStattPatt5": {
+                "urls": []
+            },
+            "mattStattPatt6": {
+                "urls": []
+            },
+            "spellGG": {
+                "urls": []
+            },
+            "spellDAB": {
+                "urls": []
+            },
+            "spellHaha": {
+                "urls": []
+            },
+            "spellAffe": {
+                "urls": []
+            }
+        },
+        "unique": []
+    },
+    {
+        "username": "msch-majmar",
+        "timestamp": 1700334569000,
+        "ach": {
+            "wonWithWhite": {
+                "urls": []
+            },
+            "wonWithBlack": {
+                "urls": [
+                    "https://lichess.org/41UzWwKX/black"
+                ]
+            },
+            "new_opponent": {
+                "urls": [
+                    "https://lichess.org/4EwYUFdl/black",
+                    "https://lichess.org/gVGi7xvv/black"
+                ]
+            },
+            "small_underdog": {
+                "urls": []
+            },
+            "rookSniper": {
+                "urls": []
+            },
+            "textbookOpening": {
+                "urls": []
+            },
+            "noFool": {
+                "urls": []
+            },
+            "onlyPawnMoves": {
+                "urls": []
+            },
+            "mateWithQueen": {
+                "urls": []
+            },
+            "mateWithRook": {
+                "urls": [
+                    "https://lichess.org/41UzWwKX/black"
+                ]
+            },
+            "mateWithBishop": {
+                "urls": []
+            },
+            "mateWithKnight": {
+                "urls": []
+            },
+            "mateWithPawn": {
+                "urls": []
+            },
+            "mateWithKing": {
+                "urls": []
+            },
+            "mateOnBackRank": {
+                "urls": []
+            },
+            "mateWithLess": {
+                "urls": []
+            },
+            "mateAfterCapture": {
+                "urls": []
+            },
+            "secondQueen": {
+                "urls": []
+            },
+            "underpromote": {
+                "urls": []
+            },
+            "withTwoRooks": {
+                "urls": []
+            },
+            "withOneQueen": {
+                "urls": []
+            },
+            "withOneRook": {
+                "urls": []
+            },
+            "withTwoBishops": {
+                "urls": []
+            },
+            "withBishopKnight": {
+                "urls": []
+            },
+            "drawWithKing": {
+                "urls": [
+                    "https://lichess.org/4EwYUFdl/black",
+                    "https://lichess.org/ICOVFetS"
+                ]
+            },
+            "justTwoKings": {
+                "urls": []
+            },
+            "enpeasant": {
+                "urls": []
+            },
+            "castleWithCheck": {
+                "urls": []
+            },
+            "battlefield": {
+                "urls": []
+            },
+            "peacefulmode": {
+                "urls": []
+            },
+            "wonVsComputer1": {
+                "urls": [
+                    "https://lichess.org/41UzWwKX/black"
+                ]
+            },
+            "wonVsComputer2": {
+                "urls": []
+            },
+            "wonVsComputer3": {
+                "urls": []
+            },
+            "wonVsComputer8NoQueen": {
+                "urls": []
+            },
+            "basicPawnEndgame1": {
+                "urls": []
+            },
+            "basicPawnEndgame2": {
+                "urls": []
+            },
+            "mattStattPatt1": {
+                "urls": []
+            },
+            "mattStattPatt2": {
+                "urls": []
+            },
+            "mattStattPatt3": {
+                "urls": []
+            },
+            "mattStattPatt4": {
+                "urls": []
+            },
+            "mattStattPatt5": {
+                "urls": []
+            },
+            "mattStattPatt6": {
+                "urls": []
+            },
+            "spellGG": {
+                "urls": []
+            },
+            "spellDAB": {
+                "urls": []
+            },
+            "spellHaha": {
+                "urls": []
+            },
+            "spellAffe": {
+                "urls": []
+            }
+        },
+        "unique": [
+            "msch-lenly",
+            "msch-ezgiyil"
+        ]
+    },
+    {
+        "username": "msch-marsai",
+        "timestamp": 1700334569000,
+        "ach": {
+            "wonWithWhite": {
+                "urls": []
+            },
+            "wonWithBlack": {
+                "urls": []
+            },
+            "new_opponent": {
+                "urls": []
+            },
+            "small_underdog": {
+                "urls": []
+            },
+            "rookSniper": {
+                "urls": []
+            },
+            "textbookOpening": {
+                "urls": []
+            },
+            "noFool": {
+                "urls": []
+            },
+            "onlyPawnMoves": {
+                "urls": []
+            },
+            "mateWithQueen": {
+                "urls": []
+            },
+            "mateWithRook": {
+                "urls": []
+            },
+            "mateWithBishop": {
+                "urls": []
+            },
+            "mateWithKnight": {
+                "urls": []
+            },
+            "mateWithPawn": {
+                "urls": []
+            },
+            "mateWithKing": {
+                "urls": []
+            },
+            "mateOnBackRank": {
+                "urls": []
+            },
+            "mateWithLess": {
+                "urls": []
+            },
+            "mateAfterCapture": {
+                "urls": []
+            },
+            "secondQueen": {
+                "urls": []
+            },
+            "underpromote": {
+                "urls": []
+            },
+            "withTwoRooks": {
+                "urls": []
+            },
+            "withOneQueen": {
+                "urls": []
+            },
+            "withOneRook": {
+                "urls": []
+            },
+            "withTwoBishops": {
+                "urls": []
+            },
+            "withBishopKnight": {
+                "urls": []
+            },
+            "drawWithKing": {
+                "urls": []
+            },
+            "justTwoKings": {
+                "urls": []
+            },
+            "enpeasant": {
+                "urls": []
+            },
+            "castleWithCheck": {
+                "urls": []
+            },
+            "battlefield": {
+                "urls": []
+            },
+            "peacefulmode": {
+                "urls": []
+            },
+            "wonVsComputer1": {
+                "urls": []
+            },
+            "wonVsComputer2": {
+                "urls": []
+            },
+            "wonVsComputer3": {
+                "urls": []
+            },
+            "wonVsComputer8NoQueen": {
+                "urls": []
+            },
+            "basicPawnEndgame1": {
+                "urls": []
+            },
+            "basicPawnEndgame2": {
+                "urls": []
+            },
+            "mattStattPatt1": {
+                "urls": []
+            },
+            "mattStattPatt2": {
+                "urls": []
+            },
+            "mattStattPatt3": {
+                "urls": []
+            },
+            "mattStattPatt4": {
+                "urls": []
+            },
+            "mattStattPatt5": {
+                "urls": []
+            },
+            "mattStattPatt6": {
+                "urls": []
+            },
+            "spellGG": {
+                "urls": []
+            },
+            "spellDAB": {
+                "urls": []
+            },
+            "spellHaha": {
+                "urls": []
+            },
+            "spellAffe": {
+                "urls": []
+            }
+        },
+        "unique": []
+    },
+    {
+        "username": "msch-mihtod",
+        "timestamp": 1700334570000,
+        "ach": {
+            "wonWithWhite": {
+                "urls": []
+            },
+            "wonWithBlack": {
+                "urls": []
+            },
+            "new_opponent": {
+                "urls": []
+            },
+            "small_underdog": {
+                "urls": []
+            },
+            "rookSniper": {
+                "urls": []
+            },
+            "textbookOpening": {
+                "urls": []
+            },
+            "noFool": {
+                "urls": []
+            },
+            "onlyPawnMoves": {
+                "urls": []
+            },
+            "mateWithQueen": {
+                "urls": []
+            },
+            "mateWithRook": {
+                "urls": []
+            },
+            "mateWithBishop": {
+                "urls": []
+            },
+            "mateWithKnight": {
+                "urls": []
+            },
+            "mateWithPawn": {
+                "urls": []
+            },
+            "mateWithKing": {
+                "urls": []
+            },
+            "mateOnBackRank": {
+                "urls": []
+            },
+            "mateWithLess": {
+                "urls": []
+            },
+            "mateAfterCapture": {
+                "urls": []
+            },
+            "secondQueen": {
+                "urls": []
+            },
+            "underpromote": {
+                "urls": []
+            },
+            "withTwoRooks": {
+                "urls": []
+            },
+            "withOneQueen": {
+                "urls": []
+            },
+            "withOneRook": {
+                "urls": []
+            },
+            "withTwoBishops": {
+                "urls": []
+            },
+            "withBishopKnight": {
+                "urls": []
+            },
+            "drawWithKing": {
+                "urls": []
+            },
+            "justTwoKings": {
+                "urls": []
+            },
+            "enpeasant": {
+                "urls": []
+            },
+            "castleWithCheck": {
+                "urls": []
+            },
+            "battlefield": {
+                "urls": []
+            },
+            "peacefulmode": {
+                "urls": []
+            },
+            "wonVsComputer1": {
+                "urls": []
+            },
+            "wonVsComputer2": {
+                "urls": []
+            },
+            "wonVsComputer3": {
+                "urls": []
+            },
+            "wonVsComputer8NoQueen": {
+                "urls": []
+            },
+            "basicPawnEndgame1": {
+                "urls": []
+            },
+            "basicPawnEndgame2": {
+                "urls": []
+            },
+            "mattStattPatt1": {
+                "urls": []
+            },
+            "mattStattPatt2": {
+                "urls": []
+            },
+            "mattStattPatt3": {
+                "urls": []
+            },
+            "mattStattPatt4": {
+                "urls": []
+            },
+            "mattStattPatt5": {
+                "urls": []
+            },
+            "mattStattPatt6": {
+                "urls": []
+            },
+            "spellGG": {
+                "urls": []
+            },
+            "spellDAB": {
+                "urls": []
+            },
+            "spellHaha": {
+                "urls": []
+            },
+            "spellAffe": {
+                "urls": []
+            }
+        },
+        "unique": []
+    },
+    {
+        "username": "msch-mikcin",
+        "timestamp": 1700334572000,
+        "ach": {
+            "wonWithWhite": {
+                "urls": []
+            },
+            "wonWithBlack": {
+                "urls": []
+            },
+            "new_opponent": {
+                "urls": [
+                    "https://lichess.org/QrfX35at/black",
+                    "https://lichess.org/LGxAliIn",
+                    "https://lichess.org/SLqTRfHa/black"
+                ]
+            },
+            "small_underdog": {
+                "urls": []
+            },
+            "rookSniper": {
+                "urls": []
+            },
+            "textbookOpening": {
+                "urls": []
+            },
+            "noFool": {
+                "urls": []
+            },
+            "onlyPawnMoves": {
+                "urls": []
+            },
+            "mateWithQueen": {
+                "urls": []
+            },
+            "mateWithRook": {
+                "urls": []
+            },
+            "mateWithBishop": {
+                "urls": []
+            },
+            "mateWithKnight": {
+                "urls": []
+            },
+            "mateWithPawn": {
+                "urls": []
+            },
+            "mateWithKing": {
+                "urls": []
+            },
+            "mateOnBackRank": {
+                "urls": []
+            },
+            "mateWithLess": {
+                "urls": []
+            },
+            "mateAfterCapture": {
+                "urls": []
+            },
+            "secondQueen": {
+                "urls": []
+            },
+            "underpromote": {
+                "urls": []
+            },
+            "withTwoRooks": {
+                "urls": []
+            },
+            "withOneQueen": {
+                "urls": []
+            },
+            "withOneRook": {
+                "urls": []
+            },
+            "withTwoBishops": {
+                "urls": []
+            },
+            "withBishopKnight": {
+                "urls": []
+            },
+            "drawWithKing": {
+                "urls": [
+                    "https://lichess.org/LGxAliIn"
+                ]
+            },
+            "justTwoKings": {
+                "urls": []
+            },
+            "enpeasant": {
+                "urls": []
+            },
+            "castleWithCheck": {
+                "urls": []
+            },
+            "battlefield": {
+                "urls": []
+            },
+            "peacefulmode": {
+                "urls": []
+            },
+            "wonVsComputer1": {
+                "urls": []
+            },
+            "wonVsComputer2": {
+                "urls": []
+            },
+            "wonVsComputer3": {
+                "urls": []
+            },
+            "wonVsComputer8NoQueen": {
+                "urls": []
+            },
+            "basicPawnEndgame1": {
+                "urls": []
+            },
+            "basicPawnEndgame2": {
+                "urls": []
+            },
+            "mattStattPatt1": {
+                "urls": []
+            },
+            "mattStattPatt2": {
+                "urls": []
+            },
+            "mattStattPatt3": {
+                "urls": []
+            },
+            "mattStattPatt4": {
+                "urls": []
+            },
+            "mattStattPatt5": {
+                "urls": []
+            },
+            "mattStattPatt6": {
+                "urls": []
+            },
+            "spellGG": {
+                "urls": []
+            },
+            "spellDAB": {
+                "urls": []
+            },
+            "spellHaha": {
+                "urls": []
+            },
+            "spellAffe": {
+                "urls": []
+            }
+        },
+        "unique": [
+            "msch-tahalp",
+            "msch-emierc",
+            "msch-selkar"
+        ]
+    },
+    {
+        "username": "msch-raphef",
+        "timestamp": 1700334576000,
+        "ach": {
+            "wonWithWhite": {
+                "urls": [
+                    "https://lichess.org/mtP0vSAX"
+                ]
+            },
+            "wonWithBlack": {
+                "urls": []
+            },
+            "new_opponent": {
+                "urls": [
+                    "https://lichess.org/mtP0vSAX",
+                    "https://lichess.org/tbXf0BfO/black"
+                ]
+            },
+            "small_underdog": {
+                "urls": []
+            },
+            "rookSniper": {
+                "urls": []
+            },
+            "textbookOpening": {
+                "urls": []
+            },
+            "noFool": {
+                "urls": []
+            },
+            "onlyPawnMoves": {
+                "urls": [
+                    "https://lichess.org/mtP0vSAX"
+                ]
+            },
+            "mateWithQueen": {
+                "urls": [
+                    "https://lichess.org/mtP0vSAX"
+                ]
+            },
+            "mateWithRook": {
+                "urls": []
+            },
+            "mateWithBishop": {
+                "urls": []
+            },
+            "mateWithKnight": {
+                "urls": []
+            },
+            "mateWithPawn": {
+                "urls": []
+            },
+            "mateWithKing": {
+                "urls": []
+            },
+            "mateOnBackRank": {
+                "urls": []
+            },
+            "mateWithLess": {
+                "urls": []
+            },
+            "mateAfterCapture": {
+                "urls": []
+            },
+            "secondQueen": {
+                "urls": []
+            },
+            "underpromote": {
+                "urls": []
+            },
+            "withTwoRooks": {
+                "urls": []
+            },
+            "withOneQueen": {
+                "urls": []
+            },
+            "withOneRook": {
+                "urls": []
+            },
+            "withTwoBishops": {
+                "urls": []
+            },
+            "withBishopKnight": {
+                "urls": []
+            },
+            "drawWithKing": {
+                "urls": [
+                    "https://lichess.org/wwuZIA2j"
+                ]
+            },
+            "justTwoKings": {
+                "urls": []
+            },
+            "enpeasant": {
+                "urls": []
+            },
+            "castleWithCheck": {
+                "urls": []
+            },
+            "battlefield": {
+                "urls": [
+                    "https://lichess.org/mtP0vSAX"
+                ]
+            },
+            "peacefulmode": {
+                "urls": []
+            },
+            "wonVsComputer1": {
+                "urls": []
+            },
+            "wonVsComputer2": {
+                "urls": []
+            },
+            "wonVsComputer3": {
+                "urls": []
+            },
+            "wonVsComputer8NoQueen": {
+                "urls": []
+            },
+            "basicPawnEndgame1": {
+                "urls": []
+            },
+            "basicPawnEndgame2": {
+                "urls": []
+            },
+            "mattStattPatt1": {
+                "urls": []
+            },
+            "mattStattPatt2": {
+                "urls": []
+            },
+            "mattStattPatt3": {
+                "urls": []
+            },
+            "mattStattPatt4": {
+                "urls": []
+            },
+            "mattStattPatt5": {
+                "urls": []
+            },
+            "mattStattPatt6": {
+                "urls": []
+            },
+            "spellGG": {
+                "urls": []
+            },
+            "spellDAB": {
+                "urls": []
+            },
+            "spellHaha": {
+                "urls": []
+            },
+            "spellAffe": {
+                "urls": []
+            }
+        },
+        "unique": [
+            "msch-tahalp",
+            "msch-brkkay"
+        ]
+    },
+    {
+        "username": "msch-ronber",
+        "timestamp": 1700334576000,
+        "ach": {
+            "wonWithWhite": {
+                "urls": []
+            },
+            "wonWithBlack": {
+                "urls": []
+            },
+            "new_opponent": {
+                "urls": []
+            },
+            "small_underdog": {
+                "urls": []
+            },
+            "rookSniper": {
+                "urls": []
+            },
+            "textbookOpening": {
+                "urls": []
+            },
+            "noFool": {
+                "urls": []
+            },
+            "onlyPawnMoves": {
+                "urls": []
+            },
+            "mateWithQueen": {
+                "urls": []
+            },
+            "mateWithRook": {
+                "urls": []
+            },
+            "mateWithBishop": {
+                "urls": []
+            },
+            "mateWithKnight": {
+                "urls": []
+            },
+            "mateWithPawn": {
+                "urls": []
+            },
+            "mateWithKing": {
+                "urls": []
+            },
+            "mateOnBackRank": {
+                "urls": []
+            },
+            "mateWithLess": {
+                "urls": []
+            },
+            "mateAfterCapture": {
+                "urls": []
+            },
+            "secondQueen": {
+                "urls": []
+            },
+            "underpromote": {
+                "urls": []
+            },
+            "withTwoRooks": {
+                "urls": []
+            },
+            "withOneQueen": {
+                "urls": []
+            },
+            "withOneRook": {
+                "urls": []
+            },
+            "withTwoBishops": {
+                "urls": []
+            },
+            "withBishopKnight": {
+                "urls": []
+            },
+            "drawWithKing": {
+                "urls": []
+            },
+            "justTwoKings": {
+                "urls": []
+            },
+            "enpeasant": {
+                "urls": []
+            },
+            "castleWithCheck": {
+                "urls": []
+            },
+            "battlefield": {
+                "urls": []
+            },
+            "peacefulmode": {
+                "urls": []
+            },
+            "wonVsComputer1": {
+                "urls": []
+            },
+            "wonVsComputer2": {
+                "urls": []
+            },
+            "wonVsComputer3": {
+                "urls": []
+            },
+            "wonVsComputer8NoQueen": {
+                "urls": []
+            },
+            "basicPawnEndgame1": {
+                "urls": []
+            },
+            "basicPawnEndgame2": {
+                "urls": []
+            },
+            "mattStattPatt1": {
+                "urls": []
+            },
+            "mattStattPatt2": {
+                "urls": []
+            },
+            "mattStattPatt3": {
+                "urls": []
+            },
+            "mattStattPatt4": {
+                "urls": []
+            },
+            "mattStattPatt5": {
+                "urls": []
+            },
+            "mattStattPatt6": {
+                "urls": []
+            },
+            "spellGG": {
+                "urls": []
+            },
+            "spellDAB": {
+                "urls": []
+            },
+            "spellHaha": {
+                "urls": []
+            },
+            "spellAffe": {
+                "urls": []
+            }
+        },
+        "unique": []
+    },
+    {
+        "username": "msch-selkar",
+        "timestamp": 1700334579000,
+        "ach": {
+            "wonWithWhite": {
+                "urls": [
+                    "https://lichess.org/SMYX8HFq",
+                    "https://lichess.org/TruGOSs3"
+                ]
+            },
+            "wonWithBlack": {
+                "urls": []
+            },
+            "new_opponent": {
+                "urls": [
+                    "https://lichess.org/SMYX8HFq",
+                    "https://lichess.org/z185q4o4",
+                    "https://lichess.org/SLqTRfHa",
+                    "https://lichess.org/rnfkSygy"
+                ]
+            },
+            "small_underdog": {
+                "urls": []
+            },
+            "rookSniper": {
+                "urls": []
+            },
+            "textbookOpening": {
+                "urls": []
+            },
+            "noFool": {
+                "urls": []
+            },
+            "onlyPawnMoves": {
+                "urls": []
+            },
+            "mateWithQueen": {
+                "urls": [
+                    "https://lichess.org/SMYX8HFq",
+                    "https://lichess.org/TruGOSs3"
+                ]
+            },
+            "mateWithRook": {
+                "urls": []
+            },
+            "mateWithBishop": {
+                "urls": []
+            },
+            "mateWithKnight": {
+                "urls": []
+            },
+            "mateWithPawn": {
+                "urls": []
+            },
+            "mateWithKing": {
+                "urls": []
+            },
+            "mateOnBackRank": {
+                "urls": [
+                    "https://lichess.org/SMYX8HFq",
+                    "https://lichess.org/TruGOSs3"
+                ]
+            },
+            "mateWithLess": {
+                "urls": []
+            },
+            "mateAfterCapture": {
+                "urls": []
+            },
+            "secondQueen": {
+                "urls": []
+            },
+            "underpromote": {
+                "urls": []
+            },
+            "withTwoRooks": {
+                "urls": []
+            },
+            "withOneQueen": {
+                "urls": []
+            },
+            "withOneRook": {
+                "urls": []
+            },
+            "withTwoBishops": {
+                "urls": []
+            },
+            "withBishopKnight": {
+                "urls": []
+            },
+            "drawWithKing": {
+                "urls": [
+                    "https://lichess.org/Lo6w6g6V/black",
+                    "https://lichess.org/YSFftxhs",
+                    "https://lichess.org/D39OiDZW/black",
+                    "https://lichess.org/tTtlfisQ",
+                    "https://lichess.org/MRgTsHeo/black",
+                    "https://lichess.org/2xJfLM4H/black",
+                    "https://lichess.org/bvIR1gRX",
+                    "https://lichess.org/SLqTRfHa"
+                ]
+            },
+            "justTwoKings": {
+                "urls": [
+                    "https://lichess.org/hUqqSAiO",
+                    "https://lichess.org/vAN9NPWR/black",
+                    "https://lichess.org/pqTdREOB/black"
+                ]
+            },
+            "enpeasant": {
+                "urls": []
+            },
+            "castleWithCheck": {
+                "urls": []
+            },
+            "battlefield": {
+                "urls": []
+            },
+            "peacefulmode": {
+                "urls": []
+            },
+            "wonVsComputer1": {
+                "urls": []
+            },
+            "wonVsComputer2": {
+                "urls": []
+            },
+            "wonVsComputer3": {
+                "urls": []
+            },
+            "wonVsComputer8NoQueen": {
+                "urls": []
+            },
+            "basicPawnEndgame1": {
+                "urls": []
+            },
+            "basicPawnEndgame2": {
+                "urls": []
+            },
+            "mattStattPatt1": {
+                "urls": []
+            },
+            "mattStattPatt2": {
+                "urls": []
+            },
+            "mattStattPatt3": {
+                "urls": []
+            },
+            "mattStattPatt4": {
+                "urls": []
+            },
+            "mattStattPatt5": {
+                "urls": []
+            },
+            "mattStattPatt6": {
+                "urls": []
+            },
+            "spellGG": {
+                "urls": []
+            },
+            "spellDAB": {
+                "urls": []
+            },
+            "spellHaha": {
+                "urls": []
+            },
+            "spellAffe": {
+                "urls": []
+            }
+        },
+        "unique": [
+            "msch-emierc",
+            "msch-tahalp",
+            "msch-mikcin",
+            "msch-brkkay"
+        ]
+    },
+    {
+        "username": "msch-tahalp",
+        "timestamp": 1700334585000,
+        "ach": {
+            "wonWithWhite": {
+                "urls": [
+                    "https://lichess.org/QrfX35at",
+                    "https://lichess.org/tXmQB86w",
+                    "https://lichess.org/RwTskxaK",
+                    "https://lichess.org/CrDaIFB8",
+                    "https://lichess.org/WH1Y9fTY",
+                    "https://lichess.org/tESynWKz",
+                    "https://lichess.org/T2cI7ZRR",
+                    "https://lichess.org/VQdprBHV",
+                    "https://lichess.org/JG46OfRi",
+                    "https://lichess.org/0vKMsVWc"
+                ]
+            },
+            "wonWithBlack": {
+                "urls": [
+                    "https://lichess.org/2FWIplpt/black",
+                    "https://lichess.org/ozKXCZtw/black",
+                    "https://lichess.org/KiM2McNJ/black",
+                    "https://lichess.org/TgDrpG7x/black",
+                    "https://lichess.org/WoA7LPEE/black",
+                    "https://lichess.org/kei2oPZw/black",
+                    "https://lichess.org/kb3JSkEj/black",
+                    "https://lichess.org/kQszHUoA/black",
+                    "https://lichess.org/HxK23ABH/black",
+                    "https://lichess.org/crRqEeuZ/black",
+                    "https://lichess.org/3Es7reZi/black",
+                    "https://lichess.org/hpgBGJei/black"
+                ]
+            },
+            "new_opponent": {
+                "urls": [
+                    "https://lichess.org/SZ37ESHh",
+                    "https://lichess.org/QrfX35at",
+                    "https://lichess.org/z185q4o4/black",
+                    "https://lichess.org/RwTskxaK",
+                    "https://lichess.org/mtP0vSAX/black"
+                ]
+            },
+            "small_underdog": {
+                "urls": []
+            },
+            "rookSniper": {
+                "urls": []
+            },
+            "textbookOpening": {
+                "urls": []
+            },
+            "noFool": {
+                "urls": []
+            },
+            "onlyPawnMoves": {
+                "urls": [
+                    "https://lichess.org/ozKXCZtw/black"
+                ]
+            },
+            "mateWithQueen": {
+                "urls": [
+                    "https://lichess.org/QrfX35at",
+                    "https://lichess.org/tXmQB86w",
+                    "https://lichess.org/2FWIplpt/black",
+                    "https://lichess.org/ozKXCZtw/black",
+                    "https://lichess.org/KiM2McNJ/black",
+                    "https://lichess.org/TgDrpG7x/black",
+                    "https://lichess.org/WoA7LPEE/black",
+                    "https://lichess.org/CrDaIFB8",
+                    "https://lichess.org/kei2oPZw/black",
+                    "https://lichess.org/WH1Y9fTY",
+                    "https://lichess.org/kb3JSkEj/black",
+                    "https://lichess.org/tESynWKz",
+                    "https://lichess.org/T2cI7ZRR",
+                    "https://lichess.org/HxK23ABH/black",
+                    "https://lichess.org/crRqEeuZ/black",
+                    "https://lichess.org/3Es7reZi/black",
+                    "https://lichess.org/VQdprBHV",
+                    "https://lichess.org/hpgBGJei/black"
+                ]
+            },
+            "mateWithRook": {
+                "urls": [
+                    "https://lichess.org/RwTskxaK",
+                    "https://lichess.org/0vKMsVWc"
+                ]
+            },
+            "mateWithBishop": {
+                "urls": []
+            },
+            "mateWithKnight": {
+                "urls": [
+                    "https://lichess.org/JG46OfRi"
+                ]
+            },
+            "mateWithPawn": {
+                "urls": [
+                    "https://lichess.org/kQszHUoA/black",
+                    "https://lichess.org/hpgBGJei/black"
+                ]
+            },
+            "mateWithKing": {
+                "urls": []
+            },
+            "mateOnBackRank": {
+                "urls": [
+                    "https://lichess.org/tESynWKz"
+                ]
+            },
+            "mateWithLess": {
+                "urls": []
+            },
+            "mateAfterCapture": {
+                "urls": []
+            },
+            "secondQueen": {
+                "urls": [
+                    "https://lichess.org/QrfX35at",
+                    "https://lichess.org/tXmQB86w",
+                    "https://lichess.org/2FWIplpt/black",
+                    "https://lichess.org/TgDrpG7x/black",
+                    "https://lichess.org/WoA7LPEE/black",
+                    "https://lichess.org/CrDaIFB8",
+                    "https://lichess.org/WH1Y9fTY",
+                    "https://lichess.org/T2cI7ZRR",
+                    "https://lichess.org/HxK23ABH/black",
+                    "https://lichess.org/VQdprBHV"
+                ]
+            },
+            "underpromote": {
+                "urls": []
+            },
+            "withTwoRooks": {
+                "urls": []
+            },
+            "withOneQueen": {
+                "urls": []
+            },
+            "withOneRook": {
+                "urls": []
+            },
+            "withTwoBishops": {
+                "urls": []
+            },
+            "withBishopKnight": {
+                "urls": []
+            },
+            "drawWithKing": {
+                "urls": [
+                    "https://lichess.org/L3WJuahp/black",
+                    "https://lichess.org/gv6LNztR",
+                    "https://lichess.org/xuMKdF18",
+                    "https://lichess.org/qs5CX0sw/black",
+                    "https://lichess.org/pS0IN8RV/black"
+                ]
+            },
+            "justTwoKings": {
+                "urls": [
+                    "https://lichess.org/hUqqSAiO/black",
+                    "https://lichess.org/ltMfTARh/black",
+                    "https://lichess.org/1CEHmvrE",
+                    "https://lichess.org/pVwcV7Jb"
+                ]
+            },
+            "enpeasant": {
+                "urls": []
+            },
+            "castleWithCheck": {
+                "urls": []
+            },
+            "battlefield": {
+                "urls": [
+                    "https://lichess.org/T2cI7ZRR",
+                    "https://lichess.org/crRqEeuZ/black"
+                ]
+            },
+            "peacefulmode": {
+                "urls": []
+            },
+            "wonVsComputer1": {
+                "urls": [
+                    "https://lichess.org/2FWIplpt/black",
+                    "https://lichess.org/CrDaIFB8",
+                    "https://lichess.org/kei2oPZw/black",
+                    "https://lichess.org/WH1Y9fTY",
+                    "https://lichess.org/kb3JSkEj/black",
+                    "https://lichess.org/tESynWKz",
+                    "https://lichess.org/kQszHUoA/black",
+                    "https://lichess.org/T2cI7ZRR",
+                    "https://lichess.org/JG46OfRi",
+                    "https://lichess.org/hpgBGJei/black"
+                ]
+            },
+            "wonVsComputer2": {
+                "urls": []
+            },
+            "wonVsComputer3": {
+                "urls": []
+            },
+            "wonVsComputer8NoQueen": {
+                "urls": []
+            },
+            "basicPawnEndgame1": {
+                "urls": []
+            },
+            "basicPawnEndgame2": {
+                "urls": []
+            },
+            "mattStattPatt1": {
+                "urls": []
+            },
+            "mattStattPatt2": {
+                "urls": []
+            },
+            "mattStattPatt3": {
+                "urls": []
+            },
+            "mattStattPatt4": {
+                "urls": []
+            },
+            "mattStattPatt5": {
+                "urls": []
+            },
+            "mattStattPatt6": {
+                "urls": []
+            },
+            "spellGG": {
+                "urls": []
+            },
+            "spellDAB": {
+                "urls": []
+            },
+            "spellHaha": {
+                "urls": []
+            },
+            "spellAffe": {
+                "urls": []
+            }
+        },
+        "unique": [
+            "msch-brkkay",
+            "msch-mikcin",
+            "msch-selkar",
+            "msch-emierc",
+            "msch-raphef"
+        ]
+    },
+    {
+        "username": "msch-turgue",
+        "timestamp": 1700334585000,
+        "ach": {
+            "wonWithWhite": {
+                "urls": []
+            },
+            "wonWithBlack": {
+                "urls": []
+            },
+            "new_opponent": {
+                "urls": []
+            },
+            "small_underdog": {
+                "urls": []
+            },
+            "rookSniper": {
+                "urls": []
+            },
+            "textbookOpening": {
+                "urls": []
+            },
+            "noFool": {
+                "urls": []
+            },
+            "onlyPawnMoves": {
+                "urls": []
+            },
+            "mateWithQueen": {
+                "urls": []
+            },
+            "mateWithRook": {
+                "urls": []
+            },
+            "mateWithBishop": {
+                "urls": []
+            },
+            "mateWithKnight": {
+                "urls": []
+            },
+            "mateWithPawn": {
+                "urls": []
+            },
+            "mateWithKing": {
+                "urls": []
+            },
+            "mateOnBackRank": {
+                "urls": []
+            },
+            "mateWithLess": {
+                "urls": []
+            },
+            "mateAfterCapture": {
+                "urls": []
+            },
+            "secondQueen": {
+                "urls": []
+            },
+            "underpromote": {
+                "urls": []
+            },
+            "withTwoRooks": {
+                "urls": []
+            },
+            "withOneQueen": {
+                "urls": []
+            },
+            "withOneRook": {
+                "urls": []
+            },
+            "withTwoBishops": {
+                "urls": []
+            },
+            "withBishopKnight": {
+                "urls": []
+            },
+            "drawWithKing": {
+                "urls": []
+            },
+            "justTwoKings": {
+                "urls": []
+            },
+            "enpeasant": {
+                "urls": []
+            },
+            "castleWithCheck": {
+                "urls": []
+            },
+            "battlefield": {
+                "urls": []
+            },
+            "peacefulmode": {
+                "urls": []
+            },
+            "wonVsComputer1": {
+                "urls": []
+            },
+            "wonVsComputer2": {
+                "urls": []
+            },
+            "wonVsComputer3": {
+                "urls": []
+            },
+            "wonVsComputer8NoQueen": {
+                "urls": []
+            },
+            "basicPawnEndgame1": {
+                "urls": []
+            },
+            "basicPawnEndgame2": {
+                "urls": []
+            },
+            "mattStattPatt1": {
+                "urls": []
+            },
+            "mattStattPatt2": {
+                "urls": []
+            },
+            "mattStattPatt3": {
+                "urls": []
+            },
+            "mattStattPatt4": {
+                "urls": []
+            },
+            "mattStattPatt5": {
+                "urls": []
+            },
+            "mattStattPatt6": {
+                "urls": []
+            },
+            "spellGG": {
+                "urls": []
+            },
+            "spellDAB": {
+                "urls": []
+            },
+            "spellHaha": {
+                "urls": []
+            },
+            "spellAffe": {
+                "urls": []
+            }
+        },
+        "unique": []
+    },
+    {
+        "username": "msch-yahyue",
+        "timestamp": 1700334586000,
+        "ach": {
+            "wonWithWhite": {
+                "urls": []
+            },
+            "wonWithBlack": {
+                "urls": []
+            },
+            "new_opponent": {
+                "urls": []
+            },
+            "small_underdog": {
+                "urls": []
+            },
+            "rookSniper": {
+                "urls": []
+            },
+            "textbookOpening": {
+                "urls": []
+            },
+            "noFool": {
+                "urls": []
+            },
+            "onlyPawnMoves": {
+                "urls": []
+            },
+            "mateWithQueen": {
+                "urls": []
+            },
+            "mateWithRook": {
+                "urls": []
+            },
+            "mateWithBishop": {
+                "urls": []
+            },
+            "mateWithKnight": {
+                "urls": []
+            },
+            "mateWithPawn": {
+                "urls": []
+            },
+            "mateWithKing": {
+                "urls": []
+            },
+            "mateOnBackRank": {
+                "urls": []
+            },
+            "mateWithLess": {
+                "urls": []
+            },
+            "mateAfterCapture": {
+                "urls": []
+            },
+            "secondQueen": {
+                "urls": []
+            },
+            "underpromote": {
+                "urls": []
+            },
+            "withTwoRooks": {
+                "urls": []
+            },
+            "withOneQueen": {
+                "urls": []
+            },
+            "withOneRook": {
+                "urls": []
+            },
+            "withTwoBishops": {
+                "urls": []
+            },
+            "withBishopKnight": {
+                "urls": []
+            },
+            "drawWithKing": {
+                "urls": []
+            },
+            "justTwoKings": {
+                "urls": []
+            },
+            "enpeasant": {
+                "urls": []
+            },
+            "castleWithCheck": {
+                "urls": []
+            },
+            "battlefield": {
+                "urls": []
+            },
+            "peacefulmode": {
+                "urls": []
+            },
+            "wonVsComputer1": {
+                "urls": []
+            },
+            "wonVsComputer2": {
+                "urls": []
+            },
+            "wonVsComputer3": {
+                "urls": []
+            },
+            "wonVsComputer8NoQueen": {
+                "urls": []
+            },
+            "basicPawnEndgame1": {
+                "urls": []
+            },
+            "basicPawnEndgame2": {
+                "urls": []
+            },
+            "mattStattPatt1": {
+                "urls": []
+            },
+            "mattStattPatt2": {
+                "urls": []
+            },
+            "mattStattPatt3": {
+                "urls": []
+            },
+            "mattStattPatt4": {
+                "urls": []
+            },
+            "mattStattPatt5": {
+                "urls": []
+            },
+            "mattStattPatt6": {
+                "urls": []
+            },
+            "spellGG": {
+                "urls": []
+            },
+            "spellDAB": {
+                "urls": []
+            },
+            "spellHaha": {
+                "urls": []
+            },
+            "spellAffe": {
+                "urls": []
+            }
+        },
+        "unique": []
+    },
+    {
+        "username": "esmkar",
+        "timestamp": 1700334588000,
+        "ach": {
+            "wonWithWhite": {
+                "urls": [
+                    "https://lichess.org/uvOwY4Fc"
+                ]
+            },
+            "wonWithBlack": {
+                "urls": []
+            },
+            "new_opponent": {
+                "urls": []
+            },
+            "small_underdog": {
+                "urls": []
+            },
+            "rookSniper": {
+                "urls": []
+            },
+            "textbookOpening": {
+                "urls": []
+            },
+            "noFool": {
+                "urls": []
+            },
+            "onlyPawnMoves": {
+                "urls": []
+            },
+            "mateWithQueen": {
+                "urls": [
+                    "https://lichess.org/uvOwY4Fc"
+                ]
+            },
+            "mateWithRook": {
+                "urls": []
+            },
+            "mateWithBishop": {
+                "urls": []
+            },
+            "mateWithKnight": {
+                "urls": []
+            },
+            "mateWithPawn": {
+                "urls": []
+            },
+            "mateWithKing": {
+                "urls": []
+            },
+            "mateOnBackRank": {
+                "urls": []
+            },
+            "mateWithLess": {
+                "urls": []
+            },
+            "mateAfterCapture": {
+                "urls": []
+            },
+            "secondQueen": {
+                "urls": []
+            },
+            "underpromote": {
+                "urls": []
+            },
+            "withTwoRooks": {
+                "urls": []
+            },
+            "withOneQueen": {
+                "urls": []
+            },
+            "withOneRook": {
+                "urls": []
+            },
+            "withTwoBishops": {
+                "urls": []
+            },
+            "withBishopKnight": {
+                "urls": []
+            },
+            "drawWithKing": {
+                "urls": []
+            },
+            "justTwoKings": {
+                "urls": []
+            },
+            "enpeasant": {
+                "urls": []
+            },
+            "castleWithCheck": {
+                "urls": []
+            },
+            "battlefield": {
+                "urls": []
+            },
+            "peacefulmode": {
+                "urls": []
+            },
+            "wonVsComputer1": {
+                "urls": [
+                    "https://lichess.org/uvOwY4Fc"
+                ]
+            },
+            "wonVsComputer2": {
+                "urls": []
+            },
+            "wonVsComputer3": {
+                "urls": []
+            },
+            "wonVsComputer8NoQueen": {
+                "urls": []
+            },
+            "basicPawnEndgame1": {
+                "urls": []
+            },
+            "basicPawnEndgame2": {
+                "urls": []
+            },
+            "mattStattPatt1": {
+                "urls": []
+            },
+            "mattStattPatt2": {
+                "urls": []
+            },
+            "mattStattPatt3": {
+                "urls": []
+            },
+            "mattStattPatt4": {
+                "urls": []
+            },
+            "mattStattPatt5": {
+                "urls": []
+            },
+            "mattStattPatt6": {
+                "urls": []
+            },
+            "spellGG": {
+                "urls": []
+            },
+            "spellDAB": {
+                "urls": []
+            },
+            "spellHaha": {
+                "urls": []
+            },
+            "spellAffe": {
+                "urls": []
+            }
+        },
+        "unique": []
+    },
+    {
+        "username": "msch-adrhor",
+        "timestamp": 1700336317000,
+        "ach": {
+            "wonWithWhite": {
+                "urls": [
+                    "https://lichess.org/6U4JauP2",
+                    "https://lichess.org/DtiNo2u1",
+                    "https://lichess.org/BBHDG9rR",
+                    "https://lichess.org/fcNTwdz7",
+                    "https://lichess.org/rTEQ04dk",
+                    "https://lichess.org/bywh4xAS",
+                    "https://lichess.org/FG0wu6pa",
+                    "https://lichess.org/3lIWlK4v",
+                    "https://lichess.org/YJPUxSpL",
+                    "https://lichess.org/CI8T0gEV",
+                    "https://lichess.org/nub3UiJI",
+                    "https://lichess.org/PEabU5gu",
+                    "https://lichess.org/WViedzd7",
+                    "https://lichess.org/JsaBhmNF",
+                    "https://lichess.org/wUN2NM0C",
+                    "https://lichess.org/gK26pSp7",
+                    "https://lichess.org/N5Rj4cIA",
+                    "https://lichess.org/9Isxv8Du",
+                    "https://lichess.org/u9pDkuRp",
+                    "https://lichess.org/u1vBMmrG",
+                    "https://lichess.org/XCnIqeHf",
+                    "https://lichess.org/I3B7ycDT",
+                    "https://lichess.org/vZQNamKM",
+                    "https://lichess.org/H9LNPuW2",
+                    "https://lichess.org/d2GGgdSn",
+                    "https://lichess.org/EneGvGaK",
+                    "https://lichess.org/gWT2Ez6z",
+                    "https://lichess.org/VDL7i1px",
+                    "https://lichess.org/K2fRXePC",
+                    "https://lichess.org/yBZLXbXQ",
+                    "https://lichess.org/XuBdcavJ",
+                    "https://lichess.org/Kadm1fUk",
+                    "https://lichess.org/e62pKkUe",
+                    "https://lichess.org/XaNuXPGR",
+                    "https://lichess.org/uMJkhWuC",
+                    "https://lichess.org/HV8v4fpp",
+                    "https://lichess.org/XngDrG7q",
+                    "https://lichess.org/AdmbBwFT",
+                    "https://lichess.org/oMaNyckO",
+                    "https://lichess.org/F6ussyVP",
+                    "https://lichess.org/3PuCjgpQ",
+                    "https://lichess.org/2d0PsD6Y",
+                    "https://lichess.org/SD3gOPba",
+                    "https://lichess.org/MTvJboYc",
+                    "https://lichess.org/Fq8zYXct",
+                    "https://lichess.org/8mJwViNz",
+                    "https://lichess.org/zLzxdYru",
+                    "https://lichess.org/0KrgxiUN",
+                    "https://lichess.org/vlxcqwsw"
+                ]
+            },
+            "wonWithBlack": {
+                "urls": [
+                    "https://lichess.org/DEAOez3J/black",
+                    "https://lichess.org/uAB8ZYVb/black",
+                    "https://lichess.org/VFJttnbt/black",
+                    "https://lichess.org/y75m6rng/black",
+                    "https://lichess.org/v1iLKJmB/black",
+                    "https://lichess.org/l36R0EMV/black",
+                    "https://lichess.org/Z8hcxvnM/black",
+                    "https://lichess.org/CoAxKQDH/black",
+                    "https://lichess.org/279f7TSv/black",
+                    "https://lichess.org/PxPaRhw9/black",
+                    "https://lichess.org/CJ97eKPJ/black",
+                    "https://lichess.org/zMH4ZoyF/black",
+                    "https://lichess.org/4xK8aUjt/black",
+                    "https://lichess.org/gBzlgyt4/black",
+                    "https://lichess.org/6CEU0Z0p/black",
+                    "https://lichess.org/U21NzJFZ/black",
+                    "https://lichess.org/G8XQyDmc/black",
+                    "https://lichess.org/H9I7SU24/black",
+                    "https://lichess.org/KTgFphBk/black",
+                    "https://lichess.org/Z496TlgE/black",
+                    "https://lichess.org/FLB078H4/black",
+                    "https://lichess.org/yQGicxH5/black",
+                    "https://lichess.org/GffOUrKp/black",
+                    "https://lichess.org/tHH4P3BB/black",
+                    "https://lichess.org/mgdu0MDt/black",
+                    "https://lichess.org/Aw609j7C/black",
+                    "https://lichess.org/MSMsj6Tl/black",
+                    "https://lichess.org/D1G1YCEp/black",
+                    "https://lichess.org/KwmYQV8B/black",
+                    "https://lichess.org/pLTnbNVE/black",
+                    "https://lichess.org/noYqGWHJ/black",
+                    "https://lichess.org/efkaC5BX/black",
+                    "https://lichess.org/eFmKuwr9/black",
+                    "https://lichess.org/WbzjONgc/black",
+                    "https://lichess.org/YukuVNrr/black",
+                    "https://lichess.org/4i5phMfi/black",
+                    "https://lichess.org/qlxb4wii/black",
+                    "https://lichess.org/aoJSxTHI/black",
+                    "https://lichess.org/HtFm4ETG/black",
+                    "https://lichess.org/0IDgZJMM/black",
+                    "https://lichess.org/JAjAiKEA/black",
+                    "https://lichess.org/iW5NxHqY/black",
+                    "https://lichess.org/UKPmHTXq/black"
+                ]
+            },
+            "new_opponent": {
+                "urls": [
+                    "https://lichess.org/DEAOez3J/black",
+                    "https://lichess.org/3vZS893T/black",
+                    "https://lichess.org/6CEU0Z0p/black",
+                    "https://lichess.org/XCnIqeHf",
+                    "https://lichess.org/vZQNamKM",
+                    "https://lichess.org/uMJkhWuC"
+                ]
+            },
+            "mattStattPatt1": {
+                "urls": []
+            },
+            "mattStattPatt2": {
+                "urls": []
+            },
+            "mattStattPatt3": {
+                "urls": []
+            },
+            "mattStattPatt4": {
+                "urls": []
+            },
+            "mattStattPatt5": {
+                "urls": []
+            },
+            "mattStattPatt6": {
+                "urls": []
+            },
+            "textbookOpening": {
+                "urls": [
+                    "https://lichess.org/DtiNo2u1",
+                    "https://lichess.org/bywh4xAS",
+                    "https://lichess.org/YJPUxSpL",
+                    "https://lichess.org/WViedzd7",
+                    "https://lichess.org/9Isxv8Du",
+                    "https://lichess.org/u9pDkuRp",
+                    "https://lichess.org/gBzlgyt4/black",
+                    "https://lichess.org/6CEU0Z0p/black",
+                    "https://lichess.org/XCnIqeHf",
+                    "https://lichess.org/I3B7ycDT",
+                    "https://lichess.org/KTgFphBk/black",
+                    "https://lichess.org/gWT2Ez6z",
+                    "https://lichess.org/D1G1YCEp/black",
+                    "https://lichess.org/yBZLXbXQ",
+                    "https://lichess.org/uMJkhWuC",
+                    "https://lichess.org/HV8v4fpp",
+                    "https://lichess.org/8mJwViNz",
+                    "https://lichess.org/vlxcqwsw"
+                ]
+            },
+            "wonVsComputer1": {
+                "urls": [
+                    "https://lichess.org/UKPmHTXq/black"
+                ]
+            },
+            "wonVsComputer2": {
+                "urls": []
+            },
+            "wonVsComputer3": {
+                "urls": [
+                    "https://lichess.org/F6ussyVP"
+                ]
+            },
+            "wonVsComputer8NoQueen": {
+                "urls": []
+            },
+            "basicPawnEndgame1": {
+                "urls": []
+            },
+            "basicPawnEndgame2": {
+                "urls": []
+            },
+            "withTwoRooks": {
+                "urls": [
+                    "https://lichess.org/PEabU5gu",
+                    "https://lichess.org/aoJSxTHI/black"
+                ]
+            },
+            "withOneQueen": {
+                "urls": []
+            },
+            "withOneRook": {
+                "urls": [
+                    "https://lichess.org/U21NzJFZ/black"
+                ]
+            },
+            "noFool": {
+                "urls": [
+                    "https://lichess.org/zMH4ZoyF/black",
+                    "https://lichess.org/FLB078H4/black"
+                ]
+            },
+            "onlyPawnMoves": {
+                "urls": [
+                    "https://lichess.org/6U4JauP2",
+                    "https://lichess.org/nub3UiJI",
+                    "https://lichess.org/Z496TlgE/black",
+                    "https://lichess.org/efkaC5BX/black",
+                    "https://lichess.org/XaNuXPGR",
+                    "https://lichess.org/qlxb4wii/black",
+                    "https://lichess.org/iW5NxHqY/black"
+                ]
+            },
+            "mateWithQueen": {
+                "urls": [
+                    "https://lichess.org/DEAOez3J/black",
+                    "https://lichess.org/6U4JauP2",
+                    "https://lichess.org/DtiNo2u1",
+                    "https://lichess.org/VFJttnbt/black",
+                    "https://lichess.org/3lIWlK4v",
+                    "https://lichess.org/v1iLKJmB/black",
+                    "https://lichess.org/CoAxKQDH/black",
+                    "https://lichess.org/gK26pSp7",
+                    "https://lichess.org/9Isxv8Du",
+                    "https://lichess.org/4xK8aUjt/black",
+                    "https://lichess.org/6CEU0Z0p/black",
+                    "https://lichess.org/XCnIqeHf",
+                    "https://lichess.org/H9LNPuW2",
+                    "https://lichess.org/G8XQyDmc/black",
+                    "https://lichess.org/H9I7SU24/black",
+                    "https://lichess.org/GffOUrKp/black",
+                    "https://lichess.org/D1G1YCEp/black",
+                    "https://lichess.org/KwmYQV8B/black",
+                    "https://lichess.org/noYqGWHJ/black",
+                    "https://lichess.org/efkaC5BX/black",
+                    "https://lichess.org/e62pKkUe",
+                    "https://lichess.org/uMJkhWuC",
+                    "https://lichess.org/HV8v4fpp",
+                    "https://lichess.org/XngDrG7q",
+                    "https://lichess.org/F6ussyVP",
+                    "https://lichess.org/0IDgZJMM/black",
+                    "https://lichess.org/Fq8zYXct",
+                    "https://lichess.org/zLzxdYru",
+                    "https://lichess.org/UKPmHTXq/black"
+                ]
+            },
+            "mateWithRook": {
+                "urls": [
+                    "https://lichess.org/YJPUxSpL",
+                    "https://lichess.org/PEabU5gu",
+                    "https://lichess.org/WViedzd7",
+                    "https://lichess.org/JsaBhmNF",
+                    "https://lichess.org/279f7TSv/black",
+                    "https://lichess.org/u9pDkuRp",
+                    "https://lichess.org/u1vBMmrG",
+                    "https://lichess.org/vZQNamKM",
+                    "https://lichess.org/KTgFphBk/black",
+                    "https://lichess.org/Aw609j7C/black",
+                    "https://lichess.org/MSMsj6Tl/black",
+                    "https://lichess.org/Kadm1fUk",
+                    "https://lichess.org/eFmKuwr9/black",
+                    "https://lichess.org/WbzjONgc/black",
+                    "https://lichess.org/JAjAiKEA/black",
+                    "https://lichess.org/vlxcqwsw",
+                    "https://lichess.org/iW5NxHqY/black"
+                ]
+            },
+            "mateWithBishop": {
+                "urls": [
+                    "https://lichess.org/0KrgxiUN"
+                ]
+            },
+            "mateWithKnight": {
+                "urls": [
+                    "https://lichess.org/wUN2NM0C"
+                ]
+            },
+            "mateWithPawn": {
+                "urls": [
+                    "https://lichess.org/XCnIqeHf",
+                    "https://lichess.org/HV8v4fpp"
+                ]
+            },
+            "mateWithKing": {
+                "urls": []
+            },
+            "mateOnBackRank": {
+                "urls": [
+                    "https://lichess.org/9Isxv8Du",
+                    "https://lichess.org/u9pDkuRp",
+                    "https://lichess.org/4xK8aUjt/black",
+                    "https://lichess.org/MSMsj6Tl/black",
+                    "https://lichess.org/Kadm1fUk",
+                    "https://lichess.org/eFmKuwr9/black",
+                    "https://lichess.org/JAjAiKEA/black"
+                ]
+            },
+            "mateWithLess": {
+                "urls": [
+                    "https://lichess.org/3lIWlK4v",
+                    "https://lichess.org/4xK8aUjt/black",
+                    "https://lichess.org/6CEU0Z0p/black",
+                    "https://lichess.org/MSMsj6Tl/black",
+                    "https://lichess.org/noYqGWHJ/black",
+                    "https://lichess.org/XngDrG7q",
+                    "https://lichess.org/JAjAiKEA/black"
+                ]
+            },
+            "mateAfterCapture": {
+                "urls": [
+                    "https://lichess.org/6U4JauP2",
+                    "https://lichess.org/3lIWlK4v",
+                    "https://lichess.org/u1vBMmrG",
+                    "https://lichess.org/4xK8aUjt/black",
+                    "https://lichess.org/MSMsj6Tl/black",
+                    "https://lichess.org/HV8v4fpp",
+                    "https://lichess.org/XngDrG7q",
+                    "https://lichess.org/JAjAiKEA/black"
+                ]
+            },
+            "secondQueen": {
+                "urls": [
+                    "https://lichess.org/6U4JauP2",
+                    "https://lichess.org/DtiNo2u1",
+                    "https://lichess.org/gK26pSp7",
+                    "https://lichess.org/XCnIqeHf",
+                    "https://lichess.org/e62pKkUe",
+                    "https://lichess.org/uMJkhWuC",
+                    "https://lichess.org/F6ussyVP",
+                    "https://lichess.org/2d0PsD6Y",
+                    "https://lichess.org/zLzxdYru"
+                ]
+            },
+            "underpromote": {
+                "urls": []
+            },
+            "withTwoBishops": {
+                "urls": []
+            },
+            "withBishopKnight": {
+                "urls": []
+            },
+            "drawWithKing": {
+                "urls": [
+                    "https://lichess.org/TrWJq0Kl/black",
+                    "https://lichess.org/eiluYWmE",
+                    "https://lichess.org/7uKUho1D",
+                    "https://lichess.org/iAyGppXI/black",
+                    "https://lichess.org/oRNchZVX"
+                ]
+            },
+            "justTwoKings": {
+                "urls": [
+                    "https://lichess.org/8f6I4Zz5",
+                    "https://lichess.org/0zY8i51y",
+                    "https://lichess.org/4p7z2It1",
+                    "https://lichess.org/slHqlBwC/black"
+                ]
+            },
+            "enpeasant": {
+                "urls": []
+            },
+            "castleWithCheck": {
+                "urls": []
+            },
+            "battlefield": {
+                "urls": [
+                    "https://lichess.org/279f7TSv/black",
+                    "https://lichess.org/U21NzJFZ/black",
+                    "https://lichess.org/Kadm1fUk",
+                    "https://lichess.org/e62pKkUe"
+                ]
+            },
+            "peacefulmode": {
+                "urls": []
+            },
+            "small_underdog": {
+                "urls": [
+                    "https://lichess.org/FG0wu6pa",
+                    "https://lichess.org/YJPUxSpL",
+                    "https://lichess.org/v1iLKJmB/black",
+                    "https://lichess.org/l36R0EMV/black",
+                    "https://lichess.org/279f7TSv/black",
+                    "https://lichess.org/6CEU0Z0p/black",
+                    "https://lichess.org/KwmYQV8B/black",
+                    "https://lichess.org/yBZLXbXQ",
+                    "https://lichess.org/efkaC5BX/black",
+                    "https://lichess.org/eFmKuwr9/black"
+                ]
+            },
+            "rookSniper": {
+                "urls": []
+            },
+            "spellGG": {
+                "urls": []
+            },
+            "spellDAB": {
+                "urls": []
+            },
+            "spellHaha": {
+                "urls": []
+            },
+            "spellAffe": {
+                "urls": []
+            }
+        },
+        "unique": [
+            "msch-amyhor",
+            "msch-vanvon",
+            "msch-adarad",
+            "msch-firdal",
+            "msch-tufavc",
+            "msch-mehkar"
+        ]
     }
 ]

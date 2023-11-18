@@ -40,12 +40,33 @@ const checks = {
   wonWithWhite: result.wonWithWhite,
   wonWithBlack: result.wonWithBlack,
 
-  new_opponent: underdog.new_opponent,
-  small_underdog: underdog.small_underdog,
-  /*big_underdog: underdog.big_underdog,*/
-  rookSniper: opening.rookSniper,
 
+
+  mattStattPatt1: computer.mattStattPatt1,
+  mattStattPatt2: computer.mattStattPatt2,
+  mattStattPatt3: computer.mattStattPatt3,
+  mattStattPatt4: computer.mattStattPatt4,
+  mattStattPatt5: computer.mattStattPatt5,
+  mattStattPatt6: computer.mattStattPatt6,
+
+
+
+  wonVsComputer1: computer.wonVsComputer1,
+  wonVsComputer2: computer.wonVsComputer2,
+  wonVsComputer3: computer.wonVsComputer3,
+  wonVsComputer8NoQueen: computer.wonVsComputer8NoQueen,
+
+
+  new_opponent: underdog.new_opponent,
   textbookOpening: opening.textbookOpening,
+
+  basicPawnEndgame1: computer.basicPawnEndgame1,
+  basicPawnEndgame2: computer.basicPawnEndgame2,
+
+  withTwoRooks: endgames.withTwoRooks,
+  withOneQueen: endgames.withOneQueen,
+  withOneRook: endgames.withOneRook,
+
   noFool: opening.noFool,
   onlyPawnMoves: opening.onlyPawnMoves,
 
@@ -61,9 +82,7 @@ const checks = {
 
   secondQueen: endgames.secondQueen,
   underpromote: endgames.underpromote,
-  withTwoRooks: endgames.withTwoRooks,
-  withOneQueen: endgames.withOneQueen,
-  withOneRook: endgames.withOneRook,
+
   withTwoBishops: endgames.withTwoBishops,
   withBishopKnight: endgames.withBishopKnight,
   drawWithKing: result.drawWithKing,
@@ -74,19 +93,14 @@ const checks = {
   battlefield: captures.battlefield,
   peacefulmode: captures.peacefulmode,
 
-  wonVsComputer1: computer.wonVsComputer1,
-  wonVsComputer2: computer.wonVsComputer2,
-  wonVsComputer3: computer.wonVsComputer3,
-  wonVsComputer8NoQueen: computer.wonVsComputer8NoQueen,
-  basicPawnEndgame1: computer.basicPawnEndgame1,
-  basicPawnEndgame2: computer.basicPawnEndgame2,
 
-  mattStattPatt1: computer.mattStattPatt1,
-  mattStattPatt2: computer.mattStattPatt2,
-  mattStattPatt3: computer.mattStattPatt3,
-  mattStattPatt4: computer.mattStattPatt4,
-  mattStattPatt5: computer.mattStattPatt5,
-  mattStattPatt6: computer.mattStattPatt6,
+
+
+
+
+  small_underdog: underdog.small_underdog,
+  /*big_underdog: underdog.big_underdog,*/
+  rookSniper: opening.rookSniper,
 
   spellGG: pawnwords.spellGG,
   spellDAB: pawnwords.spellDAB,
@@ -377,12 +391,27 @@ export default function Home() {
       "mattStattPatt4",
       "mattStattPatt5",
       "mattStattPatt6",
+      "new_opponent",
     ];
 
     let greenAchievementTitle = []
-    
     for(let green of greenAchievement){
     greenAchievementTitle.push(checks[green].title)
+    }
+
+    //blue
+    const blueAchievement = [
+      /*"wonWithWhite",
+      "wonWithBlack",
+      "wonVsComputer1",
+      "wonVsComputer2",
+      "wonVsComputer3",
+      "wonVsComputer8NoQueen",/**/
+    ];
+
+    let blueAchievementTitle = []
+    for(let blue of blueAchievement){
+    blueAchievementTitle.push(checks[blue].title)
     }
 
 
@@ -453,12 +482,6 @@ export default function Home() {
               const ach = user.ach[achKey];
               const cell = document.createElement('td');
     
-              if (greenAchievement.includes(achKey) && ach.urls.length > 0) {
-                cell.classList.add('green_ach');
-              } else if (ach.urls.length === 0) {
-                cell.classList.add('grey_zero');
-              }
-    
               cell.textContent = ach.urls.length;
               row.appendChild(cell);
             }
@@ -466,10 +489,11 @@ export default function Home() {
           }
         }
       }
-      updateTableStyles(tableid,greenAchievementTitle);
+      updateTableStyles(tableid);
     }
 
     function InitiateReloadUser(username,uniqueAchievements) {
+      console.log('initiate')
       if(namePressed_boolean) {
         return
       } else {
@@ -477,7 +501,7 @@ export default function Home() {
         reloadUser(username,uniqueAchievements);
       }
     }
-    
+
     async function reloadUser(username,uniqueAchievements) {
       try {
         //color cell grey
@@ -538,10 +562,10 @@ export default function Home() {
             break;
           }
         }
-      updateTableStyles(tableId,greenAchievementTitle);  
+      updateTableStyles(tableId);  
     }  
 
-    function updateTableStyles(tableId, highlightStrings) {
+    function updateTableStyles(tableId) {
       const table = document.getElementById(tableId);
     
       // Iterate through the columns
@@ -579,12 +603,28 @@ export default function Home() {
     
         // Apply green background to cells in the column with top cells matching the array
         const topCellText = table.rows[0].cells[col].textContent.trim();
-        if (highlightStrings.includes(topCellText)) {
+        if (greenAchievementTitle.includes(topCellText)) {
           for (let row = 0; row < table.rows.length; row++) {
             const cell = table.rows[row].cells[col];
             const cellValue = parseInt(cell.textContent, 10);
             if(cellValue != 0){
             cell.style.backgroundColor = '#9bf09b';
+            }
+          }
+        } else if (blueAchievementTitle.includes(topCellText)) {
+          for (let row = 0; row < table.rows.length; row++) {
+            const cell = table.rows[row].cells[col];
+            const cellValue = parseInt(cell.textContent, 10);
+            if(cellValue != 0){
+            cell.style.backgroundColor = '#b8c4ff';
+            }
+          }
+        } else if (topCellText === 'Challenges') {
+          for (let row = 0; row < table.rows.length; row++) {
+            const cell = table.rows[row].cells[col];
+            const cellValue = parseInt(cell.textContent, 10);
+            if(cellValue != 0){
+            cell.style.backgroundColor = '#618bdd';
             }
           }
         }
@@ -674,6 +714,7 @@ export default function Home() {
               <br />
               {[
                 { label: 'Schach', class: classes.classChess },
+                { label: '1c', class: classes.class1c },
                 { label: '2c', class: classes.class2c },
                 { label: '3b', class: classes.class3b },
                 { label: '4a', class: classes.class4a },

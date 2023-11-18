@@ -1,5 +1,6 @@
 export default [];
 import { opponents_school_unique } from '../../pages/index';
+import { blackSheepList } from '../classes';
 
 function wonVsHigherElo(diff1, diff2) { //returns true if opponent is higher between range
   return function(game) {               //ignores diff2 if it's smaller than diff1 (no upper limit)
@@ -60,7 +61,7 @@ export let new_opponent = {
     time: 2
   },
   check: function(game) {
-    if(!(game.oppName.toLowerCase().includes("msch-")||game.oppName.toLowerCase().includes("misch-"))){
+    if(!(game.oppName.toLowerCase().includes("msch-") || blackSheepList.includes(game.oppName) || game.oppName.toLowerCase().includes("misch-"))){
       return false
     }
     if(opponents_school_unique.includes(game.oppName.toLowerCase())){
