@@ -164,6 +164,7 @@ const LOADING_STATUS_RUNNING = 1;
 const LOADING_STATUS_ERROR = 2;
 const LOADING_STATUS_DONE = 3;
 let secondview = false;
+let namePressed_boolean = false;
 let nameArray = [];
 let objectArray = [];
 
@@ -431,7 +432,8 @@ export default function Home() {
             const usernameCell = document.createElement('td');
             usernameCell.textContent = user.username;
             usernameCell.style.cursor = 'pointer';
-            usernameCell.onclick = () => reloadUser(user.username,uniqueAchievements);
+            usernameCell.id = user.username + tableid;
+            usernameCell.onclick = () => InitiateReloadUser(user.username,uniqueAchievements);
             row.appendChild(usernameCell);
     
             //count challenges
@@ -460,21 +462,40 @@ export default function Home() {
               cell.textContent = ach.urls.length;
               row.appendChild(cell);
             }
-    
             table.appendChild(row);
           }
         }
       }
       updateTableStyles(tableid,greenAchievementTitle);
     }
+
+    function InitiateReloadUser(username,uniqueAchievements) {
+      if(namePressed_boolean) {
+        return
+      } else {
+        namePressed_boolean = true;
+        reloadUser(username,uniqueAchievements);
+      }
+    }
+    
     async function reloadUser(username,uniqueAchievements) {
       try {
+        //color cell grey
+        const cell1 = document.getElementById(username + "table1");
+        cell1.style.backgroundColor = "lightgrey";
+        const cell2 = document.getElementById(username + "table2");
+        cell2.style.backgroundColor = "lightgrey";
+        //reload user
         await processPlayerData(username, 0, true);
         const checks_keys_array = Object.keys(checks);
         reloadUserTable(username,"table1",uniqueAchievements,0, (checks_keys_array.length / 2)-2);
         reloadUserTable(username,"table2",uniqueAchievements,(checks_keys_array.length / 2)-2,checks_keys_array.length-4);  
+        
       } catch (error) {
 
+      }finally {
+        setLoadingStatus(LOADING_STATUS_DONE);
+        namePressed_boolean = false;
       }
     }
 
@@ -513,7 +534,7 @@ export default function Home() {
             // Your logic to update the row goes here
             // For example, you can clear the existing content and re-append the updated content
             rows[i].innerHTML = rowInnerHTML;
-            cells[0].onclick = () => reloadUser(username,uniqueAchievements);
+            cells[0].onclick = () => InitiateReloadUser(username,uniqueAchievements);
             break;
           }
         }
