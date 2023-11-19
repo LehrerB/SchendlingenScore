@@ -170,7 +170,19 @@ function Achievement({ name, ach }) {
 }
 
 function isMobileDevice() {
-  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|tablet|Opera Mini/i.test(navigator.userAgent);
+  const toMatch = [
+    /Android/i,
+    /webOS/i,
+    /iPhone/i,
+    /iPad/i,
+    /iPod/i,
+    /BlackBerry/i,
+    /Windows Phone/i
+];
+
+return toMatch.some((toMatchItem) => {
+    return navigator.userAgent.match(toMatchItem);
+});
 }
 
 function delay(ms) {
@@ -424,12 +436,8 @@ export default function Home() {
 
     function createAchievementTable(tableid, bigdata_input, nameArray_input, checks_input, start, end) {
       const table = document.getElementById(tableid);
-      mobile_boolean = !isMobileDevice();
+      mobile_boolean = isMobileDevice();
       console.log('Mobile',mobile_boolean);
-
-      document.addEventListener("DOMContentLoaded", function() {
-        
-      });
 
       if(mobile_boolean){
         table.classList.add('table_text_mobile')
@@ -443,6 +451,7 @@ export default function Home() {
         usernameCell.classList.add('th_mobile');
       }
       usernameCell.textContent = mobile_boolean;
+      //usernameCell.textContent = 'Benutzernamen';
       headerRow.appendChild(usernameCell);
     
       const uniqueAchievements = Object.keys(checks_input);
