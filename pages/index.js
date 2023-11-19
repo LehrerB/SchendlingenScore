@@ -169,6 +169,10 @@ function Achievement({ name, ach }) {
   );
 }
 
+function isMobileDevice() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|tablet|Opera Mini/i.test(navigator.userAgent);
+}
+
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -181,6 +185,8 @@ let secondview = false;
 let namePressed_boolean = false;
 let nameArray = [];
 let objectArray = [];
+let mobile_boolean;
+
 
 
 
@@ -201,7 +207,6 @@ export default function Home() {
     setView(view === 0 ? 1 : 0);
   };
 
-
   const fetchAndAnalyzeGames = (local) => {
     if (name === "view") {
       setName("msch-");
@@ -209,6 +214,7 @@ export default function Home() {
       return;
     }
     setLoadingStatus(LOADING_STATUS_RUNNING);
+    namePressed_boolean = true;
     setErrorMsg('');
     const oneMonthAgo = new Date();
     oneMonthAgo.setMonth(oneMonthAgo.getMonth() - 1);
@@ -348,6 +354,7 @@ export default function Home() {
     async function doMainPart() {
       await fetchDataForPlayers();
       setLoadingStatus(LOADING_STATUS_DONE);
+      namePressed_boolean = false;
       doRest();
     }
 
@@ -417,6 +424,13 @@ export default function Home() {
 
     function createAchievementTable(tableid, bigdata_input, nameArray_input, checks_input, start, end) {
       const table = document.getElementById(tableid);
+
+      document.addEventListener("DOMContentLoaded", function() {
+        mobile_boolean = isMobileDevice();
+      });
+      if(mobile_boolean){
+        table.classList.add('table_text_mobile')
+      }
       table.innerHTML = '';
     
       const headerRow = document.createElement('tr');
@@ -426,12 +440,15 @@ export default function Home() {
     
       const uniqueAchievements = Object.keys(checks_input);
       
+      const rotated_cell_class = mobile_boolean ? 'rotated_cell' : 'rotated_cell_mobile';
+      const rotated_text_class = mobile_boolean ? 'rotate_text' : 'rotate_text_mobile';
+
       if(start === 0){
         const th = document.createElement('th');
-        th.classList.add('rotated_cell');
+        th.classList.add(rotated_cell_class);
         let title = "Challenges";
         const div = document.createElement('div');
-        div.classList.add('rotate_text');
+        div.classList.add(rotated_text_class);
         div.textContent = title;
         th.appendChild(div);
         headerRow.appendChild(th);
@@ -442,11 +459,11 @@ export default function Home() {
         const th = document.createElement('th');
         const title = checks_input[achKey].title;
     
-        th.classList.add('rotated_cell');
+        th.classList.add(rotated_cell_class);
 
     
         const div = document.createElement('div');
-        div.classList.add('rotate_text');
+        div.classList.add(rotated_text_class);
         div.textContent = title;
         th.appendChild(div);
         headerRow.appendChild(th);
@@ -493,7 +510,6 @@ export default function Home() {
     }
 
     function InitiateReloadUser(username,uniqueAchievements) {
-      console.log('initiate')
       if(namePressed_boolean) {
         return
       } else {

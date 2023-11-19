@@ -7,7 +7,7 @@ body {
 }
 
 a {
-  color: #0000EE !important;
+  color: #0070f3 !important;
   text-decoration: none;
 }
 
@@ -34,6 +34,21 @@ h3 {
   white-space: nowrap;
   text-overflow: ellipsis;
   height: 3.5rem;
+}
+
+.rotate_text_mobile {
+  transform: rotate(270deg) !important;
+  width: 2.8rem;
+}
+
+.rotated_cell_mobile {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  height: 3.5rem;
+}
+
+.table_text_mobile {
+  font-size: 1rem;
 }
 
 table {
