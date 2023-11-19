@@ -170,7 +170,7 @@ function Achievement({ name, ach }) {
     <div className={styles.card} >
       <h2>{checks[name].title}</h2>
       {/* zero width character &#8203; such that the height of every card is the same */}
-      <div className={styles.trophyList}>&#8203;{ach.urls.map((url, index) => <a key={index} href={url} target="_blank" rel="noopener noreferrer">🏆</a>)}</div>
+      <div className={styles.trophyList}>&#8203;{ach.urls.map((url, index) => <a key={index} href={url} target="_blank" >🏆</a>)}</div>
       <div className={styles.details}>
         <p>{checks[name].description}</p>
 
@@ -479,7 +479,7 @@ export default function Home() {
         const div = document.createElement('div');
         div.classList.add(rotated_text_class);
         div.textContent = title;
-        div.onclick = () => ToggleGreenColor(title);
+        div.onclick = () => ToggleGreenColor(title,greenAchievementTitle);
         th.appendChild(div);
         headerRow.appendChild(th);
       }
@@ -508,13 +508,31 @@ export default function Home() {
               cell.textContent = challengeCount;
               row.appendChild(cell);
             }
-
+            
+            //count achievements and put number there
             for (let i = start; i < end; i++) {
               const achKey = uniqueAchievements[i];
               const ach = user.ach[achKey];
               const cell = document.createElement('td');
     
-              cell.textContent = ach.urls.length;
+              if (ach.urls.length > 0) {
+                const lastUrl = ach.urls[ach.urls.length - 1];
+            
+                // Create an anchor element
+                const link = document.createElement('a');
+                link.href = lastUrl;
+                link.target = '_blank';
+                link.rel="noopener noreferrer";
+                link.textContent = ach.urls.length;
+                link.style.color = '#000000'
+            
+                // Append the link to the cell
+                cell.appendChild(link);
+              } else {
+                // If there are no URLs, just set the text content
+                cell.textContent = ach.urls.length;
+              }
+              
               row.appendChild(cell);
             }
             table.appendChild(row);
@@ -523,15 +541,16 @@ export default function Home() {
       }
       updateTableStyles(tableid);
     }
-
-    function ToggleGreenColor(title) {
-      var index = greenAchievementTitle.indexOf(title);
+    
+    function ToggleGreenColor(title, colorArray) {
+      if(namePressed_boolean) { return }
+      var index = colorArray.indexOf(title);
       if (index !== -1) {
         // Title is already in the array, so remove it
-        greenAchievementTitle.splice(index, 1);
+        colorArray.splice(index, 1);
       } else {
         // Title is not in the array, so add it
-        greenAchievementTitle.push(title);
+        colorArray.push(title);
       }
       updateTableStyles('table1');
       updateTableStyles('table2');
@@ -648,7 +667,13 @@ export default function Home() {
 
         // Apply red text to cells with the highest non-zero value in the column
         for (const rowIndex of maxNonZeroRowIndices) {
-          table.rows[rowIndex].cells[col].style.color = 'red';
+          const cell =table.rows[rowIndex].cells[col]
+          cell.style.color = 'red'; //for challenges
+          if (cell.children.length > 0) {
+            const childElement = cell.children[0];
+            // Set the color of the child element
+            childElement.style.color = 'red';
+          }
         }
     
         // Apply green background to cells in the column with top cells matching the array
