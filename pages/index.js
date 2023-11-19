@@ -126,6 +126,37 @@ const checks = {
 
 }
 
+//green
+const greenAchievement = [
+  "mattStattPatt1",
+  "mattStattPatt2",
+  "mattStattPatt3",
+  "mattStattPatt4",
+  "mattStattPatt5",
+  "mattStattPatt6",
+  "new_opponent",
+];
+
+let greenAchievementTitle = []
+for(let green of greenAchievement){
+greenAchievementTitle.push(checks[green].title)
+}
+
+//blue
+const blueAchievement = [
+  /*"wonWithWhite",
+  "wonWithBlack",
+  "wonVsComputer1",
+  "wonVsComputer2",
+  "wonVsComputer3",
+  "wonVsComputer8NoQueen",/**/
+];
+
+let blueAchievementTitle = []
+for(let blue of blueAchievement){
+blueAchievementTitle.push(checks[blue].title)
+}
+
 function createAchievementsDict() {
   let d = {}
   for (const [key, _] of Object.entries(checks)) {
@@ -402,38 +433,6 @@ export default function Home() {
       }
     }
 
-    //green
-    const greenAchievement = [
-      "mattStattPatt1",
-      "mattStattPatt2",
-      "mattStattPatt3",
-      "mattStattPatt4",
-      "mattStattPatt5",
-      "mattStattPatt6",
-      "new_opponent",
-    ];
-
-    let greenAchievementTitle = []
-    for(let green of greenAchievement){
-    greenAchievementTitle.push(checks[green].title)
-    }
-
-    //blue
-    const blueAchievement = [
-      /*"wonWithWhite",
-      "wonWithBlack",
-      "wonVsComputer1",
-      "wonVsComputer2",
-      "wonVsComputer3",
-      "wonVsComputer8NoQueen",/**/
-    ];
-
-    let blueAchievementTitle = []
-    for(let blue of blueAchievement){
-    blueAchievementTitle.push(checks[blue].title)
-    }
-
-
     function createAchievementTable(tableid, bigdata_input, nameArray_input, checks_input, start, end) {
       const table = document.getElementById(tableid);
       mobile_boolean = isMobileDevice();
@@ -480,6 +479,7 @@ export default function Home() {
         const div = document.createElement('div');
         div.classList.add(rotated_text_class);
         div.textContent = title;
+        div.onclick = () => ToggleGreenColor(title);
         th.appendChild(div);
         headerRow.appendChild(th);
       }
@@ -522,6 +522,19 @@ export default function Home() {
         }
       }
       updateTableStyles(tableid);
+    }
+
+    function ToggleGreenColor(title) {
+      var index = greenAchievementTitle.indexOf(title);
+      if (index !== -1) {
+        // Title is already in the array, so remove it
+        greenAchievementTitle.splice(index, 1);
+      } else {
+        // Title is not in the array, so add it
+        greenAchievementTitle.push(title);
+      }
+      updateTableStyles('table1');
+      updateTableStyles('table2');
     }
 
     function InitiateReloadUser(username,uniqueAchievements) {
@@ -603,7 +616,13 @@ export default function Home() {
       for (let col = 1; col < table.rows[0].cells.length; col++) {
         let maxNonZeroValue = 0;
         let maxNonZeroRowIndices = [];
-    
+        
+        // Top row white
+        for (let row = 0; row < 1; row++) {
+          const cell = table.rows[row].cells[col];
+          cell.style.backgroundColor = '#ffffff';
+        }
+
         // Iterate through the rows (skipping the header row)
         for (let row = 1; row < table.rows.length; row++) {
           const cell = table.rows[row].cells[col];
