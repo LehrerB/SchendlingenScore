@@ -38,17 +38,17 @@ h3 {
 
 .rotate_text_mobile {
   transform: rotate(270deg) !important;
-  width: 2.4rem;
+  width: 2.4rem !important;
 }
 
 .rotated_cell_mobile {
   white-space: nowrap;
   text-overflow: ellipsis;
-  height: 3rem;
+  height: 3rem !important;
 }
 
 .table_text_mobile {
-  font-size: 1rem;
+  font-size: 1rem !important;
 }
 
 table {

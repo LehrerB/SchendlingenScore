@@ -424,10 +424,13 @@ export default function Home() {
 
     function createAchievementTable(tableid, bigdata_input, nameArray_input, checks_input, start, end) {
       const table = document.getElementById(tableid);
+      mobile_boolean = isMobileDevice();
+      console.log('Mobile',mobile_boolean);
 
       document.addEventListener("DOMContentLoaded", function() {
-        mobile_boolean = isMobileDevice();
+        
       });
+      
       if(mobile_boolean){
         table.classList.add('table_text_mobile')
       }
@@ -435,7 +438,7 @@ export default function Home() {
     
       const headerRow = document.createElement('tr');
       const usernameCell = document.createElement('th');
-      usernameCell.textContent = 'Benutzernamen';
+      usernameCell.textContent = mobile_boolean;
       headerRow.appendChild(usernameCell);
     
       const uniqueAchievements = Object.keys(checks_input);
