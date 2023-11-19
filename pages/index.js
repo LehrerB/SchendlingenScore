@@ -440,8 +440,8 @@ export default function Home() {
     
       const uniqueAchievements = Object.keys(checks_input);
       
-      const rotated_cell_class = mobile_boolean ? 'rotated_cell' : 'rotated_cell_mobile';
-      const rotated_text_class = mobile_boolean ? 'rotate_text' : 'rotate_text_mobile';
+      const rotated_cell_class = !mobile_boolean ? 'rotated_cell' : 'rotated_cell_mobile';
+      const rotated_text_class = !mobile_boolean ? 'rotate_text' : 'rotate_text_mobile';
 
       if(start === 0){
         const th = document.createElement('th');
