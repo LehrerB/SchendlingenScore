@@ -399,10 +399,10 @@ export default function Home() {
       await fetchDataForPlayers();
       setLoadingStatus(LOADING_STATUS_DONE);
       namePressed_boolean = false;
-      doRest();
+      doRest(true);
     }
 
-    function doRest() {
+    function doRest(createTableBoolean) {
       if ((view === 1 || view === 0) && (isDev || secondview)) {
         console.log('ObjectArray:')
         console.log(objectArray)
@@ -414,7 +414,6 @@ export default function Home() {
 
           if (existingObjIndex !== -1) {
             // If the username exists, replace the object in new_bigdata
-
             new_bigdata[existingObjIndex] = newObj;
           } else {
             // If the username doesn't exist, add the object to new_bigdata
@@ -424,8 +423,10 @@ export default function Home() {
         });
         objectArray = [];
         //to prevent that new achs can be added again and again
+        console.log('1',bigdata)
         bigdata = new_bigdata //just in case we don't want to do it like this later
-        if (view === 1) {
+        console.log('2',bigdata)
+        if (view === 1 && createTableBoolean) {
           const checks_keys_array = Object.keys(checks);
           createAchievementTable("table1", new_bigdata, nameArray, checks, 0, (checks_keys_array.length / 2)-2);
           createAchievementTable("table2", new_bigdata, nameArray, checks, (checks_keys_array.length / 2)-2, checks_keys_array.length-4);
@@ -582,10 +583,11 @@ export default function Home() {
         reloadUserTable(username,"table2",uniqueAchievements,(checks_keys_array.length / 2)-2,checks_keys_array.length-4);  
         
       } catch (error) {
-
+        console.error(error)
       }finally {
         setLoadingStatus(LOADING_STATUS_DONE);
         namePressed_boolean = false;
+        doRest(false);
       }
     }
 
@@ -598,7 +600,7 @@ export default function Home() {
       let rowInnerHTML
       for (const user of bigdata) {
           if (username === user.username) {
-            rowInnerHTML = `<td style="cursor: pointer;">${user.username}</td>`;
+            rowInnerHTML = `<td id="${user.username}${tableId}" style="cursor: pointer;">${user.username}</td>`;
 
             //count challenges
             if(start === 0){
