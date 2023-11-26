@@ -249,5 +249,35 @@ let class1cArray = [
 
 export let class1c = class1cArray.join('\n'); 
 
+let allClasses = [
+  blackSheepList,
+  class1cArray,
+  class2cArray,
+  class3bArray,
+  class3aArray,
+  class4cArray,
+  class4bArray,
+  class4aArray,
+  //classChessArray,
+]
 
+function mergeArraysOfNames(arraysOfNames) {
+  // Use Set to store unique names
+  const uniqueNames = new Set();
 
+  // Iterate through each array
+  arraysOfNames.forEach((namesArray) => {
+    // Iterate through names in the current array
+    namesArray.forEach((name) => {
+      // Add each name to the Set
+      uniqueNames.add(name);
+    });
+  });
+
+  // Convert Set back to an array
+  const uniqueNamesArray = Array.from(uniqueNames);
+
+  return uniqueNamesArray;
+}
+
+export let allStudents = mergeArraysOfNames(allClasses);

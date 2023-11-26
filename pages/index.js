@@ -170,7 +170,7 @@ function Achievement({ name, ach }) {
     <div className={styles.card} >
       <h2>{checks[name].title}</h2>
       {/* zero width character &#8203; such that the height of every card is the same */}
-      <div className={styles.trophyList}>&#8203;{ach.urls.map((url, index) => <a key={index} href={url} target="_blank" >🏆</a>)}</div>
+      <div className={styles.trophyList}>&#8203;{ach.urls.map((url, index) => <a key={index} href={url} target="_blank" rel="noopener noreferrer">🏆</a>)}</div>
       <div className={styles.details}>
         <p>{checks[name].description}</p>
 
@@ -724,7 +724,7 @@ export default function Home() {
         </a>
       </div>
       <main className={styles.main}>
-        <h1 className={styles.title}>Schendlingen Score</h1>
+        <h1 className={styles.title}>Schendlingen Score 🏆</h1>
         <div className={styles.description}>
 
           {(isDev || secondview) && (
