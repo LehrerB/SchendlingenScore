@@ -724,7 +724,8 @@ export default function Home() {
         </a>
       </div>
       <main className={styles.main}>
-        <h1 className={styles.title}>Schendlingen Score 🏆</h1>
+        <br></br>
+        <h1 className={styles.title}>🏆 Schendlingen Score 🏆</h1>
         <div className={styles.description}>
 
           {(isDev || secondview) && (
