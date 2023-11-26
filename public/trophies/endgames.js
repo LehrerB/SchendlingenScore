@@ -3,6 +3,50 @@ export default [];
 import { Chess } from 'chess.js';
 import * as utils from '../utils/javachess';
 
+const openRandomLink = (links) => {
+  const randomIndex = Math.floor(Math.random() * links.length);
+  const randomLink = links[randomIndex];
+  window.open(randomLink, '_blank');
+};
+
+const links2Rooks = [
+  'https://lichess.org/?fen=8/8/8/2K1k3/8/R5R1/8/8%20w%20-%20-%200%201#ai',
+  'https://lichess.org/?fen=8/7R/8/6R1/8/5K2/3k4/8%20w%20-%20-%200%201#ai',
+];
+
+const links1Rook = [
+  'https://lichess.org/?fen=8/3k4/8/8/8/8/3K4/7R%20w%20-%20-%200%201#ai',
+  'https://lichess.org/?fen=8/8/8/4k3/8/8/3K4/R7%20w%20-%20-%200%201#ai',
+  'https://lichess.org/?fen=8/8/8/2K1k3/8/8/5R2/8%20w%20-%20-%200%201#ai',
+  'https://lichess.org/?fen=8/8/3R4/2K1k3/8/8/8/8%20w%20-%20-%200%201#ai',
+  'https://lichess.org/?fen=8/8/8/2k5/8/3R4/5K2/8%20w%20-%20-%200%201#ai',
+  'https://lichess.org/?fen=8/8/8/3k4/6R1/4K3/8/8%20w%20-%20-%200%201#ai',
+];
+
+const links1Queen = [
+  'https://lichess.org/?fen=8/8/8/3k4/5Q2/4K3/8/8%20w%20-%20-%200%201#ai',
+  'https://lichess.org/?fen=8/6Q1/5K2/8/3k4/8/8/8%20w%20-%20-%200%201#ai',
+  'https://lichess.org/?fen=8/3Q4/8/8/4k3/8/1K6/8%20w%20-%20-%200%201#ai',
+  'https://lichess.org/?fen=8/8/8/6k1/8/1Q6/3K4/8%20w%20-%20-%200%201#ai',
+  'https://lichess.org/?fen=8/8/3k4/8/8/4Q3/3K4/8%20w%20-%20-%200%201#ai',
+  'https://lichess.org/?fen=8/8/6Q1/4K3/2k5/8/8/8%20w%20-%20-%200%201#ai',
+];
+
+const links2Bishops = [
+  'https://lichess.org/?fen=4k3/8/8/8/8/8/8/1B2K1B1%20w%20-%20-%200%201#ai',
+  'https://lichess.org/?fen=8/4k3/1B6/8/6B1/3K4/8/8%20w%20-%20-%200%201#ai',
+  'https://lichess.org/?fen=8/8/8/B2k4/B7/5K2/8/8%20w%20-%20-%200%201#ai',
+];
+
+const links1Bishop1Knight = [
+  'https://lichess.org/?fen=8/8/8/3k4/8/8/8/2B1K1N1%20w%20-%20-%200%201#ai',
+  'https://lichess.org/?fen=8/8/8/4k3/8/8/8/1N2KB2%20w%20-%20-%200%201#ai',
+  'https://lichess.org/?fen=8/8/4k3/8/1N6/6B1/8/4K3%20w%20-%20-%200%201#ai',
+  'https://lichess.org/?fen=8/1B2N3/8/8/5k2/8/2K5/8%20w%20-%20-%200%201#ai',
+  'https://lichess.org/?fen=1B6/8/8/3k4/N7/6K1/8/8%20w%20-%20-%200%201#ai',
+  'https://lichess.org/?fen=8/5B2/8/6N1/3K4/8/4k3/8%20w%20-%20-%200%201#ai',
+];
+
 export let getQueenBack = {
     title: 'Wiedergeburt',
     description: <>Hol dir deine Dame zurück und gewinne das Spiel.</>,
@@ -99,7 +143,7 @@ export let underpromote = {
 
 export let withTwoRooks = {
     title: '2 Türme',
-    description: <>Gewinne mit 2 Türmen. <a href="https://nimble.li/2d55l5d3" target="_blank">(LINK)</a></>,
+    description: <>Gewinne mit 2 Türmen. <a href="#" onClick={() => openRandomLink(links2Rooks)} target="_blank">(LINK)</a></>,
     pref: {
       win: 1,
       bullet: 3,
@@ -123,7 +167,7 @@ export let withTwoRooks = {
 
 export let withOneQueen = {
     title: '1 Dame',
-    description: <>Gewinne mit einer Dame. <a href="https://nimble.li/qm2kgem2" target="_blank">(LINK)</a></>,
+    description: <>Gewinne mit einer Dame. <a href="#" onClick={() => openRandomLink(links1Queen)} target="_blank">(LINK)</a></>,
     pref: {
       win: 1,
       bullet: 3,
@@ -151,7 +195,7 @@ export let withOneQueen = {
 
 export let withOneRook = {
     title: '1 Turm',
-    description: <>Gewinne mit einem Turm. <a href="https://nimble.li/6dwa4x9l" target="_blank">(LINK)</a></>,
+    description: <>Gewinne mit einem Turm. <a href="#" onClick={() => openRandomLink(links1Rook)} target="_blank">(LINK)</a></>,
     pref: {
       win: 1,
       bullet: 3,
@@ -179,7 +223,7 @@ export let withOneRook = {
 
 export let withTwoBishops = {
     title: '2 Läufer',
-    description: <>Gewinne mit 2 Läufern. <a href="https://nimble.li/omzv2pd6" target="_blank">(LINK)</a></>,
+    description: <>Gewinne mit 2 Läufern. <a href="#" onClick={() => openRandomLink(links2Bishops)} target="_blank">(LINK)</a></>,
     pref: {
       win: 1,
       bullet: 3,
@@ -210,7 +254,7 @@ export let withTwoBishops = {
 
 export let withBishopKnight = {
     title: '1 Läufer und 1 Pferd',
-    description: <>Gewinne mit einem Läufer und einem Pferd. <a href="https://nimble.li/vdrzp29y" target="_blank">(LINK)</a> (Stufe 6+)</>,
+    description: <>Gewinne mit einem Läufer und einem Pferd. <a href="#" onClick={() => openRandomLink(links1Bishop1Knight)} target="_blank">(LINK)</a> (Stufe 6+)</>,
     pref: {
       win: 1,
       bullet: 3,
@@ -283,3 +327,4 @@ export let onlyPawnsLeft = {
     return false
   }
 }
+

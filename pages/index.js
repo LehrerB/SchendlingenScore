@@ -238,7 +238,7 @@ export default function Home() {
 
   const [name, setName] = useState(isDev ? 'msch-jakhal' : 'msch-'); //smart
   const [amount, setAmount] = useState(isDev ? 'all' : 'all');
-  const [loadingStatus, setLoadingStatus] = useState(LOADING_STATUS_PRE);
+  const [loadingStatus, setLoadingStatus] = useState(LOADING_STATUS_DONE);
   const [errorMsg, setErrorMsg] = useState('');
   const [achievements, setAchievement] = useState(createAchievementsDict());
   const [view, setView] = useState(0);
@@ -275,6 +275,7 @@ export default function Home() {
 
     function processPlayerData(currentname, index, forceDownloadBoolean) {
       return new Promise((resolve, reject) => {
+        console.log('process',currentname)
         let newAch = createAchievementsDict();
 
         function getURLofPlayer(currentname) {
@@ -341,7 +342,7 @@ export default function Home() {
             if (view === 0) {
               setAchievement(newAch); //Achievements get updated to show user
             }
-            if (isDev || secondview) {
+            if (true || isDev || secondview) {
               console.log('Object', { username: currentname, timestamp: Math.floor(Date.now() / 1000) * 1000, ach: newAch, unique: opponents_school_unique })
               objectArray.push({ username: currentname, timestamp: Math.floor(Date.now() / 1000) * 1000, ach: newAch, unique: opponents_school_unique })
               opponents_school_unique = []; //empty again
@@ -352,7 +353,7 @@ export default function Home() {
             setLoadingStatus(LOADING_STATUS_ERROR);
             console.error('Error fetching games:', error);
             setErrorMsg('Error: ' + error);
-            if (isDev || secondview) {
+            if (true || isDev || secondview) {
               console.log('Object', { username: currentname, timestamp: Math.floor(Date.now() / 1000) * 1000, ach: newAch, unique: opponents_school_unique })
               objectArray.push({ username: currentname, timestamp: Math.floor(Date.now() / 1000) * 1000, ach: newAch, unique: opponents_school_unique })
               opponents_school_unique = []; //empty again
@@ -557,6 +558,7 @@ export default function Home() {
     }
 
     function InitiateReloadUser(username,uniqueAchievements) {
+      console.log('initiate',username,uniqueAchievements,namePressed_boolean)
       if(namePressed_boolean) {
         return
       } else {
@@ -567,6 +569,7 @@ export default function Home() {
 
     async function reloadUser(username,uniqueAchievements) {
       try {
+        console.log('reload',username)
         //color cell grey
         const cell1 = document.getElementById(username + "table1");
         cell1.style.backgroundColor = "lightgrey";
@@ -715,7 +718,7 @@ export default function Home() {
         </a>
 
         <a href="https://lichess.org/" target="_blank" rel="noopener noreferrer">
-          <img className={styles.logor} src='/lichess_logo.png' alt="MS Schendlingen"></img>
+          <img className={styles.logor} src='/lichess_logo.png' alt="Lichess.org"></img>
         </a>
       </div>
       <main className={styles.main}>
@@ -791,6 +794,7 @@ export default function Home() {
                 { label: 'Schach', class: classes.classChess },
                 { label: '1c', class: classes.class1c },
                 { label: '2c', class: classes.class2c },
+                { label: '3a', class: classes.class3a },
                 { label: '3b', class: classes.class3b },
                 { label: '4a', class: classes.class4a },
                 { label: '4b', class: classes.class4b },

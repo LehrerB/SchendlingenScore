@@ -21,13 +21,12 @@ let classChessArray = [
   'msch-horbar',
   'msch-musgez',
   'msch-abuele',
+  'msch-cankar',
   'msch-salsar',
   'msch-emijov',
   'msch-millaz',
   'msch-lucler',
   'msch-stemio',
-  'msch-mehpor',
-  'Aykan20100',
   'HatArs',
   'msch-semfen',
   'msch-noabil',
@@ -45,6 +44,7 @@ let class4aArray = [
   'msch-bethel',
   'msch-blafor',
   'msch-fabsut',
+  'msch-gilgab', //verkehrt
   'msch-joaboe',
   'msch-julcyr',
   'msch-lenkro',
@@ -59,7 +59,6 @@ let class4aArray = [
   'msch-simrue',
   'msch-timkop',
   'msch-yusalt',
-  'msch-gilgab', //verkehrt
   'EliasStegi', //freestyle name
   //'msch-matfro', //not found
 ]
@@ -79,6 +78,7 @@ let class4bArray = [
   'msch-ilidjo',
   'msch-innkha',
   'msch-jacjus',
+  'msch-jorins', //new
   'msch-liamen',
   'msch-magmas',
   'msch-martra',
@@ -86,9 +86,9 @@ let class4bArray = [
   'msch-noabil',
   'msch-rabyas',
   'msch-semfen',
-  'HatArs', //freestyle
   'mich-sudder', //mich statt msch
-  //'msch-joriss', //not found
+  'msch-vikpet',
+  'HatArs', //freestyle
 ]
 
 export let class4b = class4bArray.join('\n');
@@ -101,26 +101,54 @@ let class4cArray = [
   'msch-betdem',
   'msch-emasch',
   'msch-emimit',
+  'msch-engher',
   'msch-ezgyil',
   'msch-kueari',
   'msch-mahdil',
+  'msch-marfek',
   'msch-melkoc',
   'msch-migrin',
   'msch-mikkoc',
   'msch-mirsok',
+  'msch-Muhalf',
+  'msch-muhyuc',
   'msch-nikkal',
   'msch-subbar',
   'msch-toptav',
   'msch-xenhof',
   'Ninaum',
-  'msch-engher',
 ]
 
 export let class4c = class4cArray.join('\n'); 
 
 //3a
 let class3aArray = [
-
+  'msch-anngei',
+  'msch-antded',
+  'msch-azasue',
+  'msch-es',
+  'msch-fablon',
+  'msch-feljue',
+  'msch-hansch',
+  'msch-iveheh',
+  'msch-jacpic',
+  'msch-johkle',
+  'msch-jusgra',
+  'msch-lensal',
+  'msch-lenkal',
+  'msch-leoblu',
+  'msch-leobur',
+  'msch-livney',
+  'mschlukkue',
+  'msch-marada',
+  'msch-melluef',
+  'msch-nicnat',
+  'msch-romstei',
+  'msch-steman',
+  
+  //'msch-markis', //not found
+  //'msch-kessch', //not found
+  //'msch-leagri', //not found
 ]
 
 export let class3a = class3aArray.join('\n');

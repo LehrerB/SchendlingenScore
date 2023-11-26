@@ -7,6 +7,7 @@ function wonVsHigherElo(diff1, diff2) { //returns true if opponent is higher bet
     if(!(game.isWon)){return false}
     let plElo = parseInt(game.isWhite ? game.header().WhiteElo : game.header().BlackElo)
     let opElo = parseInt(game.isWhite ? game.header().BlackElo : game.header().WhiteElo)
+  if(opElo === 1500){return false} //new accounts have exactly 1500 and mess this up
   if(diff1 < diff2) {return (plElo + diff1 <= opElo)&&!(plElo + diff2 <= opElo)}
   return plElo + diff1 <= opElo;
   }
