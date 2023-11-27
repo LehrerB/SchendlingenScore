@@ -403,9 +403,10 @@ export default function Home() {
     }
 
     function doRest(createTableBoolean) {
-      if ((view === 1 || view === 0) && (isDev || secondview)) {
+      if ((view === 1 || view === 0) && (isDev)) {      
         console.log('ObjectArray:')
         console.log(objectArray)
+      }
         let new_bigdata = bigdata;
 
         // Loop through objectArray
@@ -423,16 +424,15 @@ export default function Home() {
         });
         objectArray = [];
         //to prevent that new achs can be added again and again
-        console.log('1',bigdata)
         bigdata = new_bigdata //just in case we don't want to do it like this later
-        console.log('2',bigdata)
         if (view === 1 && createTableBoolean) {
           const checks_keys_array = Object.keys(checks);
           createAchievementTable("table1", new_bigdata, nameArray, checks, 0, (checks_keys_array.length / 2)-2);
           createAchievementTable("table2", new_bigdata, nameArray, checks, (checks_keys_array.length / 2)-2, checks_keys_array.length-4);
         }
+        if ((view === 1 || view === 0) && (isDev)) { 
         console.log('New Big Data', new_bigdata);
-      }
+        }
     }
 
     function createAchievementTable(tableid, bigdata_input, nameArray_input, checks_input, start, end) {
