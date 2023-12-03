@@ -82,8 +82,7 @@ export let wonVsComputer8NoQueen = {
   },
   check: function(game) {
   if(game.isStandard){return false}
-  return (game.isComputer && game.isWon && game.oppName.includes("8") && (game.header().FEN === 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNB1KBNR w KQkq - 0 1')||(game.header().FEN === 'rnb1kbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1'))
-
+  return (game.isComputer && game.isWon && game.oppName.includes("8") && (game.header().FEN === 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNB1KBNR w KQkq - 0 1'||game.header().FEN === 'rnb1kbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1'))
 }
 }
 

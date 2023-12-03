@@ -8,6 +8,7 @@ export let blackSheepList = [
   'Ninaum',
   'Riri_theCat',
   'esmkar',
+  'J2by',
 ]
 
 //chess group
@@ -20,6 +21,7 @@ let classChessArray = [
   'msch-necdem',
   'msch-horbar',
   'msch-musgez',
+  'J2by',
   'msch-abuele',
   'msch-cankar',
   'msch-salsar',
