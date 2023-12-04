@@ -191,6 +191,38 @@ let class3cArray = [
 
 export let class3c = class3cArray.join('\n'); 
 
+//2a
+let class2aArray = [
+  'msch-amegep',
+  'msch-angbir',
+  'msch-anikal',
+  'msch-benmeu',
+  'msch-emimas',
+  'msch-emmsoh',
+  'msch-fabfla',
+  'msch-gabdie',
+  'msch-laugil',
+  'msch-leasch',
+  'msch-leavog',
+  'msch-leokek',
+  'msch-levtau',
+  'msch-liavoe',
+  'msch-linjus',
+  'msch-liszef',
+  'msch-luinus',
+  'msch-marzau',
+  'msch-michoe',
+  'msch-morbue',
+  'msch-patpek',
+  'msch-yusata',
+  
+  //'msch-milvan', //not found
+  //'msch-noafae', //not found
+  //'msch-tuadog', //not found
+]
+
+export let class2a = class2aArray.join('\n'); 
+
 //2c
 let class2cArray = [
   'msch-abuele',
