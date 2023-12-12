@@ -250,6 +250,14 @@ export default function Home() {
     setView(view === 0 ? 1 : 0);
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' && view === 0) {
+      e.preventDefault(); // Prevent the default form submission
+      document.getElementById('startButton').click();
+      e.target.blur();
+    }
+  };
+
   const fetchAndAnalyzeGames = (local) => {
     if (name === "view") {
       setName("msch-");
@@ -741,6 +749,7 @@ export default function Home() {
                   className={styles.input}
                   value={name}
                   onChange={(e) => setName(e.target.value)}
+                  onKeyDown={handleKeyDown}
                   name="lichessName"
                 />
               </label>
@@ -780,7 +789,7 @@ export default function Home() {
             </select>
           </label>
           <br />
-          <button className={styles.button} disabled={loadingStatus == LOADING_STATUS_RUNNING} onClick={fetchAndAnalyzeGames}>{(loadingStatus == LOADING_STATUS_RUNNING) ? 'Ladet...' : 'Start'}</button>
+          <button id="startButton" className={styles.button} disabled={loadingStatus == LOADING_STATUS_RUNNING} onClick={fetchAndAnalyzeGames}>{(loadingStatus == LOADING_STATUS_RUNNING) ? 'Ladet...' : 'Start'}</button>
           {view === 1 && (
             <label>
               <input type="checkbox" checked={skipFetch} onChange={() => setSkipFetch(!skipFetch)} />
