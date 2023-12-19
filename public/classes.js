@@ -9,6 +9,7 @@ export let blackSheepList = [
   'Riri_theCat',
   'esmkar',
   'J2by',
+  'CayanK',
 ]
 
 //chess group
@@ -34,8 +35,6 @@ let classChessArray = [
   'msch-noabil',
   'msch-martra',
   'msch-subbar',
-  'msch-mahdil',
-  'msch-abdbol',
 ]
 
 export let classChess = classChessArray.join('\n');
@@ -54,6 +53,7 @@ let class4aArray = [
   'msch-levvoe',
   'msch-malheg',
   'msch-marmit',
+  'msch-matfroe', //new
   'msch-matoer',
   'msch-maxgas',
   'msch-melmio',
@@ -62,7 +62,6 @@ let class4aArray = [
   'msch-timkop',
   'msch-yusalt',
   'EliasStegi', //freestyle name
-  //'msch-matfro', //not found
 ]
 
 export let class4a = class4aArray.join('\n');
@@ -228,6 +227,7 @@ let class2cArray = [
   'msch-abuele',
   'msch-alepet',
   'msch-cankar',
+  'msch-devhasi', 
   'msch-eligol',
   'msch-emijov',
   'msch-eyuayg',
@@ -240,11 +240,9 @@ let class2cArray = [
   'msch-oliwel',
   'msch-ruepol',
   'msch-salsar',
-  
-  //'msch-jermen', 
-  //'msch-devhas', 
-  //'msch-ashkai', 
-  //'msch-caykiz', 
+  'msch-ashkai',
+  'msch-jeremen', 
+  'CayanK',  
 
   //'msch-mubgoi', // DAZ
   //'msch-hunfek', // DAZ
@@ -263,6 +261,7 @@ let class1cArray = [
   'msch-davmit',
   'msch-emilyjov',
   'msch-emierc',
+  'esmkar',
   'msch-ezgiyil',
   'msch-leakol',
   'msch-lelfek',
@@ -278,7 +277,7 @@ let class1cArray = [
   'msch-tahalp',
   'msch-turgue',
   'msch-yahyue',
-  'esmkar',
+  'msch-salalk',
 ]
 
 export let class1c = class1cArray.join('\n'); 

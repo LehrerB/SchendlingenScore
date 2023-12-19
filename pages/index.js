@@ -259,7 +259,7 @@ export default function Home() {
   };
 
   const fetchAndAnalyzeGames = (local) => {
-    if (name === "view") {
+    if (name === "view" || name === "") {
       setName("msch-");
       secondview = true;
       return;
