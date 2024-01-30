@@ -949,7 +949,7 @@ export default function Home() {
             </div>
 
           </div></>}
-              <div><a href="https://msschendlingen-my.sharepoint.com/personal/alexander_boehler_ms-schendlingen_at/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Falexander%5Fboehler%5Fms%2Dschendlingen%5Fat%2FDocuments%2FQR%20Code%20PDFs%20und%20Bilder%2FLektion%20Links%20Schach%20Pass%20PDF%2Epdf&parent=%2Fpersonal%2Falexander%5Fboehler%5Fms%2Dschendlingen%5Fat%2FDocuments%2FQR%20Code%20PDFs%20und%20Bilder&ga=1" target="_blank">Lektionen vom Schachpass</a></div>
+              <div><a href="https://msschendlingen-my.sharepoint.com/personal/alexander_boehler_ms-schendlingen_at/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Falexander%5Fboehler%5Fms%2Dschendlingen%5Fat%2FDocuments%2FQR%20Code%20PDFs%20und%20Bilder%2FLektion%20Links%20Schach%20Pass%20PDF%2Epdf&parent=%2Fpersonal%2Falexander%5Fboehler%5Fms%2Dschendlingen%5Fat%2FDocuments%2FQR%20Code%20PDFs%20und%20Bilder&ga=1" target="_blank" rel="noopener noreferrer">Lektionen vom Schachpass</a></div>
               
 
       </main>
