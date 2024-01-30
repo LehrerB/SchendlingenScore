@@ -226,12 +226,15 @@ export let class2a = class2aArray.join('\n');
 let class2cArray = [
   'msch-abuele',
   'msch-alepet',
+  'msch-ashkai',
   'msch-cankar',
+  'CayanK',  
   'msch-devhasi', 
   'msch-eligol',
   'msch-emijov',
   'msch-eyuayg',
   'msch-imasha',
+  'msch-jeremen', 
   'msch-julklo',
   'msch-kaybal',
   'msch-lejcuk',
@@ -240,9 +243,7 @@ let class2cArray = [
   'msch-oliwel',
   'msch-ruepol',
   'msch-salsar',
-  'msch-ashkai',
-  'msch-jeremen', 
-  'CayanK',  
+  'msch-zahyah',
 
   //'msch-mubgoi', // DAZ
   //'msch-hunfek', // DAZ
