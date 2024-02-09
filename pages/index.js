@@ -40,8 +40,6 @@ const checks = {
   wonWithWhite: result.wonWithWhite,
   wonWithBlack: result.wonWithBlack,
 
-
-
   mattStattPatt1: computer.mattStattPatt1,
   mattStattPatt2: computer.mattStattPatt2,
   mattStattPatt3: computer.mattStattPatt3,
@@ -49,23 +47,24 @@ const checks = {
   mattStattPatt5: computer.mattStattPatt5,
   mattStattPatt6: computer.mattStattPatt6,
 
-
-
   wonVsComputer1: computer.wonVsComputer1,
   wonVsComputer2: computer.wonVsComputer2,
   wonVsComputer3: computer.wonVsComputer3,
+  wonVsComputer4: computer.wonVsComputer4,
   wonVsComputer8NoQueen: computer.wonVsComputer8NoQueen,
-
+  wonVsMaia: computer.wonVsMaia,
 
   new_opponent: underdog.new_opponent,
+  /*against_teacher: underdog.against_teacher,*/
   textbookOpening: opening.textbookOpening,
 
   basicPawnEndgame1: computer.basicPawnEndgame1,
   basicPawnEndgame2: computer.basicPawnEndgame2,
 
-  withTwoRooks: endgames.withTwoRooks,
-  withOneQueen: endgames.withOneQueen,
-  withOneRook: endgames.withOneRook,
+  speedWithTwoRooks: endgames.speedWithTwoRooks,
+  speedWithOneQueen: endgames.speedWithOneQueen,
+  speedWithOneRook: endgames.speedWithOneRook,
+  speedWithTwoBishops: endgames.speedWithTwoBishops,
 
   noFool: opening.noFool,
   onlyPawnMoves: opening.onlyPawnMoves,
@@ -83,8 +82,6 @@ const checks = {
   secondQueen: endgames.secondQueen,
   underpromote: endgames.underpromote,
 
-  withTwoBishops: endgames.withTwoBishops,
-  withBishopKnight: endgames.withBishopKnight,
   drawWithKing: result.drawWithKing,
   justTwoKings: result.justTwoKings,
 
@@ -92,11 +89,6 @@ const checks = {
   castleWithCheck: specialmoves.castleWithCheck,
   battlefield: captures.battlefield,
   peacefulmode: captures.peacefulmode,
-
-
-
-
-
 
   small_underdog: underdog.small_underdog,
   /*big_underdog: underdog.big_underdog,*/
@@ -170,7 +162,15 @@ function Achievement({ name, ach }) {
     <div className={styles.card} >
       <h2>{checks[name].title}</h2>
       {/* zero width character &#8203; such that the height of every card is the same */}
-      <div className={styles.trophyList}>&#8203;{ach.urls.map((url, index) => <a key={index} href={url} target="_blank" rel="noopener noreferrer">🏆</a>)}</div>
+      <div className={styles.trophyList}>
+          {ach && ach.urls && ach.urls.length > 0 ? 
+              ach.urls.map((url, index) => 
+                  <a key={index} href={url} target="_blank" rel="noopener noreferrer">🏆</a>
+              ) 
+              : 
+              <div>&nbsp;</div>
+          }
+      </div>
       <div className={styles.details}>
         <p>{checks[name].description}</p>
 
@@ -236,7 +236,20 @@ let mobile_boolean;
 export default function Home() {
   const isDev = process.env.NODE_ENV !== 'production';
 
-  const [name, setName] = useState(isDev ? 'msch-jakhal' : 'msch-'); //smart
+  let classesButtonArray = [
+    { label: 'Schach', class: classes.classChess },
+    { label: '1c', class: classes.class1c },
+    { label: '2a', class: classes.class2a },
+    { label: '2c', class: classes.class2c },
+    { label: '3a', class: classes.class3a },
+    { label: '3b', class: classes.class3b },
+    { label: '4a', class: classes.class4a },
+    { label: '4b', class: classes.class4b },
+    { label: '4c', class: classes.class4c },
+  ]
+  if(isDev){classesButtonArray.push({ label: 'Alle', class: classes.allStudents.join('\n') })}
+
+  const [name, setName] = useState(isDev ? 'msch-tahalp' : 'msch-'); //smart
   const [amount, setAmount] = useState(isDev ? 'all' : 'all');
   const [loadingStatus, setLoadingStatus] = useState(LOADING_STATUS_DONE);
   const [errorMsg, setErrorMsg] = useState('');
@@ -284,7 +297,7 @@ export default function Home() {
     function processPlayerData(currentname, index, forceDownloadBoolean) {
       return new Promise((resolve, reject) => {
         console.log('process',currentname)
-        let newAch = createAchievementsDict();
+        let newAch = {};
 
         function getURLofPlayer(currentname) {
           let url;
@@ -296,7 +309,7 @@ export default function Home() {
               if (userobject.unique != null) { opponents_school_unique = userobject.unique }
               console.log('Found userobject:', userobjectIndex)
               newAch = userobject.ach;
-              url = `https://lichess.org/api/games/user/${currentname}?since=${userobject.timestamp}`;
+              url = `https://lichess.org/api/games/user/${currentname}?since=${userobject.timestamp - (10 * 60 * 1000)}`; //10 minutes back
             }
           } else if (amount === "month") {
             url = `https://lichess.org/api/games/user/${currentname}?since=${timestampOneMonthAgo}`;
@@ -341,7 +354,12 @@ export default function Home() {
                 if (ach.check(chess)) {
                   const add = chess.isBlack ? "/black" : "";
                   const site = chess.header().Site + add;
+                  if(!newAch[key]){
+                    newAch[key] = { urls: [] };
+                  }
+                  if(!newAch[key].urls.includes(site)){
                   newAch[key].urls.push(site);
+                  }
                 }
               }
             });
@@ -435,8 +453,8 @@ export default function Home() {
         bigdata = new_bigdata //just in case we don't want to do it like this later
         if (view === 1 && createTableBoolean) {
           const checks_keys_array = Object.keys(checks);
-          createAchievementTable("table1", new_bigdata, nameArray, checks, 0, (checks_keys_array.length / 2)-2);
-          createAchievementTable("table2", new_bigdata, nameArray, checks, (checks_keys_array.length / 2)-2, checks_keys_array.length-4);
+          createAchievementTable("table1", new_bigdata, nameArray, checks, 0, Math.floor(checks_keys_array.length / 2)-2);
+          createAchievementTable("table2", new_bigdata, nameArray, checks, Math.floor(checks_keys_array.length / 2)-2, checks_keys_array.length-4);
         }
         if ((view === 1 || view === 0) && (isDev)) { 
         console.log('New Big Data', new_bigdata);
@@ -497,8 +515,17 @@ export default function Home() {
       table.appendChild(headerRow);
     
       for (const name of nameArray_input) {
-        for (const user of bigdata_input) {
-          if (name === user.username) {
+        let user = {"username": name, "ach": {}, "timestamp": "0"}
+        let userNewBoolean = true;
+        for (const biguser of bigdata_input) {
+          if (name === biguser.username) {
+            user = biguser;
+            userNewBoolean = false;
+          }
+        }
+        if (userNewBoolean) {
+          bigdata.push(user);
+        }
             const row = document.createElement('tr');
             const usernameCell = document.createElement('td');
             usernameCell.textContent = user.username;
@@ -512,7 +539,7 @@ export default function Home() {
               let challengeCount = 0;
               for (let achKey of uniqueAchievements){
                 const ach = user.ach[achKey];
-                if(ach.urls.length > 0){challengeCount += 1}
+                if(ach && ach.urls && ach.urls.length > 0){challengeCount += 1}
               }
               const cell = document.createElement('td');
               cell.textContent = challengeCount;
@@ -525,7 +552,7 @@ export default function Home() {
               const ach = user.ach[achKey];
               const cell = document.createElement('td');
     
-              if (ach.urls.length > 0) {
+              if (ach && ach.urls && ach.urls.length > 0) {
                 const lastUrl = ach.urls[ach.urls.length - 1];
             
                 // Create an anchor element
@@ -540,14 +567,12 @@ export default function Home() {
                 cell.appendChild(link);
               } else {
                 // If there are no URLs, just set the text content
-                cell.textContent = ach.urls.length;
+                cell.textContent = "0";
               }
               
               row.appendChild(cell);
             }
             table.appendChild(row);
-          }
-        }
       }
       updateTableStyles(tableid);
     }
@@ -587,8 +612,8 @@ export default function Home() {
         //reload user
         await processPlayerData(username, 0, true);
         const checks_keys_array = Object.keys(checks);
-        reloadUserTable(username,"table1",uniqueAchievements,0, (checks_keys_array.length / 2)-2);
-        reloadUserTable(username,"table2",uniqueAchievements,(checks_keys_array.length / 2)-2,checks_keys_array.length-4);  
+        reloadUserTable(username,"table1",uniqueAchievements,0, Math.floor(checks_keys_array.length / 2)-2);
+        reloadUserTable(username,"table2",uniqueAchievements,Math.floor(checks_keys_array.length / 2)-2, checks_keys_array.length-4);
         
       } catch (error) {
         console.error(error)
@@ -606,8 +631,12 @@ export default function Home() {
     
       //construct innerHMTL
       let rowInnerHTML
-      for (const user of bigdata) {
-          if (username === user.username) {
+        let user = {"username": username, "ach": {}, "timestamp": "0"}
+        for (const biguser of bigdata) {
+          if (username === biguser.username) {
+            user = biguser;
+          }
+        }
             rowInnerHTML = `<td id="${user.username}${tableId}" style="cursor: pointer;">${user.username}</td>`;
 
             //count challenges
@@ -615,7 +644,7 @@ export default function Home() {
               let challengeCount = 0;
               for (let achKey of uniqueAchievements){
                 const ach = user.ach[achKey];
-                if(ach.urls.length > 0){challengeCount += 1}
+                if(ach && ach.urls && ach.urls.length > 0){challengeCount += 1}
               }
             rowInnerHTML = rowInnerHTML + `<td>${challengeCount}</td>`;
             }
@@ -623,10 +652,8 @@ export default function Home() {
             for (let i = start; i < end; i++) {
               const achKey = uniqueAchievements[i];
               const ach = user.ach[achKey];
-              rowInnerHTML = rowInnerHTML + `<td>${ach.urls.length}</td>`;
+              rowInnerHTML = rowInnerHTML + `<td>${ach && ach.urls ? ach.urls.length : 0}</td>`;
             }
-          }
-        }
 
         for (let i = 0; i < rows.length; i++) {
           const cells = rows[i].getElementsByTagName('td');
@@ -802,17 +829,7 @@ export default function Home() {
             
             <>
               <br />
-              {[
-                { label: 'Schach', class: classes.classChess },
-                { label: '1c', class: classes.class1c },
-                { label: '2a', class: classes.class2a },
-                { label: '2c', class: classes.class2c },
-                { label: '3a', class: classes.class3a },
-                { label: '3b', class: classes.class3b },
-                { label: '4a', class: classes.class4a },
-                { label: '4b', class: classes.class4b },
-                { label: '4c', class: classes.class4c },
-              ].map(({ label, class: buttonClass }, index, array) => (
+              {classesButtonArray.map(({ label, class: buttonClass }, index, array) => (
                 <span key={label}>
                   <button disabled={loadingStatus === LOADING_STATUS_RUNNING} onClick={() => setUsername(buttonClass)}>
                     {label}
@@ -830,7 +847,7 @@ export default function Home() {
           {isDev && <button onClick={() => fetchAndAnalyzeGames(true)}>Load local</button>}
           <p></p>
           {loadingStatus == LOADING_STATUS_DONE && <>
-            {Object.values(achievements).map(ach => ach.urls.length > 0).reduce((partialSum, a) => partialSum + a, 0)} / {Object.keys(achievements).length} Challenges<br/>
+            {Object.values(achievements).map(ach => ach.urls.length > 0).reduce((partialSum, a) => partialSum + a, 0)} / {Object.keys(checks).length} Challenges<br/>
             {Object.values(achievements).map(ach => ach.urls.length).reduce((partialSum, a) => partialSum + a, 0)} Trophäen
           </>}
 
@@ -852,16 +869,6 @@ export default function Home() {
               <div className={styles.achWrap}>
                 <Achievement name={"new_opponent"} ach={achievements.new_opponent} />
                 <Achievement name={"small_underdog"} ach={achievements.small_underdog} />
-
-                {achievements.small_underdog.urls.length < 0 && <Achievement name={"big_underdog"} ach={achievements.big_underdog} />}
-              </div>
-
-              <h3>Eröffnung</h3>
-              <div className={styles.achWrap}>
-                <Achievement name={"textbookOpening"} ach={achievements.textbookOpening} />
-                <Achievement name={"noFool"} ach={achievements.noFool} />
-                <Achievement name={"onlyPawnMoves"} ach={achievements.onlyPawnMoves} />
-                <Achievement name={"rookSniper"} ach={achievements.rookSniper} />
               </div>
 
               <h3>Schach Matt</h3>
@@ -877,40 +884,27 @@ export default function Home() {
                 <Achievement name={"mateWithLess"} ach={achievements.mateWithLess} />
               </div>
 
+              <h3>Eröffnung</h3>
+              <div className={styles.achWrap}>
+                <Achievement name={"textbookOpening"} ach={achievements.textbookOpening} />
+                <Achievement name={"noFool"} ach={achievements.noFool} />
+                <Achievement name={"onlyPawnMoves"} ach={achievements.onlyPawnMoves} />
+                <Achievement name={"rookSniper"} ach={achievements.rookSniper} />
+              </div>
+
               <h3>Endspiel</h3>
               <div className={styles.achWrap}>
                 <Achievement name={"secondQueen"} ach={achievements.secondQueen} />
                 <Achievement name={"underpromote"} ach={achievements.underpromote} />
-                <Achievement name={"withTwoRooks"} ach={achievements.withTwoRooks} />
-                <Achievement name={"withOneQueen"} ach={achievements.withOneQueen} />
-                <Achievement name={"withOneRook"} ach={achievements.withOneRook} />
-                <Achievement name={"withTwoBishops"} ach={achievements.withTwoBishops} />
-                <Achievement name={"withBishopKnight"} ach={achievements.withBishopKnight} />
                 <Achievement name={"drawWithKing"} ach={achievements.drawWithKing} />
                 <Achievement name={"justTwoKings"} ach={achievements.justTwoKings} />
-              </div>
-            </div>
-
-            <div className={styles.column}>
-              <h3>Besondere Züge</h3>
-              <div className={styles.achWrap}>
-                <Achievement name={"enpeasant"} ach={achievements.enpeasant} />
-                <Achievement name={"castleWithCheck"} ach={achievements.castleWithCheck} />
-                <Achievement name={"battlefield"} ach={achievements.battlefield} />
-                <Achievement name={"peacefulmode"} ach={achievements.peacefulmode} />
-              </div>
-
-              <h3>Mensch gegen Maschine</h3>
-              <div className={styles.achWrap}>
-                <Achievement name={"wonVsComputer1"} ach={achievements.wonVsComputer1} />
-                <Achievement name={"wonVsComputer2"} ach={achievements.wonVsComputer2} />
-                <Achievement name={"wonVsComputer3"} ach={achievements.wonVsComputer3} />
-                <Achievement name={"wonVsComputer8NoQueen"} ach={achievements.wonVsComputer8NoQueen} />
                 <Achievement name={"basicPawnEndgame1"} ach={achievements.basicPawnEndgame1} />
                 <Achievement name={"basicPawnEndgame2"} ach={achievements.basicPawnEndgame2} />
               </div>
+            </div> 
 
-              <h3>Matt statt Patt</h3>
+            <div className={styles.column}>
+            <h3>Matt statt Patt</h3>
               <div className={styles.achWrap}>
                 <Achievement name={"mattStattPatt1"} ach={achievements.mattStattPatt1} />
                 <Achievement name={"mattStattPatt2"} ach={achievements.mattStattPatt2} />
@@ -919,6 +913,33 @@ export default function Home() {
                 <Achievement name={"mattStattPatt5"} ach={achievements.mattStattPatt5} />
                 <Achievement name={"mattStattPatt6"} ach={achievements.mattStattPatt6} />
               </div>
+
+              <h3>Mensch gegen Maschine</h3>
+              <div className={styles.achWrap}>
+                <Achievement name={"wonVsComputer1"} ach={achievements.wonVsComputer1} />
+                <Achievement name={"wonVsComputer2"} ach={achievements.wonVsComputer2} />
+                <Achievement name={"wonVsComputer3"} ach={achievements.wonVsComputer3} />
+                <Achievement name={"wonVsComputer4"} ach={achievements.wonVsComputer4} />
+                <Achievement name={"wonVsComputer8NoQueen"} ach={achievements.wonVsComputer8NoQueen} />
+                <Achievement name={"wonVsMaia"} ach={achievements.wonVsMaia} />
+              </div> 
+
+              <h3>Besondere Züge</h3>
+              <div className={styles.achWrap}>
+                <Achievement name={"enpeasant"} ach={achievements.enpeasant} />
+                <Achievement name={"castleWithCheck"} ach={achievements.castleWithCheck} />
+                <Achievement name={"battlefield"} ach={achievements.battlefield} />
+                <Achievement name={"peacefulmode"} ach={achievements.peacefulmode} />
+              </div>
+              
+              <h3>Speed Challenges</h3>
+              <div className={styles.achWrap}>
+                <Achievement name={"speedWithTwoRooks"} ach={achievements.speedWithTwoRooks} />
+                <Achievement name={"speedWithOneQueen"} ach={achievements.speedWithOneQueen} />
+                <Achievement name={"speedWithOneRook"} ach={achievements.speedWithOneRook} />
+                <Achievement name={"speedWithTwoBishops"} ach={achievements.speedWithTwoBishops} />
+              </div>
+
               {Object.values(achievements).map(ach => ach.urls.length > 0).reduce((partialSum, a) => partialSum + a, 0) > 29 && <>
                 <h3>Blödeleien</h3>
                 <div className={styles.achWrap}>

@@ -12,14 +12,23 @@ export let blackSheepList = [
   'CayanK',
 ]
 
+export let teacherList = [
+  'LehrerB',
+]
+
 //chess group
 let classChessArray = [
   'LehrerB',
+  'msch-brkkay',
+  'msch-emilyjov',
+  'msch-emierc',
+  'msch-majmar',
+  'msch-selkar',
+  'msch-tahalp',
   'msch-oliwel',
   'msch-xenhof',
   'misch-andhof',
   'msch-dommio',
-  'msch-necdem',
   'msch-horbar',
   'msch-musgez',
   'J2by',

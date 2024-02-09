@@ -19,7 +19,7 @@ export let wonWithWhite = {
     time: 2
   },
   check: function(game) {
-    return game.isWhite && game.header().Result === '1-0'
+    return game.isStandard && !game.isBullet && game.isWhite && game.header().Result === '1-0'
   }
 }
 
@@ -33,7 +33,7 @@ export let wonWithBlack = {
     time: 2
   },
   check: function(game) {
-    return game.isBlack && game.header().Result === '0-1';
+    return game.isStandard && !game.isBullet && game.isBlack && game.header().Result === '0-1';
   }
 }
 

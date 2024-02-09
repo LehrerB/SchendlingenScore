@@ -83,7 +83,7 @@ export default function parseLichessGame(str, name) {
   chess.isStandard = chess.header().Variant === 'Standard';
   chess.isFromPosition = chess.header().Variant === 'From Position';
   chess.isWeirdVariant = chess.header().Variant != 'Standard' && chess.header().Variant != 'From Position';
-  chess.isBullet = false; //chess.header().Event.includes('Bullet');
+  chess.isBullet = chess.header().Event.includes('Bullet');
   chess.addwb = chess.isWhite ? 1 : 0;
   chess.playerhistory = chess.history().filter((_, index) => index % 2 !== chess.addwb);
   chess.addbw = chess.isWhite ? 0 : 1;

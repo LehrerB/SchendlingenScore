@@ -86,11 +86,25 @@ export let wonVsComputer8NoQueen = {
 }
 }
 
+export let wonVsMaia = {
+  title: 'Maia Bot',
+  description: <>Besiege den Maia1 Bot auf Lichess <a href="https://lichess.org/@/maia1" target="_blank">(LINK)</a>.</>,
+  pref: {
+    win: 1,
+    bullet: 2,
+    computer: 1,
+    time: 3
+  },
+  check: function(game) {
+  return (game.isWon && game.isStandard && game.oppName.includes("maia1"))
+}
+}
+
 //Matt statt Patt
 
 export let mattStattPatt1 = {
   title: 'Matt statt Patt Level 1',
-  description: <><a href="https://lichess.org/editor/8/8/4k3/8/6R1/1R1K3R/R7/8_w_-_-_0_1?color=white" target="_blank">Matt statt Patt Level 1</a> (Computer Stufe 2+)</>,
+  description: <>Matt statt Patt Level 1 (Computer Stufe <a href="https://lichess.org/editor/8/8/4k3/8/6R1/1R1K3R/R7/8_w_-_-_0_1?color=white" target="_blank">2+</a>)</>,
   pref: {
     win: 1,
     bullet: 2,
@@ -107,7 +121,7 @@ export let mattStattPatt1 = {
 
 export let mattStattPatt2 = {
   title: 'Matt statt Patt Level 2',
-  description: <><a href="https://lichess.org/editor/1k6/7p/8/8/8/4P2P/PPP5/3R1K2_w_-_-_0_1?color=white" target="_blank">Matt statt Patt Level 2</a> (Computer Stufe 2+)</>,
+  description: <>Matt statt Patt Level 2 (Computer Stufe <a href="https://lichess.org/editor/1k6/7p/8/8/8/4P2P/PPP5/3R1K2_w_-_-_0_1?color=white" target="_blank">2+</a>)</>,
   pref: {
     win: 1,
     bullet: 2,
@@ -124,7 +138,7 @@ export let mattStattPatt2 = {
 
 export let mattStattPatt3 = {
   title: 'Matt statt Patt Level 3',
-  description: <><a href="https://lichess.org/editor/8/5k1p/8/3P4/8/7P/8/3R1K2_w_-_-_0_1?color=white" target="_blank">Matt statt Patt Level 3</a> (Computer Stufe 2+)</>,
+  description: <>Matt statt Patt Level 3 (Computer Stufe <a href="https://lichess.org/editor/8/5k1p/8/3P4/8/7P/8/3R1K2_w_-_-_0_1?color=white" target="_blank">2+</a>)</>,
   pref: {
     win: 1,
     bullet: 2,
@@ -141,7 +155,7 @@ export let mattStattPatt3 = {
 
 export let mattStattPatt4 = {
   title: 'Matt statt Patt Level 4',
-  description: <><a href="https://lichess.org/editor/8/8/5Pk1/p3P3/2P5/1P6/P3K3/8_w_-_-_0_1?color=white" target="_blank">Matt statt Patt Level 4</a> (Computer Stufe 2+)</>,
+  description: <>Matt statt Patt Level 4 (Computer Stufe <a href="https://lichess.org/editor/8/8/5Pk1/p3P3/2P5/1P6/P3K3/8_w_-_-_0_1?color=white" target="_blank">2+</a>)</>,
   pref: {
     win: 1,
     bullet: 2,
@@ -158,7 +172,7 @@ export let mattStattPatt4 = {
 
 export let mattStattPatt5 = {
   title: 'Matt statt Patt Level 5',
-  description: <><a href="https://lichess.org/editor/8/7p/1kP5/1P3p2/6p1/8/4KPPP/8_w_-_-_0_1?color=white" target="_blank">Matt statt Patt Level 5</a> (Computer Stufe 6+)</>,
+  description: <>Matt statt Patt Level 5 (Computer Stufe <a href="https://lichess.org/editor/8/7p/1kP5/1P3p2/6p1/8/4KPPP/8_w_-_-_0_1?color=white" target="_blank">6+</a>)</>,
   pref: {
     win: 1,
     bullet: 2,
@@ -175,7 +189,7 @@ export let mattStattPatt5 = {
 
 export let mattStattPatt6 = {
   title: 'Matt statt Patt Level 6',
-  description: <><a href="https://lichess.org/editor/8/8/8/4k3/8/8/8/3RKR2_w_-_-_0_1?color=white" target="_blank">Matt statt Patt Level 6</a> (Computer Stufe 6+)</>,
+  description: <>Matt statt Patt Level 6 (Computer Stufe <a href="https://lichess.org/editor/8/8/8/4k3/8/8/8/3RKR2_w_-_-_0_1?color=white" target="_blank">6+</a>)</>,
   pref: {
     win: 1,
     bullet: 2,
