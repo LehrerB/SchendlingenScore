@@ -1,7 +1,7 @@
 [
     {
         "username": "LehrerB",
-        "timestamp": 1707505560000,
+        "timestamp": 1707550980000,
         "ach": {
             "wonWithWhite": {
                 "urls": [
@@ -429,7 +429,7 @@
     },
     {
         "username": "msch-oliwel",
-        "timestamp": 1707505670000,
+        "timestamp": 1707550990000,
         "ach": {
             "mattStattPatt6": {
                 "urls": [
@@ -544,7 +544,7 @@
     },
     {
         "username": "msch-xenhof",
-        "timestamp": 1707506024000,
+        "timestamp": 1707550991000,
         "ach": {
             "new_opponent": {
                 "urls": [
@@ -687,7 +687,7 @@
     },
     {
         "username": "misch-andhof",
-        "timestamp": 1707505681000,
+        "timestamp": 1707550996000,
         "ach": {
             "wonWithBlack": {
                 "urls": [
@@ -1488,7 +1488,7 @@
     },
     {
         "username": "msch-brkkay",
-        "timestamp": 1707505585000,
+        "timestamp": 1707550981000,
         "ach": {
             "wonWithWhite": {
                 "urls": [
@@ -1960,7 +1960,7 @@
     },
     {
         "username": "msch-emilyjov",
-        "timestamp": 1707505592000,
+        "timestamp": 1707550982000,
         "ach": {
             "wonWithWhite": {
                 "urls": [
@@ -2215,7 +2215,7 @@
     },
     {
         "username": "msch-emierc",
-        "timestamp": 1707505593000,
+        "timestamp": 1707550982000,
         "ach": {
             "wonWithWhite": {
                 "urls": [
@@ -2931,7 +2931,7 @@
     },
     {
         "username": "msch-majmar",
-        "timestamp": 1707505606000,
+        "timestamp": 1707550983000,
         "ach": {
             "wonWithWhite": {
                 "urls": [
@@ -3536,7 +3536,7 @@
     },
     {
         "username": "msch-selkar",
-        "timestamp": 1707505618000,
+        "timestamp": 1707550988000,
         "ach": {
             "wonWithBlack": {
                 "urls": [
@@ -3825,7 +3825,7 @@
     },
     {
         "username": "msch-tahalp",
-        "timestamp": 1707505619000,
+        "timestamp": 1707550989000,
         "ach": {
             "wonWithWhite": {
                 "urls": [
@@ -6681,7 +6681,7 @@
     },
     {
         "username": "HatArs",
-        "timestamp": 1707506119000,
+        "timestamp": 1707551051000,
         "ach": {
             "wonWithBlack": {
                 "urls": [
@@ -6965,7 +6965,7 @@
     },
     {
         "username": "J2by",
-        "timestamp": 1707505579000,
+        "timestamp": 1707551032000,
         "ach": {
             "wonWithBlack": {
                 "urls": [
@@ -7030,7 +7030,7 @@
     },
     {
         "username": "msch-abuele",
-        "timestamp": 1707505630000,
+        "timestamp": 1707551033000,
         "ach": {
             "new_opponent": {
                 "urls": [
@@ -7170,7 +7170,7 @@
     },
     {
         "username": "msch-cankar",
-        "timestamp": 1707505637000,
+        "timestamp": 1707551034000,
         "ach": {
             "new_opponent": {
                 "urls": [
@@ -7381,7 +7381,7 @@
     },
     {
         "username": "msch-emijov",
-        "timestamp": 1707505651000,
+        "timestamp": 1707551040000,
         "ach": {
             "mattStattPatt6": {
                 "urls": [
@@ -8101,7 +8101,7 @@
     },
     {
         "username": "msch-salsar",
-        "timestamp": 1707505680000,
+        "timestamp": 1707551035000,
         "ach": {
             "wonWithBlack": {
                 "urls": [
@@ -10611,7 +10611,7 @@
     },
     {
         "username": "msch-lucler",
-        "timestamp": 1707505789000,
+        "timestamp": 1707551046000,
         "ach": {
             "new_opponent": {
                 "urls": [
@@ -10948,7 +10948,7 @@
     },
     {
         "username": "msch-stemio",
-        "timestamp": 1707505819000,
+        "timestamp": 1707551047000,
         "ach": {
             "wonWithWhite": {
                 "urls": [
@@ -14424,7 +14424,7 @@
     },
     {
         "username": "msch-subbar",
-        "timestamp": 1707506017000,
+        "timestamp": 1707551059000,
         "ach": {
             "wonWithBlack": {
                 "urls": [
@@ -16388,7 +16388,7 @@
     },
     {
         "username": "msch-martra",
-        "timestamp": 1707506077000,
+        "timestamp": 1707551054000,
         "ach": {
             "wonWithWhite": {
                 "urls": [
@@ -16630,7 +16630,7 @@
     },
     {
         "username": "msch-noabil",
-        "timestamp": 1707506082000,
+        "timestamp": 1707551053000,
         "ach": {
             "mattStattPatt6": {
                 "urls": [
@@ -16809,7 +16809,7 @@
     },
     {
         "username": "msch-semfen",
-        "timestamp": 1707506111000,
+        "timestamp": 1707551052000,
         "ach": {
             "wonWithWhite": {
                 "urls": [
@@ -22459,5 +22459,2080 @@
             "msch-meryil",
             "msch-meruya"
         ]
+    },
+    {
+        "username": "msch-dommio",
+        "timestamp": 1707551015000,
+        "ach": {
+            "wonWithWhite": {
+                "urls": [
+                    "https://lichess.org/QC4ByBro",
+                    "https://lichess.org/vT8LGjE6",
+                    "https://lichess.org/LJN0dWeP",
+                    "https://lichess.org/oFYRr2B5",
+                    "https://lichess.org/P2jH4JvR",
+                    "https://lichess.org/8tD6gGXF",
+                    "https://lichess.org/AhGgoWNP",
+                    "https://lichess.org/nxBtsVjd",
+                    "https://lichess.org/DXWZHNDY",
+                    "https://lichess.org/rFeHo8GG",
+                    "https://lichess.org/jsSj3uF8",
+                    "https://lichess.org/95a5pWQg",
+                    "https://lichess.org/oDDtlSDl",
+                    "https://lichess.org/ICBfjx2P",
+                    "https://lichess.org/e91zLe5B",
+                    "https://lichess.org/6ZTuPqu8",
+                    "https://lichess.org/Tl9iwHjK"
+                ]
+            },
+            "small_underdog": {
+                "urls": [
+                    "https://lichess.org/QC4ByBro",
+                    "https://lichess.org/8tD6gGXF",
+                    "https://lichess.org/AhGgoWNP"
+                ]
+            },
+            "mateWithRook": {
+                "urls": [
+                    "https://lichess.org/vT8LGjE6",
+                    "https://lichess.org/95a5pWQg",
+                    "https://lichess.org/oDDtlSDl",
+                    "https://lichess.org/6ZTuPqu8",
+                    "https://lichess.org/kuWdFumq/black"
+                ]
+            },
+            "new_opponent": {
+                "urls": [
+                    "https://lichess.org/N9xbrPpt/black"
+                ]
+            },
+            "wonWithBlack": {
+                "urls": [
+                    "https://lichess.org/fTzRtQ2I/black",
+                    "https://lichess.org/yIlVbZ3B/black",
+                    "https://lichess.org/Pe5HX82y/black",
+                    "https://lichess.org/cmJdyIhY/black",
+                    "https://lichess.org/WsArdwFW/black",
+                    "https://lichess.org/aM16v9wh/black",
+                    "https://lichess.org/oe61FRiK/black",
+                    "https://lichess.org/HAKdCdCp/black",
+                    "https://lichess.org/kuWdFumq/black"
+                ]
+            },
+            "mateWithQueen": {
+                "urls": [
+                    "https://lichess.org/oFYRr2B5",
+                    "https://lichess.org/P2jH4JvR",
+                    "https://lichess.org/nxBtsVjd",
+                    "https://lichess.org/DXWZHNDY",
+                    "https://lichess.org/oe61FRiK/black",
+                    "https://lichess.org/rFeHo8GG",
+                    "https://lichess.org/jsSj3uF8",
+                    "https://lichess.org/ICBfjx2P",
+                    "https://lichess.org/HAKdCdCp/black",
+                    "https://lichess.org/e91zLe5B",
+                    "https://lichess.org/Tl9iwHjK"
+                ]
+            },
+            "mattStattPatt5": {
+                "urls": [
+                    "https://lichess.org/67iKiJcl",
+                    "https://lichess.org/fE1eRKvp",
+                    "https://lichess.org/9h4dIlxJ"
+                ]
+            },
+            "mattStattPatt1": {
+                "urls": [
+                    "https://lichess.org/4rQqxNcc",
+                    "https://lichess.org/VTskFkj4",
+                    "https://lichess.org/etsuAQ5b",
+                    "https://lichess.org/mqIW4a8E",
+                    "https://lichess.org/xHl6fwMY",
+                    "https://lichess.org/rVG1EJst"
+                ]
+            },
+            "mattStattPatt2": {
+                "urls": [
+                    "https://lichess.org/WzKs8Efd",
+                    "https://lichess.org/USsmCyQH",
+                    "https://lichess.org/P1ppCYJf",
+                    "https://lichess.org/Cku3aNdu"
+                ]
+            },
+            "drawWithKing": {
+                "urls": [
+                    "https://lichess.org/cy7NI45a/black"
+                ]
+            },
+            "wonVsComputer1": {
+                "urls": [
+                    "https://lichess.org/nxBtsVjd",
+                    "https://lichess.org/rFeHo8GG",
+                    "https://lichess.org/95a5pWQg",
+                    "https://lichess.org/oDDtlSDl",
+                    "https://lichess.org/ICBfjx2P",
+                    "https://lichess.org/HAKdCdCp/black",
+                    "https://lichess.org/e91zLe5B",
+                    "https://lichess.org/6ZTuPqu8",
+                    "https://lichess.org/kuWdFumq/black",
+                    "https://lichess.org/Tl9iwHjK"
+                ]
+            },
+            "mateOnBackRank": {
+                "urls": [
+                    "https://lichess.org/nxBtsVjd",
+                    "https://lichess.org/e91zLe5B"
+                ]
+            },
+            "mateWithPawn": {
+                "urls": [
+                    "https://lichess.org/DXWZHNDY",
+                    "https://lichess.org/Tl9iwHjK"
+                ]
+            },
+            "mateAfterCapture": {
+                "urls": [
+                    "https://lichess.org/jsSj3uF8"
+                ]
+            },
+            "mattStattPatt6": {
+                "urls": [
+                    "https://lichess.org/qauXFVfM"
+                ]
+            },
+            "mattStattPatt4": {
+                "urls": [
+                    "https://lichess.org/usFszOJ1",
+                    "https://lichess.org/uHCqBerZ"
+                ]
+            },
+            "mattStattPatt3": {
+                "urls": [
+                    "https://lichess.org/inbRU0dU"
+                ]
+            },
+            "secondQueen": {
+                "urls": [
+                    "https://lichess.org/oDDtlSDl",
+                    "https://lichess.org/6ZTuPqu8"
+                ]
+            }
+        },
+        "unique": [
+            "msch-stemio"
+        ]
+    },
+    {
+        "username": "msch-horbar",
+        "timestamp": 1707551027000,
+        "ach": {
+            "small_underdog": {
+                "urls": [
+                    "https://lichess.org/nTMsKoMs/black",
+                    "https://lichess.org/1TaiZ7yL/black"
+                ]
+            },
+            "wonWithWhite": {
+                "urls": [
+                    "https://lichess.org/waLi7NBY",
+                    "https://lichess.org/vVaX52aT",
+                    "https://lichess.org/NDLP7yH9",
+                    "https://lichess.org/avF7Dfwx",
+                    "https://lichess.org/dDFQlR9Q",
+                    "https://lichess.org/gHhX1dx5",
+                    "https://lichess.org/jTSmnVGa"
+                ]
+            },
+            "wonVsComputer2": {
+                "urls": [
+                    "https://lichess.org/waLi7NBY",
+                    "https://lichess.org/avF7Dfwx",
+                    "https://lichess.org/gHhX1dx5",
+                    "https://lichess.org/jTSmnVGa"
+                ]
+            },
+            "mateWithQueen": {
+                "urls": [
+                    "https://lichess.org/waLi7NBY",
+                    "https://lichess.org/vVaX52aT",
+                    "https://lichess.org/NDLP7yH9",
+                    "https://lichess.org/dDFQlR9Q",
+                    "https://lichess.org/jTSmnVGa",
+                    "https://lichess.org/BFgYXm2T/black",
+                    "https://lichess.org/BneyQhtI/black"
+                ]
+            },
+            "secondQueen": {
+                "urls": [
+                    "https://lichess.org/waLi7NBY",
+                    "https://lichess.org/vVaX52aT",
+                    "https://lichess.org/dDFQlR9Q"
+                ]
+            },
+            "wonVsComputer1": {
+                "urls": [
+                    "https://lichess.org/vVaX52aT",
+                    "https://lichess.org/CeJxTlKH/black",
+                    "https://lichess.org/NDLP7yH9",
+                    "https://lichess.org/dDFQlR9Q",
+                    "https://lichess.org/BFgYXm2T/black",
+                    "https://lichess.org/BneyQhtI/black"
+                ]
+            },
+            "mattStattPatt4": {
+                "urls": [
+                    "https://lichess.org/QQvezZ7Y"
+                ]
+            },
+            "mattStattPatt3": {
+                "urls": [
+                    "https://lichess.org/nNbNJ3eb"
+                ]
+            },
+            "wonWithBlack": {
+                "urls": [
+                    "https://lichess.org/CeJxTlKH/black",
+                    "https://lichess.org/BFgYXm2T/black",
+                    "https://lichess.org/BneyQhtI/black"
+                ]
+            },
+            "mateWithRook": {
+                "urls": [
+                    "https://lichess.org/CeJxTlKH/black",
+                    "https://lichess.org/gHhX1dx5"
+                ]
+            },
+            "peacefulmode": {
+                "urls": [
+                    "https://lichess.org/CeJxTlKH/black"
+                ]
+            },
+            "new_opponent": {
+                "urls": [
+                    "https://lichess.org/uXbIictb"
+                ]
+            },
+            "mateWithPawn": {
+                "urls": [
+                    "https://lichess.org/avF7Dfwx",
+                    "https://lichess.org/jTSmnVGa"
+                ]
+            },
+            "mattStattPatt2": {
+                "urls": [
+                    "https://lichess.org/V3Uki12y",
+                    "https://lichess.org/cUmiwTj4"
+                ]
+            },
+            "mattStattPatt1": {
+                "urls": [
+                    "https://lichess.org/poCnSUns"
+                ]
+            },
+            "mateOnBackRank": {
+                "urls": [
+                    "https://lichess.org/jTSmnVGa"
+                ]
+            }
+        },
+        "unique": [
+            "msch-subbar"
+        ]
+    },
+    {
+        "username": "msch-musgez",
+        "timestamp": 1707551028000,
+        "ach": {
+            "wonWithWhite": {
+                "urls": [
+                    "https://lichess.org/nDmQgUta",
+                    "https://lichess.org/E3APVvCi"
+                ]
+            },
+            "new_opponent": {
+                "urls": [
+                    "https://lichess.org/nDmQgUta"
+                ]
+            },
+            "wonWithBlack": {
+                "urls": [
+                    "https://lichess.org/ZKtIyciT/black",
+                    "https://lichess.org/ielHw4pk/black"
+                ]
+            },
+            "mateWithQueen": {
+                "urls": [
+                    "https://lichess.org/ZKtIyciT/black"
+                ]
+            },
+            "mateOnBackRank": {
+                "urls": [
+                    "https://lichess.org/ZKtIyciT/black"
+                ]
+            }
+        },
+        "unique": [
+            "msch-emijov"
+        ]
+    },
+    {
+        "username": "msch-millaz",
+        "timestamp": 1707551045000,
+        "ach": {
+            "mattStattPatt5": {
+                "urls": [
+                    "https://lichess.org/qxgnmbkc"
+                ]
+            },
+            "mattStattPatt4": {
+                "urls": [
+                    "https://lichess.org/UZsXV9hj"
+                ]
+            },
+            "mattStattPatt3": {
+                "urls": [
+                    "https://lichess.org/TeNBAxhZ"
+                ]
+            },
+            "mattStattPatt6": {
+                "urls": [
+                    "https://lichess.org/RFUPIzbn"
+                ]
+            },
+            "mattStattPatt2": {
+                "urls": [
+                    "https://lichess.org/BVbjr2MK"
+                ]
+            },
+            "new_opponent": {
+                "urls": [
+                    "https://lichess.org/mzx6gJxb",
+                    "https://lichess.org/6mdJLzTS",
+                    "https://lichess.org/n6zFOfAW"
+                ]
+            },
+            "wonWithWhite": {
+                "urls": [
+                    "https://lichess.org/6mdJLzTS"
+                ]
+            },
+            "mateWithQueen": {
+                "urls": [
+                    "https://lichess.org/6mdJLzTS"
+                ]
+            },
+            "secondQueen": {
+                "urls": [
+                    "https://lichess.org/6mdJLzTS"
+                ]
+            },
+            "underpromote": {
+                "urls": [
+                    "https://lichess.org/6mdJLzTS"
+                ]
+            },
+            "mattStattPatt1": {
+                "urls": [
+                    "https://lichess.org/c3yGSRpW",
+                    "https://lichess.org/DRtkDDxG",
+                    "https://lichess.org/99Xf8B84",
+                    "https://lichess.org/oyUhjkk3",
+                    "https://lichess.org/KrU8RH18",
+                    "https://lichess.org/CaqB2OWL",
+                    "https://lichess.org/5Mafh7oO",
+                    "https://lichess.org/DIdj5kZn",
+                    "https://lichess.org/1LC2YrIO",
+                    "https://lichess.org/z17yJ7HK"
+                ]
+            },
+            "wonWithBlack": {
+                "urls": [
+                    "https://lichess.org/ELQIFdmm/black",
+                    "https://lichess.org/IYI5WEvk/black"
+                ]
+            },
+            "noFool": {
+                "urls": [
+                    "https://lichess.org/ELQIFdmm/black",
+                    "https://lichess.org/IYI5WEvk/black"
+                ]
+            }
+        },
+        "unique": [
+            "lehrerb",
+            "msch-lucler",
+            "msch-mahdil"
+        ]
+    },
+    {
+        "username": "DACHSWE",
+        "timestamp": 1707551222000,
+        "ach": {
+            "wonWithWhite": {
+                "urls": [
+                    "https://lichess.org/8IasWKlg",
+                    "https://lichess.org/Hj2J78WP",
+                    "https://lichess.org/MuDqIe1r",
+                    "https://lichess.org/tMXeFiZY",
+                    "https://lichess.org/TlLCS5GG",
+                    "https://lichess.org/1hlHhDgs",
+                    "https://lichess.org/fepivNAD",
+                    "https://lichess.org/fgP4SuzR",
+                    "https://lichess.org/sShRHRft",
+                    "https://lichess.org/hmy2ezKM",
+                    "https://lichess.org/Zz2T4MyQ",
+                    "https://lichess.org/aGolR0Vv",
+                    "https://lichess.org/GxPZZfUZ",
+                    "https://lichess.org/g4mZumP6",
+                    "https://lichess.org/Cbg4Ij7D",
+                    "https://lichess.org/1nliJcV3",
+                    "https://lichess.org/IS9VT0Xr",
+                    "https://lichess.org/8FoXW1aW",
+                    "https://lichess.org/aAufqfnV",
+                    "https://lichess.org/2rJtoSfo",
+                    "https://lichess.org/ggduEMMY",
+                    "https://lichess.org/DGgPc4DL",
+                    "https://lichess.org/AsSZvWF7",
+                    "https://lichess.org/4DCDwv6y",
+                    "https://lichess.org/e9NJjOVB",
+                    "https://lichess.org/cXycB1mC",
+                    "https://lichess.org/gz8Ff5P9",
+                    "https://lichess.org/agecxwdN",
+                    "https://lichess.org/TdNVYZAl",
+                    "https://lichess.org/xAl1rcDx",
+                    "https://lichess.org/EJXdRH6u",
+                    "https://lichess.org/12AJIGar",
+                    "https://lichess.org/yQImUbLG",
+                    "https://lichess.org/GHqZoTNC",
+                    "https://lichess.org/XDW0PMcw",
+                    "https://lichess.org/Cfj31JUR",
+                    "https://lichess.org/EYSn3pjn",
+                    "https://lichess.org/FVmFI0up",
+                    "https://lichess.org/qKTyJIEp",
+                    "https://lichess.org/QjlD08Yj",
+                    "https://lichess.org/La96AXBw",
+                    "https://lichess.org/jDyjM3cV",
+                    "https://lichess.org/xiJVe9za",
+                    "https://lichess.org/K3DTPOq4",
+                    "https://lichess.org/QfEBPABv",
+                    "https://lichess.org/97xTy0kV",
+                    "https://lichess.org/OwTnGVFu",
+                    "https://lichess.org/kvR7WOug",
+                    "https://lichess.org/BOThc6nP",
+                    "https://lichess.org/3g4DNozf",
+                    "https://lichess.org/dpm5ZpII",
+                    "https://lichess.org/xE9bBvGf",
+                    "https://lichess.org/rMjhFj1o",
+                    "https://lichess.org/J4hSCNyz",
+                    "https://lichess.org/468KghOT",
+                    "https://lichess.org/Vhf3Gfhw",
+                    "https://lichess.org/Bt3GbjRk",
+                    "https://lichess.org/lnHTjPCf",
+                    "https://lichess.org/oP89eQlN",
+                    "https://lichess.org/pNe9IOa5",
+                    "https://lichess.org/Wkh57Nln",
+                    "https://lichess.org/M4piwJ96",
+                    "https://lichess.org/FJY38nOv",
+                    "https://lichess.org/nSuxoNBa",
+                    "https://lichess.org/2jJskwt1",
+                    "https://lichess.org/Y3yiXaIB",
+                    "https://lichess.org/giEnHGSX",
+                    "https://lichess.org/Zd78rnML",
+                    "https://lichess.org/Wa8u78PQ",
+                    "https://lichess.org/S4aY5IW6",
+                    "https://lichess.org/Suy8BZZt",
+                    "https://lichess.org/TIYX524M",
+                    "https://lichess.org/sKVjfp2Z",
+                    "https://lichess.org/omg2eFOR",
+                    "https://lichess.org/au7OrAzP",
+                    "https://lichess.org/Yqav7fCm",
+                    "https://lichess.org/uGesmSQa",
+                    "https://lichess.org/hMw5toHy",
+                    "https://lichess.org/ynrcvK3F",
+                    "https://lichess.org/izQL7bbQ",
+                    "https://lichess.org/i2kWHqcm",
+                    "https://lichess.org/ev7AoXyF",
+                    "https://lichess.org/qwZNUVCR",
+                    "https://lichess.org/cNpGD4yN",
+                    "https://lichess.org/cpYSDI1v",
+                    "https://lichess.org/IHw9HsLE",
+                    "https://lichess.org/sdVebDK6",
+                    "https://lichess.org/AGYthEnQ",
+                    "https://lichess.org/s34NCw3k",
+                    "https://lichess.org/3cKx9LEZ",
+                    "https://lichess.org/zIcyTwcu",
+                    "https://lichess.org/GOTgUZn5",
+                    "https://lichess.org/1M5RYUot",
+                    "https://lichess.org/4KXQNtBE",
+                    "https://lichess.org/g0zhlvcx",
+                    "https://lichess.org/yLGQAUXL",
+                    "https://lichess.org/CcZQiBPm",
+                    "https://lichess.org/2hx5GaoB",
+                    "https://lichess.org/Wt0mK3Ed",
+                    "https://lichess.org/35RnpmfC",
+                    "https://lichess.org/u7vsvbfD",
+                    "https://lichess.org/YRqsYg2T",
+                    "https://lichess.org/pFD6ZR14",
+                    "https://lichess.org/1hB7I8X7",
+                    "https://lichess.org/3RQjXqSE",
+                    "https://lichess.org/hdVEvtNz",
+                    "https://lichess.org/3CuVktxz",
+                    "https://lichess.org/Yq4aT5Sb",
+                    "https://lichess.org/sir3CV30",
+                    "https://lichess.org/DW5rciYr",
+                    "https://lichess.org/J3F3XfDU",
+                    "https://lichess.org/g6UIg35X",
+                    "https://lichess.org/gWQ5dw5k",
+                    "https://lichess.org/QNFvb7HT",
+                    "https://lichess.org/XWISaGc9",
+                    "https://lichess.org/XKhafSRy",
+                    "https://lichess.org/ljyOvBrT",
+                    "https://lichess.org/gTzfYptO",
+                    "https://lichess.org/Vc89xVNb",
+                    "https://lichess.org/hvlEDlJ7",
+                    "https://lichess.org/QJpsWzEp",
+                    "https://lichess.org/DTR4vnAK",
+                    "https://lichess.org/bZjWsYoc",
+                    "https://lichess.org/b3XMc8Ze",
+                    "https://lichess.org/EYh0m6BH",
+                    "https://lichess.org/EgvEiR1z",
+                    "https://lichess.org/8BYOtGzi",
+                    "https://lichess.org/KYVEdz9h",
+                    "https://lichess.org/8BjzATQm",
+                    "https://lichess.org/1w1Ms12m",
+                    "https://lichess.org/IRr6C73L",
+                    "https://lichess.org/BdX4YK1h",
+                    "https://lichess.org/FsualgOt",
+                    "https://lichess.org/JDjTBrrD",
+                    "https://lichess.org/R3BN5myh",
+                    "https://lichess.org/M428n41J",
+                    "https://lichess.org/1IcuMo90",
+                    "https://lichess.org/jDuyzdZf",
+                    "https://lichess.org/5r7sQyha",
+                    "https://lichess.org/0ss94fke",
+                    "https://lichess.org/ixZkIssd",
+                    "https://lichess.org/lC6Gcejf",
+                    "https://lichess.org/QpsEKrvD",
+                    "https://lichess.org/rXPXSWCh",
+                    "https://lichess.org/Qyj96EIX",
+                    "https://lichess.org/MJembRoQ",
+                    "https://lichess.org/nHo9RFUO",
+                    "https://lichess.org/inoH5nuI",
+                    "https://lichess.org/p071ddcI",
+                    "https://lichess.org/fs4Tf2w6",
+                    "https://lichess.org/RsLPpCUb",
+                    "https://lichess.org/RjoOVzTQ",
+                    "https://lichess.org/sfGDQ2Qi",
+                    "https://lichess.org/sGLQQn8Q",
+                    "https://lichess.org/M7qliqyk",
+                    "https://lichess.org/jfTEfpph",
+                    "https://lichess.org/LuAhsyir",
+                    "https://lichess.org/XlH1Riug",
+                    "https://lichess.org/MFqC0Yt6",
+                    "https://lichess.org/Wz3mUONm",
+                    "https://lichess.org/6t3StfXD",
+                    "https://lichess.org/wJH2TdWx",
+                    "https://lichess.org/dwprMLR5",
+                    "https://lichess.org/bArslFDG",
+                    "https://lichess.org/aAVvjkG3",
+                    "https://lichess.org/LYPSk70g",
+                    "https://lichess.org/lD92plIF",
+                    "https://lichess.org/n6QWiqfS",
+                    "https://lichess.org/mjF5kRlB",
+                    "https://lichess.org/0s8kqs9W",
+                    "https://lichess.org/NbcQBysI",
+                    "https://lichess.org/bAkzqhg8",
+                    "https://lichess.org/OdJSdlR0",
+                    "https://lichess.org/m9otnFDU",
+                    "https://lichess.org/42eWKh6Y",
+                    "https://lichess.org/mEmzyP9f",
+                    "https://lichess.org/dLh3FSZW",
+                    "https://lichess.org/DnzXPBOG",
+                    "https://lichess.org/2QgZf6qL",
+                    "https://lichess.org/PvZpIQQk",
+                    "https://lichess.org/ERvSK8Kq",
+                    "https://lichess.org/VSCb3WHj",
+                    "https://lichess.org/M3FDpfNO",
+                    "https://lichess.org/sWG1nei2",
+                    "https://lichess.org/PvFbmgvQ",
+                    "https://lichess.org/pnck4HYi",
+                    "https://lichess.org/kyqpza7M",
+                    "https://lichess.org/9ewTUjbi",
+                    "https://lichess.org/Med7RPgw",
+                    "https://lichess.org/sxsymJLc",
+                    "https://lichess.org/Ar24XsQy",
+                    "https://lichess.org/114CTBDV",
+                    "https://lichess.org/ajTvT7qI",
+                    "https://lichess.org/zBErHQVk",
+                    "https://lichess.org/VqeWPUzV",
+                    "https://lichess.org/gp8aCntw",
+                    "https://lichess.org/oRcBjx4r",
+                    "https://lichess.org/4auNWUEC",
+                    "https://lichess.org/RyucaVVk",
+                    "https://lichess.org/tqfZg0mf",
+                    "https://lichess.org/n8Mu0igC",
+                    "https://lichess.org/VjYiNq4c",
+                    "https://lichess.org/8i1yzeIG",
+                    "https://lichess.org/UrZf8FAB",
+                    "https://lichess.org/21fREGEX",
+                    "https://lichess.org/QB06NoQ4",
+                    "https://lichess.org/AeIEEYlt",
+                    "https://lichess.org/VfYrrJAk",
+                    "https://lichess.org/hepTrB6I",
+                    "https://lichess.org/OKjMWeNK",
+                    "https://lichess.org/5kbxtpSQ",
+                    "https://lichess.org/6aR3BJwq",
+                    "https://lichess.org/31kwmLii",
+                    "https://lichess.org/BhmubS9B",
+                    "https://lichess.org/ZzbXuKRy",
+                    "https://lichess.org/UPIy7QEX",
+                    "https://lichess.org/lTsOqC6W",
+                    "https://lichess.org/z6JPEScu",
+                    "https://lichess.org/RTMFadH7",
+                    "https://lichess.org/TIj7cq6n",
+                    "https://lichess.org/rMnDGXbb",
+                    "https://lichess.org/cfbgpcAc",
+                    "https://lichess.org/rLIWqQxl",
+                    "https://lichess.org/wHTvMIMu",
+                    "https://lichess.org/ZhG0RD6N",
+                    "https://lichess.org/7DzxCzoI",
+                    "https://lichess.org/ozkIea75",
+                    "https://lichess.org/NWPPfC4l",
+                    "https://lichess.org/G4pM6wlh",
+                    "https://lichess.org/u61zwwY1",
+                    "https://lichess.org/mmAcUlf8",
+                    "https://lichess.org/JancKFuJ",
+                    "https://lichess.org/iN8x12cx",
+                    "https://lichess.org/KAY2DgU8",
+                    "https://lichess.org/wWoliUKJ",
+                    "https://lichess.org/CqVAhtcl",
+                    "https://lichess.org/GsX0zYQB",
+                    "https://lichess.org/k7prDQj7",
+                    "https://lichess.org/YbVyiJwu",
+                    "https://lichess.org/eK1SNrSN",
+                    "https://lichess.org/VSeJjHY4",
+                    "https://lichess.org/J6FvjwWy",
+                    "https://lichess.org/zV05z3EA",
+                    "https://lichess.org/gvY2kDd3",
+                    "https://lichess.org/KHzmdpoK",
+                    "https://lichess.org/8X3d0KF5",
+                    "https://lichess.org/MLs1HAQ8",
+                    "https://lichess.org/6AmbJcA3",
+                    "https://lichess.org/vDm6NHKL",
+                    "https://lichess.org/bX8Grk2H",
+                    "https://lichess.org/OKIy8XqE",
+                    "https://lichess.org/wb2CAw7k",
+                    "https://lichess.org/dFJHCbt1",
+                    "https://lichess.org/HfhCTgvO",
+                    "https://lichess.org/jXJ6Bi1X",
+                    "https://lichess.org/etI7AAJH",
+                    "https://lichess.org/EqMelRkb",
+                    "https://lichess.org/Z5NDiq5L",
+                    "https://lichess.org/zZeb4kRg",
+                    "https://lichess.org/uZg58rIj",
+                    "https://lichess.org/uAXFM0AR",
+                    "https://lichess.org/EvOm1z51",
+                    "https://lichess.org/Fg1ZPvUb",
+                    "https://lichess.org/N7qX670Z",
+                    "https://lichess.org/ZUO6LYKs",
+                    "https://lichess.org/ELX4CpBs",
+                    "https://lichess.org/2aToJPSq",
+                    "https://lichess.org/4sjECvRx"
+                ]
+            },
+            "wonVsComputer1": {
+                "urls": [
+                    "https://lichess.org/8IasWKlg",
+                    "https://lichess.org/EyIKtnD9/black",
+                    "https://lichess.org/TlLCS5GG",
+                    "https://lichess.org/1hlHhDgs",
+                    "https://lichess.org/fepivNAD",
+                    "https://lichess.org/fgP4SuzR",
+                    "https://lichess.org/sShRHRft",
+                    "https://lichess.org/hmy2ezKM",
+                    "https://lichess.org/Zz2T4MyQ"
+                ]
+            },
+            "textbookOpening": {
+                "urls": [
+                    "https://lichess.org/8IasWKlg",
+                    "https://lichess.org/0Nj6qlGT/black",
+                    "https://lichess.org/agecxwdN",
+                    "https://lichess.org/DdaODMCw/black",
+                    "https://lichess.org/97xTy0kV",
+                    "https://lichess.org/dpm5ZpII",
+                    "https://lichess.org/7L9BmB9z/black",
+                    "https://lichess.org/Bt3GbjRk",
+                    "https://lichess.org/2jJskwt1",
+                    "https://lichess.org/Suy8BZZt",
+                    "https://lichess.org/h6mSo7ar/black",
+                    "https://lichess.org/sdVebDK6",
+                    "https://lichess.org/ACwTTyjk/black",
+                    "https://lichess.org/2hx5GaoB",
+                    "https://lichess.org/mqNGcG6G/black",
+                    "https://lichess.org/DTR4vnAK",
+                    "https://lichess.org/bZjWsYoc",
+                    "https://lichess.org/TjFoLzBU/black",
+                    "https://lichess.org/8BYOtGzi",
+                    "https://lichess.org/8BjzATQm",
+                    "https://lichess.org/IRr6C73L",
+                    "https://lichess.org/FsualgOt",
+                    "https://lichess.org/1IcuMo90",
+                    "https://lichess.org/0ss94fke",
+                    "https://lichess.org/M7qliqyk",
+                    "https://lichess.org/wJH2TdWx",
+                    "https://lichess.org/QHpHWsdz/black",
+                    "https://lichess.org/mjF5kRlB",
+                    "https://lichess.org/42eWKh6Y",
+                    "https://lichess.org/qyaeMXR4/black",
+                    "https://lichess.org/rTdXcj2l/black",
+                    "https://lichess.org/KyIwjs94/black",
+                    "https://lichess.org/Q2Vidrtn/black",
+                    "https://lichess.org/nl7EX39o/black",
+                    "https://lichess.org/3fuPzDeA/black",
+                    "https://lichess.org/2QgZf6qL",
+                    "https://lichess.org/PvZpIQQk",
+                    "https://lichess.org/Q24hKjXH/black",
+                    "https://lichess.org/xiBG8Qmf/black",
+                    "https://lichess.org/8i1yzeIG",
+                    "https://lichess.org/UrZf8FAB",
+                    "https://lichess.org/AeIEEYlt",
+                    "https://lichess.org/5kbxtpSQ",
+                    "https://lichess.org/6aR3BJwq",
+                    "https://lichess.org/ZzbXuKRy",
+                    "https://lichess.org/oNSrIYIm/black",
+                    "https://lichess.org/UPIy7QEX",
+                    "https://lichess.org/lTsOqC6W",
+                    "https://lichess.org/z6JPEScu",
+                    "https://lichess.org/iBBId0Qz/black",
+                    "https://lichess.org/xUfVCddg/black",
+                    "https://lichess.org/wPjigoaL/black",
+                    "https://lichess.org/rMnDGXbb",
+                    "https://lichess.org/y02hDhrx/black",
+                    "https://lichess.org/rLIWqQxl",
+                    "https://lichess.org/XP49bvs1/black",
+                    "https://lichess.org/ZhG0RD6N",
+                    "https://lichess.org/u61zwwY1",
+                    "https://lichess.org/mmAcUlf8",
+                    "https://lichess.org/J6FvjwWy",
+                    "https://lichess.org/gvY2kDd3",
+                    "https://lichess.org/sSHJV5cV/black",
+                    "https://lichess.org/8X3d0KF5",
+                    "https://lichess.org/bX8Grk2H",
+                    "https://lichess.org/Nue8X3X8/black",
+                    "https://lichess.org/ZKL4mVkC/black",
+                    "https://lichess.org/HfhCTgvO",
+                    "https://lichess.org/x75llycZ/black",
+                    "https://lichess.org/n2jHIHMg/black",
+                    "https://lichess.org/2aToJPSq",
+                    "https://lichess.org/FmQEcMlJ/black",
+                    "https://lichess.org/Az6UGqrI/black"
+                ]
+            },
+            "mateWithQueen": {
+                "urls": [
+                    "https://lichess.org/8IasWKlg",
+                    "https://lichess.org/tMXeFiZY",
+                    "https://lichess.org/1hlHhDgs",
+                    "https://lichess.org/fepivNAD",
+                    "https://lichess.org/fgP4SuzR",
+                    "https://lichess.org/ak9fDojh/black",
+                    "https://lichess.org/Zz2T4MyQ",
+                    "https://lichess.org/aGolR0Vv",
+                    "https://lichess.org/ySVNvfQO/black",
+                    "https://lichess.org/GxPZZfUZ",
+                    "https://lichess.org/oFB0qZwH/black",
+                    "https://lichess.org/g4mZumP6",
+                    "https://lichess.org/Cbg4Ij7D",
+                    "https://lichess.org/1nliJcV3",
+                    "https://lichess.org/ldJAxobi/black",
+                    "https://lichess.org/0d9NOWg2/black",
+                    "https://lichess.org/L78JZIMM/black",
+                    "https://lichess.org/och9r4EP/black",
+                    "https://lichess.org/8FoXW1aW",
+                    "https://lichess.org/G3XXAPfB/black",
+                    "https://lichess.org/2rJtoSfo",
+                    "https://lichess.org/4Eea65JG/black",
+                    "https://lichess.org/rLZbSgL3/black",
+                    "https://lichess.org/NybCF9fk/black",
+                    "https://lichess.org/ggduEMMY",
+                    "https://lichess.org/4vBcazpJ/black",
+                    "https://lichess.org/xgp4Uh8o/black",
+                    "https://lichess.org/GhP9yKrL/black",
+                    "https://lichess.org/xAl1rcDx",
+                    "https://lichess.org/EJXdRH6u",
+                    "https://lichess.org/12AJIGar",
+                    "https://lichess.org/xx97YsFb/black",
+                    "https://lichess.org/FVmFI0up",
+                    "https://lichess.org/La96AXBw",
+                    "https://lichess.org/tAk9frRt/black",
+                    "https://lichess.org/xiJVe9za",
+                    "https://lichess.org/eBe8yzMB/black",
+                    "https://lichess.org/sOs05vp3/black",
+                    "https://lichess.org/v0WaGG3j/black",
+                    "https://lichess.org/NImwf4Pn/black",
+                    "https://lichess.org/97xTy0kV",
+                    "https://lichess.org/MeT6woop/black",
+                    "https://lichess.org/BOThc6nP",
+                    "https://lichess.org/tsA0s8bC/black",
+                    "https://lichess.org/zSnGDzWg/black",
+                    "https://lichess.org/45dNnpoV/black",
+                    "https://lichess.org/sTV4DFoJ/black",
+                    "https://lichess.org/IVrxFKfH/black",
+                    "https://lichess.org/QKpryrXT/black",
+                    "https://lichess.org/Bt3GbjRk",
+                    "https://lichess.org/lnHTjPCf",
+                    "https://lichess.org/lXeaOUtL/black",
+                    "https://lichess.org/UpHKlBwn/black",
+                    "https://lichess.org/pNe9IOa5",
+                    "https://lichess.org/M4piwJ96",
+                    "https://lichess.org/FJY38nOv",
+                    "https://lichess.org/ZlpT3HKY/black",
+                    "https://lichess.org/Zd78rnML",
+                    "https://lichess.org/6cua8IgU/black",
+                    "https://lichess.org/Wa8u78PQ",
+                    "https://lichess.org/3difSx1R/black",
+                    "https://lichess.org/hMw5toHy",
+                    "https://lichess.org/aX5VtCTV/black",
+                    "https://lichess.org/LXCh3HUA/black",
+                    "https://lichess.org/2CuL9yGw/black",
+                    "https://lichess.org/AGYthEnQ",
+                    "https://lichess.org/a1Mmn9Ru/black",
+                    "https://lichess.org/2pLQ7p4y/black",
+                    "https://lichess.org/zIcyTwcu",
+                    "https://lichess.org/GOTgUZn5",
+                    "https://lichess.org/fVptk1fm/black",
+                    "https://lichess.org/nms7awIv/black",
+                    "https://lichess.org/2hx5GaoB",
+                    "https://lichess.org/GhVzSOH2/black",
+                    "https://lichess.org/KYv32l1a/black",
+                    "https://lichess.org/Yq4aT5Sb",
+                    "https://lichess.org/J3F3XfDU",
+                    "https://lichess.org/gWQ5dw5k",
+                    "https://lichess.org/0zpLqXPA/black",
+                    "https://lichess.org/QNFvb7HT",
+                    "https://lichess.org/XKhafSRy",
+                    "https://lichess.org/rJHfYs39/black",
+                    "https://lichess.org/QJpsWzEp",
+                    "https://lichess.org/bZjWsYoc",
+                    "https://lichess.org/4bgsdT1Y/black",
+                    "https://lichess.org/EgvEiR1z",
+                    "https://lichess.org/MiKaJlP1/black",
+                    "https://lichess.org/cqyyqldN/black",
+                    "https://lichess.org/1w1Ms12m",
+                    "https://lichess.org/mq7oynwE/black",
+                    "https://lichess.org/8Nh3egIt/black",
+                    "https://lichess.org/xhj3AVRI/black",
+                    "https://lichess.org/BdX4YK1h",
+                    "https://lichess.org/xSRQs2DE/black",
+                    "https://lichess.org/0Zr2TRMg/black",
+                    "https://lichess.org/R3BN5myh",
+                    "https://lichess.org/M428n41J",
+                    "https://lichess.org/cBsmeusJ/black",
+                    "https://lichess.org/vMG5Noic/black",
+                    "https://lichess.org/pjYY2hzU/black",
+                    "https://lichess.org/NUFJnPfq/black",
+                    "https://lichess.org/5r7sQyha",
+                    "https://lichess.org/Cm3jOQOB/black",
+                    "https://lichess.org/LNKTo92B/black",
+                    "https://lichess.org/DKSGfcid/black",
+                    "https://lichess.org/lC6Gcejf",
+                    "https://lichess.org/QpsEKrvD",
+                    "https://lichess.org/G0KaOmgJ/black",
+                    "https://lichess.org/FWsVTXxu/black",
+                    "https://lichess.org/rXPXSWCh",
+                    "https://lichess.org/Qyj96EIX",
+                    "https://lichess.org/MJembRoQ",
+                    "https://lichess.org/tBOiVZqz/black",
+                    "https://lichess.org/nHo9RFUO",
+                    "https://lichess.org/CqEz3Xkj/black",
+                    "https://lichess.org/RjoOVzTQ",
+                    "https://lichess.org/5GQOPyzM/black",
+                    "https://lichess.org/sfGDQ2Qi",
+                    "https://lichess.org/M7qliqyk",
+                    "https://lichess.org/6t3StfXD",
+                    "https://lichess.org/wJH2TdWx",
+                    "https://lichess.org/dwprMLR5",
+                    "https://lichess.org/bArslFDG",
+                    "https://lichess.org/LYPSk70g",
+                    "https://lichess.org/n6QWiqfS",
+                    "https://lichess.org/rnGipwpo/black",
+                    "https://lichess.org/0s8kqs9W",
+                    "https://lichess.org/NbcQBysI",
+                    "https://lichess.org/dM9hUXnR/black",
+                    "https://lichess.org/OdbIiY4f/black",
+                    "https://lichess.org/bAkzqhg8",
+                    "https://lichess.org/NDPuJE4a/black",
+                    "https://lichess.org/OdJSdlR0",
+                    "https://lichess.org/m9otnFDU",
+                    "https://lichess.org/s15YPAsB/black",
+                    "https://lichess.org/42eWKh6Y",
+                    "https://lichess.org/mEmzyP9f",
+                    "https://lichess.org/dLh3FSZW",
+                    "https://lichess.org/SIKcpyZh/black",
+                    "https://lichess.org/rTdXcj2l/black",
+                    "https://lichess.org/KyIwjs94/black",
+                    "https://lichess.org/Q2Vidrtn/black",
+                    "https://lichess.org/XLqshLQY/black",
+                    "https://lichess.org/tZcQEvT6/black",
+                    "https://lichess.org/Nrx8BA8P/black",
+                    "https://lichess.org/DnzXPBOG",
+                    "https://lichess.org/L3rfgxKH/black",
+                    "https://lichess.org/3fuPzDeA/black",
+                    "https://lichess.org/igzdXnBn/black",
+                    "https://lichess.org/2QgZf6qL",
+                    "https://lichess.org/PvZpIQQk",
+                    "https://lichess.org/mt46FwGd/black",
+                    "https://lichess.org/H1oR6mle/black",
+                    "https://lichess.org/VSCb3WHj",
+                    "https://lichess.org/sWG1nei2",
+                    "https://lichess.org/pnck4HYi",
+                    "https://lichess.org/Q24hKjXH/black",
+                    "https://lichess.org/EdUMjDD7/black",
+                    "https://lichess.org/Med7RPgw",
+                    "https://lichess.org/IhO89Got/black",
+                    "https://lichess.org/114CTBDV",
+                    "https://lichess.org/ajTvT7qI",
+                    "https://lichess.org/zBErHQVk",
+                    "https://lichess.org/VqeWPUzV",
+                    "https://lichess.org/ti4FBquU/black",
+                    "https://lichess.org/gp8aCntw",
+                    "https://lichess.org/u6NDx100/black",
+                    "https://lichess.org/cXAPBjzq/black",
+                    "https://lichess.org/oRcBjx4r",
+                    "https://lichess.org/RyucaVVk",
+                    "https://lichess.org/SeipYio4/black",
+                    "https://lichess.org/tqfZg0mf",
+                    "https://lichess.org/5YstuS9S/black",
+                    "https://lichess.org/JgL1U0ve/black",
+                    "https://lichess.org/n8Mu0igC",
+                    "https://lichess.org/VjYiNq4c",
+                    "https://lichess.org/8i1yzeIG",
+                    "https://lichess.org/UrZf8FAB",
+                    "https://lichess.org/KTezH6dM/black",
+                    "https://lichess.org/yoRzyxsu/black",
+                    "https://lichess.org/VfYrrJAk",
+                    "https://lichess.org/OKjMWeNK",
+                    "https://lichess.org/DXxCJj6K/black",
+                    "https://lichess.org/5kbxtpSQ",
+                    "https://lichess.org/lOM0we0J/black",
+                    "https://lichess.org/2ZlstsVV/black",
+                    "https://lichess.org/31kwmLii",
+                    "https://lichess.org/BhmubS9B",
+                    "https://lichess.org/oNSrIYIm/black",
+                    "https://lichess.org/l9pIcuxG/black",
+                    "https://lichess.org/XRnHBAa4/black",
+                    "https://lichess.org/z6JPEScu",
+                    "https://lichess.org/iBBId0Qz/black",
+                    "https://lichess.org/MPQ465XE/black",
+                    "https://lichess.org/PlgIpoFH/black",
+                    "https://lichess.org/zHpuPbDk/black",
+                    "https://lichess.org/TIj7cq6n",
+                    "https://lichess.org/rMnDGXbb",
+                    "https://lichess.org/cfbgpcAc",
+                    "https://lichess.org/y02hDhrx/black",
+                    "https://lichess.org/rLIWqQxl",
+                    "https://lichess.org/ZhG0RD6N",
+                    "https://lichess.org/7DzxCzoI",
+                    "https://lichess.org/ozkIea75",
+                    "https://lichess.org/NWPPfC4l",
+                    "https://lichess.org/G4pM6wlh",
+                    "https://lichess.org/6cmQaWOD/black",
+                    "https://lichess.org/82ZpOTb2/black",
+                    "https://lichess.org/u61zwwY1",
+                    "https://lichess.org/ViAMSzkn/black",
+                    "https://lichess.org/JancKFuJ",
+                    "https://lichess.org/CqVAhtcl",
+                    "https://lichess.org/R0wJZlaD/black",
+                    "https://lichess.org/k7prDQj7",
+                    "https://lichess.org/0mGCV6m6/black",
+                    "https://lichess.org/eK1SNrSN",
+                    "https://lichess.org/J6FvjwWy",
+                    "https://lichess.org/gvY2kDd3",
+                    "https://lichess.org/KHzmdpoK",
+                    "https://lichess.org/8X3d0KF5",
+                    "https://lichess.org/yYV7kfSu/black",
+                    "https://lichess.org/MLs1HAQ8",
+                    "https://lichess.org/6AmbJcA3",
+                    "https://lichess.org/vDm6NHKL",
+                    "https://lichess.org/a3IK3GAj/black",
+                    "https://lichess.org/bX8Grk2H",
+                    "https://lichess.org/OKIy8XqE",
+                    "https://lichess.org/Nue8X3X8/black",
+                    "https://lichess.org/wb2CAw7k",
+                    "https://lichess.org/HfhCTgvO",
+                    "https://lichess.org/etI7AAJH",
+                    "https://lichess.org/uZg58rIj",
+                    "https://lichess.org/2aToJPSq"
+                ]
+            },
+            "wonWithBlack": {
+                "urls": [
+                    "https://lichess.org/53sG5758/black",
+                    "https://lichess.org/EyIKtnD9/black",
+                    "https://lichess.org/ak9fDojh/black",
+                    "https://lichess.org/QWpa70ZT/black",
+                    "https://lichess.org/0Nj6qlGT/black",
+                    "https://lichess.org/ySVNvfQO/black",
+                    "https://lichess.org/oFB0qZwH/black",
+                    "https://lichess.org/CswSVIE9/black",
+                    "https://lichess.org/ldJAxobi/black",
+                    "https://lichess.org/0d9NOWg2/black",
+                    "https://lichess.org/L78JZIMM/black",
+                    "https://lichess.org/och9r4EP/black",
+                    "https://lichess.org/8WRU0DHN/black",
+                    "https://lichess.org/5pcd5CvQ/black",
+                    "https://lichess.org/G3XXAPfB/black",
+                    "https://lichess.org/4Eea65JG/black",
+                    "https://lichess.org/rLZbSgL3/black",
+                    "https://lichess.org/NybCF9fk/black",
+                    "https://lichess.org/4vBcazpJ/black",
+                    "https://lichess.org/RUtVqXVn/black",
+                    "https://lichess.org/xgp4Uh8o/black",
+                    "https://lichess.org/GhP9yKrL/black",
+                    "https://lichess.org/dWwnCrX3/black",
+                    "https://lichess.org/N47vbn20/black",
+                    "https://lichess.org/8xx8MSlV/black",
+                    "https://lichess.org/GT1H2gRf/black",
+                    "https://lichess.org/AsMrwqZR/black",
+                    "https://lichess.org/xx97YsFb/black",
+                    "https://lichess.org/VBJt05rg/black",
+                    "https://lichess.org/uCiO6M6c/black",
+                    "https://lichess.org/DdaODMCw/black",
+                    "https://lichess.org/a4wgb6x2/black",
+                    "https://lichess.org/tMB0MdQ4/black",
+                    "https://lichess.org/4T4PB2N8/black",
+                    "https://lichess.org/fkpP9ujW/black",
+                    "https://lichess.org/tAk9frRt/black",
+                    "https://lichess.org/eBe8yzMB/black",
+                    "https://lichess.org/8Iu5BSvX/black",
+                    "https://lichess.org/pASQRigN/black",
+                    "https://lichess.org/Wjv2sa1M/black",
+                    "https://lichess.org/moIGO1sk/black",
+                    "https://lichess.org/zo5Svwyq/black",
+                    "https://lichess.org/9iY5DxHj/black",
+                    "https://lichess.org/sOs05vp3/black",
+                    "https://lichess.org/v0WaGG3j/black",
+                    "https://lichess.org/NImwf4Pn/black",
+                    "https://lichess.org/PEX7iH07/black",
+                    "https://lichess.org/MeT6woop/black",
+                    "https://lichess.org/ONv2bPCZ/black",
+                    "https://lichess.org/BY64BoQP/black",
+                    "https://lichess.org/oTvBZdEF/black",
+                    "https://lichess.org/tsA0s8bC/black",
+                    "https://lichess.org/zSnGDzWg/black",
+                    "https://lichess.org/7L9BmB9z/black",
+                    "https://lichess.org/45dNnpoV/black",
+                    "https://lichess.org/sTV4DFoJ/black",
+                    "https://lichess.org/IVrxFKfH/black",
+                    "https://lichess.org/QKpryrXT/black",
+                    "https://lichess.org/lXeaOUtL/black",
+                    "https://lichess.org/UpHKlBwn/black",
+                    "https://lichess.org/jLxHtn5E/black",
+                    "https://lichess.org/LrllT9Y6/black",
+                    "https://lichess.org/k9482jh3/black",
+                    "https://lichess.org/T2BgIXLF/black",
+                    "https://lichess.org/DUv9VUCf/black",
+                    "https://lichess.org/IiCjGhAn/black",
+                    "https://lichess.org/ZlpT3HKY/black",
+                    "https://lichess.org/s7nj5TFS/black",
+                    "https://lichess.org/5thcGjJO/black",
+                    "https://lichess.org/6cua8IgU/black",
+                    "https://lichess.org/e7RHBCsA/black",
+                    "https://lichess.org/kGuLO9lo/black",
+                    "https://lichess.org/joX4FEy8/black",
+                    "https://lichess.org/pCOJuDPN/black",
+                    "https://lichess.org/3difSx1R/black",
+                    "https://lichess.org/kf7fkDbf/black",
+                    "https://lichess.org/Cz9l8MX0/black",
+                    "https://lichess.org/h6mSo7ar/black",
+                    "https://lichess.org/aX5VtCTV/black",
+                    "https://lichess.org/R1Mxew2a/black",
+                    "https://lichess.org/LXCh3HUA/black",
+                    "https://lichess.org/2CuL9yGw/black",
+                    "https://lichess.org/27kh1TKy/black",
+                    "https://lichess.org/a1Mmn9Ru/black",
+                    "https://lichess.org/bq1bSnTy/black",
+                    "https://lichess.org/pcQxofLk/black",
+                    "https://lichess.org/3ailgLO0/black",
+                    "https://lichess.org/2pLQ7p4y/black",
+                    "https://lichess.org/l5gWnH7s/black",
+                    "https://lichess.org/fVptk1fm/black",
+                    "https://lichess.org/J9cMfWF4/black",
+                    "https://lichess.org/ACwTTyjk/black",
+                    "https://lichess.org/nms7awIv/black",
+                    "https://lichess.org/x5b7pXCN/black",
+                    "https://lichess.org/iLAEBBKb/black",
+                    "https://lichess.org/Y2GH1mIu/black",
+                    "https://lichess.org/key3XPwW/black",
+                    "https://lichess.org/GhVzSOH2/black",
+                    "https://lichess.org/mKQC6jHR/black",
+                    "https://lichess.org/KYv32l1a/black",
+                    "https://lichess.org/DoVenIy4/black",
+                    "https://lichess.org/3A4zimK4/black",
+                    "https://lichess.org/eHagV3Ey/black",
+                    "https://lichess.org/Vozn6ru6/black",
+                    "https://lichess.org/VTlEieSo/black",
+                    "https://lichess.org/nCCLxbdz/black",
+                    "https://lichess.org/0zpLqXPA/black",
+                    "https://lichess.org/mqNGcG6G/black",
+                    "https://lichess.org/zdqUJmbd/black",
+                    "https://lichess.org/6b9LAr26/black",
+                    "https://lichess.org/rJHfYs39/black",
+                    "https://lichess.org/yTiJw2cl/black",
+                    "https://lichess.org/TjFoLzBU/black",
+                    "https://lichess.org/4bgsdT1Y/black",
+                    "https://lichess.org/rDCGnqdf/black",
+                    "https://lichess.org/MiKaJlP1/black",
+                    "https://lichess.org/K3ZjGUtM/black",
+                    "https://lichess.org/cqyyqldN/black",
+                    "https://lichess.org/mq7oynwE/black",
+                    "https://lichess.org/8Nh3egIt/black",
+                    "https://lichess.org/xhj3AVRI/black",
+                    "https://lichess.org/mMLHFCSM/black",
+                    "https://lichess.org/xSRQs2DE/black",
+                    "https://lichess.org/ZxkjMYl3/black",
+                    "https://lichess.org/0Zr2TRMg/black",
+                    "https://lichess.org/fvrykutn/black",
+                    "https://lichess.org/cBsmeusJ/black",
+                    "https://lichess.org/tdRT7xAz/black",
+                    "https://lichess.org/EDwFnOV2/black",
+                    "https://lichess.org/vMG5Noic/black",
+                    "https://lichess.org/pjYY2hzU/black",
+                    "https://lichess.org/D1UkawHs/black",
+                    "https://lichess.org/NUFJnPfq/black",
+                    "https://lichess.org/Cm3jOQOB/black",
+                    "https://lichess.org/LNKTo92B/black",
+                    "https://lichess.org/DKSGfcid/black",
+                    "https://lichess.org/G0KaOmgJ/black",
+                    "https://lichess.org/FWsVTXxu/black",
+                    "https://lichess.org/tBOiVZqz/black",
+                    "https://lichess.org/v1wAZjcj/black",
+                    "https://lichess.org/CqEz3Xkj/black",
+                    "https://lichess.org/5GQOPyzM/black",
+                    "https://lichess.org/ebSzGLi9/black",
+                    "https://lichess.org/6A82lgU5/black",
+                    "https://lichess.org/QHpHWsdz/black",
+                    "https://lichess.org/CdoEZ5u8/black",
+                    "https://lichess.org/joT0hvH4/black",
+                    "https://lichess.org/rnGipwpo/black",
+                    "https://lichess.org/dM9hUXnR/black",
+                    "https://lichess.org/OdbIiY4f/black",
+                    "https://lichess.org/NDPuJE4a/black",
+                    "https://lichess.org/s15YPAsB/black",
+                    "https://lichess.org/e9aVtWht/black",
+                    "https://lichess.org/SIKcpyZh/black",
+                    "https://lichess.org/qyaeMXR4/black",
+                    "https://lichess.org/rTdXcj2l/black",
+                    "https://lichess.org/b8PstRzR/black",
+                    "https://lichess.org/KyIwjs94/black",
+                    "https://lichess.org/Q2Vidrtn/black",
+                    "https://lichess.org/XLqshLQY/black",
+                    "https://lichess.org/nl7EX39o/black",
+                    "https://lichess.org/tZcQEvT6/black",
+                    "https://lichess.org/kZoNLbsa/black",
+                    "https://lichess.org/Nrx8BA8P/black",
+                    "https://lichess.org/L3rfgxKH/black",
+                    "https://lichess.org/3fuPzDeA/black",
+                    "https://lichess.org/igzdXnBn/black",
+                    "https://lichess.org/G4d8sUm0/black",
+                    "https://lichess.org/bGKb3trg/black",
+                    "https://lichess.org/mt46FwGd/black",
+                    "https://lichess.org/5Jn8FXoQ/black",
+                    "https://lichess.org/H1oR6mle/black",
+                    "https://lichess.org/8WREBWhu/black",
+                    "https://lichess.org/Q24hKjXH/black",
+                    "https://lichess.org/EdUMjDD7/black",
+                    "https://lichess.org/xiBG8Qmf/black",
+                    "https://lichess.org/IhO89Got/black",
+                    "https://lichess.org/ti4FBquU/black",
+                    "https://lichess.org/u6NDx100/black",
+                    "https://lichess.org/cXAPBjzq/black",
+                    "https://lichess.org/hgvc80J4/black",
+                    "https://lichess.org/SeipYio4/black",
+                    "https://lichess.org/LzPr6k1H/black",
+                    "https://lichess.org/5YstuS9S/black",
+                    "https://lichess.org/JgL1U0ve/black",
+                    "https://lichess.org/1JYQ4D9S/black",
+                    "https://lichess.org/KTezH6dM/black",
+                    "https://lichess.org/NVdWNcWz/black",
+                    "https://lichess.org/yoRzyxsu/black",
+                    "https://lichess.org/KEZaCvXi/black",
+                    "https://lichess.org/DXxCJj6K/black",
+                    "https://lichess.org/lOM0we0J/black",
+                    "https://lichess.org/2ZlstsVV/black",
+                    "https://lichess.org/oNSrIYIm/black",
+                    "https://lichess.org/l9pIcuxG/black",
+                    "https://lichess.org/XRnHBAa4/black",
+                    "https://lichess.org/94HAYy7N/black",
+                    "https://lichess.org/iBBId0Qz/black",
+                    "https://lichess.org/xUfVCddg/black",
+                    "https://lichess.org/MPQ465XE/black",
+                    "https://lichess.org/wPjigoaL/black",
+                    "https://lichess.org/PlgIpoFH/black",
+                    "https://lichess.org/zHpuPbDk/black",
+                    "https://lichess.org/gZciqpHC/black",
+                    "https://lichess.org/y02hDhrx/black",
+                    "https://lichess.org/XP49bvs1/black",
+                    "https://lichess.org/6cmQaWOD/black",
+                    "https://lichess.org/82ZpOTb2/black",
+                    "https://lichess.org/ViAMSzkn/black",
+                    "https://lichess.org/f9JAowb5/black",
+                    "https://lichess.org/MTHiR0Po/black",
+                    "https://lichess.org/R0wJZlaD/black",
+                    "https://lichess.org/0mGCV6m6/black",
+                    "https://lichess.org/NrTIUPaM/black",
+                    "https://lichess.org/NdJrcrSN/black",
+                    "https://lichess.org/sSHJV5cV/black",
+                    "https://lichess.org/yYV7kfSu/black",
+                    "https://lichess.org/a3IK3GAj/black",
+                    "https://lichess.org/Nue8X3X8/black",
+                    "https://lichess.org/ZKL4mVkC/black",
+                    "https://lichess.org/x75llycZ/black",
+                    "https://lichess.org/Ixgyh1tp/black",
+                    "https://lichess.org/zVlYxSYm/black",
+                    "https://lichess.org/Xzn07Lyp/black",
+                    "https://lichess.org/FRlDl3Oh/black",
+                    "https://lichess.org/jyoMOPWo/black",
+                    "https://lichess.org/4KYDaFNq/black",
+                    "https://lichess.org/BqWclEic/black",
+                    "https://lichess.org/n2jHIHMg/black",
+                    "https://lichess.org/ddmMEs9C/black",
+                    "https://lichess.org/hlDLOK85/black",
+                    "https://lichess.org/ilFvy8jY/black",
+                    "https://lichess.org/XKf16fvD/black",
+                    "https://lichess.org/FmQEcMlJ/black",
+                    "https://lichess.org/Az6UGqrI/black",
+                    "https://lichess.org/KGGGaE40/black"
+                ]
+            },
+            "wonVsMaia": {
+                "urls": [
+                    "https://lichess.org/53sG5758/black",
+                    "https://lichess.org/Hj2J78WP",
+                    "https://lichess.org/MuDqIe1r",
+                    "https://lichess.org/tMXeFiZY",
+                    "https://lichess.org/nl7EX39o/black",
+                    "https://lichess.org/tZcQEvT6/black",
+                    "https://lichess.org/kZoNLbsa/black",
+                    "https://lichess.org/Nrx8BA8P/black",
+                    "https://lichess.org/DnzXPBOG",
+                    "https://lichess.org/L3rfgxKH/black",
+                    "https://lichess.org/3fuPzDeA/black",
+                    "https://lichess.org/igzdXnBn/black",
+                    "https://lichess.org/G4d8sUm0/black",
+                    "https://lichess.org/PvZpIQQk",
+                    "https://lichess.org/bGKb3trg/black",
+                    "https://lichess.org/ERvSK8Kq",
+                    "https://lichess.org/mt46FwGd/black",
+                    "https://lichess.org/5Jn8FXoQ/black",
+                    "https://lichess.org/H1oR6mle/black",
+                    "https://lichess.org/VSCb3WHj",
+                    "https://lichess.org/M3FDpfNO",
+                    "https://lichess.org/8WREBWhu/black",
+                    "https://lichess.org/sWG1nei2",
+                    "https://lichess.org/PvFbmgvQ",
+                    "https://lichess.org/pnck4HYi",
+                    "https://lichess.org/kyqpza7M",
+                    "https://lichess.org/Q24hKjXH/black",
+                    "https://lichess.org/9ewTUjbi",
+                    "https://lichess.org/EdUMjDD7/black",
+                    "https://lichess.org/Med7RPgw",
+                    "https://lichess.org/xiBG8Qmf/black",
+                    "https://lichess.org/sxsymJLc",
+                    "https://lichess.org/Ar24XsQy",
+                    "https://lichess.org/IhO89Got/black",
+                    "https://lichess.org/114CTBDV",
+                    "https://lichess.org/zBErHQVk",
+                    "https://lichess.org/VqeWPUzV",
+                    "https://lichess.org/ti4FBquU/black",
+                    "https://lichess.org/gp8aCntw",
+                    "https://lichess.org/u6NDx100/black",
+                    "https://lichess.org/cXAPBjzq/black",
+                    "https://lichess.org/oRcBjx4r",
+                    "https://lichess.org/hgvc80J4/black",
+                    "https://lichess.org/4auNWUEC",
+                    "https://lichess.org/RyucaVVk",
+                    "https://lichess.org/SeipYio4/black",
+                    "https://lichess.org/tqfZg0mf",
+                    "https://lichess.org/5YstuS9S/black",
+                    "https://lichess.org/JgL1U0ve/black",
+                    "https://lichess.org/n8Mu0igC",
+                    "https://lichess.org/1JYQ4D9S/black",
+                    "https://lichess.org/VjYiNq4c",
+                    "https://lichess.org/8i1yzeIG",
+                    "https://lichess.org/UrZf8FAB",
+                    "https://lichess.org/KTezH6dM/black",
+                    "https://lichess.org/21fREGEX",
+                    "https://lichess.org/QB06NoQ4",
+                    "https://lichess.org/NVdWNcWz/black"
+                ]
+            },
+            "mateWithRook": {
+                "urls": [
+                    "https://lichess.org/53sG5758/black",
+                    "https://lichess.org/Hj2J78WP",
+                    "https://lichess.org/MuDqIe1r",
+                    "https://lichess.org/sShRHRft",
+                    "https://lichess.org/hmy2ezKM",
+                    "https://lichess.org/QWpa70ZT/black",
+                    "https://lichess.org/0Nj6qlGT/black",
+                    "https://lichess.org/CswSVIE9/black",
+                    "https://lichess.org/IS9VT0Xr",
+                    "https://lichess.org/8WRU0DHN/black",
+                    "https://lichess.org/cXycB1mC",
+                    "https://lichess.org/gz8Ff5P9",
+                    "https://lichess.org/N47vbn20/black",
+                    "https://lichess.org/8xx8MSlV/black",
+                    "https://lichess.org/GT1H2gRf/black",
+                    "https://lichess.org/VBJt05rg/black",
+                    "https://lichess.org/DdaODMCw/black",
+                    "https://lichess.org/jDyjM3cV",
+                    "https://lichess.org/9iY5DxHj/black",
+                    "https://lichess.org/7L9BmB9z/black",
+                    "https://lichess.org/rMjhFj1o",
+                    "https://lichess.org/Y3yiXaIB",
+                    "https://lichess.org/kGuLO9lo/black",
+                    "https://lichess.org/ynrcvK3F",
+                    "https://lichess.org/cpYSDI1v",
+                    "https://lichess.org/sdVebDK6",
+                    "https://lichess.org/3cKx9LEZ",
+                    "https://lichess.org/1M5RYUot",
+                    "https://lichess.org/Wt0mK3Ed",
+                    "https://lichess.org/3CuVktxz",
+                    "https://lichess.org/mKQC6jHR/black",
+                    "https://lichess.org/DoVenIy4/black",
+                    "https://lichess.org/mqNGcG6G/black",
+                    "https://lichess.org/XWISaGc9",
+                    "https://lichess.org/DTR4vnAK",
+                    "https://lichess.org/KYVEdz9h",
+                    "https://lichess.org/8BjzATQm",
+                    "https://lichess.org/rDCGnqdf/black",
+                    "https://lichess.org/K3ZjGUtM/black",
+                    "https://lichess.org/IRr6C73L",
+                    "https://lichess.org/mMLHFCSM/black",
+                    "https://lichess.org/FsualgOt",
+                    "https://lichess.org/JDjTBrrD",
+                    "https://lichess.org/ZxkjMYl3/black",
+                    "https://lichess.org/1IcuMo90",
+                    "https://lichess.org/tdRT7xAz/black",
+                    "https://lichess.org/EDwFnOV2/black",
+                    "https://lichess.org/jDuyzdZf",
+                    "https://lichess.org/D1UkawHs/black",
+                    "https://lichess.org/0ss94fke",
+                    "https://lichess.org/ixZkIssd",
+                    "https://lichess.org/inoH5nuI",
+                    "https://lichess.org/p071ddcI",
+                    "https://lichess.org/fs4Tf2w6",
+                    "https://lichess.org/RsLPpCUb",
+                    "https://lichess.org/jfTEfpph",
+                    "https://lichess.org/LuAhsyir",
+                    "https://lichess.org/XlH1Riug",
+                    "https://lichess.org/MFqC0Yt6",
+                    "https://lichess.org/Wz3mUONm",
+                    "https://lichess.org/QHpHWsdz/black",
+                    "https://lichess.org/CdoEZ5u8/black",
+                    "https://lichess.org/aAVvjkG3",
+                    "https://lichess.org/lD92plIF",
+                    "https://lichess.org/joT0hvH4/black",
+                    "https://lichess.org/mjF5kRlB",
+                    "https://lichess.org/e9aVtWht/black",
+                    "https://lichess.org/qyaeMXR4/black",
+                    "https://lichess.org/nl7EX39o/black",
+                    "https://lichess.org/kZoNLbsa/black",
+                    "https://lichess.org/G4d8sUm0/black",
+                    "https://lichess.org/bGKb3trg/black",
+                    "https://lichess.org/ERvSK8Kq",
+                    "https://lichess.org/5Jn8FXoQ/black",
+                    "https://lichess.org/M3FDpfNO",
+                    "https://lichess.org/8WREBWhu/black",
+                    "https://lichess.org/PvFbmgvQ",
+                    "https://lichess.org/kyqpza7M",
+                    "https://lichess.org/9ewTUjbi",
+                    "https://lichess.org/xiBG8Qmf/black",
+                    "https://lichess.org/sxsymJLc",
+                    "https://lichess.org/Ar24XsQy",
+                    "https://lichess.org/hgvc80J4/black",
+                    "https://lichess.org/4auNWUEC",
+                    "https://lichess.org/LzPr6k1H/black",
+                    "https://lichess.org/21fREGEX",
+                    "https://lichess.org/QB06NoQ4",
+                    "https://lichess.org/AeIEEYlt",
+                    "https://lichess.org/NVdWNcWz/black",
+                    "https://lichess.org/ZzbXuKRy",
+                    "https://lichess.org/UPIy7QEX",
+                    "https://lichess.org/94HAYy7N/black",
+                    "https://lichess.org/RTMFadH7",
+                    "https://lichess.org/xUfVCddg/black",
+                    "https://lichess.org/wPjigoaL/black",
+                    "https://lichess.org/gZciqpHC/black",
+                    "https://lichess.org/wHTvMIMu",
+                    "https://lichess.org/XP49bvs1/black",
+                    "https://lichess.org/mmAcUlf8",
+                    "https://lichess.org/iN8x12cx",
+                    "https://lichess.org/f9JAowb5/black",
+                    "https://lichess.org/KAY2DgU8",
+                    "https://lichess.org/MTHiR0Po/black",
+                    "https://lichess.org/wWoliUKJ",
+                    "https://lichess.org/GsX0zYQB",
+                    "https://lichess.org/VSeJjHY4",
+                    "https://lichess.org/zV05z3EA",
+                    "https://lichess.org/sSHJV5cV/black",
+                    "https://lichess.org/ZKL4mVkC/black",
+                    "https://lichess.org/dFJHCbt1",
+                    "https://lichess.org/jyoMOPWo/black",
+                    "https://lichess.org/XKf16fvD/black",
+                    "https://lichess.org/4sjECvRx"
+                ]
+            },
+            "mateWithLess": {
+                "urls": [
+                    "https://lichess.org/53sG5758/black",
+                    "https://lichess.org/Hj2J78WP",
+                    "https://lichess.org/ldJAxobi/black",
+                    "https://lichess.org/IS9VT0Xr",
+                    "https://lichess.org/och9r4EP/black",
+                    "https://lichess.org/G3XXAPfB/black",
+                    "https://lichess.org/rLZbSgL3/black",
+                    "https://lichess.org/4vBcazpJ/black",
+                    "https://lichess.org/cXycB1mC",
+                    "https://lichess.org/GhP9yKrL/black",
+                    "https://lichess.org/GT1H2gRf/black",
+                    "https://lichess.org/VBJt05rg/black",
+                    "https://lichess.org/a4wgb6x2/black",
+                    "https://lichess.org/jDyjM3cV",
+                    "https://lichess.org/tAk9frRt/black",
+                    "https://lichess.org/v0WaGG3j/black",
+                    "https://lichess.org/NImwf4Pn/black",
+                    "https://lichess.org/oTvBZdEF/black",
+                    "https://lichess.org/zSnGDzWg/black",
+                    "https://lichess.org/7L9BmB9z/black",
+                    "https://lichess.org/45dNnpoV/black",
+                    "https://lichess.org/lnHTjPCf",
+                    "https://lichess.org/lXeaOUtL/black",
+                    "https://lichess.org/UpHKlBwn/black",
+                    "https://lichess.org/FJY38nOv",
+                    "https://lichess.org/a1Mmn9Ru/black",
+                    "https://lichess.org/zIcyTwcu",
+                    "https://lichess.org/XWISaGc9",
+                    "https://lichess.org/8BYOtGzi",
+                    "https://lichess.org/rDCGnqdf/black",
+                    "https://lichess.org/MiKaJlP1/black",
+                    "https://lichess.org/mq7oynwE/black",
+                    "https://lichess.org/8Nh3egIt/black",
+                    "https://lichess.org/IRr6C73L",
+                    "https://lichess.org/BdX4YK1h",
+                    "https://lichess.org/FsualgOt",
+                    "https://lichess.org/JDjTBrrD",
+                    "https://lichess.org/D1UkawHs/black",
+                    "https://lichess.org/RsLPpCUb",
+                    "https://lichess.org/ebSzGLi9/black",
+                    "https://lichess.org/6A82lgU5/black",
+                    "https://lichess.org/Wz3mUONm",
+                    "https://lichess.org/bArslFDG",
+                    "https://lichess.org/LYPSk70g",
+                    "https://lichess.org/dM9hUXnR/black",
+                    "https://lichess.org/OdbIiY4f/black",
+                    "https://lichess.org/bAkzqhg8",
+                    "https://lichess.org/NDPuJE4a/black",
+                    "https://lichess.org/Q2Vidrtn/black",
+                    "https://lichess.org/DnzXPBOG",
+                    "https://lichess.org/igzdXnBn/black",
+                    "https://lichess.org/G4d8sUm0/black",
+                    "https://lichess.org/PvZpIQQk",
+                    "https://lichess.org/bGKb3trg/black",
+                    "https://lichess.org/8WREBWhu/black",
+                    "https://lichess.org/PvFbmgvQ",
+                    "https://lichess.org/kyqpza7M",
+                    "https://lichess.org/9ewTUjbi",
+                    "https://lichess.org/Med7RPgw",
+                    "https://lichess.org/114CTBDV",
+                    "https://lichess.org/zBErHQVk",
+                    "https://lichess.org/gp8aCntw",
+                    "https://lichess.org/u6NDx100/black",
+                    "https://lichess.org/cXAPBjzq/black",
+                    "https://lichess.org/oRcBjx4r",
+                    "https://lichess.org/hgvc80J4/black",
+                    "https://lichess.org/SeipYio4/black",
+                    "https://lichess.org/LzPr6k1H/black",
+                    "https://lichess.org/5YstuS9S/black",
+                    "https://lichess.org/JgL1U0ve/black",
+                    "https://lichess.org/n8Mu0igC",
+                    "https://lichess.org/1JYQ4D9S/black",
+                    "https://lichess.org/VjYiNq4c",
+                    "https://lichess.org/KTezH6dM/black",
+                    "https://lichess.org/2ZlstsVV/black",
+                    "https://lichess.org/lTsOqC6W"
+                ]
+            },
+            "mateOnBackRank": {
+                "urls": [
+                    "https://lichess.org/Hj2J78WP",
+                    "https://lichess.org/MuDqIe1r",
+                    "https://lichess.org/ak9fDojh/black",
+                    "https://lichess.org/1nliJcV3",
+                    "https://lichess.org/IS9VT0Xr",
+                    "https://lichess.org/G3XXAPfB/black",
+                    "https://lichess.org/cXycB1mC",
+                    "https://lichess.org/N47vbn20/black",
+                    "https://lichess.org/xAl1rcDx",
+                    "https://lichess.org/VBJt05rg/black",
+                    "https://lichess.org/DdaODMCw/black",
+                    "https://lichess.org/xiJVe9za",
+                    "https://lichess.org/9iY5DxHj/black",
+                    "https://lichess.org/97xTy0kV",
+                    "https://lichess.org/7L9BmB9z/black",
+                    "https://lichess.org/a1Mmn9Ru/black",
+                    "https://lichess.org/KYv32l1a/black",
+                    "https://lichess.org/mqNGcG6G/black",
+                    "https://lichess.org/4bgsdT1Y/black",
+                    "https://lichess.org/EgvEiR1z",
+                    "https://lichess.org/xhj3AVRI/black",
+                    "https://lichess.org/IRr6C73L",
+                    "https://lichess.org/BdX4YK1h",
+                    "https://lichess.org/JDjTBrrD",
+                    "https://lichess.org/0Zr2TRMg/black",
+                    "https://lichess.org/cBsmeusJ/black",
+                    "https://lichess.org/EDwFnOV2/black",
+                    "https://lichess.org/MJembRoQ",
+                    "https://lichess.org/p071ddcI",
+                    "https://lichess.org/CqEz3Xkj/black",
+                    "https://lichess.org/RsLPpCUb",
+                    "https://lichess.org/jfTEfpph",
+                    "https://lichess.org/XlH1Riug",
+                    "https://lichess.org/CdoEZ5u8/black",
+                    "https://lichess.org/aAVvjkG3",
+                    "https://lichess.org/LYPSk70g",
+                    "https://lichess.org/bAkzqhg8",
+                    "https://lichess.org/kZoNLbsa/black",
+                    "https://lichess.org/G4d8sUm0/black",
+                    "https://lichess.org/bGKb3trg/black",
+                    "https://lichess.org/mt46FwGd/black",
+                    "https://lichess.org/kyqpza7M",
+                    "https://lichess.org/Q24hKjXH/black",
+                    "https://lichess.org/xiBG8Qmf/black",
+                    "https://lichess.org/hgvc80J4/black",
+                    "https://lichess.org/z6JPEScu",
+                    "https://lichess.org/xUfVCddg/black"
+                ]
+            },
+            "mateAfterCapture": {
+                "urls": [
+                    "https://lichess.org/Hj2J78WP",
+                    "https://lichess.org/ldJAxobi/black",
+                    "https://lichess.org/IS9VT0Xr",
+                    "https://lichess.org/4vBcazpJ/black",
+                    "https://lichess.org/cXycB1mC",
+                    "https://lichess.org/8xx8MSlV/black",
+                    "https://lichess.org/xiJVe9za",
+                    "https://lichess.org/9iY5DxHj/black",
+                    "https://lichess.org/v0WaGG3j/black",
+                    "https://lichess.org/97xTy0kV",
+                    "https://lichess.org/BOThc6nP",
+                    "https://lichess.org/7L9BmB9z/black",
+                    "https://lichess.org/FJY38nOv",
+                    "https://lichess.org/Y3yiXaIB",
+                    "https://lichess.org/e7RHBCsA/black",
+                    "https://lichess.org/mqNGcG6G/black",
+                    "https://lichess.org/bZjWsYoc",
+                    "https://lichess.org/4bgsdT1Y/black",
+                    "https://lichess.org/8BYOtGzi",
+                    "https://lichess.org/1w1Ms12m",
+                    "https://lichess.org/8Nh3egIt/black",
+                    "https://lichess.org/xhj3AVRI/black",
+                    "https://lichess.org/IRr6C73L",
+                    "https://lichess.org/BdX4YK1h",
+                    "https://lichess.org/JDjTBrrD",
+                    "https://lichess.org/EDwFnOV2/black",
+                    "https://lichess.org/vMG5Noic/black",
+                    "https://lichess.org/D1UkawHs/black",
+                    "https://lichess.org/Qyj96EIX",
+                    "https://lichess.org/p071ddcI",
+                    "https://lichess.org/M7qliqyk",
+                    "https://lichess.org/jfTEfpph",
+                    "https://lichess.org/XlH1Riug",
+                    "https://lichess.org/MFqC0Yt6",
+                    "https://lichess.org/QHpHWsdz/black",
+                    "https://lichess.org/NbcQBysI",
+                    "https://lichess.org/dM9hUXnR/black",
+                    "https://lichess.org/OdbIiY4f/black",
+                    "https://lichess.org/bAkzqhg8",
+                    "https://lichess.org/NDPuJE4a/black",
+                    "https://lichess.org/dLh3FSZW",
+                    "https://lichess.org/b8PstRzR/black",
+                    "https://lichess.org/L3rfgxKH/black",
+                    "https://lichess.org/8WREBWhu/black",
+                    "https://lichess.org/sWG1nei2",
+                    "https://lichess.org/kyqpza7M",
+                    "https://lichess.org/Q24hKjXH/black",
+                    "https://lichess.org/xiBG8Qmf/black",
+                    "https://lichess.org/114CTBDV",
+                    "https://lichess.org/zBErHQVk",
+                    "https://lichess.org/gp8aCntw",
+                    "https://lichess.org/cXAPBjzq/black",
+                    "https://lichess.org/oRcBjx4r",
+                    "https://lichess.org/hgvc80J4/black",
+                    "https://lichess.org/SeipYio4/black",
+                    "https://lichess.org/LzPr6k1H/black",
+                    "https://lichess.org/n8Mu0igC",
+                    "https://lichess.org/KTezH6dM/black",
+                    "https://lichess.org/lTsOqC6W",
+                    "https://lichess.org/rMnDGXbb",
+                    "https://lichess.org/XP49bvs1/black",
+                    "https://lichess.org/etI7AAJH",
+                    "https://lichess.org/uZg58rIj"
+                ]
+            },
+            "secondQueen": {
+                "urls": [
+                    "https://lichess.org/tMXeFiZY",
+                    "https://lichess.org/fgP4SuzR",
+                    "https://lichess.org/aGolR0Vv",
+                    "https://lichess.org/xE9bBvGf",
+                    "https://lichess.org/sKVjfp2Z",
+                    "https://lichess.org/AGYthEnQ",
+                    "https://lichess.org/lC6Gcejf",
+                    "https://lichess.org/QpsEKrvD",
+                    "https://lichess.org/rXPXSWCh",
+                    "https://lichess.org/nHo9RFUO",
+                    "https://lichess.org/6t3StfXD",
+                    "https://lichess.org/lD92plIF",
+                    "https://lichess.org/0s8kqs9W",
+                    "https://lichess.org/VSCb3WHj",
+                    "https://lichess.org/ajTvT7qI",
+                    "https://lichess.org/8i1yzeIG",
+                    "https://lichess.org/OKjMWeNK",
+                    "https://lichess.org/6aR3BJwq",
+                    "https://lichess.org/31kwmLii",
+                    "https://lichess.org/rMnDGXbb",
+                    "https://lichess.org/rLIWqQxl",
+                    "https://lichess.org/ZhG0RD6N",
+                    "https://lichess.org/7DzxCzoI",
+                    "https://lichess.org/ozkIea75",
+                    "https://lichess.org/JancKFuJ",
+                    "https://lichess.org/eK1SNrSN",
+                    "https://lichess.org/J6FvjwWy",
+                    "https://lichess.org/8X3d0KF5",
+                    "https://lichess.org/HfhCTgvO",
+                    "https://lichess.org/2aToJPSq"
+                ]
+            },
+            "mateWithKing": {
+                "urls": [
+                    "https://lichess.org/EyIKtnD9/black"
+                ]
+            },
+            "mateWithBishop": {
+                "urls": [
+                    "https://lichess.org/TlLCS5GG",
+                    "https://lichess.org/a4wgb6x2/black",
+                    "https://lichess.org/oTvBZdEF/black",
+                    "https://lichess.org/e7RHBCsA/black",
+                    "https://lichess.org/8BYOtGzi",
+                    "https://lichess.org/fvrykutn/black",
+                    "https://lichess.org/v1wAZjcj/black",
+                    "https://lichess.org/sGLQQn8Q",
+                    "https://lichess.org/6aR3BJwq",
+                    "https://lichess.org/NdJrcrSN/black"
+                ]
+            },
+            "basicPawnEndgame2": {
+                "urls": [
+                    "https://lichess.org/s4ExH5mn"
+                ]
+            },
+            "rookSniper": {
+                "urls": [
+                    "https://lichess.org/1hlHhDgs"
+                ]
+            },
+            "enpeasant": {
+                "urls": [
+                    "https://lichess.org/fepivNAD",
+                    "https://lichess.org/GHqZoTNC",
+                    "https://lichess.org/Wkh57Nln",
+                    "https://lichess.org/8BjzATQm",
+                    "https://lichess.org/hepTrB6I",
+                    "https://lichess.org/VSeJjHY4",
+                    "https://lichess.org/OKIy8XqE",
+                    "https://lichess.org/dFJHCbt1",
+                    "https://lichess.org/ZUO6LYKs",
+                    "https://lichess.org/4sjECvRx"
+                ]
+            },
+            "spellGG": {
+                "urls": [
+                    "https://lichess.org/fepivNAD"
+                ]
+            },
+            "spellDAB": {
+                "urls": [
+                    "https://lichess.org/fgP4SuzR"
+                ]
+            },
+            "spellHaha": {
+                "urls": [
+                    "https://lichess.org/sShRHRft"
+                ]
+            },
+            "spellAffe": {
+                "urls": [
+                    "https://lichess.org/hmy2ezKM"
+                ]
+            },
+            "wonVsComputer8NoQueen": {
+                "urls": [
+                    "https://lichess.org/HsVmN5qs"
+                ]
+            },
+            "wonVsComputer3": {
+                "urls": [
+                    "https://lichess.org/ak9fDojh/black"
+                ]
+            },
+            "wonVsComputer2": {
+                "urls": [
+                    "https://lichess.org/QWpa70ZT/black"
+                ]
+            },
+            "basicPawnEndgame1": {
+                "urls": [
+                    "https://lichess.org/Nfa5NwC9"
+                ]
+            },
+            "mattStattPatt1": {
+                "urls": [
+                    "https://lichess.org/v8iQG3yA"
+                ]
+            },
+            "mattStattPatt2": {
+                "urls": [
+                    "https://lichess.org/EAX1RfR9"
+                ]
+            },
+            "mattStattPatt3": {
+                "urls": [
+                    "https://lichess.org/6pbLEwDC"
+                ]
+            },
+            "mattStattPatt4": {
+                "urls": [
+                    "https://lichess.org/cRHgX9PO"
+                ]
+            },
+            "mattStattPatt5": {
+                "urls": [
+                    "https://lichess.org/HnlP5e6b"
+                ]
+            },
+            "mattStattPatt6": {
+                "urls": [
+                    "https://lichess.org/yhhFMvyO"
+                ]
+            },
+            "drawWithKing": {
+                "urls": [
+                    "https://lichess.org/yPi3GmLb",
+                    "https://lichess.org/Ojx5KbRa/black",
+                    "https://lichess.org/NCVTQ2Oo",
+                    "https://lichess.org/fjE9bafH/black",
+                    "https://lichess.org/kWezMISx",
+                    "https://lichess.org/neLap9g1",
+                    "https://lichess.org/PhJamUCG",
+                    "https://lichess.org/Kw8JrU9E",
+                    "https://lichess.org/HzH0rRtg",
+                    "https://lichess.org/IaFZZYtB/black",
+                    "https://lichess.org/4Xc5xqSX",
+                    "https://lichess.org/bjKiPHKK",
+                    "https://lichess.org/yl9rkfp8/black",
+                    "https://lichess.org/sCyQiApD/black",
+                    "https://lichess.org/MG1JuzE8/black",
+                    "https://lichess.org/O33oiUH7",
+                    "https://lichess.org/ecCqnFd2",
+                    "https://lichess.org/KK1JPDqz/black",
+                    "https://lichess.org/9WqLZadv/black",
+                    "https://lichess.org/afvaDmDe/black",
+                    "https://lichess.org/CVVIj3Oh/black",
+                    "https://lichess.org/MWV98nuM/black",
+                    "https://lichess.org/3ItXoYHO/black",
+                    "https://lichess.org/PY9kOjLl/black"
+                ]
+            },
+            "battlefield": {
+                "urls": [
+                    "https://lichess.org/aGolR0Vv",
+                    "https://lichess.org/NybCF9fk/black",
+                    "https://lichess.org/xx97YsFb/black",
+                    "https://lichess.org/XDW0PMcw",
+                    "https://lichess.org/uCiO6M6c/black",
+                    "https://lichess.org/4T4PB2N8/black",
+                    "https://lichess.org/s34NCw3k",
+                    "https://lichess.org/1M5RYUot",
+                    "https://lichess.org/4KXQNtBE",
+                    "https://lichess.org/fVptk1fm/black",
+                    "https://lichess.org/35RnpmfC",
+                    "https://lichess.org/DTR4vnAK",
+                    "https://lichess.org/IRr6C73L",
+                    "https://lichess.org/FsualgOt",
+                    "https://lichess.org/RjoOVzTQ",
+                    "https://lichess.org/6t3StfXD",
+                    "https://lichess.org/QHpHWsdz/black",
+                    "https://lichess.org/CdoEZ5u8/black",
+                    "https://lichess.org/0s8kqs9W",
+                    "https://lichess.org/m9otnFDU",
+                    "https://lichess.org/KyIwjs94/black",
+                    "https://lichess.org/XLqshLQY/black",
+                    "https://lichess.org/3fuPzDeA/black",
+                    "https://lichess.org/IhO89Got/black",
+                    "https://lichess.org/VqeWPUzV",
+                    "https://lichess.org/8i1yzeIG",
+                    "https://lichess.org/AeIEEYlt",
+                    "https://lichess.org/94HAYy7N/black",
+                    "https://lichess.org/ozkIea75",
+                    "https://lichess.org/JancKFuJ",
+                    "https://lichess.org/CqVAhtcl",
+                    "https://lichess.org/0mGCV6m6/black",
+                    "https://lichess.org/FRlDl3Oh/black",
+                    "https://lichess.org/Az6UGqrI/black"
+                ]
+            },
+            "small_underdog": {
+                "urls": [
+                    "https://lichess.org/aGolR0Vv",
+                    "https://lichess.org/G3XXAPfB/black",
+                    "https://lichess.org/rLZbSgL3/black",
+                    "https://lichess.org/VBJt05rg/black",
+                    "https://lichess.org/DdaODMCw/black",
+                    "https://lichess.org/a4wgb6x2/black",
+                    "https://lichess.org/tMB0MdQ4/black",
+                    "https://lichess.org/jDyjM3cV",
+                    "https://lichess.org/tAk9frRt/black",
+                    "https://lichess.org/xiJVe9za",
+                    "https://lichess.org/eBe8yzMB/black",
+                    "https://lichess.org/9iY5DxHj/black",
+                    "https://lichess.org/sOs05vp3/black",
+                    "https://lichess.org/v0WaGG3j/black",
+                    "https://lichess.org/NImwf4Pn/black",
+                    "https://lichess.org/97xTy0kV",
+                    "https://lichess.org/kvR7WOug",
+                    "https://lichess.org/7L9BmB9z/black",
+                    "https://lichess.org/45dNnpoV/black",
+                    "https://lichess.org/rMjhFj1o",
+                    "https://lichess.org/IVrxFKfH/black",
+                    "https://lichess.org/Vhf3Gfhw",
+                    "https://lichess.org/QKpryrXT/black",
+                    "https://lichess.org/Bt3GbjRk",
+                    "https://lichess.org/lnHTjPCf",
+                    "https://lichess.org/oP89eQlN",
+                    "https://lichess.org/pNe9IOa5",
+                    "https://lichess.org/T2BgIXLF/black",
+                    "https://lichess.org/Y3yiXaIB",
+                    "https://lichess.org/LXCh3HUA/black",
+                    "https://lichess.org/sdVebDK6",
+                    "https://lichess.org/3cKx9LEZ",
+                    "https://lichess.org/ACwTTyjk/black",
+                    "https://lichess.org/2hx5GaoB",
+                    "https://lichess.org/x5b7pXCN/black",
+                    "https://lichess.org/35RnpmfC",
+                    "https://lichess.org/3RQjXqSE",
+                    "https://lichess.org/DTR4vnAK",
+                    "https://lichess.org/bZjWsYoc",
+                    "https://lichess.org/b3XMc8Ze",
+                    "https://lichess.org/G0KaOmgJ/black",
+                    "https://lichess.org/fs4Tf2w6",
+                    "https://lichess.org/CqEz3Xkj/black",
+                    "https://lichess.org/RsLPpCUb",
+                    "https://lichess.org/RjoOVzTQ",
+                    "https://lichess.org/5GQOPyzM/black",
+                    "https://lichess.org/sfGDQ2Qi",
+                    "https://lichess.org/6t3StfXD",
+                    "https://lichess.org/wJH2TdWx",
+                    "https://lichess.org/QHpHWsdz/black",
+                    "https://lichess.org/dwprMLR5",
+                    "https://lichess.org/bArslFDG",
+                    "https://lichess.org/CdoEZ5u8/black",
+                    "https://lichess.org/0s8kqs9W",
+                    "https://lichess.org/m9otnFDU",
+                    "https://lichess.org/mEmzyP9f",
+                    "https://lichess.org/e9aVtWht/black",
+                    "https://lichess.org/igzdXnBn/black",
+                    "https://lichess.org/ajTvT7qI",
+                    "https://lichess.org/RyucaVVk",
+                    "https://lichess.org/SeipYio4/black",
+                    "https://lichess.org/UrZf8FAB",
+                    "https://lichess.org/KTezH6dM/black",
+                    "https://lichess.org/NVdWNcWz/black",
+                    "https://lichess.org/ilFvy8jY/black",
+                    "https://lichess.org/Az6UGqrI/black"
+                ]
+            },
+            "noFool": {
+                "urls": [
+                    "https://lichess.org/5pcd5CvQ/black",
+                    "https://lichess.org/kf7fkDbf/black"
+                ]
+            },
+            "mateWithPawn": {
+                "urls": [
+                    "https://lichess.org/4Eea65JG/black",
+                    "https://lichess.org/hvlEDlJ7",
+                    "https://lichess.org/TjFoLzBU/black",
+                    "https://lichess.org/BdX4YK1h",
+                    "https://lichess.org/0Zr2TRMg/black",
+                    "https://lichess.org/pjYY2hzU/black",
+                    "https://lichess.org/6A82lgU5/black",
+                    "https://lichess.org/b8PstRzR/black",
+                    "https://lichess.org/TIj7cq6n",
+                    "https://lichess.org/ozkIea75",
+                    "https://lichess.org/0mGCV6m6/black",
+                    "https://lichess.org/J6FvjwWy",
+                    "https://lichess.org/MLs1HAQ8",
+                    "https://lichess.org/6AmbJcA3",
+                    "https://lichess.org/OKIy8XqE",
+                    "https://lichess.org/etI7AAJH"
+                ]
+            },
+            "justTwoKings": {
+                "urls": [
+                    "https://lichess.org/vxinqpHB/black",
+                    "https://lichess.org/EODgqTgH/black",
+                    "https://lichess.org/URafwbXk"
+                ]
+            },
+            "mateWithKnight": {
+                "urls": [
+                    "https://lichess.org/tMB0MdQ4/black",
+                    "https://lichess.org/Vhf3Gfhw",
+                    "https://lichess.org/ebSzGLi9/black",
+                    "https://lichess.org/1JYQ4D9S/black",
+                    "https://lichess.org/lTsOqC6W",
+                    "https://lichess.org/NrTIUPaM/black"
+                ]
+            },
+            "peacefulmode": {
+                "urls": [
+                    "https://lichess.org/giEnHGSX",
+                    "https://lichess.org/izQL7bbQ",
+                    "https://lichess.org/m9otnFDU",
+                    "https://lichess.org/H1oR6mle/black",
+                    "https://lichess.org/ajTvT7qI",
+                    "https://lichess.org/AeIEEYlt",
+                    "https://lichess.org/6aR3BJwq",
+                    "https://lichess.org/oNSrIYIm/black",
+                    "https://lichess.org/z6JPEScu",
+                    "https://lichess.org/iBBId0Qz/black",
+                    "https://lichess.org/MPQ465XE/black",
+                    "https://lichess.org/zHpuPbDk/black",
+                    "https://lichess.org/sSHJV5cV/black",
+                    "https://lichess.org/Nue8X3X8/black",
+                    "https://lichess.org/ZKL4mVkC/black",
+                    "https://lichess.org/EvOm1z51"
+                ]
+            },
+            "onlyPawnMoves": {
+                "urls": [
+                    "https://lichess.org/pCOJuDPN/black",
+                    "https://lichess.org/izQL7bbQ",
+                    "https://lichess.org/nHo9RFUO",
+                    "https://lichess.org/tZcQEvT6/black"
+                ]
+            },
+            "castleWithCheck": {
+                "urls": [
+                    "https://lichess.org/XKhafSRy",
+                    "https://lichess.org/L3rfgxKH/black",
+                    "https://lichess.org/zZeb4kRg",
+                    "https://lichess.org/ELX4CpBs"
+                ]
+            },
+            "underpromote": {
+                "urls": [
+                    "https://lichess.org/42eWKh6Y",
+                    "https://lichess.org/KAY2DgU8",
+                    "https://lichess.org/Nue8X3X8/black"
+                ]
+            },
+            "wonVsComputer4": {
+                "urls": [
+                    "https://lichess.org/AeIEEYlt",
+                    "https://lichess.org/yoRzyxsu/black",
+                    "https://lichess.org/VfYrrJAk",
+                    "https://lichess.org/DXxCJj6K/black",
+                    "https://lichess.org/5kbxtpSQ",
+                    "https://lichess.org/lOM0we0J/black",
+                    "https://lichess.org/6aR3BJwq",
+                    "https://lichess.org/2ZlstsVV/black",
+                    "https://lichess.org/31kwmLii",
+                    "https://lichess.org/BhmubS9B",
+                    "https://lichess.org/ZzbXuKRy",
+                    "https://lichess.org/oNSrIYIm/black",
+                    "https://lichess.org/l9pIcuxG/black",
+                    "https://lichess.org/UPIy7QEX",
+                    "https://lichess.org/lTsOqC6W",
+                    "https://lichess.org/XRnHBAa4/black",
+                    "https://lichess.org/z6JPEScu",
+                    "https://lichess.org/94HAYy7N/black",
+                    "https://lichess.org/iBBId0Qz/black",
+                    "https://lichess.org/RTMFadH7",
+                    "https://lichess.org/xUfVCddg/black",
+                    "https://lichess.org/MPQ465XE/black",
+                    "https://lichess.org/wPjigoaL/black",
+                    "https://lichess.org/PlgIpoFH/black",
+                    "https://lichess.org/zHpuPbDk/black",
+                    "https://lichess.org/TIj7cq6n",
+                    "https://lichess.org/gZciqpHC/black",
+                    "https://lichess.org/rMnDGXbb",
+                    "https://lichess.org/cfbgpcAc",
+                    "https://lichess.org/y02hDhrx/black",
+                    "https://lichess.org/rLIWqQxl",
+                    "https://lichess.org/wHTvMIMu",
+                    "https://lichess.org/XP49bvs1/black",
+                    "https://lichess.org/ZhG0RD6N",
+                    "https://lichess.org/7DzxCzoI",
+                    "https://lichess.org/ozkIea75",
+                    "https://lichess.org/NWPPfC4l",
+                    "https://lichess.org/G4pM6wlh",
+                    "https://lichess.org/6cmQaWOD/black",
+                    "https://lichess.org/82ZpOTb2/black",
+                    "https://lichess.org/u61zwwY1",
+                    "https://lichess.org/mmAcUlf8",
+                    "https://lichess.org/ViAMSzkn/black",
+                    "https://lichess.org/JancKFuJ",
+                    "https://lichess.org/iN8x12cx",
+                    "https://lichess.org/f9JAowb5/black",
+                    "https://lichess.org/KAY2DgU8",
+                    "https://lichess.org/MTHiR0Po/black",
+                    "https://lichess.org/wWoliUKJ",
+                    "https://lichess.org/CqVAhtcl",
+                    "https://lichess.org/R0wJZlaD/black",
+                    "https://lichess.org/GsX0zYQB",
+                    "https://lichess.org/k7prDQj7",
+                    "https://lichess.org/0mGCV6m6/black",
+                    "https://lichess.org/eK1SNrSN",
+                    "https://lichess.org/NrTIUPaM/black",
+                    "https://lichess.org/VSeJjHY4",
+                    "https://lichess.org/J6FvjwWy",
+                    "https://lichess.org/zV05z3EA",
+                    "https://lichess.org/NdJrcrSN/black",
+                    "https://lichess.org/gvY2kDd3",
+                    "https://lichess.org/KHzmdpoK",
+                    "https://lichess.org/sSHJV5cV/black",
+                    "https://lichess.org/8X3d0KF5",
+                    "https://lichess.org/yYV7kfSu/black",
+                    "https://lichess.org/MLs1HAQ8",
+                    "https://lichess.org/6AmbJcA3",
+                    "https://lichess.org/vDm6NHKL",
+                    "https://lichess.org/a3IK3GAj/black",
+                    "https://lichess.org/bX8Grk2H",
+                    "https://lichess.org/OKIy8XqE",
+                    "https://lichess.org/Nue8X3X8/black",
+                    "https://lichess.org/wb2CAw7k",
+                    "https://lichess.org/ZKL4mVkC/black",
+                    "https://lichess.org/dFJHCbt1",
+                    "https://lichess.org/HfhCTgvO"
+                ]
+            }
+        },
+        "unique": []
     }
 ]

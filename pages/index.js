@@ -226,6 +226,7 @@ const LOADING_STATUS_ERROR = 2;
 const LOADING_STATUS_DONE = 3;
 let secondview = false;
 let namePressed_boolean = false;
+let tablePressSurpressBoolean = false;
 let nameArray = [];
 let objectArray = [];
 let mobile_boolean;
@@ -593,10 +594,14 @@ export default function Home() {
 
     function InitiateReloadUser(username,uniqueAchievements) {
       console.log('initiate',username,uniqueAchievements,namePressed_boolean)
-      if(namePressed_boolean) {
+      if(namePressed_boolean || tablePressSurpressBoolean) {
         return
       } else {
+        setTimeout(function() {
+          tablePressSurpressBoolean = false;
+        }, 800);
         namePressed_boolean = true;
+        tablePressSurpressBoolean = true;
         reloadUser(username,uniqueAchievements);
       }
     }
