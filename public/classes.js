@@ -262,6 +262,37 @@ let class2cArray = [
 export let class2c = class2cArray.join('\n'); 
 
 //1c
+let class1aArray = [
+  'msch-alibou',
+  'msch-amemeu',
+  'msch-amykoh',
+  'msch-brygod',
+  'msch-elisoh',
+  'msch-emmris',
+  'msch-finfen',
+  'msch-jaydom',
+  'msch-jonvog',
+  'msch-leoste',
+  'msch-letgra',
+  'msch-linsut',
+  'msch-luiblu',
+  'msch-lukmeu',
+  'msch-matsch',
+  'msch-monsta',
+  'msch-morlac',
+  'msch-neesch',
+  'msch-olison',
+  'msch-petvuk',
+  'msch-piabue',
+  'msch-piumag',
+  'msch-simmoo',
+  'msch-thekle',
+  'msch-vinnus',
+]
+
+export let class1a = class1aArray.join('\n'); 
+
+//1c
 let class1cArray = [
   'msch-amyhor',
   'msch-azryil',
@@ -294,6 +325,7 @@ export let class1c = class1cArray.join('\n');
 
 let allClasses = [
   blackSheepList,
+  class1aArray,
   class1cArray,
   class2cArray,
   class3bArray,

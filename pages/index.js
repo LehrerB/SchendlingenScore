@@ -239,6 +239,7 @@ export default function Home() {
 
   let classesButtonArray = [
     { label: 'Schach', class: classes.classChess },
+    { label: '1a', class: classes.class1a },
     { label: '1c', class: classes.class1c },
     { label: '2a', class: classes.class2a },
     { label: '2c', class: classes.class2c },
@@ -248,7 +249,7 @@ export default function Home() {
     { label: '4b', class: classes.class4b },
     { label: '4c', class: classes.class4c },
   ]
-  if(isDev){classesButtonArray.push({ label: 'Alle', class: classes.allStudents.join('\n') })}
+  if(true){classesButtonArray.push({ label: 'Alle', class: classes.allStudents.join('\n') })}
 
   const [name, setName] = useState(isDev ? 'msch-tahalp' : 'msch-'); //smart
   const [amount, setAmount] = useState(isDev ? 'all' : 'all');
