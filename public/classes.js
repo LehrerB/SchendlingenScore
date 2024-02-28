@@ -10,6 +10,7 @@ export let blackSheepList = [
   'esmkar',
   'J2by',
   'CayanK',
+  'Oezflk', //1b
 ]
 
 export let teacherList = [
@@ -261,7 +262,7 @@ let class2cArray = [
 
 export let class2c = class2cArray.join('\n'); 
 
-//1c
+//1a
 let class1aArray = [
   'msch-alibou',
   'msch-amemeu',
@@ -291,6 +292,37 @@ let class1aArray = [
 ]
 
 export let class1a = class1aArray.join('\n'); 
+
+//1b
+let class1bArray = [
+  'msch-abbbut',
+  'msch-adimin',
+  'msch-angkru',
+  'msch-arayil',
+  'msch-burcin',
+  'msch-ecekil',
+  'msch-elayav',
+  'msch-elifeu',
+  'msch-emisis',
+  'msch-marlin', //estera maria
+  'msch-evemat',
+  'msch-galspo',
+  'msch-hampal',
+  'msch-irssha',
+  'msch-isahec',
+  'msch-kekkaj',
+  'msch-kevola',
+  'Oezflk',      //'msch-leosta',
+  'msch-magami',
+  'msch-maskoc',
+  'msch-melerg',
+  'msch-samtod',
+  'msch-selbar',
+  'msch-simamm',
+  'msch-suakal',
+]
+
+export let class1b = class1bArray.join('\n'); 
 
 //1c
 let class1cArray = [
