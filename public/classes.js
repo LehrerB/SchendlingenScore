@@ -118,6 +118,7 @@ let class4cArray = [
   'msch-mahdil',
   'msch-marfek',
   'msch-melkoc',
+  'msch-meryav',
   'msch-migrin',
   'msch-mikkoc',
   'msch-mirsok',

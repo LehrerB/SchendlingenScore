@@ -1,7 +1,7 @@
 [
     {
         "username": "LehrerB",
-        "timestamp": 1714451888000,
+        "timestamp": 1718625862000,
         "ach": {
             "wonWithWhite": {
                 "urls": [
@@ -25,7 +25,10 @@
                     "https://lichess.org/nF2rYVmE",
                     "https://lichess.org/NGqtrAsX",
                     "https://lichess.org/NhsVsQHv",
-                    "https://lichess.org/rdyQHsvR"
+                    "https://lichess.org/rdyQHsvR",
+                    "https://lichess.org/Y1RrxjWq",
+                    "https://lichess.org/fsPg6nrv",
+                    "https://lichess.org/6yKGOnsw"
                 ]
             },
             "wonVsMaia": {
@@ -93,7 +96,11 @@
                     "https://lichess.org/hnwKJ6eb/black",
                     "https://lichess.org/W6EGx0AC/black",
                     "https://lichess.org/I558oZar/black",
-                    "https://lichess.org/rbXz2BLL/black"
+                    "https://lichess.org/rbXz2BLL/black",
+                    "https://lichess.org/YXosbWqY/black",
+                    "https://lichess.org/t5yvVeco/black",
+                    "https://lichess.org/pbbiRd0X/black",
+                    "https://lichess.org/a1GYEgqG/black"
                 ]
             },
             "mateWithRook": {
@@ -133,7 +140,9 @@
                     "https://lichess.org/qIi1F1Y2/black",
                     "https://lichess.org/pvQMUmLF/black",
                     "https://lichess.org/rUTg1k7N/black",
-                    "https://lichess.org/rbXz2BLL/black"
+                    "https://lichess.org/rbXz2BLL/black",
+                    "https://lichess.org/t5yvVeco/black",
+                    "https://lichess.org/a1GYEgqG/black"
                 ]
             },
             "onlyPawnMoves": {
@@ -172,7 +181,13 @@
                     "https://lichess.org/clm7ObUL/black",
                     "https://lichess.org/q1Bx3Y9s/black",
                     "https://lichess.org/rUTg1k7N/black",
-                    "https://lichess.org/NhsVsQHv"
+                    "https://lichess.org/NhsVsQHv",
+                    "https://lichess.org/Y1RrxjWq",
+                    "https://lichess.org/YXosbWqY/black",
+                    "https://lichess.org/t5yvVeco/black",
+                    "https://lichess.org/fsPg6nrv",
+                    "https://lichess.org/6yKGOnsw",
+                    "https://lichess.org/pbbiRd0X/black"
                 ]
             },
             "mattStattPatt2": {
@@ -212,7 +227,8 @@
                     "https://lichess.org/HaNIENrf/black",
                     "https://lichess.org/ss7qCTdR/black",
                     "https://lichess.org/Hu4FBvKr",
-                    "https://lichess.org/PJNEOuNq/black"
+                    "https://lichess.org/PJNEOuNq/black",
+                    "https://lichess.org/t5yvVeco/black"
                 ]
             },
             "rookSniper": {
@@ -433,12 +449,14 @@
             "msch-kimher",
             "msch-lucler",
             "msch-celfeu",
-            "msch-levvoe"
+            "msch-levvoe",
+            "msch-salalk",
+            "msch-lengri"
         ]
     },
     {
         "username": "msch-oliwel",
-        "timestamp": 1714451898000,
+        "timestamp": 1718625871000,
         "ach": {
             "mattStattPatt6": {
                 "urls": [
@@ -597,7 +615,7 @@
     },
     {
         "username": "msch-xenhof",
-        "timestamp": 1714451900000,
+        "timestamp": 1718625872000,
         "ach": {
             "new_opponent": {
                 "urls": [
@@ -637,7 +655,8 @@
                     "https://lichess.org/sHCmKET1/black",
                     "https://lichess.org/oKn47Lqj/black",
                     "https://lichess.org/9C0JMWqe/black",
-                    "https://lichess.org/N4P6RuWK/black"
+                    "https://lichess.org/N4P6RuWK/black",
+                    "https://lichess.org/wFo8H4AK/black"
                 ]
             },
             "wonVsComputer2": {
@@ -651,7 +670,9 @@
                     "https://lichess.org/JfXtFS33",
                     "https://lichess.org/5vUz76B7/black",
                     "https://lichess.org/sHCmKET1/black",
-                    "https://lichess.org/oKn47Lqj/black"
+                    "https://lichess.org/oKn47Lqj/black",
+                    "https://lichess.org/iR6ZnkXe",
+                    "https://lichess.org/q8Ygfcsu"
                 ]
             },
             "mattStattPatt4": {
@@ -679,7 +700,9 @@
                     "https://lichess.org/GckppW9u",
                     "https://lichess.org/9C0JMWqe/black",
                     "https://lichess.org/arbpeb3g",
-                    "https://lichess.org/pOXpVdTh"
+                    "https://lichess.org/pOXpVdTh",
+                    "https://lichess.org/wFo8H4AK/black",
+                    "https://lichess.org/IW5vmUvZ"
                 ]
             },
             "mateAfterCapture": {
@@ -696,7 +719,10 @@
                     "https://lichess.org/fDlE4CMH",
                     "https://lichess.org/GckppW9u",
                     "https://lichess.org/arbpeb3g",
-                    "https://lichess.org/pOXpVdTh"
+                    "https://lichess.org/pOXpVdTh",
+                    "https://lichess.org/iR6ZnkXe",
+                    "https://lichess.org/IW5vmUvZ",
+                    "https://lichess.org/q8Ygfcsu"
                 ]
             },
             "drawWithKing": {
@@ -715,7 +741,10 @@
             "wonVsComputer1": {
                 "urls": [
                     "https://lichess.org/XghJg8Dm/black",
-                    "https://lichess.org/arbpeb3g"
+                    "https://lichess.org/arbpeb3g",
+                    "https://lichess.org/iR6ZnkXe",
+                    "https://lichess.org/wFo8H4AK/black",
+                    "https://lichess.org/IW5vmUvZ"
                 ]
             },
             "small_underdog": {
@@ -726,12 +755,14 @@
             "secondQueen": {
                 "urls": [
                     "https://lichess.org/JfXtFS33",
-                    "https://lichess.org/fDlE4CMH"
+                    "https://lichess.org/fDlE4CMH",
+                    "https://lichess.org/q8Ygfcsu"
                 ]
             },
             "mateOnBackRank": {
                 "urls": [
-                    "https://lichess.org/5vUz76B7/black"
+                    "https://lichess.org/5vUz76B7/black",
+                    "https://lichess.org/wFo8H4AK/black"
                 ]
             },
             "mateWithLess": {
@@ -755,6 +786,11 @@
                 "urls": [
                     "https://lichess.org/sHCmKET1/black"
                 ]
+            },
+            "textbookOpening": {
+                "urls": [
+                    "https://lichess.org/iR6ZnkXe"
+                ]
             }
         },
         "unique": [
@@ -767,7 +803,7 @@
     },
     {
         "username": "misch-andhof",
-        "timestamp": 1714451909000,
+        "timestamp": 1718626016000,
         "ach": {
             "wonWithBlack": {
                 "urls": [
@@ -886,7 +922,8 @@
                     "https://lichess.org/691d8QTx/black",
                     "https://lichess.org/DKAE7Ug1/black",
                     "https://lichess.org/rMykQRwA/black",
-                    "https://lichess.org/h82Yls2Y/black"
+                    "https://lichess.org/h82Yls2Y/black",
+                    "https://lichess.org/ZhU0NZRz/black"
                 ]
             },
             "new_opponent": {
@@ -908,7 +945,8 @@
                     "https://lichess.org/T5FCL9lN/black",
                     "https://lichess.org/NXN4wft7",
                     "https://lichess.org/8ztaIODq/black",
-                    "https://lichess.org/Va0jaZnl"
+                    "https://lichess.org/Va0jaZnl",
+                    "https://lichess.org/ZhU0NZRz/black"
                 ]
             },
             "wonVsComputer3": {
@@ -1101,7 +1139,8 @@
                     "https://lichess.org/qY9Kr4CA/black",
                     "https://lichess.org/FEpo3A6U/black",
                     "https://lichess.org/0Na3ds2m/black",
-                    "https://lichess.org/rKKADri5"
+                    "https://lichess.org/rKKADri5",
+                    "https://lichess.org/eLcaH1fY"
                 ]
             },
             "wonWithWhite": {
@@ -1210,7 +1249,9 @@
                     "https://lichess.org/Uj2mI7tN",
                     "https://lichess.org/o3KVeao6",
                     "https://lichess.org/rKKADri5",
-                    "https://lichess.org/HWuP9pRq"
+                    "https://lichess.org/HWuP9pRq",
+                    "https://lichess.org/DAhcaAb4",
+                    "https://lichess.org/eLcaH1fY"
                 ]
             },
             "wonVsComputer2": {
@@ -1347,7 +1388,8 @@
                     "https://lichess.org/g4HxT94j",
                     "https://lichess.org/VntbBxgF",
                     "https://lichess.org/c22Cnpdf",
-                    "https://lichess.org/acktnqew"
+                    "https://lichess.org/acktnqew",
+                    "https://lichess.org/eLcaH1fY"
                 ]
             },
             "mateWithLess": {
@@ -1367,7 +1409,8 @@
                     "https://lichess.org/ulR83p2K",
                     "https://lichess.org/ZTSfQKgh/black",
                     "https://lichess.org/eoVtHAzW/black",
-                    "https://lichess.org/HWuP9pRq"
+                    "https://lichess.org/HWuP9pRq",
+                    "https://lichess.org/DAhcaAb4"
                 ]
             },
             "castleWithCheck": {
@@ -1449,7 +1492,8 @@
                     "https://lichess.org/JXo5z67l/black",
                     "https://lichess.org/JSJrCatf/black",
                     "https://lichess.org/acktnqew",
-                    "https://lichess.org/B3BCVrXG"
+                    "https://lichess.org/B3BCVrXG",
+                    "https://lichess.org/eLcaH1fY"
                 ]
             },
             "mattStattPatt4": {
@@ -1542,12 +1586,13 @@
             "msch-zankaj",
             "msch-mahals",
             "msch-hamkud",
-            "msch-tahalp"
+            "msch-tahalp",
+            "msch-brkkay"
         ]
     },
     {
         "username": "msch-amyhor",
-        "timestamp": 1714451670000,
+        "timestamp": 1718625484000,
         "ach": {
             "new_opponent": {
                 "urls": [
@@ -1568,7 +1613,8 @@
             "wonWithWhite": {
                 "urls": [
                     "https://lichess.org/yIbm5byt",
-                    "https://lichess.org/TkmX6VxK"
+                    "https://lichess.org/TkmX6VxK",
+                    "https://lichess.org/gBQjinZB"
                 ]
             },
             "wonVsComputer1": {
@@ -1641,7 +1687,7 @@
     },
     {
         "username": "msch-azryil",
-        "timestamp": 1714451672000,
+        "timestamp": 1718625484000,
         "ach": {
             "new_opponent": {
                 "urls": [
@@ -1795,7 +1841,7 @@
     },
     {
         "username": "msch-brkkay",
-        "timestamp": 1714451888000,
+        "timestamp": 1718625863000,
         "ach": {
             "wonWithWhite": {
                 "urls": [
@@ -1817,7 +1863,11 @@
                     "https://lichess.org/DQCXSdvi",
                     "https://lichess.org/A353QQRK",
                     "https://lichess.org/kvGnSXaq",
-                    "https://lichess.org/bIEMCdOG"
+                    "https://lichess.org/bIEMCdOG",
+                    "https://lichess.org/ReUj2Ths",
+                    "https://lichess.org/FRKQxYfy",
+                    "https://lichess.org/rNqUDt4w",
+                    "https://lichess.org/oXu0504O"
                 ]
             },
             "wonWithBlack": {
@@ -1848,7 +1898,12 @@
                     "https://lichess.org/agAGGuoG/black",
                     "https://lichess.org/ZJ7l4UpF/black",
                     "https://lichess.org/ViU61hcp/black",
-                    "https://lichess.org/v6F7I5db/black"
+                    "https://lichess.org/v6F7I5db/black",
+                    "https://lichess.org/YDpePDpY/black",
+                    "https://lichess.org/tr7B4uWi/black",
+                    "https://lichess.org/9pGlDR6q/black",
+                    "https://lichess.org/KbSWHatH/black",
+                    "https://lichess.org/WIcqIIL5/black"
                 ]
             },
             "wonVsComputer1": {
@@ -1864,7 +1919,8 @@
                     "https://lichess.org/vEvL3n9u",
                     "https://lichess.org/uDgBj7i9",
                     "https://lichess.org/Nr2u5Q6E",
-                    "https://lichess.org/xbOULa4U/black"
+                    "https://lichess.org/xbOULa4U/black",
+                    "https://lichess.org/YDpePDpY/black"
                 ]
             },
             "new_opponent": {
@@ -1881,7 +1937,8 @@
                     "https://lichess.org/NaEMBEN8",
                     "https://lichess.org/2QqYOytf/black",
                     "https://lichess.org/A353QQRK",
-                    "https://lichess.org/0S8IY5kM/black"
+                    "https://lichess.org/0S8IY5kM/black",
+                    "https://lichess.org/ZhU0NZRz"
                 ]
             },
             "mateOnBackRank": {
@@ -1895,7 +1952,8 @@
                     "https://lichess.org/rnfkSygy/black",
                     "https://lichess.org/ynH80Oii/black",
                     "https://lichess.org/Wpri8THy",
-                    "https://lichess.org/ZJ7l4UpF/black"
+                    "https://lichess.org/ZJ7l4UpF/black",
+                    "https://lichess.org/9pGlDR6q/black"
                 ]
             },
             "drawWithKing": {
@@ -1939,12 +1997,20 @@
                     "https://lichess.org/agAGGuoG/black",
                     "https://lichess.org/ZJ7l4UpF/black",
                     "https://lichess.org/ViU61hcp/black",
-                    "https://lichess.org/bIEMCdOG"
+                    "https://lichess.org/bIEMCdOG",
+                    "https://lichess.org/ReUj2Ths",
+                    "https://lichess.org/tr7B4uWi/black",
+                    "https://lichess.org/FRKQxYfy",
+                    "https://lichess.org/rNqUDt4w",
+                    "https://lichess.org/9pGlDR6q/black",
+                    "https://lichess.org/KbSWHatH/black",
+                    "https://lichess.org/oXu0504O"
                 ]
             },
             "mateWithLess": {
                 "urls": [
-                    "https://lichess.org/u6BMMcXi/black"
+                    "https://lichess.org/u6BMMcXi/black",
+                    "https://lichess.org/9pGlDR6q/black"
                 ]
             },
             "mateWithKnight": {
@@ -2000,7 +2066,8 @@
             "secondQueen": {
                 "urls": [
                     "https://lichess.org/VV93XzNC",
-                    "https://lichess.org/FZkyUnI1"
+                    "https://lichess.org/FZkyUnI1",
+                    "https://lichess.org/rNqUDt4w"
                 ]
             },
             "peacefulmode": {
@@ -2034,12 +2101,13 @@
             "lehrerb",
             "msch-raphef",
             "msch-emilyjov",
-            "msch-musgez"
+            "msch-musgez",
+            "misch-andhof"
         ]
     },
     {
         "username": "msch-burpar",
-        "timestamp": 1714451683000,
+        "timestamp": 1718625489000,
         "ach": {
             "wonWithWhite": {
                 "urls": [
@@ -2059,7 +2127,8 @@
                     "https://lichess.org/2TNwc27c",
                     "https://lichess.org/vqO24ynC",
                     "https://lichess.org/VuTa7GJw",
-                    "https://lichess.org/jOsJ1o9N"
+                    "https://lichess.org/jOsJ1o9N",
+                    "https://lichess.org/hFArQUyb"
                 ]
             },
             "new_opponent": {
@@ -2120,7 +2189,8 @@
                     "https://lichess.org/RFcjPDol",
                     "https://lichess.org/stA1bXYW",
                     "https://lichess.org/2TNwc27c",
-                    "https://lichess.org/jOsJ1o9N"
+                    "https://lichess.org/jOsJ1o9N",
+                    "https://lichess.org/hFArQUyb"
                 ]
             },
             "secondQueen": {
@@ -2132,7 +2202,8 @@
                     "https://lichess.org/F3MEMm9E",
                     "https://lichess.org/RFcjPDol",
                     "https://lichess.org/GGEthpZa",
-                    "https://lichess.org/jOsJ1o9N"
+                    "https://lichess.org/jOsJ1o9N",
+                    "https://lichess.org/hFArQUyb"
                 ]
             },
             "wonWithBlack": {
@@ -2226,7 +2297,7 @@
     },
     {
         "username": "msch-celalt",
-        "timestamp": 1714451684000,
+        "timestamp": 1718625489000,
         "ach": {
             "mattStattPatt4": {
                 "urls": [
@@ -2262,6 +2333,17 @@
                 "urls": [
                     "https://lichess.org/nRiTnxvy"
                 ]
+            },
+            "wonWithWhite": {
+                "urls": [
+                    "https://lichess.org/wlC56XRf",
+                    "https://lichess.org/ZYqwbTtM"
+                ]
+            },
+            "small_underdog": {
+                "urls": [
+                    "https://lichess.org/ZYqwbTtM"
+                ]
             }
         },
         "unique": [
@@ -2270,7 +2352,7 @@
     },
     {
         "username": "msch-davmit",
-        "timestamp": 1714451690000,
+        "timestamp": 1718625493000,
         "ach": {
             "new_opponent": {
                 "urls": [
@@ -2388,7 +2470,7 @@
     },
     {
         "username": "msch-emilyjov",
-        "timestamp": 1714451889000,
+        "timestamp": 1718625863000,
         "ach": {
             "wonWithWhite": {
                 "urls": [
@@ -2542,7 +2624,27 @@
                     "https://lichess.org/bblGQHyi",
                     "https://lichess.org/K92enicz",
                     "https://lichess.org/LEJ6geWi",
-                    "https://lichess.org/b4hDZVQA"
+                    "https://lichess.org/b4hDZVQA",
+                    "https://lichess.org/d82WHAfi",
+                    "https://lichess.org/voU0KHQ7",
+                    "https://lichess.org/rwPzqY6B",
+                    "https://lichess.org/qZum3KZu",
+                    "https://lichess.org/rmU2kI2L",
+                    "https://lichess.org/BCMxpLGo",
+                    "https://lichess.org/JdxKM0St",
+                    "https://lichess.org/538Sli7n",
+                    "https://lichess.org/mVpOq9il",
+                    "https://lichess.org/ejs3v9dg",
+                    "https://lichess.org/pGETCoxo",
+                    "https://lichess.org/O3cJCI23",
+                    "https://lichess.org/bX6uLYPT",
+                    "https://lichess.org/wH4nWwbM",
+                    "https://lichess.org/0kzfNmVq",
+                    "https://lichess.org/I4oKwnEn",
+                    "https://lichess.org/ZzU69tZP",
+                    "https://lichess.org/y4GETOlV",
+                    "https://lichess.org/jbiXnFpV",
+                    "https://lichess.org/tV2wSsMe"
                 ]
             },
             "wonVsComputer2": {
@@ -2708,7 +2810,30 @@
                     "https://lichess.org/K92enicz",
                     "https://lichess.org/LEJ6geWi",
                     "https://lichess.org/wQL8veSn/black",
-                    "https://lichess.org/b4hDZVQA"
+                    "https://lichess.org/b4hDZVQA",
+                    "https://lichess.org/d82WHAfi",
+                    "https://lichess.org/LcO0HGus/black",
+                    "https://lichess.org/rwPzqY6B",
+                    "https://lichess.org/nE46hjsL/black",
+                    "https://lichess.org/qZum3KZu",
+                    "https://lichess.org/rmU2kI2L",
+                    "https://lichess.org/BCMxpLGo",
+                    "https://lichess.org/aGoT66Jc/black",
+                    "https://lichess.org/JdxKM0St",
+                    "https://lichess.org/LpTcTG02/black",
+                    "https://lichess.org/538Sli7n",
+                    "https://lichess.org/UFIsRKsC/black",
+                    "https://lichess.org/mVpOq9il",
+                    "https://lichess.org/O3cJCI23",
+                    "https://lichess.org/d3xml7ox/black",
+                    "https://lichess.org/bX6uLYPT",
+                    "https://lichess.org/YDGy7IUw/black",
+                    "https://lichess.org/wH4nWwbM",
+                    "https://lichess.org/QhePN9M7/black",
+                    "https://lichess.org/0kzfNmVq",
+                    "https://lichess.org/nzkguRCV/black",
+                    "https://lichess.org/y4GETOlV",
+                    "https://lichess.org/tV2wSsMe"
                 ]
             },
             "mateWithRook": {
@@ -2781,7 +2906,21 @@
                     "https://lichess.org/uHrXQQD0",
                     "https://lichess.org/O6JyiHOY",
                     "https://lichess.org/bblGQHyi",
-                    "https://lichess.org/LEJ6geWi"
+                    "https://lichess.org/LEJ6geWi",
+                    "https://lichess.org/LcO0HGus/black",
+                    "https://lichess.org/nE46hjsL/black",
+                    "https://lichess.org/rmU2kI2L",
+                    "https://lichess.org/BCMxpLGo",
+                    "https://lichess.org/aGoT66Jc/black",
+                    "https://lichess.org/LpTcTG02/black",
+                    "https://lichess.org/538Sli7n",
+                    "https://lichess.org/mVpOq9il",
+                    "https://lichess.org/O3cJCI23",
+                    "https://lichess.org/wH4nWwbM",
+                    "https://lichess.org/QhePN9M7/black",
+                    "https://lichess.org/y4GETOlV",
+                    "https://lichess.org/rkaGDmjI/black",
+                    "https://lichess.org/tV2wSsMe"
                 ]
             },
             "underpromote": {
@@ -2816,7 +2955,12 @@
                     "https://lichess.org/00bqsQ7h/black",
                     "https://lichess.org/JwRky2bS/black",
                     "https://lichess.org/bblGQHyi",
-                    "https://lichess.org/K92enicz"
+                    "https://lichess.org/K92enicz",
+                    "https://lichess.org/voU0KHQ7",
+                    "https://lichess.org/qZum3KZu",
+                    "https://lichess.org/rmU2kI2L",
+                    "https://lichess.org/aGoT66Jc/black",
+                    "https://lichess.org/mVpOq9il"
                 ]
             },
             "mateWithQueen": {
@@ -2914,7 +3058,24 @@
                     "https://lichess.org/Wfs7Py12",
                     "https://lichess.org/KaEB5AJ4/black",
                     "https://lichess.org/wQL8veSn/black",
-                    "https://lichess.org/b4hDZVQA"
+                    "https://lichess.org/b4hDZVQA",
+                    "https://lichess.org/d82WHAfi",
+                    "https://lichess.org/voU0KHQ7",
+                    "https://lichess.org/rwPzqY6B",
+                    "https://lichess.org/qZum3KZu",
+                    "https://lichess.org/JdxKM0St",
+                    "https://lichess.org/UFIsRKsC/black",
+                    "https://lichess.org/ejs3v9dg",
+                    "https://lichess.org/sAOurnSj/black",
+                    "https://lichess.org/pGETCoxo",
+                    "https://lichess.org/d3xml7ox/black",
+                    "https://lichess.org/bX6uLYPT",
+                    "https://lichess.org/YDGy7IUw/black",
+                    "https://lichess.org/0kzfNmVq",
+                    "https://lichess.org/I4oKwnEn",
+                    "https://lichess.org/ZzU69tZP",
+                    "https://lichess.org/nzkguRCV/black",
+                    "https://lichess.org/jbiXnFpV"
                 ]
             },
             "secondQueen": {
@@ -2950,7 +3111,9 @@
                     "https://lichess.org/K7Oq6U1Z",
                     "https://lichess.org/8VJQ2q2x",
                     "https://lichess.org/Wfs7Py12",
-                    "https://lichess.org/b4hDZVQA"
+                    "https://lichess.org/b4hDZVQA",
+                    "https://lichess.org/voU0KHQ7",
+                    "https://lichess.org/I4oKwnEn"
                 ]
             },
             "wonWithBlack": {
@@ -2994,7 +3157,20 @@
                     "https://lichess.org/JwRky2bS/black",
                     "https://lichess.org/PHePHjML/black",
                     "https://lichess.org/KaEB5AJ4/black",
-                    "https://lichess.org/wQL8veSn/black"
+                    "https://lichess.org/wQL8veSn/black",
+                    "https://lichess.org/LcO0HGus/black",
+                    "https://lichess.org/nE46hjsL/black",
+                    "https://lichess.org/vCik0TjB/black",
+                    "https://lichess.org/aGoT66Jc/black",
+                    "https://lichess.org/LpTcTG02/black",
+                    "https://lichess.org/UFIsRKsC/black",
+                    "https://lichess.org/sAOurnSj/black",
+                    "https://lichess.org/d3xml7ox/black",
+                    "https://lichess.org/YDGy7IUw/black",
+                    "https://lichess.org/QhePN9M7/black",
+                    "https://lichess.org/ncM65U3I/black",
+                    "https://lichess.org/nzkguRCV/black",
+                    "https://lichess.org/rkaGDmjI/black"
                 ]
             },
             "drawWithKing": {
@@ -3021,7 +3197,9 @@
                     "https://lichess.org/RTtWQ0oF/black",
                     "https://lichess.org/XzYfuO24",
                     "https://lichess.org/26mlA2km",
-                    "https://lichess.org/xW4XyeFb"
+                    "https://lichess.org/xW4XyeFb",
+                    "https://lichess.org/rwPzqY6B",
+                    "https://lichess.org/YDGy7IUw/black"
                 ]
             },
             "battlefield": {
@@ -3031,7 +3209,8 @@
                     "https://lichess.org/FLXP6AVu/black",
                     "https://lichess.org/YtXMux3T/black",
                     "https://lichess.org/uSw5IA6N",
-                    "https://lichess.org/ANjm2XpG/black"
+                    "https://lichess.org/ANjm2XpG/black",
+                    "https://lichess.org/rkaGDmjI/black"
                 ]
             },
             "mateWithPawn": {
@@ -3062,7 +3241,8 @@
                     "https://lichess.org/fD3WU53y",
                     "https://lichess.org/GPdnsgVY",
                     "https://lichess.org/PERHOQgc",
-                    "https://lichess.org/K7Oq6U1Z"
+                    "https://lichess.org/K7Oq6U1Z",
+                    "https://lichess.org/d82WHAfi"
                 ]
             },
             "rookSniper": {
@@ -3154,13 +3334,18 @@
             },
             "wonVsComputer3": {
                 "urls": [
-                    "https://lichess.org/VWufgbxU"
+                    "https://lichess.org/VWufgbxU",
+                    "https://lichess.org/voU0KHQ7",
+                    "https://lichess.org/I4oKwnEn"
                 ]
             },
             "wonVsComputer1": {
                 "urls": [
                     "https://lichess.org/o3CJA18u",
-                    "https://lichess.org/xW4XyeFb"
+                    "https://lichess.org/xW4XyeFb",
+                    "https://lichess.org/ejs3v9dg",
+                    "https://lichess.org/sAOurnSj/black",
+                    "https://lichess.org/pGETCoxo"
                 ]
             },
             "peacefulmode": {
@@ -3185,6 +3370,16 @@
                 "urls": [
                     "https://lichess.org/E0FTP3vX"
                 ]
+            },
+            "small_underdog": {
+                "urls": [
+                    "https://lichess.org/vCik0TjB/black"
+                ]
+            },
+            "enpeasant": {
+                "urls": [
+                    "https://lichess.org/sAOurnSj/black"
+                ]
             }
         },
         "unique": [
@@ -3203,7 +3398,7 @@
     },
     {
         "username": "msch-emierc",
-        "timestamp": 1714451890000,
+        "timestamp": 1718625864000,
         "ach": {
             "wonWithWhite": {
                 "urls": [
@@ -3262,7 +3457,12 @@
                     "https://lichess.org/TSqqYAt8",
                     "https://lichess.org/vBaUYIlp",
                     "https://lichess.org/VQyIZeWz",
-                    "https://lichess.org/5pxlYQ8i"
+                    "https://lichess.org/5pxlYQ8i",
+                    "https://lichess.org/S7XJg5Hu",
+                    "https://lichess.org/88xjJUHY",
+                    "https://lichess.org/twg2n7qH",
+                    "https://lichess.org/qaRL8am9",
+                    "https://lichess.org/dJt1OKro"
                 ]
             },
             "new_opponent": {
@@ -3395,7 +3595,9 @@
                     "https://lichess.org/nqjZTumR/black",
                     "https://lichess.org/optyHb7s/black",
                     "https://lichess.org/JxPb752k/black",
-                    "https://lichess.org/wmrUFQH6/black"
+                    "https://lichess.org/wmrUFQH6/black",
+                    "https://lichess.org/gmE0lS23/black",
+                    "https://lichess.org/9M5ub1uf/black"
                 ]
             },
             "mateWithQueen": {
@@ -3455,7 +3657,10 @@
                     "https://lichess.org/nYhDZTJL/black",
                     "https://lichess.org/vBaUYIlp",
                     "https://lichess.org/JxPb752k/black",
-                    "https://lichess.org/wmrUFQH6/black"
+                    "https://lichess.org/wmrUFQH6/black",
+                    "https://lichess.org/9M5ub1uf/black",
+                    "https://lichess.org/S7XJg5Hu",
+                    "https://lichess.org/twg2n7qH"
                 ]
             },
             "wonVsComputer3": {
@@ -3553,7 +3758,8 @@
                     "https://lichess.org/dhXuh1LE",
                     "https://lichess.org/ThI1kGNx",
                     "https://lichess.org/nYhDZTJL/black",
-                    "https://lichess.org/8sFzBdyo/black"
+                    "https://lichess.org/8sFzBdyo/black",
+                    "https://lichess.org/9M5ub1uf/black"
                 ]
             },
             "onlyPawnMoves": {
@@ -3646,12 +3852,14 @@
     },
     {
         "username": "esmkar",
-        "timestamp": 1714451742000,
+        "timestamp": 1718625505000,
         "ach": {
             "new_opponent": {
                 "urls": [
                     "https://lichess.org/7Kw4hUx2/black",
-                    "https://lichess.org/qgYSTM5w/black"
+                    "https://lichess.org/qgYSTM5w/black",
+                    "https://lichess.org/4Gv5kVSh",
+                    "https://lichess.org/v7JnhkJg"
                 ]
             },
             "mattStattPatt4": {
@@ -3677,7 +3885,8 @@
             "wonWithWhite": {
                 "urls": [
                     "https://lichess.org/uvOwY4Fc",
-                    "https://lichess.org/nbkK63Rs"
+                    "https://lichess.org/nbkK63Rs",
+                    "https://lichess.org/v7JnhkJg"
                 ]
             },
             "wonVsComputer1": {
@@ -3709,16 +3918,23 @@
                 "urls": [
                     "https://lichess.org/alRJZWsi"
                 ]
+            },
+            "onlyPawnMoves": {
+                "urls": [
+                    "https://lichess.org/v7JnhkJg"
+                ]
             }
         },
         "unique": [
             "msch-lenly",
-            "msch-amyhor"
+            "msch-amyhor",
+            "msch-tahalp",
+            "msch-lelfek"
         ]
     },
     {
         "username": "msch-ezgiyil",
-        "timestamp": 1714451746000,
+        "timestamp": 1718625509000,
         "ach": {
             "new_opponent": {
                 "urls": [
@@ -3818,7 +4034,7 @@
     },
     {
         "username": "msch-leakol",
-        "timestamp": 1714451750000,
+        "timestamp": 1718625510000,
         "ach": {
             "new_opponent": {
                 "urls": [
@@ -3868,7 +4084,8 @@
             "wonWithBlack": {
                 "urls": [
                     "https://lichess.org/9U7UIXKv/black",
-                    "https://lichess.org/x3fzjEq8/black"
+                    "https://lichess.org/x3fzjEq8/black",
+                    "https://lichess.org/cbU03KBJ/black"
                 ]
             },
             "mattStattPatt5": {
@@ -3882,7 +4099,8 @@
                     "https://lichess.org/fBxMZLHE",
                     "https://lichess.org/Yz2IuQx9",
                     "https://lichess.org/ftv9Xeez",
-                    "https://lichess.org/P0oStnpC"
+                    "https://lichess.org/P0oStnpC",
+                    "https://lichess.org/ucRgoeGA"
                 ]
             },
             "battlefield": {
@@ -3910,17 +4128,19 @@
     },
     {
         "username": "msch-lelfek",
-        "timestamp": 1714451751000,
+        "timestamp": 1718625511000,
         "ach": {
             "new_opponent": {
                 "urls": [
                     "https://lichess.org/YVUqCKMr/black",
-                    "https://lichess.org/U4U3Gt7v/black"
+                    "https://lichess.org/U4U3Gt7v/black",
+                    "https://lichess.org/v7JnhkJg/black"
                 ]
             },
             "justTwoKings": {
                 "urls": [
-                    "https://lichess.org/YVUqCKMr/black"
+                    "https://lichess.org/YVUqCKMr/black",
+                    "https://lichess.org/1aa3DE2X/black"
                 ]
             },
             "wonWithBlack": {
@@ -3961,12 +4181,13 @@
         },
         "unique": [
             "msch-ronber",
-            "msch-marsai"
+            "msch-marsai",
+            "esmkar"
         ]
     },
     {
         "username": "msch-lenly",
-        "timestamp": 1714451753000,
+        "timestamp": 1718625512000,
         "ach": {
             "new_opponent": {
                 "urls": [
@@ -4003,7 +4224,8 @@
                     "https://lichess.org/7Kw4hUx2",
                     "https://lichess.org/q17PgWNR",
                     "https://lichess.org/PoGmYVMv",
-                    "https://lichess.org/QxpCSl3R"
+                    "https://lichess.org/QxpCSl3R",
+                    "https://lichess.org/i6Rrp3XC"
                 ]
             },
             "mateWithRook": {
@@ -4060,12 +4282,19 @@
             },
             "mattStattPatt5": {
                 "urls": [
-                    "https://lichess.org/p6tSlG9F"
+                    "https://lichess.org/p6tSlG9F",
+                    "https://lichess.org/Kqv7mVfh"
                 ]
             },
             "mateWithQueen": {
                 "urls": [
-                    "https://lichess.org/4U392y9q/black"
+                    "https://lichess.org/4U392y9q/black",
+                    "https://lichess.org/i6Rrp3XC"
+                ]
+            },
+            "secondQueen": {
+                "urls": [
+                    "https://lichess.org/i6Rrp3XC"
                 ]
             }
         },
@@ -4082,7 +4311,7 @@
     },
     {
         "username": "msch-lenmei",
-        "timestamp": 1714451757000,
+        "timestamp": 1718625516000,
         "ach": {
             "mattStattPatt4": {
                 "urls": [
@@ -4151,7 +4380,7 @@
     },
     {
         "username": "msch-majmar",
-        "timestamp": 1714451891000,
+        "timestamp": 1718625865000,
         "ach": {
             "wonWithWhite": {
                 "urls": [
@@ -4506,7 +4735,7 @@
     },
     {
         "username": "msch-marsai",
-        "timestamp": 1714451759000,
+        "timestamp": 1718625518000,
         "ach": {
             "mattStattPatt4": {
                 "urls": [
@@ -4541,7 +4770,8 @@
             "new_opponent": {
                 "urls": [
                     "https://lichess.org/m6vpvcGs/black",
-                    "https://lichess.org/U4U3Gt7v"
+                    "https://lichess.org/U4U3Gt7v",
+                    "https://lichess.org/u6zZ6uST/black"
                 ]
             },
             "wonWithWhite": {
@@ -4553,16 +4783,32 @@
                 "urls": [
                     "https://lichess.org/U4U3Gt7v"
                 ]
+            },
+            "wonWithBlack": {
+                "urls": [
+                    "https://lichess.org/u6zZ6uST/black"
+                ]
+            },
+            "mateWithRook": {
+                "urls": [
+                    "https://lichess.org/u6zZ6uST/black"
+                ]
+            },
+            "underpromote": {
+                "urls": [
+                    "https://lichess.org/u6zZ6uST/black"
+                ]
             }
         },
         "unique": [
             "msch-mikcin",
-            "msch-lelfek"
+            "msch-lelfek",
+            "msch-ronber"
         ]
     },
     {
         "username": "msch-mihtod",
-        "timestamp": 1714451760000,
+        "timestamp": 1718625519000,
         "ach": {
             "mattStattPatt4": {
                 "urls": [
@@ -4589,7 +4835,7 @@
     },
     {
         "username": "msch-mikcin",
-        "timestamp": 1714451779000,
+        "timestamp": 1718625525000,
         "ach": {
             "wonWithWhite": {
                 "urls": [
@@ -4682,7 +4928,8 @@
                     "https://lichess.org/y4p1NK0h/black",
                     "https://lichess.org/djD4JIvw",
                     "https://lichess.org/xKyXVjz4/black",
-                    "https://lichess.org/Zu5F0ES9/black"
+                    "https://lichess.org/Zu5F0ES9/black",
+                    "https://lichess.org/6csz7XMC/black"
                 ]
             },
             "wonWithBlack": {
@@ -4706,7 +4953,9 @@
                     "https://lichess.org/y4p1NK0h/black",
                     "https://lichess.org/xKyXVjz4/black",
                     "https://lichess.org/6uOExyBw/black",
-                    "https://lichess.org/Zu5F0ES9/black"
+                    "https://lichess.org/Zu5F0ES9/black",
+                    "https://lichess.org/s40cZxmE/black",
+                    "https://lichess.org/6csz7XMC/black"
                 ]
             },
             "drawWithKing": {
@@ -4715,7 +4964,8 @@
                     "https://lichess.org/8K1OTNwx",
                     "https://lichess.org/pmtH3o24/black",
                     "https://lichess.org/LGxAliIn",
-                    "https://lichess.org/Pf5YJ9DZ/black"
+                    "https://lichess.org/Pf5YJ9DZ/black",
+                    "https://lichess.org/uXtJipUJ"
                 ]
             },
             "underpromote": {
@@ -4826,7 +5076,8 @@
             },
             "mateWithLess": {
                 "urls": [
-                    "https://lichess.org/MtCnBl3t/black"
+                    "https://lichess.org/MtCnBl3t/black",
+                    "https://lichess.org/6csz7XMC/black"
                 ]
             },
             "mateWithBishop": {
@@ -4865,7 +5116,7 @@
     },
     {
         "username": "msch-raphef",
-        "timestamp": 1714451782000,
+        "timestamp": 1718625526000,
         "ach": {
             "wonWithBlack": {
                 "urls": [
@@ -4880,7 +5131,8 @@
                     "https://lichess.org/2QqYOytf",
                     "https://lichess.org/6vI9wlEM/black",
                     "https://lichess.org/BstPca6t/black",
-                    "https://lichess.org/T0BQMmJh"
+                    "https://lichess.org/T0BQMmJh",
+                    "https://lichess.org/6StdAg46"
                 ]
             },
             "onlyPawnMoves": {
@@ -4919,7 +5171,8 @@
                 "urls": [
                     "https://lichess.org/mtP0vSAX",
                     "https://lichess.org/iZDXEP8f",
-                    "https://lichess.org/T0BQMmJh"
+                    "https://lichess.org/T0BQMmJh",
+                    "https://lichess.org/6StdAg46"
                 ]
             },
             "mateWithQueen": {
@@ -4947,6 +5200,11 @@
                 "urls": [
                     "https://lichess.org/6vI9wlEM/black"
                 ]
+            },
+            "mateWithRook": {
+                "urls": [
+                    "https://lichess.org/6StdAg46"
+                ]
             }
         },
         "unique": [
@@ -4955,12 +5213,13 @@
             "msch-brkkay",
             "msch-mikcin",
             "msch-emilyjov",
-            "msch-burpar"
+            "msch-burpar",
+            "msch-salalk"
         ]
     },
     {
         "username": "msch-ronber",
-        "timestamp": 1714451783000,
+        "timestamp": 1718625527000,
         "ach": {
             "new_opponent": {
                 "urls": [
@@ -4969,7 +5228,8 @@
                     "https://lichess.org/swz8Tlwf",
                     "https://lichess.org/cjRMG42Y",
                     "https://lichess.org/bCwed1Q3/black",
-                    "https://lichess.org/4U392y9q"
+                    "https://lichess.org/4U392y9q",
+                    "https://lichess.org/u6zZ6uST"
                 ]
             },
             "wonWithBlack": {
@@ -5039,12 +5299,13 @@
             "msch-turgue",
             "msch-burpar",
             "msch-simamm",
-            "msch-lenly"
+            "msch-lenly",
+            "msch-marsai"
         ]
     },
     {
         "username": "msch-selkar",
-        "timestamp": 1714451895000,
+        "timestamp": 1718625870000,
         "ach": {
             "wonWithBlack": {
                 "urls": [
@@ -5068,7 +5329,9 @@
                     "https://lichess.org/hrB9zZRN/black",
                     "https://lichess.org/Dp7hSPo2/black",
                     "https://lichess.org/g6CxLm4i/black",
-                    "https://lichess.org/IHVDfS1m/black"
+                    "https://lichess.org/IHVDfS1m/black",
+                    "https://lichess.org/7OhOKngU/black",
+                    "https://lichess.org/fTVvOcn1/black"
                 ]
             },
             "new_opponent": {
@@ -5142,12 +5405,16 @@
                     "https://lichess.org/uhy62VM0",
                     "https://lichess.org/hDHxfbbs",
                     "https://lichess.org/VNbcrm1f",
-                    "https://lichess.org/08R5KAmi"
+                    "https://lichess.org/08R5KAmi",
+                    "https://lichess.org/lrqEz4Rn",
+                    "https://lichess.org/38DqTv79",
+                    "https://lichess.org/IkXN7Eae"
                 ]
             },
             "mateWithKnight": {
                 "urls": [
-                    "https://lichess.org/lMkaUM3g"
+                    "https://lichess.org/lMkaUM3g",
+                    "https://lichess.org/38DqTv79"
                 ]
             },
             "mateWithLess": {
@@ -5162,7 +5429,8 @@
                     "https://lichess.org/8Y5L7WIn",
                     "https://lichess.org/SpyjrHxE",
                     "https://lichess.org/NCPw1bQ3/black",
-                    "https://lichess.org/SXf6inLe/black"
+                    "https://lichess.org/SXf6inLe/black",
+                    "https://lichess.org/7OhOKngU/black"
                 ]
             },
             "mateWithQueen": {
@@ -5247,7 +5515,8 @@
                     "https://lichess.org/mCJt9mwV",
                     "https://lichess.org/8on4LPPE/black",
                     "https://lichess.org/bE4l3fYg",
-                    "https://lichess.org/Dp7hSPo2/black"
+                    "https://lichess.org/Dp7hSPo2/black",
+                    "https://lichess.org/38DqTv79"
                 ]
             },
             "mateWithBishop": {
@@ -5376,7 +5645,7 @@
     },
     {
         "username": "msch-tahalp",
-        "timestamp": 1714451896000,
+        "timestamp": 1718625870000,
         "ach": {
             "wonWithWhite": {
                 "urls": [
@@ -5658,7 +5927,29 @@
                     "https://lichess.org/wLXUm1MT",
                     "https://lichess.org/BaBlv1go",
                     "https://lichess.org/dobCWJOA",
-                    "https://lichess.org/I1B1JoLm"
+                    "https://lichess.org/I1B1JoLm",
+                    "https://lichess.org/LOhBYqOo",
+                    "https://lichess.org/ky0A4bkP",
+                    "https://lichess.org/62B8AseN",
+                    "https://lichess.org/ALiSsNU6",
+                    "https://lichess.org/ywhfSwfQ",
+                    "https://lichess.org/wKNRORSO",
+                    "https://lichess.org/6l035Uft",
+                    "https://lichess.org/csU9rPB6",
+                    "https://lichess.org/LE57IWxK",
+                    "https://lichess.org/qfDrn0ay",
+                    "https://lichess.org/XuQK8KAl",
+                    "https://lichess.org/wXPsnRBE",
+                    "https://lichess.org/fpKGyvJN",
+                    "https://lichess.org/7RHC08Ie",
+                    "https://lichess.org/g1g1HLQr",
+                    "https://lichess.org/TdSYwMqL",
+                    "https://lichess.org/NGHWb4Y4",
+                    "https://lichess.org/7tqoq7bI",
+                    "https://lichess.org/N148Rb5y",
+                    "https://lichess.org/2gbid5tb",
+                    "https://lichess.org/zsZjriTA",
+                    "https://lichess.org/0uX7FSps"
                 ]
             },
             "wonVsComputer2": {
@@ -5756,7 +6047,8 @@
                     "https://lichess.org/tIDOA7mA",
                     "https://lichess.org/Ft54iBPI/black",
                     "https://lichess.org/uBDELHDM",
-                    "https://lichess.org/lClAw50q"
+                    "https://lichess.org/lClAw50q",
+                    "https://lichess.org/LOhBYqOo"
                 ]
             },
             "mateWithBishop": {
@@ -5774,7 +6066,10 @@
                     "https://lichess.org/HVAR9HdC",
                     "https://lichess.org/niP98ZRB",
                     "https://lichess.org/C9E3fPoP/black",
-                    "https://lichess.org/bN2TXSUp/black"
+                    "https://lichess.org/bN2TXSUp/black",
+                    "https://lichess.org/N148Rb5y",
+                    "https://lichess.org/2gbid5tb",
+                    "https://lichess.org/zsZjriTA"
                 ]
             },
             "wonVsComputer1": {
@@ -6113,7 +6408,21 @@
                     "https://lichess.org/tdC2aRVv",
                     "https://lichess.org/NTcq6Top",
                     "https://lichess.org/wLXUm1MT",
-                    "https://lichess.org/wT1yiKW6/black"
+                    "https://lichess.org/wT1yiKW6/black",
+                    "https://lichess.org/ky0A4bkP",
+                    "https://lichess.org/62B8AseN",
+                    "https://lichess.org/hnRn0XRi/black",
+                    "https://lichess.org/6l035Uft",
+                    "https://lichess.org/yqS5OSue/black",
+                    "https://lichess.org/LE57IWxK",
+                    "https://lichess.org/XuQK8KAl",
+                    "https://lichess.org/fpKGyvJN",
+                    "https://lichess.org/It1HBW4y/black",
+                    "https://lichess.org/TdSYwMqL",
+                    "https://lichess.org/NGHWb4Y4",
+                    "https://lichess.org/4LrPQlif/black",
+                    "https://lichess.org/7tqoq7bI",
+                    "https://lichess.org/0uX7FSps"
                 ]
             },
             "mateOnBackRank": {
@@ -6158,7 +6467,11 @@
                     "https://lichess.org/bxyhtLDl",
                     "https://lichess.org/8M9Ollnh/black",
                     "https://lichess.org/TLYj7tJL/black",
-                    "https://lichess.org/2DRkmVDW/black"
+                    "https://lichess.org/2DRkmVDW/black",
+                    "https://lichess.org/62B8AseN",
+                    "https://lichess.org/6l035Uft",
+                    "https://lichess.org/TdSYwMqL",
+                    "https://lichess.org/7tqoq7bI"
                 ]
             },
             "wonVsComputer3": {
@@ -6175,7 +6488,11 @@
                     "https://lichess.org/5sBX5DSg",
                     "https://lichess.org/fX76bHzF",
                     "https://lichess.org/FY5X4nwa",
-                    "https://lichess.org/wLXUm1MT"
+                    "https://lichess.org/wLXUm1MT",
+                    "https://lichess.org/ky0A4bkP",
+                    "https://lichess.org/2gbid5tb",
+                    "https://lichess.org/zsZjriTA",
+                    "https://lichess.org/0uX7FSps"
                 ]
             },
             "mateWithRook": {
@@ -6259,7 +6576,12 @@
                     "https://lichess.org/TG5ZNeCV/black",
                     "https://lichess.org/8M9Ollnh/black",
                     "https://lichess.org/LReHywaX/black",
-                    "https://lichess.org/2DRkmVDW/black"
+                    "https://lichess.org/2DRkmVDW/black",
+                    "https://lichess.org/LOhBYqOo",
+                    "https://lichess.org/ywhfSwfQ",
+                    "https://lichess.org/csU9rPB6",
+                    "https://lichess.org/7RHC08Ie",
+                    "https://lichess.org/g1g1HLQr"
                 ]
             },
             "secondQueen": {
@@ -6317,7 +6639,10 @@
                     "https://lichess.org/HxK23ABH/black",
                     "https://lichess.org/VQdprBHV",
                     "https://lichess.org/lcH2LcXc",
-                    "https://lichess.org/VelPc1iP"
+                    "https://lichess.org/VelPc1iP",
+                    "https://lichess.org/ky0A4bkP",
+                    "https://lichess.org/LE57IWxK",
+                    "https://lichess.org/fpKGyvJN"
                 ]
             },
             "new_opponent": {
@@ -6335,7 +6660,9 @@
                     "https://lichess.org/EciwHkRH/black",
                     "https://lichess.org/JRIDgSEV",
                     "https://lichess.org/5OqySDwv",
-                    "https://lichess.org/Va0jaZnl/black"
+                    "https://lichess.org/Va0jaZnl/black",
+                    "https://lichess.org/4Gv5kVSh/black",
+                    "https://lichess.org/NGHWb4Y4"
                 ]
             },
             "drawWithKing": {
@@ -6356,7 +6683,8 @@
                     "https://lichess.org/xuMKdF18",
                     "https://lichess.org/qs5CX0sw/black",
                     "https://lichess.org/pS0IN8RV/black",
-                    "https://lichess.org/H54kpUtb"
+                    "https://lichess.org/H54kpUtb",
+                    "https://lichess.org/LAPda21y/black"
                 ]
             },
             "small_underdog": {
@@ -6418,7 +6746,9 @@
                     "https://lichess.org/IbduFDnY",
                     "https://lichess.org/CwwVawYy",
                     "https://lichess.org/VFC1jqDd",
-                    "https://lichess.org/CsjCL46o"
+                    "https://lichess.org/CsjCL46o",
+                    "https://lichess.org/fpKGyvJN",
+                    "https://lichess.org/TdSYwMqL"
                 ]
             },
             "wonWithBlack": {
@@ -6626,7 +6956,19 @@
                     "https://lichess.org/wT1yiKW6/black",
                     "https://lichess.org/vfVvtFfY/black",
                     "https://lichess.org/O1a2cCHw/black",
-                    "https://lichess.org/LRdJTzs3/black"
+                    "https://lichess.org/LRdJTzs3/black",
+                    "https://lichess.org/hnRn0XRi/black",
+                    "https://lichess.org/MwJDA6jh/black",
+                    "https://lichess.org/yqS5OSue/black",
+                    "https://lichess.org/YNHD1sHx/black",
+                    "https://lichess.org/BfgbdKuT/black",
+                    "https://lichess.org/It1HBW4y/black",
+                    "https://lichess.org/CqVJwOB5/black",
+                    "https://lichess.org/g5Whmsew/black",
+                    "https://lichess.org/4Gv5kVSh/black",
+                    "https://lichess.org/4LrPQlif/black",
+                    "https://lichess.org/0GuCrAXn/black",
+                    "https://lichess.org/rU1GRLKb/black"
                 ]
             },
             "spellAffe": {
@@ -6702,14 +7044,20 @@
                     "https://lichess.org/OJPQEzeW",
                     "https://lichess.org/9ti64hlE/black",
                     "https://lichess.org/2cYmPg29",
-                    "https://lichess.org/o4FESRUT"
+                    "https://lichess.org/o4FESRUT",
+                    "https://lichess.org/62B8AseN",
+                    "https://lichess.org/LE57IWxK",
+                    "https://lichess.org/N148Rb5y",
+                    "https://lichess.org/2gbid5tb",
+                    "https://lichess.org/zsZjriTA"
                 ]
             },
             "basicPawnEndgame1": {
                 "urls": [
                     "https://lichess.org/bHSCERFE",
                     "https://lichess.org/7SUyV4dy",
-                    "https://lichess.org/rKU8UZ84"
+                    "https://lichess.org/rKU8UZ84",
+                    "https://lichess.org/t80rSCZ3"
                 ]
             },
             "onlyPawnMoves": {
@@ -6737,7 +7085,11 @@
                     "https://lichess.org/3spXMQHt",
                     "https://lichess.org/LWgN9yND",
                     "https://lichess.org/HOwyIGEA/black",
-                    "https://lichess.org/fs1QiLDI/black"
+                    "https://lichess.org/fs1QiLDI/black",
+                    "https://lichess.org/4LrPQlif/black",
+                    "https://lichess.org/N148Rb5y",
+                    "https://lichess.org/2gbid5tb",
+                    "https://lichess.org/zsZjriTA"
                 ]
             },
             "mateWithLess": {
@@ -6757,7 +7109,11 @@
                     "https://lichess.org/9ti64hlE/black",
                     "https://lichess.org/2cYmPg29",
                     "https://lichess.org/o4FESRUT",
-                    "https://lichess.org/9sdaJL5z/black"
+                    "https://lichess.org/9sdaJL5z/black",
+                    "https://lichess.org/62B8AseN",
+                    "https://lichess.org/N148Rb5y",
+                    "https://lichess.org/2gbid5tb",
+                    "https://lichess.org/zsZjriTA"
                 ]
             },
             "mateWithPawn": {
@@ -6786,7 +7142,8 @@
                     "https://lichess.org/tgXRDwGB",
                     "https://lichess.org/x33WAl4d",
                     "https://lichess.org/VelPc1iP",
-                    "https://lichess.org/lClAw50q"
+                    "https://lichess.org/lClAw50q",
+                    "https://lichess.org/fpKGyvJN"
                 ]
             },
             "mateWithKnight": {
@@ -6823,7 +7180,12 @@
             },
             "wonVsComputer8NoQueen": {
                 "urls": [
-                    "https://lichess.org/PS7atctu"
+                    "https://lichess.org/PS7atctu",
+                    "https://lichess.org/oTQyYfqj",
+                    "https://lichess.org/k1iXTNBg",
+                    "https://lichess.org/uD6VJxlE",
+                    "https://lichess.org/cUlsXHN9",
+                    "https://lichess.org/56ifm7ni"
                 ]
             },
             "mattStattPatt1": {
@@ -6910,7 +7272,10 @@
                     "https://lichess.org/DKpFoTbx",
                     "https://lichess.org/h9NXPJZN",
                     "https://lichess.org/KTt29YDS",
-                    "https://lichess.org/hlqHQJeo"
+                    "https://lichess.org/hlqHQJeo",
+                    "https://lichess.org/ky0A4bkP",
+                    "https://lichess.org/BfgbdKuT/black",
+                    "https://lichess.org/CqVJwOB5/black"
                 ]
             },
             "mateWithKing": {
@@ -6981,12 +7346,18 @@
                     "https://lichess.org/2r25yVEE/black",
                     "https://lichess.org/avBSMQBZ/black",
                     "https://lichess.org/7Bh9vvsN/black",
-                    "https://lichess.org/K8W4FbXZ/black"
+                    "https://lichess.org/K8W4FbXZ/black",
+                    "https://lichess.org/MwJDA6jh/black"
                 ]
             },
             "castleWithCheck": {
                 "urls": [
                     "https://lichess.org/lClAw50q"
+                ]
+            },
+            "wonVsComputer4": {
+                "urls": [
+                    "https://lichess.org/N148Rb5y"
                 ]
             }
         },
@@ -7004,12 +7375,14 @@
             "msch-raphef",
             "msch-leakol",
             "msch-emilyjov",
-            "misch-andhof"
+            "misch-andhof",
+            "esmkar",
+            "msch-salalk"
         ]
     },
     {
         "username": "msch-turgue",
-        "timestamp": 1714451816000,
+        "timestamp": 1718625539000,
         "ach": {
             "wonWithWhite": {
                 "urls": [
@@ -7060,7 +7433,8 @@
                     "https://lichess.org/IWkd6Szy/black",
                     "https://lichess.org/Ch2KOZf4/black",
                     "https://lichess.org/EkdCvbFb/black",
-                    "https://lichess.org/cC3yAAdw/black"
+                    "https://lichess.org/cC3yAAdw/black",
+                    "https://lichess.org/63bwsP0p/black"
                 ]
             },
             "mateWithRook": {
@@ -7173,7 +7547,7 @@
     },
     {
         "username": "msch-yahyue",
-        "timestamp": 1714451818000,
+        "timestamp": 1718625540000,
         "ach": {
             "mattStattPatt2": {
                 "urls": [
@@ -7200,18 +7574,22 @@
     },
     {
         "username": "msch-salalk",
-        "timestamp": 1714451821000,
+        "timestamp": 1718625543000,
         "ach": {
             "mattStattPatt1": {
                 "urls": [
-                    "https://lichess.org/W4sJYNWm"
+                    "https://lichess.org/W4sJYNWm",
+                    "https://lichess.org/Wt37jEOb"
                 ]
             },
             "wonWithBlack": {
                 "urls": [
                     "https://lichess.org/KDSyXSM7/black",
                     "https://lichess.org/YdsyhCqZ/black",
-                    "https://lichess.org/GZlwFdOd/black"
+                    "https://lichess.org/GZlwFdOd/black",
+                    "https://lichess.org/nM9cHBTC/black",
+                    "https://lichess.org/HVBoAyH8/black",
+                    "https://lichess.org/axe1X7Cb/black"
                 ]
             },
             "wonVsComputer2": {
@@ -7222,7 +7600,8 @@
             "mateWithRook": {
                 "urls": [
                     "https://lichess.org/KDSyXSM7/black",
-                    "https://lichess.org/GZlwFdOd/black"
+                    "https://lichess.org/GZlwFdOd/black",
+                    "https://lichess.org/nM9cHBTC/black"
                 ]
             },
             "mattStattPatt6": {
@@ -7259,32 +7638,69 @@
             "mateWithQueen": {
                 "urls": [
                     "https://lichess.org/YdsyhCqZ/black",
-                    "https://lichess.org/0gS7AXkU"
+                    "https://lichess.org/0gS7AXkU",
+                    "https://lichess.org/4Zxwceyp",
+                    "https://lichess.org/OBDeSCZ4",
+                    "https://lichess.org/HVBoAyH8/black",
+                    "https://lichess.org/axe1X7Cb/black"
                 ]
             },
             "mateWithPawn": {
                 "urls": [
-                    "https://lichess.org/YdsyhCqZ/black"
+                    "https://lichess.org/YdsyhCqZ/black",
+                    "https://lichess.org/axe1X7Cb/black"
                 ]
             },
             "wonWithWhite": {
                 "urls": [
-                    "https://lichess.org/0gS7AXkU"
+                    "https://lichess.org/0gS7AXkU",
+                    "https://lichess.org/4Zxwceyp",
+                    "https://lichess.org/OBDeSCZ4"
                 ]
             },
             "wonVsComputer1": {
                 "urls": [
                     "https://lichess.org/0gS7AXkU",
-                    "https://lichess.org/GZlwFdOd/black"
+                    "https://lichess.org/GZlwFdOd/black",
+                    "https://lichess.org/4Zxwceyp",
+                    "https://lichess.org/nM9cHBTC/black",
+                    "https://lichess.org/HVBoAyH8/black",
+                    "https://lichess.org/axe1X7Cb/black"
                 ]
             },
             "mateAfterCapture": {
                 "urls": [
                     "https://lichess.org/0gS7AXkU"
                 ]
+            },
+            "new_opponent": {
+                "urls": [
+                    "https://lichess.org/t5yvVeco",
+                    "https://lichess.org/6StdAg46/black",
+                    "https://lichess.org/NGHWb4Y4/black"
+                ]
+            },
+            "mateOnBackRank": {
+                "urls": [
+                    "https://lichess.org/OBDeSCZ4"
+                ]
+            },
+            "secondQueen": {
+                "urls": [
+                    "https://lichess.org/axe1X7Cb/black"
+                ]
+            },
+            "underpromote": {
+                "urls": [
+                    "https://lichess.org/axe1X7Cb/black"
+                ]
             }
         },
-        "unique": []
+        "unique": [
+            "lehrerb",
+            "msch-raphef",
+            "msch-tahalp"
+        ]
     },
     {
         "username": "msch-amegep",
@@ -8726,7 +9142,7 @@
     },
     {
         "username": "HatArs",
-        "timestamp": 1714451930000,
+        "timestamp": 1718625898000,
         "ach": {
             "wonWithBlack": {
                 "urls": [
@@ -8896,7 +9312,7 @@
     },
     {
         "username": "Ninaum",
-        "timestamp": 1707506026000,
+        "timestamp": 1718625763000,
         "ach": {
             "new_opponent": {
                 "urls": [
@@ -8934,6 +9350,33 @@
                     "https://lichess.org/4ppgoAdA",
                     "https://lichess.org/JLoZu68O"
                 ]
+            },
+            "wonWithBlack": {
+                "urls": [
+                    "https://lichess.org/6YAYqbm6/black",
+                    "https://lichess.org/F7CnztXc/black"
+                ]
+            },
+            "wonVsComputer1": {
+                "urls": [
+                    "https://lichess.org/6YAYqbm6/black",
+                    "https://lichess.org/F7CnztXc/black"
+                ]
+            },
+            "textbookOpening": {
+                "urls": [
+                    "https://lichess.org/6YAYqbm6/black"
+                ]
+            },
+            "mateWithRook": {
+                "urls": [
+                    "https://lichess.org/6YAYqbm6/black"
+                ]
+            },
+            "mateWithQueen": {
+                "urls": [
+                    "https://lichess.org/F7CnztXc/black"
+                ]
             }
         },
         "unique": [
@@ -8942,7 +9385,7 @@
     },
     {
         "username": "Riri_theCat",
-        "timestamp": 1707505822000,
+        "timestamp": 1718626056000,
         "ach": {
             "new_opponent": {
                 "urls": [
@@ -9010,7 +9453,7 @@
     },
     {
         "username": "J2by",
-        "timestamp": 1714451915000,
+        "timestamp": 1718625884000,
         "ach": {
             "wonWithBlack": {
                 "urls": [
@@ -9075,7 +9518,7 @@
     },
     {
         "username": "msch-abuele",
-        "timestamp": 1714451916000,
+        "timestamp": 1718625885000,
         "ach": {
             "new_opponent": {
                 "urls": [
@@ -9233,7 +9676,7 @@
     },
     {
         "username": "msch-cankar",
-        "timestamp": 1714451917000,
+        "timestamp": 1718625886000,
         "ach": {
             "new_opponent": {
                 "urls": [
@@ -9444,7 +9887,7 @@
     },
     {
         "username": "msch-emijov",
-        "timestamp": 1714451923000,
+        "timestamp": 1718625891000,
         "ach": {
             "mattStattPatt6": {
                 "urls": [
@@ -10180,7 +10623,7 @@
     },
     {
         "username": "msch-salsar",
-        "timestamp": 1714451917000,
+        "timestamp": 1718625886000,
         "ach": {
             "wonWithBlack": {
                 "urls": [
@@ -10430,7 +10873,7 @@
     },
     {
         "username": "msch-barsah",
-        "timestamp": 1707505689000,
+        "timestamp": 1718626019000,
         "ach": {
             "mattStattPatt5": {
                 "urls": [
@@ -10463,7 +10906,9 @@
                     "https://lichess.org/JONbPyJN",
                     "https://lichess.org/qDdaRrYy",
                     "https://lichess.org/CE8ykyvW",
-                    "https://lichess.org/kjEJhsMF"
+                    "https://lichess.org/kjEJhsMF",
+                    "https://lichess.org/3K8n2YT9",
+                    "https://lichess.org/HLjdUTh7"
                 ]
             },
             "wonVsComputer1": {
@@ -10490,7 +10935,8 @@
                     "https://lichess.org/SLM0u6R9/black",
                     "https://lichess.org/qDdaRrYy",
                     "https://lichess.org/ywKrlhUL/black",
-                    "https://lichess.org/CE8ykyvW"
+                    "https://lichess.org/CE8ykyvW",
+                    "https://lichess.org/hTp1BJLE/black"
                 ]
             },
             "secondQueen": {
@@ -10505,7 +10951,10 @@
             },
             "battlefield": {
                 "urls": [
-                    "https://lichess.org/4haoCBbb"
+                    "https://lichess.org/4haoCBbb",
+                    "https://lichess.org/mmbfEXWn",
+                    "https://lichess.org/fBOKhaRc/black",
+                    "https://lichess.org/hDBYIDKl"
                 ]
             },
             "wonWithBlack": {
@@ -10521,13 +10970,17 @@
                     "https://lichess.org/I1l0AKRd/black",
                     "https://lichess.org/usSKQmKW/black",
                     "https://lichess.org/6KbDeHot/black",
-                    "https://lichess.org/f3TGOzSK/black"
+                    "https://lichess.org/f3TGOzSK/black",
+                    "https://lichess.org/hTp1BJLE/black"
                 ]
             },
             "peacefulmode": {
                 "urls": [
                     "https://lichess.org/4Wao6j4V",
-                    "https://lichess.org/f3TGOzSK/black"
+                    "https://lichess.org/f3TGOzSK/black",
+                    "https://lichess.org/F31TcjhL/black",
+                    "https://lichess.org/jBty1I9O/black",
+                    "https://lichess.org/mmbfEXWn"
                 ]
             },
             "mateWithRook": {
@@ -10609,7 +11062,7 @@
     },
     {
         "username": "msch-celfeu",
-        "timestamp": 1707505691000,
+        "timestamp": 1718626019000,
         "ach": {
             "mattStattPatt6": {
                 "urls": [
@@ -10700,7 +11153,7 @@
     },
     {
         "username": "msch-celrua",
-        "timestamp": 1707505696000,
+        "timestamp": 1718626019000,
         "ach": {
             "mattStattPatt6": {
                 "urls": [
@@ -10807,7 +11260,7 @@
     },
     {
         "username": "msch-davcel",
-        "timestamp": 1707505701000,
+        "timestamp": 1718626021000,
         "ach": {
             "mattStattPatt5": {
                 "urls": [
@@ -10883,13 +11336,22 @@
             "mattStattPatt3": {
                 "urls": [
                     "https://lichess.org/CmsHlO0m",
-                    "https://lichess.org/AoFj5kVb"
+                    "https://lichess.org/AoFj5kVb",
+                    "https://lichess.org/0EbYf5Yd"
                 ]
             },
             "mattStattPatt1": {
                 "urls": [
                     "https://lichess.org/E7XOwLSY",
-                    "https://lichess.org/OkBjq6JM"
+                    "https://lichess.org/OkBjq6JM",
+                    "https://lichess.org/1US08FH3",
+                    "https://lichess.org/6Qy6b3rB",
+                    "https://lichess.org/skPRkzXD",
+                    "https://lichess.org/qFMbzeHg",
+                    "https://lichess.org/6hfdqpND",
+                    "https://lichess.org/lJS8Zd0Y",
+                    "https://lichess.org/v9zZzzCK",
+                    "https://lichess.org/0INIe9Bu"
                 ]
             },
             "mateOnBackRank": {
@@ -10927,7 +11389,11 @@
             },
             "mattStattPatt2": {
                 "urls": [
-                    "https://lichess.org/fpJ5N83M"
+                    "https://lichess.org/fpJ5N83M",
+                    "https://lichess.org/7CpXx0wf",
+                    "https://lichess.org/0ib4zxWX",
+                    "https://lichess.org/hvUOqHhu",
+                    "https://lichess.org/cNqNI2ct"
                 ]
             },
             "battlefield": {
@@ -10948,7 +11414,7 @@
     },
     {
         "username": "msch-eflbar",
-        "timestamp": 1707505706000,
+        "timestamp": 1718626025000,
         "ach": {
             "mattStattPatt6": {
                 "urls": [
@@ -11083,7 +11549,7 @@
     },
     {
         "username": "msch-eligue",
-        "timestamp": 1707505708000,
+        "timestamp": 1718626026000,
         "ach": {
             "mattStattPatt6": {
                 "urls": [
@@ -11207,7 +11673,7 @@
     },
     {
         "username": "msch-elikar",
-        "timestamp": 1707505713000,
+        "timestamp": 1718626027000,
         "ach": {
             "mattStattPatt6": {
                 "urls": [
@@ -11227,7 +11693,8 @@
                     "https://lichess.org/TsqJoNgT",
                     "https://lichess.org/d6N7ICD1",
                     "https://lichess.org/ILFVfeIK/black",
-                    "https://lichess.org/xVwQpTK5/black"
+                    "https://lichess.org/xVwQpTK5/black",
+                    "https://lichess.org/PXt41Xkc/black"
                 ]
             },
             "wonWithBlack": {
@@ -11236,7 +11703,8 @@
                     "https://lichess.org/NYwEkoru/black",
                     "https://lichess.org/LFuLvgeE/black",
                     "https://lichess.org/UdUXclcs/black",
-                    "https://lichess.org/ILFVfeIK/black"
+                    "https://lichess.org/ILFVfeIK/black",
+                    "https://lichess.org/PXt41Xkc/black"
                 ]
             },
             "mateWithQueen": {
@@ -11312,12 +11780,13 @@
             "misch-andhof",
             "msch-eflbar",
             "msch-eligue",
-            "msch-zankaj"
+            "msch-zankaj",
+            "msch-enebal"
         ]
     },
     {
         "username": "msch-enebal",
-        "timestamp": 1707505717000,
+        "timestamp": 1718626028000,
         "ach": {
             "new_opponent": {
                 "urls": [
@@ -11328,7 +11797,8 @@
                     "https://lichess.org/o2bnyNw2/black",
                     "https://lichess.org/XGOvfpCN",
                     "https://lichess.org/onyzi7Oj",
-                    "https://lichess.org/MOGLDWpt"
+                    "https://lichess.org/MOGLDWpt",
+                    "https://lichess.org/PXt41Xkc"
                 ]
             },
             "mattStattPatt4": {
@@ -11354,7 +11824,10 @@
             "wonWithWhite": {
                 "urls": [
                     "https://lichess.org/60APbRtf",
-                    "https://lichess.org/GwWOVvpa"
+                    "https://lichess.org/GwWOVvpa",
+                    "https://lichess.org/4zzHATjp",
+                    "https://lichess.org/iJJAvHFw",
+                    "https://lichess.org/qOu9Zu73"
                 ]
             },
             "mateWithRook": {
@@ -11373,7 +11846,9 @@
                     "https://lichess.org/LyESp2n1",
                     "https://lichess.org/BvBjPxUi/black",
                     "https://lichess.org/o2bnyNw2/black",
-                    "https://lichess.org/c4wAIJcS"
+                    "https://lichess.org/c4wAIJcS",
+                    "https://lichess.org/xaHlgbmq/black",
+                    "https://lichess.org/NqXzXLaa"
                 ]
             },
             "wonWithBlack": {
@@ -11383,12 +11858,40 @@
             },
             "mateWithQueen": {
                 "urls": [
-                    "https://lichess.org/QsoURUKa/black"
+                    "https://lichess.org/QsoURUKa/black",
+                    "https://lichess.org/4zzHATjp",
+                    "https://lichess.org/iJJAvHFw",
+                    "https://lichess.org/qOu9Zu73"
                 ]
             },
             "small_underdog": {
                 "urls": [
                     "https://lichess.org/QsoURUKa/black"
+                ]
+            },
+            "wonVsComputer1": {
+                "urls": [
+                    "https://lichess.org/4zzHATjp",
+                    "https://lichess.org/iJJAvHFw",
+                    "https://lichess.org/qOu9Zu73"
+                ]
+            },
+            "mateWithPawn": {
+                "urls": [
+                    "https://lichess.org/4zzHATjp",
+                    "https://lichess.org/iJJAvHFw"
+                ]
+            },
+            "secondQueen": {
+                "urls": [
+                    "https://lichess.org/4zzHATjp",
+                    "https://lichess.org/iJJAvHFw",
+                    "https://lichess.org/qOu9Zu73"
+                ]
+            },
+            "battlefield": {
+                "urls": [
+                    "https://lichess.org/qOu9Zu73"
                 ]
             }
         },
@@ -11400,12 +11903,13 @@
             "msch-stemio",
             "msch-kaakal",
             "msch-mahals",
-            "msch-ibrjus"
+            "msch-ibrjus",
+            "msch-elikar"
         ]
     },
     {
         "username": "msch-fabhog",
-        "timestamp": 1707505721000,
+        "timestamp": 1718626033000,
         "ach": {
             "new_opponent": {
                 "urls": [
@@ -11418,7 +11922,9 @@
                     "https://lichess.org/ZKcQ0lEe/black",
                     "https://lichess.org/Ou2CZcvE/black",
                     "https://lichess.org/lsCpbeVm/black",
-                    "https://lichess.org/d5adByWp/black"
+                    "https://lichess.org/d5adByWp/black",
+                    "https://lichess.org/TFbbWW7b/black",
+                    "https://lichess.org/ltWHOfk2/black"
                 ]
             },
             "wonVsComputer1": {
@@ -11428,7 +11934,10 @@
                     "https://lichess.org/lsCpbeVm/black",
                     "https://lichess.org/d5adByWp/black",
                     "https://lichess.org/f7Odr6iv",
-                    "https://lichess.org/dFzoX1mg"
+                    "https://lichess.org/dFzoX1mg",
+                    "https://lichess.org/TFbbWW7b/black",
+                    "https://lichess.org/5lay72LP",
+                    "https://lichess.org/ltWHOfk2/black"
                 ]
             },
             "textbookOpening": {
@@ -11441,13 +11950,16 @@
                     "https://lichess.org/ZKcQ0lEe/black",
                     "https://lichess.org/Ou2CZcvE/black",
                     "https://lichess.org/f7Odr6iv",
-                    "https://lichess.org/dFzoX1mg"
+                    "https://lichess.org/dFzoX1mg",
+                    "https://lichess.org/ltWHOfk2/black"
                 ]
             },
             "mateWithRook": {
                 "urls": [
                     "https://lichess.org/lsCpbeVm/black",
-                    "https://lichess.org/jVWGeStW"
+                    "https://lichess.org/jVWGeStW",
+                    "https://lichess.org/TFbbWW7b/black",
+                    "https://lichess.org/5lay72LP"
                 ]
             },
             "mateWithPawn": {
@@ -11467,7 +11979,8 @@
                 "urls": [
                     "https://lichess.org/jVWGeStW",
                     "https://lichess.org/f7Odr6iv",
-                    "https://lichess.org/dFzoX1mg"
+                    "https://lichess.org/dFzoX1mg",
+                    "https://lichess.org/5lay72LP"
                 ]
             },
             "wonVsComputer2": {
@@ -11521,7 +12034,7 @@
     },
     {
         "username": "msch-hamkud",
-        "timestamp": 1707505723000,
+        "timestamp": 1718626034000,
         "ach": {
             "mattStattPatt6": {
                 "urls": [
@@ -11543,7 +12056,9 @@
                     "https://lichess.org/ymtrCGYB/black",
                     "https://lichess.org/9ZuB92KV/black",
                     "https://lichess.org/9YEQsHVE/black",
-                    "https://lichess.org/r76LwgAh/black"
+                    "https://lichess.org/r76LwgAh/black",
+                    "https://lichess.org/4oyAU3Bd",
+                    "https://lichess.org/8ztaIODq"
                 ]
             },
             "wonWithBlack": {
@@ -11559,7 +12074,8 @@
             },
             "wonWithWhite": {
                 "urls": [
-                    "https://lichess.org/zyIoyTxd"
+                    "https://lichess.org/zyIoyTxd",
+                    "https://lichess.org/Nq2IkznS"
                 ]
             },
             "mattStattPatt2": {
@@ -11577,12 +12093,14 @@
             "msch-barsah",
             "msch-enebal",
             "msch-eflbar",
-            "msch-stemio"
+            "msch-stemio",
+            "msch-kaakal",
+            "misch-andhof"
         ]
     },
     {
         "username": "msch-ibrjus",
-        "timestamp": 1707505737000,
+        "timestamp": 1718626035000,
         "ach": {
             "mattStattPatt6": {
                 "urls": [
@@ -11625,13 +12143,20 @@
                     "https://lichess.org/naFT1orN/black",
                     "https://lichess.org/Ut0nH7BL/black",
                     "https://lichess.org/OEpFFSMN/black",
-                    "https://lichess.org/MOGLDWpt/black"
+                    "https://lichess.org/MOGLDWpt/black",
+                    "https://lichess.org/sFpRdjMe/black",
+                    "https://lichess.org/gZHmcFPe/black",
+                    "https://lichess.org/KVkRFABa/black",
+                    "https://lichess.org/3fqIJRGJ/black",
+                    "https://lichess.org/qV5xgO1r/black"
                 ]
             },
             "wonVsComputer1": {
                 "urls": [
                     "https://lichess.org/TX9xb1Kn/black",
-                    "https://lichess.org/gCNrhXNM/black"
+                    "https://lichess.org/gCNrhXNM/black",
+                    "https://lichess.org/sFpRdjMe/black",
+                    "https://lichess.org/3fqIJRGJ/black"
                 ]
             },
             "mateWithRook": {
@@ -11643,7 +12168,9 @@
                     "https://lichess.org/XIwQ29Qk/black",
                     "https://lichess.org/R02BFfGg",
                     "https://lichess.org/PjRPgGR1",
-                    "https://lichess.org/08W3FfsG"
+                    "https://lichess.org/08W3FfsG",
+                    "https://lichess.org/KVkRFABa/black",
+                    "https://lichess.org/3fqIJRGJ/black"
                 ]
             },
             "wonWithWhite": {
@@ -11665,7 +12192,8 @@
                     "https://lichess.org/oHplOf2Y",
                     "https://lichess.org/oW35CJDn",
                     "https://lichess.org/ZTHJlWQD",
-                    "https://lichess.org/GWHDBK7u"
+                    "https://lichess.org/GWHDBK7u",
+                    "https://lichess.org/d3ge7QJI"
                 ]
             },
             "onlyPawnMoves": {
@@ -11674,7 +12202,8 @@
                     "https://lichess.org/s7E0anAf",
                     "https://lichess.org/pGHTrLqw/black",
                     "https://lichess.org/PjRPgGR1",
-                    "https://lichess.org/Ut0nH7BL/black"
+                    "https://lichess.org/Ut0nH7BL/black",
+                    "https://lichess.org/d3ge7QJI"
                 ]
             },
             "mateWithQueen": {
@@ -11694,7 +12223,9 @@
                     "https://lichess.org/naFT1orN/black",
                     "https://lichess.org/ClcqIfqc",
                     "https://lichess.org/oW35CJDn",
-                    "https://lichess.org/MOGLDWpt/black"
+                    "https://lichess.org/MOGLDWpt/black",
+                    "https://lichess.org/sFpRdjMe/black",
+                    "https://lichess.org/gZHmcFPe/black"
                 ]
             },
             "mattStattPatt4": {
@@ -11722,7 +12253,8 @@
                 "urls": [
                     "https://lichess.org/s7E0anAf",
                     "https://lichess.org/LXfcxqzH",
-                    "https://lichess.org/naFT1orN/black"
+                    "https://lichess.org/naFT1orN/black",
+                    "https://lichess.org/d3ge7QJI"
                 ]
             },
             "mateAfterCapture": {
@@ -11741,7 +12273,8 @@
             },
             "wonVsComputer2": {
                 "urls": [
-                    "https://lichess.org/oZnurxAm/black"
+                    "https://lichess.org/oZnurxAm/black",
+                    "https://lichess.org/KVkRFABa/black"
                 ]
             },
             "mateWithBishop": {
@@ -11763,7 +12296,8 @@
             "secondQueen": {
                 "urls": [
                     "https://lichess.org/CtB6yJuX",
-                    "https://lichess.org/ClcqIfqc"
+                    "https://lichess.org/ClcqIfqc",
+                    "https://lichess.org/sFpRdjMe/black"
                 ]
             },
             "mateOnBackRank": {
@@ -11779,7 +12313,8 @@
             },
             "mateWithPawn": {
                 "urls": [
-                    "https://lichess.org/08W3FfsG"
+                    "https://lichess.org/08W3FfsG",
+                    "https://lichess.org/sFpRdjMe/black"
                 ]
             },
             "underpromote": {
@@ -11808,7 +12343,7 @@
     },
     {
         "username": "msch-igrbue",
-        "timestamp": 1707505740000,
+        "timestamp": 1718626035000,
         "ach": {
             "mattStattPatt6": {
                 "urls": [
@@ -11935,7 +12470,7 @@
     },
     {
         "username": "msch-jakhal",
-        "timestamp": 1707505754000,
+        "timestamp": 1718626045000,
         "ach": {
             "mattStattPatt5": {
                 "urls": [
@@ -12007,7 +12542,30 @@
                     "https://lichess.org/EEau7cz8/black",
                     "https://lichess.org/zSt3suwL/black",
                     "https://lichess.org/coiutNw2/black",
-                    "https://lichess.org/h7AgxbJX/black"
+                    "https://lichess.org/h7AgxbJX/black",
+                    "https://lichess.org/y1lAYQdT/black",
+                    "https://lichess.org/oSNOPCpL/black",
+                    "https://lichess.org/w7DU2Pco/black",
+                    "https://lichess.org/EzIdyHW4/black",
+                    "https://lichess.org/iYMsaKVP/black",
+                    "https://lichess.org/obftghXv/black",
+                    "https://lichess.org/XA5SUDkX/black",
+                    "https://lichess.org/1sUvDlBZ/black",
+                    "https://lichess.org/HdiHJY3O/black",
+                    "https://lichess.org/Zwlcboov/black",
+                    "https://lichess.org/SQUv3wIJ/black",
+                    "https://lichess.org/E4yN8pWr/black",
+                    "https://lichess.org/3OUy1eMq/black",
+                    "https://lichess.org/twFq0NOW/black",
+                    "https://lichess.org/0eqSJ1jO/black",
+                    "https://lichess.org/iiG9Mn5o/black",
+                    "https://lichess.org/GpyMWPL5/black",
+                    "https://lichess.org/eeoYrqLz/black",
+                    "https://lichess.org/ZdDEfkBe/black",
+                    "https://lichess.org/oVY4h7nn/black",
+                    "https://lichess.org/HV5ghbtk/black",
+                    "https://lichess.org/FLbwbDIJ/black",
+                    "https://lichess.org/AbJhgRiZ/black"
                 ]
             },
             "onlyPawnMoves": {
@@ -12020,7 +12578,36 @@
                     "https://lichess.org/bDeYPI9I",
                     "https://lichess.org/2ut4aE8s/black",
                     "https://lichess.org/rrFU8hfw",
-                    "https://lichess.org/r2v3epSk/black"
+                    "https://lichess.org/r2v3epSk/black",
+                    "https://lichess.org/oSNOPCpL/black",
+                    "https://lichess.org/w7DU2Pco/black",
+                    "https://lichess.org/BQ2A8fQN",
+                    "https://lichess.org/EzIdyHW4/black",
+                    "https://lichess.org/ylbQbzvv",
+                    "https://lichess.org/GQa5Y0nk",
+                    "https://lichess.org/1sUvDlBZ/black",
+                    "https://lichess.org/e4FAJyv7",
+                    "https://lichess.org/HdiHJY3O/black",
+                    "https://lichess.org/FFnA2naU",
+                    "https://lichess.org/Zwlcboov/black",
+                    "https://lichess.org/oyieU5oc",
+                    "https://lichess.org/SQUv3wIJ/black",
+                    "https://lichess.org/E4yN8pWr/black",
+                    "https://lichess.org/3OUy1eMq/black",
+                    "https://lichess.org/VyZbJTiH",
+                    "https://lichess.org/twFq0NOW/black",
+                    "https://lichess.org/T0aInbWO",
+                    "https://lichess.org/QRig5yyD",
+                    "https://lichess.org/iiG9Mn5o/black",
+                    "https://lichess.org/WIs5zWjq",
+                    "https://lichess.org/GpyMWPL5/black",
+                    "https://lichess.org/eeoYrqLz/black",
+                    "https://lichess.org/oVY4h7nn/black",
+                    "https://lichess.org/kMfdYuuD",
+                    "https://lichess.org/HV5ghbtk/black",
+                    "https://lichess.org/ugYGVb89",
+                    "https://lichess.org/FLbwbDIJ/black",
+                    "https://lichess.org/AF4I2SXA"
                 ]
             },
             "wonWithWhite": {
@@ -12077,7 +12664,24 @@
                     "https://lichess.org/6IsGTB5h",
                     "https://lichess.org/RZZHKi4Z",
                     "https://lichess.org/UzdFtWfY",
-                    "https://lichess.org/pXWFT5Yw"
+                    "https://lichess.org/pXWFT5Yw",
+                    "https://lichess.org/BQ2A8fQN",
+                    "https://lichess.org/bKXiEJ0c",
+                    "https://lichess.org/ylbQbzvv",
+                    "https://lichess.org/GQa5Y0nk",
+                    "https://lichess.org/e4FAJyv7",
+                    "https://lichess.org/FFnA2naU",
+                    "https://lichess.org/oyieU5oc",
+                    "https://lichess.org/NWPkPqfR",
+                    "https://lichess.org/VyZbJTiH",
+                    "https://lichess.org/T0aInbWO",
+                    "https://lichess.org/QRig5yyD",
+                    "https://lichess.org/WIs5zWjq",
+                    "https://lichess.org/y2ocGxbo",
+                    "https://lichess.org/mEyy3BNE",
+                    "https://lichess.org/kMfdYuuD",
+                    "https://lichess.org/ugYGVb89",
+                    "https://lichess.org/AF4I2SXA"
                 ]
             },
             "mateWithRook": {
@@ -12125,7 +12729,20 @@
                     "https://lichess.org/pSgbeTse/black",
                     "https://lichess.org/0blIxrSS",
                     "https://lichess.org/EEau7cz8/black",
-                    "https://lichess.org/6IsGTB5h"
+                    "https://lichess.org/6IsGTB5h",
+                    "https://lichess.org/w7DU2Pco/black",
+                    "https://lichess.org/BQ2A8fQN",
+                    "https://lichess.org/EzIdyHW4/black",
+                    "https://lichess.org/e4FAJyv7",
+                    "https://lichess.org/Zwlcboov/black",
+                    "https://lichess.org/E4yN8pWr/black",
+                    "https://lichess.org/3OUy1eMq/black",
+                    "https://lichess.org/T0aInbWO",
+                    "https://lichess.org/0eqSJ1jO/black",
+                    "https://lichess.org/y2ocGxbo",
+                    "https://lichess.org/oVY4h7nn/black",
+                    "https://lichess.org/HV5ghbtk/black",
+                    "https://lichess.org/FLbwbDIJ/black"
                 ]
             },
             "secondQueen": {
@@ -12148,7 +12765,11 @@
                     "https://lichess.org/MkNmMnWU",
                     "https://lichess.org/SjzhFWYc",
                     "https://lichess.org/XK75Ic0c",
-                    "https://lichess.org/jExjzFw1"
+                    "https://lichess.org/jExjzFw1",
+                    "https://lichess.org/GQa5Y0nk",
+                    "https://lichess.org/FFnA2naU",
+                    "https://lichess.org/NWPkPqfR",
+                    "https://lichess.org/VyZbJTiH"
                 ]
             },
             "mateWithQueen": {
@@ -12197,12 +12818,34 @@
                     "https://lichess.org/r2v3epSk/black",
                     "https://lichess.org/jExjzFw1",
                     "https://lichess.org/WZqlMO9N/black",
-                    "https://lichess.org/h7AgxbJX/black"
+                    "https://lichess.org/h7AgxbJX/black",
+                    "https://lichess.org/y1lAYQdT/black",
+                    "https://lichess.org/iYMsaKVP/black",
+                    "https://lichess.org/bKXiEJ0c",
+                    "https://lichess.org/obftghXv/black",
+                    "https://lichess.org/ylbQbzvv",
+                    "https://lichess.org/XA5SUDkX/black",
+                    "https://lichess.org/GQa5Y0nk",
+                    "https://lichess.org/1sUvDlBZ/black",
+                    "https://lichess.org/HdiHJY3O/black",
+                    "https://lichess.org/FFnA2naU",
+                    "https://lichess.org/NWPkPqfR",
+                    "https://lichess.org/VyZbJTiH",
+                    "https://lichess.org/twFq0NOW/black",
+                    "https://lichess.org/QRig5yyD",
+                    "https://lichess.org/iiG9Mn5o/black",
+                    "https://lichess.org/WIs5zWjq",
+                    "https://lichess.org/GpyMWPL5/black",
+                    "https://lichess.org/eeoYrqLz/black",
+                    "https://lichess.org/mEyy3BNE",
+                    "https://lichess.org/ZdDEfkBe/black",
+                    "https://lichess.org/ugYGVb89"
                 ]
             },
             "wonVsComputer1": {
                 "urls": [
-                    "https://lichess.org/yFDAFeCh"
+                    "https://lichess.org/yFDAFeCh",
+                    "https://lichess.org/y1lAYQdT/black"
                 ]
             },
             "spellDAB": {
@@ -12217,7 +12860,11 @@
                     "https://lichess.org/8zf6wR8H",
                     "https://lichess.org/bA3mGr7x",
                     "https://lichess.org/Ox6sc0ag/black",
-                    "https://lichess.org/0blIxrSS"
+                    "https://lichess.org/0blIxrSS",
+                    "https://lichess.org/SQUv3wIJ/black",
+                    "https://lichess.org/iiG9Mn5o/black",
+                    "https://lichess.org/y2ocGxbo",
+                    "https://lichess.org/eeoYrqLz/black"
                 ]
             },
             "mattStattPatt4": {
@@ -12251,7 +12898,11 @@
                     "https://lichess.org/Si3bFyjC",
                     "https://lichess.org/3sVqdS4h",
                     "https://lichess.org/Vhlv6iwp/black",
-                    "https://lichess.org/aeijBSz0/black"
+                    "https://lichess.org/aeijBSz0/black",
+                    "https://lichess.org/iYMsaKVP/black",
+                    "https://lichess.org/SQUv3wIJ/black",
+                    "https://lichess.org/NWPkPqfR",
+                    "https://lichess.org/eeoYrqLz/black"
                 ]
             },
             "drawWithKing": {
@@ -12300,6 +12951,13 @@
                 "urls": [
                     "https://lichess.org/auqUNgxb"
                 ]
+            },
+            "mateWithBishop": {
+                "urls": [
+                    "https://lichess.org/oyieU5oc",
+                    "https://lichess.org/kMfdYuuD",
+                    "https://lichess.org/AF4I2SXA"
+                ]
             }
         },
         "unique": [
@@ -12320,13 +12978,14 @@
     },
     {
         "username": "msch-kaakal",
-        "timestamp": 1707505757000,
+        "timestamp": 1718626045000,
         "ach": {
             "wonWithBlack": {
                 "urls": [
                     "https://lichess.org/1ZwQe38O/black",
                     "https://lichess.org/mc9sUELY/black",
-                    "https://lichess.org/5SLvqqed/black"
+                    "https://lichess.org/5SLvqqed/black",
+                    "https://lichess.org/4oyAU3Bd/black"
                 ]
             },
             "new_opponent": {
@@ -12337,7 +12996,8 @@
                     "https://lichess.org/3GeGKroH",
                     "https://lichess.org/7Bed3LQB/black",
                     "https://lichess.org/zGZarbw5",
-                    "https://lichess.org/XGOvfpCN/black"
+                    "https://lichess.org/XGOvfpCN/black",
+                    "https://lichess.org/4oyAU3Bd/black"
                 ]
             },
             "onlyPawnMoves": {
@@ -12408,19 +13068,22 @@
             "msch-jakhal",
             "msch-stemio",
             "msch-mahals",
-            "msch-enebal"
+            "msch-enebal",
+            "msch-hamkud"
         ]
     },
     {
         "username": "msch-kimlan",
-        "timestamp": 1707505769000,
+        "timestamp": 1718626049000,
         "ach": {
             "wonWithBlack": {
                 "urls": [
                     "https://lichess.org/9nTaXzoi/black",
                     "https://lichess.org/il5Cg30e/black",
                     "https://lichess.org/EnpGwO4K/black",
-                    "https://lichess.org/5gj9iNDB/black"
+                    "https://lichess.org/5gj9iNDB/black",
+                    "https://lichess.org/FI5zsJZv/black",
+                    "https://lichess.org/wjYCngEW/black"
                 ]
             },
             "wonVsComputer1": {
@@ -12453,7 +13116,9 @@
                     "https://lichess.org/o6HKa74x",
                     "https://lichess.org/1nJeLpo5",
                     "https://lichess.org/hDYWUUH7",
-                    "https://lichess.org/woNDb5Tp"
+                    "https://lichess.org/woNDb5Tp",
+                    "https://lichess.org/e9wid8cB",
+                    "https://lichess.org/Ek9OT0l9"
                 ]
             },
             "mateAfterCapture": {
@@ -12499,7 +13164,8 @@
                     "https://lichess.org/y70r8ocu",
                     "https://lichess.org/9mVnqhXZ",
                     "https://lichess.org/DwkcDobf",
-                    "https://lichess.org/5GGNro37"
+                    "https://lichess.org/5GGNro37",
+                    "https://lichess.org/1PhRfCew/black"
                 ]
             },
             "justTwoKings": {
@@ -12554,6 +13220,16 @@
                     "https://lichess.org/69PYwKSc",
                     "https://lichess.org/YQprIo3l"
                 ]
+            },
+            "noFool": {
+                "urls": [
+                    "https://lichess.org/FI5zsJZv/black"
+                ]
+            },
+            "onlyPawnMoves": {
+                "urls": [
+                    "https://lichess.org/Ek9OT0l9"
+                ]
             }
         },
         "unique": [
@@ -12571,7 +13247,7 @@
     },
     {
         "username": "msch-lormin",
-        "timestamp": 1707505775000,
+        "timestamp": 1718626050000,
         "ach": {
             "new_opponent": {
                 "urls": [
@@ -12619,7 +13295,9 @@
                     "https://lichess.org/FIvj120s",
                     "https://lichess.org/QtYhVr9V",
                     "https://lichess.org/5Z45k3PY",
-                    "https://lichess.org/Smkzylr1"
+                    "https://lichess.org/Smkzylr1",
+                    "https://lichess.org/HYaHLOy5",
+                    "https://lichess.org/Cw9jcWyJ"
                 ]
             },
             "justTwoKings": {
@@ -12651,7 +13329,8 @@
                 "urls": [
                     "https://lichess.org/pEIIoxIu",
                     "https://lichess.org/zQaG5FRW",
-                    "https://lichess.org/49cmbuM7/black"
+                    "https://lichess.org/49cmbuM7/black",
+                    "https://lichess.org/zk7qjU89/black"
                 ]
             },
             "mateWithQueen": {
@@ -12674,6 +13353,11 @@
                 "urls": [
                     "https://lichess.org/Smkzylr1"
                 ]
+            },
+            "onlyPawnMoves": {
+                "urls": [
+                    "https://lichess.org/Cw9jcWyJ"
+                ]
             }
         },
         "unique": [
@@ -12693,7 +13377,7 @@
     },
     {
         "username": "msch-lucler",
-        "timestamp": 1714451925000,
+        "timestamp": 1718626054000,
         "ach": {
             "new_opponent": {
                 "urls": [
@@ -12816,7 +13500,9 @@
                     "https://lichess.org/hRuRRAVH",
                     "https://lichess.org/NkNuV3zY",
                     "https://lichess.org/jZ1HeELG",
-                    "https://lichess.org/9gV5UiDv"
+                    "https://lichess.org/9gV5UiDv",
+                    "https://lichess.org/mRNPRwLU",
+                    "https://lichess.org/Oof24K7p"
                 ]
             },
             "onlyPawnMoves": {
@@ -12860,7 +13546,8 @@
                     "https://lichess.org/eVFzyRmi/black",
                     "https://lichess.org/hRuRRAVH",
                     "https://lichess.org/NkNuV3zY",
-                    "https://lichess.org/jZ1HeELG"
+                    "https://lichess.org/jZ1HeELG",
+                    "https://lichess.org/Oof24K7p"
                 ]
             },
             "rookSniper": {
@@ -12994,7 +13681,7 @@
     },
     {
         "username": "msch-mahals",
-        "timestamp": 1707505790000,
+        "timestamp": 1718626055000,
         "ach": {
             "mattStattPatt5": {
                 "urls": [
@@ -13069,7 +13756,7 @@
     },
     {
         "username": "msch-stemio",
-        "timestamp": 1714451926000,
+        "timestamp": 1718626055000,
         "ach": {
             "wonWithWhite": {
                 "urls": [
@@ -13155,7 +13842,10 @@
                     "https://lichess.org/LND44yGR",
                     "https://lichess.org/wmg1sUwj",
                     "https://lichess.org/u4oDtVSh",
-                    "https://lichess.org/34oVyWL1"
+                    "https://lichess.org/34oVyWL1",
+                    "https://lichess.org/D6Qm1TMo",
+                    "https://lichess.org/ohuK4aQn",
+                    "https://lichess.org/YmLGkuHp"
                 ]
             },
             "new_opponent": {
@@ -13289,7 +13979,9 @@
                     "https://lichess.org/jkT01CJ7/black",
                     "https://lichess.org/DYkHU1Sn/black",
                     "https://lichess.org/37kTN3Xb/black",
-                    "https://lichess.org/d7WKRWMN/black"
+                    "https://lichess.org/d7WKRWMN/black",
+                    "https://lichess.org/yvjCMFbD/black",
+                    "https://lichess.org/UxTPF3QQ/black"
                 ]
             },
             "textbookOpening": {
@@ -13298,7 +13990,9 @@
                     "https://lichess.org/5rQKPyiM/black",
                     "https://lichess.org/698aeEJU",
                     "https://lichess.org/DYkHU1Sn/black",
-                    "https://lichess.org/37kTN3Xb/black"
+                    "https://lichess.org/37kTN3Xb/black",
+                    "https://lichess.org/D6Qm1TMo",
+                    "https://lichess.org/YmLGkuHp"
                 ]
             },
             "mateWithKnight": {
@@ -13414,7 +14108,8 @@
                     "https://lichess.org/jkT01CJ7/black",
                     "https://lichess.org/DYkHU1Sn/black",
                     "https://lichess.org/wmg1sUwj",
-                    "https://lichess.org/u4oDtVSh"
+                    "https://lichess.org/u4oDtVSh",
+                    "https://lichess.org/D6Qm1TMo"
                 ]
             },
             "battlefield": {
@@ -13571,7 +14266,8 @@
                     "https://lichess.org/g9aFb6D5",
                     "https://lichess.org/SfT9bTvG",
                     "https://lichess.org/DYkHU1Sn/black",
-                    "https://lichess.org/wmg1sUwj"
+                    "https://lichess.org/wmg1sUwj",
+                    "https://lichess.org/D6Qm1TMo"
                 ]
             },
             "justTwoKings": {
@@ -13887,7 +14583,7 @@
     },
     {
         "username": "msch-abdbol",
-        "timestamp": 1707505876000,
+        "timestamp": 1718625722000,
         "ach": {
             "wonWithBlack": {
                 "urls": [
@@ -13970,7 +14666,9 @@
                     "https://lichess.org/XD8FAMoV",
                     "https://lichess.org/WkaPpgo1",
                     "https://lichess.org/UNAe7UjU",
-                    "https://lichess.org/0X4pS3O3"
+                    "https://lichess.org/0X4pS3O3",
+                    "https://lichess.org/WHBO8vrS",
+                    "https://lichess.org/pGo3VZcD"
                 ]
             },
             "wonVsComputer3": {
@@ -14062,7 +14760,8 @@
             "textbookOpening": {
                 "urls": [
                     "https://lichess.org/Vi82faon/black",
-                    "https://lichess.org/uASJCFgp/black"
+                    "https://lichess.org/uASJCFgp/black",
+                    "https://lichess.org/WHBO8vrS"
                 ]
             },
             "wonVsComputer2": {
@@ -14088,7 +14787,7 @@
     },
     {
         "username": "msch-amiber",
-        "timestamp": 1707505878000,
+        "timestamp": 1718625723000,
         "ach": {
             "small_underdog": {
                 "urls": [
@@ -14170,7 +14869,7 @@
     },
     {
         "username": "msch-beryil",
-        "timestamp": 1707505879000,
+        "timestamp": 1718625724000,
         "ach": {
             "mattStattPatt5": {
                 "urls": [
@@ -14200,7 +14899,8 @@
             "wonWithBlack": {
                 "urls": [
                     "https://lichess.org/uniWSjSR/black",
-                    "https://lichess.org/FyULAyhX/black"
+                    "https://lichess.org/FyULAyhX/black",
+                    "https://lichess.org/wTTbT4CS/black"
                 ]
             },
             "new_opponent": {
@@ -14220,7 +14920,8 @@
             "mateWithRook": {
                 "urls": [
                     "https://lichess.org/uniWSjSR/black",
-                    "https://lichess.org/vPT3JqCi"
+                    "https://lichess.org/vPT3JqCi",
+                    "https://lichess.org/9lppMIiF"
                 ]
             },
             "small_underdog": {
@@ -14230,7 +14931,24 @@
             },
             "wonWithWhite": {
                 "urls": [
-                    "https://lichess.org/vPT3JqCi"
+                    "https://lichess.org/vPT3JqCi",
+                    "https://lichess.org/9lppMIiF"
+                ]
+            },
+            "wonVsComputer1": {
+                "urls": [
+                    "https://lichess.org/9lppMIiF",
+                    "https://lichess.org/wTTbT4CS/black"
+                ]
+            },
+            "spellGG": {
+                "urls": [
+                    "https://lichess.org/9lppMIiF"
+                ]
+            },
+            "mateWithQueen": {
+                "urls": [
+                    "https://lichess.org/wTTbT4CS/black"
                 ]
             }
         },
@@ -14242,7 +14960,7 @@
     },
     {
         "username": "msch-betdem",
-        "timestamp": 1707505885000,
+        "timestamp": 1718625725000,
         "ach": {
             "wonWithBlack": {
                 "urls": [
@@ -14434,7 +15152,7 @@
     },
     {
         "username": "msch-emasch",
-        "timestamp": 1707505886000,
+        "timestamp": 1718625726000,
         "ach": {
             "mattStattPatt5": {
                 "urls": [
@@ -14475,7 +15193,18 @@
             },
             "wonWithBlack": {
                 "urls": [
-                    "https://lichess.org/OrbwXQ3O/black"
+                    "https://lichess.org/OrbwXQ3O/black",
+                    "https://lichess.org/27H6Otel/black"
+                ]
+            },
+            "wonVsComputer1": {
+                "urls": [
+                    "https://lichess.org/27H6Otel/black"
+                ]
+            },
+            "mateWithRook": {
+                "urls": [
+                    "https://lichess.org/27H6Otel/black"
                 ]
             }
         },
@@ -14486,7 +15215,7 @@
     },
     {
         "username": "msch-emimit",
-        "timestamp": 1707505888000,
+        "timestamp": 1718625730000,
         "ach": {
             "mattStattPatt6": {
                 "urls": [
@@ -14534,7 +15263,8 @@
             "wonWithWhite": {
                 "urls": [
                     "https://lichess.org/Pf1uikwU",
-                    "https://lichess.org/6CeQADhf"
+                    "https://lichess.org/6CeQADhf",
+                    "https://lichess.org/KXWNgubG"
                 ]
             },
             "wonVsComputer1": {
@@ -14560,12 +15290,18 @@
             },
             "mateWithRook": {
                 "urls": [
-                    "https://lichess.org/6CeQADhf"
+                    "https://lichess.org/6CeQADhf",
+                    "https://lichess.org/KXWNgubG"
                 ]
             },
             "mateWithLess": {
                 "urls": [
                     "https://lichess.org/6CeQADhf"
+                ]
+            },
+            "drawWithKing": {
+                "urls": [
+                    "https://lichess.org/Y0f6f3AQ/black"
                 ]
             }
         },
@@ -14578,7 +15314,7 @@
     },
     {
         "username": "msch-engher",
-        "timestamp": 1707505891000,
+        "timestamp": 1718625732000,
         "ach": {
             "justTwoKings": {
                 "urls": [
@@ -14594,7 +15330,8 @@
                 "urls": [
                     "https://lichess.org/B24AQCGF/black",
                     "https://lichess.org/UqWHM60r/black",
-                    "https://lichess.org/CduAfLDq/black"
+                    "https://lichess.org/CduAfLDq/black",
+                    "https://lichess.org/yywWiB62/black"
                 ]
             },
             "wonVsComputer1": {
@@ -14602,14 +15339,16 @@
                     "https://lichess.org/UqWHM60r/black",
                     "https://lichess.org/bOwDkMjR",
                     "https://lichess.org/8EV3A6uM",
-                    "https://lichess.org/CduAfLDq/black"
+                    "https://lichess.org/CduAfLDq/black",
+                    "https://lichess.org/R7jBYgkY"
                 ]
             },
             "mateWithQueen": {
                 "urls": [
                     "https://lichess.org/UqWHM60r/black",
                     "https://lichess.org/aZYYG6IB",
-                    "https://lichess.org/CduAfLDq/black"
+                    "https://lichess.org/CduAfLDq/black",
+                    "https://lichess.org/yywWiB62/black"
                 ]
             },
             "wonWithWhite": {
@@ -14617,13 +15356,15 @@
                     "https://lichess.org/w9SZF92l",
                     "https://lichess.org/bOwDkMjR",
                     "https://lichess.org/aZYYG6IB",
-                    "https://lichess.org/8EV3A6uM"
+                    "https://lichess.org/8EV3A6uM",
+                    "https://lichess.org/R7jBYgkY"
                 ]
             },
             "mateWithRook": {
                 "urls": [
                     "https://lichess.org/bOwDkMjR",
-                    "https://lichess.org/8EV3A6uM"
+                    "https://lichess.org/8EV3A6uM",
+                    "https://lichess.org/R7jBYgkY"
                 ]
             },
             "secondQueen": {
@@ -14676,6 +15417,16 @@
                 "urls": [
                     "https://lichess.org/uTEyJeye"
                 ]
+            },
+            "textbookOpening": {
+                "urls": [
+                    "https://lichess.org/yywWiB62/black"
+                ]
+            },
+            "onlyPawnMoves": {
+                "urls": [
+                    "https://lichess.org/yywWiB62/black"
+                ]
             }
         },
         "unique": [
@@ -14684,7 +15435,7 @@
     },
     {
         "username": "msch-ezgyil",
-        "timestamp": 1707505894000,
+        "timestamp": 1718625733000,
         "ach": {
             "mattStattPatt4": {
                 "urls": [
@@ -14720,7 +15471,8 @@
             },
             "mateWithRook": {
                 "urls": [
-                    "https://lichess.org/Jr73DYOu/black"
+                    "https://lichess.org/Jr73DYOu/black",
+                    "https://lichess.org/o2WZihi7"
                 ]
             },
             "new_opponent": {
@@ -14734,7 +15486,9 @@
                 "urls": [
                     "https://lichess.org/1ybCrKgG",
                     "https://lichess.org/sswo6dwY",
-                    "https://lichess.org/kCYJ88YJ"
+                    "https://lichess.org/kCYJ88YJ",
+                    "https://lichess.org/o2WZihi7",
+                    "https://lichess.org/oaeG03Ur"
                 ]
             },
             "onlyPawnMoves": {
@@ -14745,12 +15499,29 @@
             "mateWithQueen": {
                 "urls": [
                     "https://lichess.org/sswo6dwY",
-                    "https://lichess.org/voNzyBt6/black"
+                    "https://lichess.org/voNzyBt6/black",
+                    "https://lichess.org/oaeG03Ur"
                 ]
             },
             "small_underdog": {
                 "urls": [
                     "https://lichess.org/voNzyBt6/black"
+                ]
+            },
+            "wonVsComputer1": {
+                "urls": [
+                    "https://lichess.org/o2WZihi7",
+                    "https://lichess.org/oaeG03Ur"
+                ]
+            },
+            "mateAfterCapture": {
+                "urls": [
+                    "https://lichess.org/o2WZihi7"
+                ]
+            },
+            "secondQueen": {
+                "urls": [
+                    "https://lichess.org/o2WZihi7"
                 ]
             }
         },
@@ -14762,7 +15533,7 @@
     },
     {
         "username": "msch-kueari",
-        "timestamp": 1707505906000,
+        "timestamp": 1718625734000,
         "ach": {
             "wonWithWhite": {
                 "urls": [
@@ -14790,7 +15561,8 @@
                     "https://lichess.org/3dUvXdrx/black",
                     "https://lichess.org/HAunMp0v/black",
                     "https://lichess.org/R5sPgbDe/black",
-                    "https://lichess.org/RBEoPdoX"
+                    "https://lichess.org/RBEoPdoX",
+                    "https://lichess.org/rphGGiwU/black"
                 ]
             },
             "mateWithQueen": {
@@ -14855,7 +15627,8 @@
                     "https://lichess.org/O47yOwcD/black",
                     "https://lichess.org/FgtJz2tv/black",
                     "https://lichess.org/33c7ZHrf/black",
-                    "https://lichess.org/Ja39kRXV/black"
+                    "https://lichess.org/Ja39kRXV/black",
+                    "https://lichess.org/rphGGiwU/black"
                 ]
             },
             "mateWithKnight": {
@@ -14886,7 +15659,8 @@
                     "https://lichess.org/O47yOwcD/black",
                     "https://lichess.org/CgvH6EiX",
                     "https://lichess.org/Ruo5YLgc",
-                    "https://lichess.org/33c7ZHrf/black"
+                    "https://lichess.org/33c7ZHrf/black",
+                    "https://lichess.org/rphGGiwU/black"
                 ]
             },
             "mattStattPatt4": {
@@ -14965,7 +15739,7 @@
     },
     {
         "username": "msch-mahdil",
-        "timestamp": 1707505936000,
+        "timestamp": 1718625738000,
         "ach": {
             "wonWithWhite": {
                 "urls": [
@@ -15054,7 +15828,11 @@
                     "https://lichess.org/dxSzaNnf",
                     "https://lichess.org/Dtd5WVAk",
                     "https://lichess.org/1WzU6p4R",
-                    "https://lichess.org/alhMBaKt"
+                    "https://lichess.org/alhMBaKt",
+                    "https://lichess.org/bQ4XrAsx",
+                    "https://lichess.org/ByZhMGMY",
+                    "https://lichess.org/fjW3EXay",
+                    "https://lichess.org/LoFyIv2U"
                 ]
             },
             "wonVsComputer2": {
@@ -15172,7 +15950,11 @@
                     "https://lichess.org/1uZkMYOf/black",
                     "https://lichess.org/t2Dj31ry/black",
                     "https://lichess.org/Sfj4IAWd/black",
-                    "https://lichess.org/KXTH4DUF/black"
+                    "https://lichess.org/KXTH4DUF/black",
+                    "https://lichess.org/bQ4XrAsx",
+                    "https://lichess.org/ByZhMGMY",
+                    "https://lichess.org/fjW3EXay",
+                    "https://lichess.org/LoFyIv2U"
                 ]
             },
             "mateOnBackRank": {
@@ -15337,7 +16119,10 @@
                     "https://lichess.org/1WzU6p4R",
                     "https://lichess.org/Sfj4IAWd/black",
                     "https://lichess.org/alhMBaKt",
-                    "https://lichess.org/KXTH4DUF/black"
+                    "https://lichess.org/KXTH4DUF/black",
+                    "https://lichess.org/ByZhMGMY",
+                    "https://lichess.org/fjW3EXay",
+                    "https://lichess.org/LoFyIv2U"
                 ]
             },
             "secondQueen": {
@@ -15443,7 +16228,9 @@
             },
             "mattStattPatt1": {
                 "urls": [
-                    "https://lichess.org/leOWmjoH"
+                    "https://lichess.org/leOWmjoH",
+                    "https://lichess.org/w9PhTBzv",
+                    "https://lichess.org/TW0wWSmJ"
                 ]
             },
             "wonVsComputer3": {
@@ -15460,7 +16247,8 @@
                 "urls": [
                     "https://lichess.org/tCNLGKKm",
                     "https://lichess.org/n6zFOfAW/black",
-                    "https://lichess.org/9Pm6B9wz/black"
+                    "https://lichess.org/9Pm6B9wz/black",
+                    "https://lichess.org/bQ4XrAsx"
                 ]
             },
             "mateWithLess": {
@@ -15653,17 +16441,28 @@
                 "urls": [
                     "https://lichess.org/KiXGFdrE"
                 ]
+            },
+            "spellGG": {
+                "urls": [
+                    "https://lichess.org/ByZhMGMY"
+                ]
+            },
+            "textbookOpening": {
+                "urls": [
+                    "https://lichess.org/fjW3EXay"
+                ]
             }
         },
         "unique": [
             "msch-melkoc",
             "msch-millaz",
-            "msch-abdbol"
+            "msch-abdbol",
+            "msch-toptav"
         ]
     },
     {
         "username": "msch-marfek",
-        "timestamp": 1707505939000,
+        "timestamp": 1718625740000,
         "ach": {
             "mattStattPatt6": {
                 "urls": [
@@ -15717,13 +16516,30 @@
                 "urls": [
                     "https://lichess.org/vEsb4BQK"
                 ]
+            },
+            "new_opponent": {
+                "urls": [
+                    "https://lichess.org/vv0WDXOf"
+                ]
+            },
+            "drawWithKing": {
+                "urls": [
+                    "https://lichess.org/vv0WDXOf"
+                ]
+            },
+            "wonWithBlack": {
+                "urls": [
+                    "https://lichess.org/lFj36iJ3/black"
+                ]
             }
         },
-        "unique": []
+        "unique": [
+            "msch-muhalf"
+        ]
     },
     {
         "username": "msch-melkoc",
-        "timestamp": 1707505957000,
+        "timestamp": 1718625741000,
         "ach": {
             "new_opponent": {
                 "urls": [
@@ -15996,7 +16812,7 @@
     },
     {
         "username": "msch-migrin",
-        "timestamp": 1707505963000,
+        "timestamp": 1718625742000,
         "ach": {
             "mattStattPatt1": {
                 "urls": [
@@ -16088,7 +16904,18 @@
                     "https://lichess.org/tc6iXRHH",
                     "https://lichess.org/d4TTz94E",
                     "https://lichess.org/cjsVtXUv",
-                    "https://lichess.org/tfEPVG31"
+                    "https://lichess.org/tfEPVG31",
+                    "https://lichess.org/djvESdXz",
+                    "https://lichess.org/NeW29FqW",
+                    "https://lichess.org/HIdFpidt",
+                    "https://lichess.org/TymnKXAG",
+                    "https://lichess.org/rhutcdIi",
+                    "https://lichess.org/IYpnjnZj",
+                    "https://lichess.org/FoHaMw6r",
+                    "https://lichess.org/zAnZqPYh",
+                    "https://lichess.org/xkImNve9",
+                    "https://lichess.org/b1kWBQ9k",
+                    "https://lichess.org/2iQpXDgT"
                 ]
             },
             "mattStattPatt2": {
@@ -16163,7 +16990,8 @@
                 "urls": [
                     "https://lichess.org/9FKjASpz",
                     "https://lichess.org/5LRfHDGe",
-                    "https://lichess.org/maspeCpV/black"
+                    "https://lichess.org/maspeCpV/black",
+                    "https://lichess.org/ci8fBQDe/black"
                 ]
             },
             "secondQueen": {
@@ -16173,19 +17001,21 @@
             },
             "wonWithBlack": {
                 "urls": [
-                    "https://lichess.org/LcgEcolR/black"
+                    "https://lichess.org/LcgEcolR/black",
+                    "https://lichess.org/ci8fBQDe/black"
                 ]
             }
         },
         "unique": [
             "msch-mikkoc",
             "msch-mirsok",
-            "msch-melkoc"
+            "msch-melkoc",
+            "msch-malheg"
         ]
     },
     {
         "username": "msch-mikkoc",
-        "timestamp": 1707505964000,
+        "timestamp": 1718625746000,
         "ach": {
             "mattStattPatt6": {
                 "urls": [
@@ -16262,7 +17092,7 @@
     },
     {
         "username": "msch-mirsok",
-        "timestamp": 1707505968000,
+        "timestamp": 1718625747000,
         "ach": {
             "mattStattPatt6": {
                 "urls": [
@@ -16350,7 +17180,7 @@
     },
     {
         "username": "msch-Muhalf",
-        "timestamp": 1707505968000,
+        "timestamp": 1718625751000,
         "ach": {
             "mattStattPatt6": {
                 "urls": [
@@ -16377,13 +17207,114 @@
                 "urls": [
                     "https://lichess.org/2Hiqq6bT"
                 ]
+            },
+            "new_opponent": {
+                "urls": [
+                    "https://lichess.org/vv0WDXOf/black"
+                ]
+            },
+            "wonWithBlack": {
+                "urls": [
+                    "https://lichess.org/8B6h9Pgc/black",
+                    "https://lichess.org/Nib79n6I/black",
+                    "https://lichess.org/IsACgODq/black",
+                    "https://lichess.org/G8piWiGb/black",
+                    "https://lichess.org/3bbneLdm/black",
+                    "https://lichess.org/kUeQaOju/black",
+                    "https://lichess.org/8C7JF2OP/black",
+                    "https://lichess.org/t38SV1Na/black",
+                    "https://lichess.org/6tF76sdx/black"
+                ]
+            },
+            "onlyPawnMoves": {
+                "urls": [
+                    "https://lichess.org/8B6h9Pgc/black"
+                ]
+            },
+            "wonVsComputer1": {
+                "urls": [
+                    "https://lichess.org/Nib79n6I/black",
+                    "https://lichess.org/IsACgODq/black",
+                    "https://lichess.org/bwue7Cuq",
+                    "https://lichess.org/G8piWiGb/black",
+                    "https://lichess.org/mPJzXaOV",
+                    "https://lichess.org/3bbneLdm/black",
+                    "https://lichess.org/m7bA2Z0g",
+                    "https://lichess.org/kUeQaOju/black",
+                    "https://lichess.org/Wj67E9Tz",
+                    "https://lichess.org/8C7JF2OP/black",
+                    "https://lichess.org/t38SV1Na/black",
+                    "https://lichess.org/5FPBL0hj",
+                    "https://lichess.org/6tF76sdx/black"
+                ]
+            },
+            "mateWithQueen": {
+                "urls": [
+                    "https://lichess.org/Nib79n6I/black",
+                    "https://lichess.org/bwue7Cuq",
+                    "https://lichess.org/3bbneLdm/black",
+                    "https://lichess.org/m7bA2Z0g",
+                    "https://lichess.org/t38SV1Na/black"
+                ]
+            },
+            "battlefield": {
+                "urls": [
+                    "https://lichess.org/Nib79n6I/black"
+                ]
+            },
+            "mateWithPawn": {
+                "urls": [
+                    "https://lichess.org/IsACgODq/black",
+                    "https://lichess.org/t38SV1Na/black",
+                    "https://lichess.org/6tF76sdx/black"
+                ]
+            },
+            "wonWithWhite": {
+                "urls": [
+                    "https://lichess.org/bwue7Cuq",
+                    "https://lichess.org/mPJzXaOV",
+                    "https://lichess.org/m7bA2Z0g",
+                    "https://lichess.org/Wj67E9Tz",
+                    "https://lichess.org/5FPBL0hj"
+                ]
+            },
+            "drawWithKing": {
+                "urls": [
+                    "https://lichess.org/Hy3zH8jj/black"
+                ]
+            },
+            "mateWithKnight": {
+                "urls": [
+                    "https://lichess.org/G8piWiGb/black"
+                ]
+            },
+            "mateWithRook": {
+                "urls": [
+                    "https://lichess.org/mPJzXaOV",
+                    "https://lichess.org/Wj67E9Tz",
+                    "https://lichess.org/8C7JF2OP/black",
+                    "https://lichess.org/5FPBL0hj",
+                    "https://lichess.org/6tF76sdx/black"
+                ]
+            },
+            "mateWithBishop": {
+                "urls": [
+                    "https://lichess.org/kUeQaOju/black"
+                ]
+            },
+            "underpromote": {
+                "urls": [
+                    "https://lichess.org/6tF76sdx/black"
+                ]
             }
         },
-        "unique": []
+        "unique": [
+            "msch-marfek"
+        ]
     },
     {
         "username": "msch-muhyuc",
-        "timestamp": 1707505979000,
+        "timestamp": 1718625751000,
         "ach": {
             "wonWithWhite": {
                 "urls": [
@@ -16536,7 +17467,7 @@
     },
     {
         "username": "msch-nikkal",
-        "timestamp": 1707505981000,
+        "timestamp": 1718625756000,
         "ach": {
             "mattStattPatt3": {
                 "urls": [
@@ -16592,7 +17523,7 @@
     },
     {
         "username": "msch-subbar",
-        "timestamp": 1714451937000,
+        "timestamp": 1718625905000,
         "ach": {
             "wonWithBlack": {
                 "urls": [
@@ -17083,14 +18014,15 @@
     },
     {
         "username": "msch-toptav",
-        "timestamp": 1707506024000,
+        "timestamp": 1718625758000,
         "ach": {
             "wonWithBlack": {
                 "urls": [
                     "https://lichess.org/8KkQ8oh1/black",
                     "https://lichess.org/7OpkvTDU/black",
                     "https://lichess.org/v0sHkuN2/black",
-                    "https://lichess.org/hnPshKuF/black"
+                    "https://lichess.org/hnPshKuF/black",
+                    "https://lichess.org/O3puNT7g/black"
                 ]
             },
             "new_opponent": {
@@ -17098,7 +18030,8 @@
                     "https://lichess.org/8KkQ8oh1/black",
                     "https://lichess.org/o41YgGLX/black",
                     "https://lichess.org/I75nfvpN/black",
-                    "https://lichess.org/mrG27n3t"
+                    "https://lichess.org/mrG27n3t",
+                    "https://lichess.org/bQ4XrAsx/black"
                 ]
             },
             "wonVsComputer1": {
@@ -17122,13 +18055,15 @@
                     "https://lichess.org/kfRnksZ5",
                     "https://lichess.org/8Ykjp4c2",
                     "https://lichess.org/fRsXHhmd",
-                    "https://lichess.org/IXiXn8js"
+                    "https://lichess.org/IXiXn8js",
+                    "https://lichess.org/O3puNT7g/black"
                 ]
             },
             "mateOnBackRank": {
                 "urls": [
                     "https://lichess.org/7OpkvTDU/black",
-                    "https://lichess.org/8Ykjp4c2"
+                    "https://lichess.org/8Ykjp4c2",
+                    "https://lichess.org/O3puNT7g/black"
                 ]
             },
             "mattStattPatt6": {
@@ -17223,7 +18158,8 @@
             "msch-engher",
             "msch-melkoc",
             "msch-abdbol",
-            "msch-nikkal"
+            "msch-nikkal",
+            "msch-mahdil"
         ]
     },
     {
@@ -18569,7 +19505,7 @@
     },
     {
         "username": "msch-martra",
-        "timestamp": 1714451932000,
+        "timestamp": 1718625900000,
         "ach": {
             "wonWithWhite": {
                 "urls": [
@@ -18811,7 +19747,7 @@
     },
     {
         "username": "msch-noabil",
-        "timestamp": 1714451931000,
+        "timestamp": 1718625900000,
         "ach": {
             "mattStattPatt6": {
                 "urls": [
@@ -18990,7 +19926,7 @@
     },
     {
         "username": "msch-semfen",
-        "timestamp": 1714451931000,
+        "timestamp": 1718625899000,
         "ach": {
             "wonWithWhite": {
                 "urls": [
@@ -24653,7 +25589,7 @@
     },
     {
         "username": "msch-dommio",
-        "timestamp": 1714451910000,
+        "timestamp": 1718625878000,
         "ach": {
             "wonWithWhite": {
                 "urls": [
@@ -24673,7 +25609,9 @@
                     "https://lichess.org/ICBfjx2P",
                     "https://lichess.org/e91zLe5B",
                     "https://lichess.org/6ZTuPqu8",
-                    "https://lichess.org/Tl9iwHjK"
+                    "https://lichess.org/Tl9iwHjK",
+                    "https://lichess.org/95pWvGeX",
+                    "https://lichess.org/7IG2G7rZ"
                 ]
             },
             "small_underdog": {
@@ -24689,7 +25627,8 @@
                     "https://lichess.org/95a5pWQg",
                     "https://lichess.org/oDDtlSDl",
                     "https://lichess.org/6ZTuPqu8",
-                    "https://lichess.org/kuWdFumq/black"
+                    "https://lichess.org/kuWdFumq/black",
+                    "https://lichess.org/95pWvGeX"
                 ]
             },
             "new_opponent": {
@@ -24813,6 +25752,11 @@
                     "https://lichess.org/oDDtlSDl",
                     "https://lichess.org/6ZTuPqu8"
                 ]
+            },
+            "wonVsComputer8NoQueen": {
+                "urls": [
+                    "https://lichess.org/cCll3caC"
+                ]
             }
         },
         "unique": [
@@ -24821,7 +25765,7 @@
     },
     {
         "username": "msch-horbar",
-        "timestamp": 1714451910000,
+        "timestamp": 1718625878000,
         "ach": {
             "small_underdog": {
                 "urls": [
@@ -24938,7 +25882,7 @@
     },
     {
         "username": "msch-musgez",
-        "timestamp": 1714451911000,
+        "timestamp": 1718625879000,
         "ach": {
             "wonWithWhite": {
                 "urls": [
@@ -24982,7 +25926,7 @@
     },
     {
         "username": "msch-millaz",
-        "timestamp": 1714451923000,
+        "timestamp": 1718625892000,
         "ach": {
             "mattStattPatt5": {
                 "urls": [
@@ -29610,5 +30554,29 @@
         "timestamp": 1714452268000,
         "ach": {},
         "unique": []
+    },
+    {
+        "username": "msch-meryav",
+        "timestamp": 1718625856000,
+        "ach": {
+            "wonWithBlack": {
+                "urls": [
+                    "https://lichess.org/xrvJwT4M/black"
+                ]
+            },
+            "wonVsComputer1": {
+                "urls": [
+                    "https://lichess.org/xrvJwT4M/black"
+                ]
+            },
+            "mateWithRook": {
+                "urls": [
+                    "https://lichess.org/xrvJwT4M/black"
+                ]
+            }
+        },
+        "unique": [
+            "msch-kueari"
+        ]
     }
 ]
