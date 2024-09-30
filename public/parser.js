@@ -47,6 +47,18 @@ function attachHeaders(chess, str) {
   });
 }
 
+function bulletCheck(chess) {
+  let timeControl = chess.header().TimeControl;
+  let bulletByTimeBoolean = false;
+  if(timeControl.includes('+')) {
+    let timeControlPlus = timeControl.split('+');
+    if(timeControlPlus[1] == 0 || timeControlPlus[0] < 61) {
+      bulletByTimeBoolean = true;
+    }
+  }
+  return chess.header().Event.includes('Bullet') || bulletByTimeBoolean;
+}
+
 export default function parseLichessGame(str, name) {
   const chess = new Chess();
   let moves;
@@ -83,7 +95,7 @@ export default function parseLichessGame(str, name) {
   chess.isStandard = chess.header().Variant === 'Standard';
   chess.isFromPosition = chess.header().Variant === 'From Position';
   chess.isWeirdVariant = chess.header().Variant != 'Standard' && chess.header().Variant != 'From Position';
-  chess.isBullet = chess.header().Event.includes('Bullet');
+  chess.isBullet = chess.header().Event.includes('Bullet') || chess.header().TimeControl == '60+0';
   chess.addwb = chess.isWhite ? 1 : 0;
   chess.playerhistory = chess.history().filter((_, index) => index % 2 !== chess.addwb);
   chess.addbw = chess.isWhite ? 0 : 1;

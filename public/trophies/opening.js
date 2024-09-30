@@ -62,7 +62,7 @@ export let textbookOpening = {
   check: function(game) {
     if(!(game.isStandard)){return false}
     const hist = game.history();
-    if(!(game.isWon && hist.includes('O-O'))){return false}
+    if(!(game.isWon)){return false}
     //reduce history to first moves
     const maxmoves = 15;
     const slicenum = Math.min((2*maxmoves),hist.length);
@@ -70,7 +70,7 @@ export let textbookOpening = {
     const addwb = game.isWhite ? 1 : 0;
     const ownophist = ophist.filter((_, index) => index % 2 !== addwb);
     //check if you castled
-    if(!(ownophist.includes('O-O'))){return false}
+    if(!(ownophist.includes('O-O') || ownophist.includes('O-O-O'))){return false}
 
     //at least 2 knight and 2 bishop moves
     let countN = 0;
@@ -83,7 +83,8 @@ export let textbookOpening = {
     if(countN < 2 || countB < 2){return false}
     //move position to one move before castling
     let currentpos = new Chess();
-    let castleindex = 2*ownophist.indexOf('O-O') - addwb +1;
+    let castleindex = ownophist.indexOf('O-O') == -1 ? ownophist.indexOf('O-O-O') : ownophist.indexOf('O-O');
+    castleindex = 2*castleindex - addwb +1;
     for (let i = 0; i < castleindex; i++){
       currentpos.move(ophist[i])
     }

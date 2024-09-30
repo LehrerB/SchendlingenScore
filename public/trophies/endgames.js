@@ -349,7 +349,10 @@ export let speedWithTwoRooks = {
     time: 2
   },
   check: function(game) {
+    console.log('test')
+    console.log(game.isBullet)
   if(!(game.isBullet) || !(game.isWon)){return false}
+  console.log('test2')
   let lastfen = game.lastfen
   //define rook and rook of opponent
   let rook = game.isWhite ? 'R' : 'r'
