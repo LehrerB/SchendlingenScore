@@ -256,7 +256,7 @@ export default function Home() {
   const [errorMsg, setErrorMsg] = useState('');
   const [achievements, setAchievement] = useState(createAchievementsDict());
   const [view, setView] = useState(0);
-  const [namelist, setUsername] = useState('LehrerB\nmsch-oliwel\nmsch-xenhof\nmisch-andhof');
+  const [namelist, setUsername] = useState('LehrerB\nmsch-tahalp\nmsch-oliwel\nmisch-andhof');
   const [skipFetch, setSkipFetch] = useState(true);
 
   const toggleView = () => {

@@ -4,9 +4,6 @@ export let blackSheepList = [
   'LehrerB',
   'LehrerS',
   'Aykan20100',
-  'HatArs',
-  'EliasStegi',  
-  'Ninaum',
   'Riri_theCat',
   'esmkar',
   'J2by',
@@ -16,6 +13,7 @@ export let blackSheepList = [
 
 export let teacherList = [
   'LehrerB',
+  'LehrerS',
 ]
 
 //chess group
@@ -286,7 +284,7 @@ let class2aArray = [
 export let class2a = class2aArray.join('\n'); 
 
 //2b
-let class1bArray = [
+let class2bArray = [
   'msch-abbbut',
   'msch-adimin',
   'msch-angkru',
@@ -377,6 +375,7 @@ let allClasses = [
   blackSheepList,
   class1cArray,
   class2aArray,
+  class2bArray,
   class2cArray,
   class3cArray,
   class4bArray,
