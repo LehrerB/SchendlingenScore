@@ -239,3 +239,37 @@ export let basicPawnEndgame2 = {
 
 }
 }
+
+export let basicLucenaPosition1 = {
+  title: 'Lucena Position',
+  description: <><a href="https://lichess.org/editor/3K4/3P1k2/8/8/8/8/4R3/3r4_w_-_-_0_1?color=white" target="_blank">Gewinne dieses klassische Endspiel gegen den Computer.</a> (Stufe 8+)</>,
+  pref: {
+    win: 1,
+    bullet: 2,
+    computer: 1,
+    time: 3
+  },
+  check: function(game) {
+  if(game.isStandard || !(game.isComputer) || !(game.isWon)){return false}
+  const complvl = parseInt(game.oppName.replace("lichess AI level ",""));
+  return (game.isWon && complvl >= 8 && (game.header().FEN === '3K4/3P1k2/8/8/8/8/4R3/3r4 w - - 0 1'))
+
+}
+}
+
+export let basicRookEndgame1 = {
+  title: 'Hartnäckiger Turm',
+  description: <><a href="https://lichess.org/editor/8/6k1/R7/7P/6PK/8/p7/r7_w_-_-_0_1?color=white" target="_blank">Lasst dich vom Turm des Computers nicht aufhalten.</a> (Stufe 8+)</>,
+  pref: {
+    win: 1,
+    bullet: 2,
+    computer: 1,
+    time: 3
+  },
+  check: function(game) {
+  if(game.isStandard || !(game.isComputer) || !(game.isWon)){return false}
+  const complvl = parseInt(game.oppName.replace("lichess AI level ",""));
+  return (game.isWon && complvl >= 8 && (game.header().FEN === '8/6k1/R7/7P/6PK/8/p7/r7 w - - 0 1'))
+
+}
+}

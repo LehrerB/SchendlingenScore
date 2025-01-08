@@ -60,6 +60,8 @@ const checks = {
 
   basicPawnEndgame1: computer.basicPawnEndgame1,
   basicPawnEndgame2: computer.basicPawnEndgame2,
+  basicLucenaPosition1: computer.basicLucenaPosition1,
+  basicRookEndgame1: computer.basicRookEndgame1,
 
   speedWithTwoRooks: endgames.speedWithTwoRooks,
   speedWithOneQueen: endgames.speedWithOneQueen,
@@ -907,6 +909,8 @@ export default function Home() {
                 <Achievement name={"justTwoKings"} ach={achievements.justTwoKings} />
                 <Achievement name={"basicPawnEndgame1"} ach={achievements.basicPawnEndgame1} />
                 <Achievement name={"basicPawnEndgame2"} ach={achievements.basicPawnEndgame2} />
+                <Achievement name={"basicLucenaPosition1"} ach={achievements.basicLucenaPosition1} />
+                <Achievement name={"basicRookEndgame1"} ach={achievements.basicRookEndgame1} />
               </div>
             </div> 
 
