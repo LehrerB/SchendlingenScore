@@ -2,6 +2,7 @@ export default [];
 
 export let blackSheepList = [
   'LehrerB',
+  'LehrerS',
   'Aykan20100',
   'HatArs',
   'EliasStegi',  
@@ -20,7 +21,14 @@ export let teacherList = [
 //chess group
 let classChessArray = [
   'LehrerB',
+  'LehrerS',
+  'msch-lelfek',
+  'msch-salalk',
+  'msch-galspo',
+  'msch-isahec',
+  'msch-hunfek',
   'msch-tahalp',
+  'msch-ronber',
   'msch-oliwel',
   'misch-andhof',
   'msch-dommio',
