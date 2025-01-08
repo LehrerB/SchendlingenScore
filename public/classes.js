@@ -20,37 +20,18 @@ export let teacherList = [
 //chess group
 let classChessArray = [
   'LehrerB',
-  'msch-brkkay',
-  'msch-emilyjov',
-  'msch-emierc',
-  'msch-majmar',
-  'msch-selkar',
   'msch-tahalp',
   'msch-oliwel',
-  'msch-xenhof',
   'misch-andhof',
   'msch-dommio',
-  'msch-horbar',
   'msch-musgez',
-  'J2by',
-  'msch-abuele',
-  'msch-cankar',
-  'msch-salsar',
-  'msch-emijov',
-  'msch-millaz',
-  'msch-lucler',
   'msch-stemio',
-  'HatArs',
-  'msch-semfen',
-  'msch-noabil',
-  'msch-martra',
-  'msch-subbar',
 ]
 
 export let classChess = classChessArray.join('\n');
 
 //4a
-let class4aArray = [
+let class4a2023Array = [
   'msch-bensch',
   'msch-bethel',
   'msch-blafor',
@@ -74,10 +55,10 @@ let class4aArray = [
   'EliasStegi', //freestyle name
 ]
 
-export let class4a = class4aArray.join('\n');
+export let class4a2023 = class4a2023Array.join('\n');
 
 //4b
-let class4bArray = [
+let class4b2023Array = [
   'msch-alekar',
   'msch-annsil',
   'msch-ayayil',
@@ -102,10 +83,10 @@ let class4bArray = [
   'HatArs', //freestyle
 ]
 
-export let class4b = class4bArray.join('\n');
+export let class4b2023 = class4b2023Array.join('\n');
 
 //4c
-let class4cArray = [
+let class4c2023Array = [
   'msch-abdbol',
   'msch-amiber',
   'msch-beryil',
@@ -131,10 +112,10 @@ let class4cArray = [
   'Ninaum',
 ]
 
-export let class4c = class4cArray.join('\n'); 
+export let class4c2023 = class4c2023Array.join('\n'); 
 
-//3a
-let class3aArray = [
+//4a
+let class4aArray = [
   'msch-anngei',
   'msch-antded',
   'msch-azasue',
@@ -152,6 +133,7 @@ let class3aArray = [
   'msch-leobur',
   'msch-livney',
   'mschlukkue',
+  'msch-malheg',
   'msch-marada',
   'msch-melluef',
   'msch-nicnat',
@@ -163,10 +145,10 @@ let class3aArray = [
   //'msch-leagri', //not found
 ]
 
-export let class3a = class3aArray.join('\n');
+export let class4a = class4aArray.join('\n');
 
-//3b
-let class3bArray = [
+//4b
+let class4bArray = [
   'misch-andhof',
   'msch-barsah',
   'msch-celfeu',
@@ -186,23 +168,24 @@ let class3bArray = [
   'msch-lormin',
   'msch-lucler',
   'msch-mahals',
+  'msch-muhyuc',
   'msch-stemio',
 
   'Riri_theCat', //RiriCat
   //'msch-simmue', //notfound
 ]
 
-export let class3b = class3bArray.join('\n');
+export let class4b = class4bArray.join('\n');
 
-//3c
-let class3cArray = [
+//4c
+let class4cArray = [
 
 ]
 
-export let class3c = class3cArray.join('\n'); 
+export let class4c = class4cArray.join('\n'); 
 
-//2a
-let class2aArray = [
+//3a
+let class3aArray = [
   'msch-amegep',
   'msch-angbir',
   'msch-anikal',
@@ -231,10 +214,10 @@ let class2aArray = [
   //'msch-tuadog', //not found
 ]
 
-export let class2a = class2aArray.join('\n'); 
+export let class3a = class3aArray.join('\n'); 
 
-//2c
-let class2cArray = [
+//3c
+let class3cArray = [
   'msch-abuele',
   'msch-alepet',
   'msch-ashkai',
@@ -261,10 +244,10 @@ let class2cArray = [
   //'msch-furerc', // DAZ
 ]
 
-export let class2c = class2cArray.join('\n'); 
+export let class3c = class3cArray.join('\n'); 
 
-//1a
-let class1aArray = [
+//2a
+let class2aArray = [
   'msch-alibou',
   'msch-amemeu',
   'msch-amykoh',
@@ -292,9 +275,9 @@ let class1aArray = [
   'msch-vinnus',
 ]
 
-export let class1a = class1aArray.join('\n'); 
+export let class2a = class2aArray.join('\n'); 
 
-//1b
+//2b
 let class1bArray = [
   'msch-abbbut',
   'msch-adimin',
@@ -323,12 +306,11 @@ let class1bArray = [
   'msch-suakal',
 ]
 
-export let class1b = class1bArray.join('\n'); 
+export let class2b = class2bArray.join('\n'); 
 
-//1c
-let class1cArray = [
+//2c
+let class2cArray = [
   'msch-amyhor',
-  'msch-azryil',
   'msch-brkkay',
   'msch-burpar',
   'msch-celalt',
@@ -337,12 +319,9 @@ let class1cArray = [
   'msch-emierc',
   'esmkar',
   'msch-ezgiyil',
-  'msch-leakol',
-  'msch-lelfek',
   'msch-lenly',
   'msch-lenmei',
   'msch-majmar',
-  'msch-marsai',
   'msch-mihtod',
   'msch-mikcin',
   'msch-raphef',
@@ -351,19 +330,47 @@ let class1cArray = [
   'msch-tahalp',
   'msch-turgue',
   'msch-yahyue',
+
+]
+
+export let class2c = class2cArray.join('\n'); 
+
+
+//1c
+let class1cArray = [
+  'LehrerB',
+  'LehrerS',
+  'msch-abudau',
+  'msch-danmas',
+  'msch-dencan',
+  'msch-edakil',
+  'msch-efssag',
+  'msch-ervuzu',
+  'msch-esayil',
+  'msch-esloez',
+  'msch-eymgue',
+  'msch-funoen',
+  'msch-haysug',
+  'msch-hilkap',
+  'msch-lelfek',
+  'msch-liogab',
+  'msch-lukzuc',
+  'msch-marsai',
+  'msch-melhas',
+  'msch-muhkar',
   'msch-salalk',
+  'msch-xentoj',
+  'msch-yigdur',
 ]
 
 export let class1c = class1cArray.join('\n'); 
 
 let allClasses = [
   blackSheepList,
-  class1aArray,
   class1cArray,
+  class2aArray,
   class2cArray,
-  class3bArray,
-  class3aArray,
-  class4cArray,
+  class3cArray,
   class4bArray,
   class4aArray,
   //classChessArray,

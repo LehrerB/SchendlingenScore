@@ -241,13 +241,9 @@ export default function Home() {
 
   let classesButtonArray = [
     { label: 'Schach', class: classes.classChess },
-    { label: '1a', class: classes.class1a },
-    { label: '1b', class: classes.class1b },
     { label: '1c', class: classes.class1c },
     { label: '2a', class: classes.class2a },
     { label: '2c', class: classes.class2c },
-    { label: '3a', class: classes.class3a },
-    { label: '3b', class: classes.class3b },
     { label: '4a', class: classes.class4a },
     { label: '4b', class: classes.class4b },
     { label: '4c', class: classes.class4c },
