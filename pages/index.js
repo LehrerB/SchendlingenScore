@@ -243,6 +243,7 @@ export default function Home() {
     { label: 'Schach', class: classes.classChess },
     { label: '1c', class: classes.class1c },
     { label: '2a', class: classes.class2a },
+    { label: '2b', class: classes.class2b },
     { label: '2c', class: classes.class2c },
     { label: '4a', class: classes.class4a },
     { label: '4b', class: classes.class4b },

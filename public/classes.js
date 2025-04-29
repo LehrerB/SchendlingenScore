@@ -352,7 +352,7 @@ let class1cArray = [
   'msch-edakil',
   'msch-efssag',
   'msch-ervuzu',
-  'msch-esayil',
+  'msch-esayil2',
   'msch-esloez',
   'msch-eymgue',
   'msch-funoen',
