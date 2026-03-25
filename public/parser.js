@@ -59,28 +59,44 @@ function bulletCheck(chess) {
   return chess.header().Event.includes('Bullet') || bulletByTimeBoolean;
 }
 
+export function splitPgnGames(pgnText) {
+  if (!pgnText) {
+    return [];
+  }
+
+  const normalizedText = pgnText.replace(/\r\n/g, '\n').trim();
+  if (!normalizedText) {
+    return [];
+  }
+
+  return normalizedText
+    .split(/\n{2,}(?=\[Event\s")/)
+    .map((game) => game.trim())
+    .filter(Boolean);
+}
+
 export default function parseLichessGame(str, name) {
   const chess = new Chess();
+  const normalizedGame = str.replace(/\r\n/g, '\n').trim();
   let moves;
   
-  if(str.includes('\r\n')){
-    moves = str.split('\r\n\r\n') //local files are encoded with \r\n instead of \n
-  } else {
-    moves = str.split('\n\n')
-  }
+  moves = normalizedGame.split('\n\n');
   if(moves.length < 2) {
     return null;
   }
   //check for variants
-  if(!(str.includes('[Variant "From Position"]')||str.includes('[Variant "Standard"]'))){ //||str.includes('[Variant "Chess960"]')
+  if(!(normalizedGame.includes('[Variant "From Position"]')||normalizedGame.includes('[Variant "Standard"]'))){ //||normalizedGame.includes('[Variant "Chess960"]')
     return null;
   }
   //check for banned games
-  if(checkForBannedGames(str, banned_games)){ 
+  if(checkForBannedGames(normalizedGame, banned_games)){ 
     return null}
 
-  //console.log(str);
-  chess.loadPgn(str); //can import from whole string instead of moves[1] //.replace('[Variant "Chess960"]','[Variant "From Position"]')
+  try {
+    chess.loadPgn(normalizedGame);
+  } catch (_error) {
+    return null;
+  }
   moves[0].split('\n').forEach(line => {
     let comps = /^\[(\w+) "?(\w+)"?\]$/g;
   });

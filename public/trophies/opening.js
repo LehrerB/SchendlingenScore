@@ -113,12 +113,12 @@ export let textbookOpening = {
     for (let i = castleindex; i < ophist.length; i++){
     currentpos.move(ophist[i])
     //no Knights or Bishops on those squares, NO MATTER WHAT COLOR
-    condNB = !(currentpos.get(posN1).type==='n' || currentpos.get(posN2).type==='n' || currentpos.get(posB1).type==='b' || currentpos.get(posB2).type==='b')
+    condNB = !(currentpos.get(posN1)?.type==='n' || currentpos.get(posN2)?.type==='n' || currentpos.get(posB1)?.type==='b' || currentpos.get(posB2)?.type==='b')
     //one of the center squares needs a pawn of the correct color
-    conde4 = currentpos.get('e4').type==='p' && currentpos.get('e4').color===piececolor;
-    conde5 = currentpos.get('e5').type==='p' && currentpos.get('e5').color===piececolor;
-    condd4 = currentpos.get('d4').type==='p' && currentpos.get('d4').color===piececolor;
-    condd5 = currentpos.get('d5').type==='p' && currentpos.get('d5').color===piececolor;
+    conde4 = currentpos.get('e4')?.type==='p' && currentpos.get('e4')?.color===piececolor;
+    conde5 = currentpos.get('e5')?.type==='p' && currentpos.get('e5')?.color===piececolor;
+    condd4 = currentpos.get('d4')?.type==='p' && currentpos.get('d4')?.color===piececolor;
+    condd5 = currentpos.get('d5')?.type==='p' && currentpos.get('d5')?.color===piececolor;
     prevscore = score //can't be down material 2 turns in a row. Small issue with in between moves
     score = utils.get_material_player(currentpos);
     if(condNB && (conde4 || conde5 || condd4 || condd5)&& score > -2 && prevscore > -2){return true}

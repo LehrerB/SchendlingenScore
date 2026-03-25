@@ -1,7 +1,7 @@
 import styles from '../styles/Home.module.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Chess } from 'chess.js';
-import parseLichessGame from '../public/parser';
+import parseLichessGame, { splitPgnGames } from '../public/parser';
 import * as castling from '../public/trophies/castling';
 import * as underdog from '../public/trophies/underdog';
 import * as lessmaterial from '../public/trophies/lessmaterial';
@@ -19,21 +19,7 @@ let opponents_school_unique = [];
 export { opponents_school_unique };
 
 const dataurl = '/saved_data.json'; // Relative URL to your JSON file
-let bigdata;
-fetch(dataurl)
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    return response.json(); // Parse the JSON response
-  })
-  .then(data => {
-    bigdata = data;
-    console.log('Bigdata:', data); // Use the JSON data in your application
-  })
-  .catch(error => {
-    console.error('Error fetching JSON data:', error);
-  });
+let bigdata = [];
 /**/
 
 const checks = {
@@ -260,6 +246,35 @@ export default function Home() {
   const [namelist, setUsername] = useState('LehrerB\nmsch-tahalp\nmsch-oliwel\nmisch-andhof');
   const [skipFetch, setSkipFetch] = useState(true);
 
+  useEffect(() => {
+    let isMounted = true;
+
+    fetch(dataurl)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then((data) => {
+        if (!isMounted) {
+          return;
+        }
+        bigdata = Array.isArray(data) ? data : [];
+        console.log('Bigdata:', bigdata);
+      })
+      .catch((error) => {
+        console.error('Error fetching JSON data:', error);
+        if (isMounted) {
+          bigdata = [];
+        }
+      });
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
   const toggleView = () => {
     // Toggle between View 0 and View 1
     setView(view === 0 ? 1 : 0);
@@ -337,12 +352,7 @@ export default function Home() {
         fetch(url, { headers: { 'Content-Type': 'text/plain; charset=utf-8' } })
           .then(response => response.text())
           .then(data => {
-            let games;
-            if (local === true) {
-              games = data.trim().split('\r\n\r\n\r\n'); //local files are encoded with \r\n instead of \n
-            } else {
-              games = data.trim().split('\n\n\n');
-            }
+            const games = splitPgnGames(data);
 
             //let newAch = checks.map(value => { return { 'title': value.title, 'description': value.description, 'check': value.check, 'urls': [] } });
             games.forEach(game => {
@@ -978,7 +988,7 @@ export default function Home() {
             </div>
 
           </div></>}
-              <div><a href="schachpasslektionen.pdf" target="_blank" rel="noopener noreferrer">Lektionen vom Schachpass</a></div>
+              <div><a href="/schachpasslektionen.pdf" target="_blank" rel="noopener noreferrer">Lektionen vom Schachpass</a></div>
               
 
       </main>

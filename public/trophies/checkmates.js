@@ -194,7 +194,7 @@ export let mateOnBackRank = {
     let emptysquares = 0; //will count how many squares are empty
     for(let pos in pawnpositions){
       const squareinfo = game.get(pawnpositions[pos]);
-      if(squareinfo===false){emptysquares += 1} else {
+      if(squareinfo===undefined){emptysquares += 1} else {
         if(squareinfo.color===piececolor){return false} //if any piece is white in front of the king, that's not backrank checkmate
       }
       if(emptysquares > 1){return false} //if two or more are empty

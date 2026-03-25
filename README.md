@@ -2,6 +2,15 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+This project is configured for `Node.js 24.x` in `package.json` so it matches Vercel's current runtime options.
+
+Use a compatible Node version first:
+
+```bash
+node -v
+# if needed, switch to Node 24 before continuing
+```
+
 First, run the development server:
 
 ```bash
