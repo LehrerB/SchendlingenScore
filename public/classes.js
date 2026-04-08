@@ -8,30 +8,54 @@ export let blackSheepList = [
   'esmkar',
   'J2by',
   'CayanK',
-  'Oezflk', //1b
+  'Oezflk', 
+  'AlviMachaschev',
 ]
 
 export let teacherList = [
   'LehrerB',
+  'LehrerinB',
+  'LehrerScM',
   'LehrerS',
 ]
 
 //chess group
 let classChessArray = [
   'LehrerB',
-  'LehrerS',
-  'msch-lelfek',
+  'LehrerinB',
+  'msch-chlhal',
+  'msch-darkos',
+  'msch-marrad',
+  'msch-wisalk',
+  'msch-atiayd',
+
+  'AlviMachaschev',
+  'msch-alwala',
+  'msch-ervuzu',
+  'msch-itialp',
+  //'msch-muhgoi',
+  'msch-tammih',
+
+  'msch-egeded',
+  'msch-malpra',
+
+  'msch-dencan',
+  'msch-efssag',
+  'msch-eymgue',
+  'msch-esayil2',
   'msch-salalk',
+  'msch-xentoj',
+  'msch-yigdur',
+
+  'msch-burcin',
+  'msch-evemat',
   'msch-galspo',
-  'msch-isahec',
-  'msch-hunfek',
-  'msch-tahalp',
+
+  'msch-burpar',
   'msch-ronber',
-  'msch-oliwel',
-  'misch-andhof',
+  'msch-tahalp',
+
   'msch-dommio',
-  'msch-musgez',
-  'msch-stemio',
 ]
 
 export let classChess = classChessArray.join('\n');
